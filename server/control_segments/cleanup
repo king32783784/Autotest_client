@@ -1,0 +1,6 @@
+def cleanup(machine):
+    host = hosts.create_host(machine, initialize=False, auto_monitor=False)
+    host.cleanup()
+
+
+job.parallel_simple(cleanup, machines, log=False)

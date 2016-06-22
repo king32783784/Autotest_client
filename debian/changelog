@@ -1,0 +1,11 @@
+autotest (0.16.0-4-g8ad06) saucy; urgency=medium
+
+  * Automated (make builddeb) build.
+
+ -- Lucas Meneghel Rodrigues (lmr) <lookkas@gmail.com>  Thu, 27 Mar 2014 23:13:14 -0300
+
+autotest (0.15.0-rc0-54-g1568d) raring; urgency=low
+
+  * Initial release.
+
+ -- Lucas Meneghel Rodrigues (lmr) <lookkas@gmail.com>  Thu, 27 Dec 2012 06:49:43 -0200
