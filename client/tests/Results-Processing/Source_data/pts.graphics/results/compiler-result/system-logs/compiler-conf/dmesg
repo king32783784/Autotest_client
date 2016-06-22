@@ -1,0 +1,2 @@
+conftest[16802]: segfault at 0 ip 00000000004006d0 sp 00007ffd46c63d30 error 4 in conftest[400000+1000]
+conftest[16837]: segfault at 0 ip 00007fa4a0f0f8fa sp 00007fff101d0478 error 4 in libc-2.21.so[7fa4a0e71000+1b6000]

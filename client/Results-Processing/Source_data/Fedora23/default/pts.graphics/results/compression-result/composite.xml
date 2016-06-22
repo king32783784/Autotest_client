@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compression-result</Title>
+    <LastModified>2015-12-14 19:51:29</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>compression-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.0.3 (git-b4bfea0), Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User></User>
+    <TimeStamp>2015-12-14 19:51:29</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-libmpx --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-isl --with-linker-hash-style=gnu --with-tune=generic","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-7zip-1.6.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>9.20.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>11422</Value>
+        <RawString>11508:11390:11369</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-pbzip2-1.4.0</Identifier>
+    <Title>Parallel BZIP2 Compression</Title>
+    <AppVersion>1.1.6</AppVersion>
+    <Arguments></Arguments>
+    <Description>256MB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>12.45</Value>
+        <RawString>12.41777586937:12.461797952652:12.480161905289</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -pthread -lbz2 -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>15.90</Value>
+        <RawString>16.098492860794:15.819407939911:15.767304897308</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-lzma-1.2.0</Identifier>
+    <Title>LZMA Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>256MB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>155.85</Value>
+        <RawString>156.01623392105:155.66462993622:155.86971902847</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

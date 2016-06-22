@@ -1,0 +1,8 @@
+param-cpu_max_prime=[10000, 20000, 30000]
+param-runtimes=3
+param-test_type='cpu'
+version=1
+sysinfo-cmdline=BOOT_IMAGE=/boot/vmlinuz-4.2.3-300.fc23.x86_64 root=/dev/sda1 ro rhgb quiet LANG=zh_CN.UTF-8
+sysinfo-memtotal-in-kb=3923972
+sysinfo-phys-mbytes=4096
+sysinfo-uname=4.2.3-300.fc23.x86_64 #1 SMP Mon Oct 5 15:42:54 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux

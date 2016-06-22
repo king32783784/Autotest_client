@@ -1,0 +1,5 @@
+
+### \*Local\* Communication latencies in microseconds - smaller is better
+
+*OS* | *2p/0K ctxsw* | *Pipe* | *AF UNIX* | *UDP* | *RPC/UDP* | *TCP* | *RPC/TCP* | *TCP conn*
+------ | ------------- | ------ | --------- | ----- | --------- | ----- | --------- | ----------

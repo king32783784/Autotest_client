@@ -1,0 +1,3 @@
+	START	ltp	ltp	timestamp=1449143845	localtime=Dec 03 19:57:25	
+		FAIL	ltp	ltp	timestamp=1449158788	localtime=Dec 04 00:06:28	LTP tests failed: ['netns_sysfs', '/root/autotest/client/tmp/ltp/src/bin/testscripts/test_fs_bind.sh', 'cgroup_regression_test', 'memcg_function_test', 'memcg_stat_test', 'memcg_use_hierarchy_test', 'cgroup_test_fj', 'cpuctl_test_fj', 'cpuset_regression_test', 'Power_Management06', 'Initnuma', 'file09', 'cron01', 'du01', 'cpufreq_boost', 'dma_thread_diotest']
+	END FAIL	ltp	ltp	timestamp=1449158788	localtime=Dec 04 00:06:28	

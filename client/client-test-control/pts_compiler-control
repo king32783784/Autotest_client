@@ -1,0 +1,9 @@
+import os 
+from autotest.client import utils
+
+def ptscompiler():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['compiler'], tag='compiler')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+ptscompiler()

@@ -1,0 +1,78 @@
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 259 usec
+4 games completed in 591571 msec
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 105 usec
+4 games completed in 532895 msec
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 261 usec
+4 games completed in 584942 msec
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 104 usec
+4 games completed in 543460 msec
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 108 usec
+4 games completed in 547482 msec
+
+PING-PONG CONFIGURATION:
+
+target (-i) = 100000
+ntables (-n) = 4
+sleepms (-z) = 0
+pthread_scope (-s) = process
+pthread_process (-p) = private
+concurrency (-c) = 0
+stacksize (-S) = 0
+
+8 threads initialised in 106 usec
+4 games completed in 586852 msec

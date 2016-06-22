@@ -1,0 +1,11 @@
+import os 
+from autotest.client import utils
+
+#unixbench test
+def unixtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('unixbench5',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/unixbench5')
+    os.chdir(res_path)
+
+unixtest()

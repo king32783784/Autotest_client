@@ -1,0 +1,17 @@
+09/22 07:00:54 DEBUG|     utils:0114| Running 'which gcc'
+09/22 07:00:54 DEBUG|     utils:0151| [stdout] /usr/bin/gcc
+09/22 07:00:54 DEBUG|     utils:0114| Running 'cat /root/autotest/client/tests/pingpong/pingpong.tar.gz | tar xvf - 2>/dev/null'
+09/22 07:00:54 DEBUG|     utils:0114| Running 'patch -p0 < /root/autotest/client/tests/pingpong/Runtest.patch'
+09/22 07:00:54 DEBUG|     utils:0151| [stdout] patching file RunTest.sh
+09/22 07:00:54 DEBUG|     utils:0114| Running './RunTest.sh 3'
+09/22 07:00:55 ERROR|     utils:0151| [stderr] pp32.c: 在函数‘main’中:
+09/22 07:00:55 ERROR|     utils:0151| [stderr] pp32.c:91:15: 警告：隐式声明函数‘getopt’ [-Wimplicit-function-declaration]
+09/22 07:00:55 ERROR|     utils:0151| [stderr]    while ((c = getopt (argc, argv, "?vri:n:z:p:s:c:S:")) != EOF)
+09/22 07:00:55 ERROR|     utils:0151| [stderr]                ^
+09/22 07:00:55 ERROR|     utils:0151| [stderr] pp32.c:113:6: 警告：隐式声明函数‘strcmp’ [-Wimplicit-function-declaration]
+09/22 07:00:55 ERROR|     utils:0151| [stderr]   if (strcmp (optarg, "shared") == 0)
+09/22 07:00:55 ERROR|     utils:0151| [stderr]       ^
+09/22 07:00:55 ERROR|     utils:0151| [stderr] pp32.c:193:7: 警告：隐式声明函数‘pthread_setconcurrency’ [-Wimplicit-function-declaration]
+09/22 07:00:55 ERROR|     utils:0151| [stderr]        pthread_setconcurrency (concurrency);
+09/22 07:00:55 ERROR|     utils:0151| [stderr]        ^
+09/22 07:47:30 DEBUG|     utils:0114| Running 'cp -a /root/autotest/client/tmp/pingpong/src/results/*  /mnt/results/default/pingpong/results'

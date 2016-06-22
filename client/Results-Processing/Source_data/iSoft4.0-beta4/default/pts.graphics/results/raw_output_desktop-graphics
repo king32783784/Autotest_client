@@ -1,0 +1,231 @@
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: iSoft Desktop 4.0, Kernel: 4.4.0-15 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.1.0, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush <bool>] [-i <file>] [-o <file>] [-c <file>] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.1 + LLVM 3.7.1, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): 
+Recently Saved Test Results:
+- compression-result   [Today]
+- encoding-result      [Today]
+- compiler-result      [Today]
+
+    Enter a name to save these results under:     Enter a unique name to describe this test run / configuration: 
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Desktop 4.0 via the Phoronix Test Suite.
+
+New Description: 
+
+QGears2:
+    pts/qgears2-1.0.1 [XRender + Image Scaling]
+    Test 1 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 3 Hours, 36 Minutes
+        Started Run 1 @ 06:31:23
+        Started Run 2 @ 06:31:30
+        Started Run 3 @ 06:31:34  [Std. Dev: 0.89%]
+
+    Test Results:
+        1695.71355
+        1698.127675
+        1670.948375
+
+    Average: 1688.26 Frames Per Second
+
+
+Doom 3 1.3.1:
+    pts/doom3-1.1.0 [1440 x 900 - Ultra Quality]
+    Test 2 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 3 Hours, 31 Minutes
+        Started Run 1 @ 06:31:43
+        The test run did not produce a result.
+        Started Run 2 @ 06:31:46
+        The test run did not produce a result.
+        Started Run 3 @ 06:31:48
+        The test run did not produce a result.
+        E: Sys_Error: Couldn't load default.cfg
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+ET: Quake Wars 1.5:
+    pts/etqw-1.1.0 [1440 x 900]
+    Test 3 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      27 Minutes
+    Estimated Time To Completion: 3 Hours, 27 Minutes
+        Started Run 1 @ 06:31:54
+        The test run did not produce a result.
+        Started Run 2 @ 06:31:56
+        The test run did not produce a result.
+        Started Run 3 @ 06:31:58
+        The test run did not produce a result.
+        E: ./etqw.x86: error while loading shared libraries: libSDL-1.2.so.0: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+Lightsmark 2008:
+    pts/lightsmark-1.2.0 [1440 x 900]
+    Test 4 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      12 Minutes
+    Estimated Time To Completion: 3 Hours
+        Started Run 1 @ 06:32:04
+        The test run did not produce a result.
+        Started Run 2 @ 06:32:06
+        The test run did not produce a result.
+        Started Run 3 @ 06:32:08
+        The test run did not produce a result.
+        E: ./backend: error while loading shared libraries: libfreeimage.so.3: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+Nexuiz 2.5.2:
+    pts/nexuiz-1.6.1 [1440 x 900 w/ HDR]
+    Test 5 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Hours
+    Estimated Time To Completion: 2 Hours, 49 Minutes
+        Started Run 1 @ 06:32:14
+        Started Run 2 @ 06:33:05
+        Started Run 3 @ 06:33:54  [Std. Dev: 0.07%]
+
+    Test Results:
+        21.1115674
+        21.0802135
+        21.0957954
+
+    Average: 21.10 Frames Per Second
+    Minimum: 13
+    Maximum: 29
+
+
+Prey 1.4.119:
+    pts/prey-1.1.2 [1440 x 900]
+    Test 6 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 49 Minutes
+        Started Run 1 @ 06:34:49
+        The test run did not produce a result.
+        Started Run 2 @ 06:34:51
+        The test run did not produce a result.
+        Started Run 3 @ 06:34:53
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+Unigine Sanctuary 2.3:
+    pts/unigine-sanctuary-1.6.2 [1440 x 900]
+    Test 7 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      24 Minutes
+    Estimated Time To Completion: 45 Minutes
+        Started Run 1 @ 06:34:59
+        Started Run 2 @ 06:38:12
+        Started Run 3 @ 06:41:25  [Std. Dev: 0.08%]
+
+    Test Results:
+        8.2785
+        8.27477
+        8.2878
+
+    Average: 8.28 Frames Per Second
+
+
+Unigine Tropics 1.3:
+    pts/unigine-tropics-1.6.2 [1440 x 900]
+    Test 8 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      16 Minutes
+    Estimated Time To Completion: 22 Minutes
+        Started Run 1 @ 06:44:42
+        Started Run 2 @ 06:48:19
+        Started Run 3 @ 06:51:55  [Std. Dev: 0.04%]
+
+    Test Results:
+        8.59912
+        8.59913
+        8.60534
+
+    Average: 8.60 Frames Per Second
+
+
+VDrift 2010-06-30:
+    pts/vdrift-1.2.0 [1440 x 900]
+    Test 9 of 10
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      7 Minutes
+    Estimated Time To Completion: 7 Minutes
+        Started Run 1 @ 06:55:36
+        The test run did not produce a result.
+        Started Run 2 @ 06:55:38
+        The test run did not produce a result.
+        Started Run 3 @ 06:55:40
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+GtkPerf 0.40:
+    pts/gtkperf-1.2.1 [GtkDrawingArea - Pixbufs]
+    Test 10 of 10
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 1 Minute
+        Started Run 1 @ 06:55:46
+        Started Run 2 @ 06:55:49
+        Started Run 3 @ 06:55:52  [Std. Dev: 4.12%]
+        Started Run 4 @ 06:55:54  [Std. Dev: 3.59%]
+        Started Run 5 @ 06:55:57  [Std. Dev: 3.89%]
+        Started Run 6 @ 06:55:59  [Std. Dev: 4.36%]
+
+    Test Results:
+        0.41
+        0.44
+        0.41
+        0.41
+        0.44
+        0.45
+
+    Average: 0.43 Seconds
+
+
+The following tests failed to properly run:
+
+	- pts/doom3-1.1.0: 1440 x 900 - Ultra Quality
+	- pts/etqw-1.1.0: 1440 x 900
+	- pts/lightsmark-1.2.0: 1440 x 900
+	- pts/prey-1.1.2: 1440 x 900
+	- pts/vdrift-1.2.0: 1440 x 900
+
+
+    Do you want to view the results in your web browser (Y/n):     Would you like to upload the results to OpenBenchmarking.org (Y/n):     Would you like to upload the results to OpenBenchmarking.org (Y/n):     Would you like to attach the system logs (lspci, dmesg, lsusb, etc) to the test result (Y/n): 
+Results Uploaded To: http://openbenchmarking.org/result/1512270-KH-DESKTOPGR44
+    Do you want to launch OpenBenchmarking.org (Y/n): 

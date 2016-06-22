@@ -1,0 +1,400 @@
+09/24 14:26:11 DEBUG|     utils:0114| Running 'which gcc'
+09/24 14:26:11 DEBUG|     utils:0151| [stdout] /bin/gcc
+09/24 14:26:11 DEBUG|     utils:0114| Running 'zcat /root/autotest/client/tests/pts/phoronix-test-suite-5.2.1.tar.gz | tar xvf - 2>/dev/null'
+09/24 14:26:11 DEBUG|     utils:0114| Running 'cat /etc/issue |awk '{print $1}' '
+09/24 14:26:11 DEBUG|     utils:0151| [stdout] Fedora
+09/24 14:26:11 DEBUG|     utils:0151| [stdout] Kernel
+09/24 14:26:11 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:11 DEBUG|     utils:0114| Running 'yum -y install php php-xml'
+09/24 14:26:11 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install php php-xml'.
+09/24 14:26:11 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 14:26:11 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 14:26:11 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 14:26:11 ERROR|     utils:0151| [stderr] 
+09/24 14:26:12 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 1:00:39 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:26:12 ERROR|     utils:0151| [stderr] 软件包 php-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 14:26:12 ERROR|     utils:0151| [stderr] 软件包 php-xml-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 14:26:12 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:26:12 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:26:12 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:26:12 DEBUG|     utils:0114| Running 'yum -y install mpich2'
+09/24 14:26:12 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install mpich2'.
+09/24 14:26:12 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 14:26:12 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 14:26:12 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 14:26:12 ERROR|     utils:0151| [stderr] 
+09/24 14:26:13 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 1:00:40 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:26:13 ERROR|     utils:0151| [stderr] 软件包 mpich-3.1.4-2.fc22.x86_64 已安装，跳过
+09/24 14:26:13 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:26:13 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:26:13 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:26:13 DEBUG|     utils:0114| Running 'dnf -y install python-pexpect.noarch'
+09/24 14:26:14 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 1:00:41 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:26:14 ERROR|     utils:0151| [stderr] 软件包 python-pexpect-3.1-3.fc21.noarch 已安装，跳过
+09/24 14:26:14 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:26:15 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:26:15 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:26:15 DEBUG|     utils:0114| Running './install-sh /root/autotest/client/tmp/pts/src'
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Installation Completed
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] Executable File: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] Documentation: /root/autotest/client/tmp/pts/src/share/doc/phoronix-test-suite/
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Files: /root/autotest/client/tmp/pts/src/share/phoronix-test-suite/
+09/24 14:26:40 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:40 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite list-available-suites'
+09/24 14:26:41 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:41 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+09/24 14:26:41 DEBUG|     utils:0151| [stdout] Available Suites
+09/24 14:26:41 DEBUG|     utils:0151| [stdout] 
+09/24 14:26:42 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+09/24 14:26:42 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+09/24 14:26:42 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+09/24 14:26:42 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+09/24 14:26:43 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+09/24 14:26:43 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+09/24 14:26:43 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+09/24 14:26:44 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+09/24 14:26:44 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+09/24 14:26:46 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+09/24 14:26:48 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+09/24 14:26:48 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+09/24 14:26:49 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+09/24 14:26:49 DEBUG|     utils:0151| [stdout] * pts/disk                         - Disk Test Suite                  Disk
+09/24 14:26:50 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+09/24 14:26:51 DEBUG|     utils:0151| [stdout] * pts/favorites                    - Favorites                        System
+09/24 14:26:51 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+09/24 14:26:51 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+09/24 14:26:51 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+09/24 14:26:51 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+09/24 14:26:52 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+09/24 14:26:52 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+09/24 14:26:52 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+09/24 14:26:52 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+09/24 14:26:53 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+09/24 14:26:54 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+09/24 14:26:54 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+09/24 14:26:54 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+09/24 14:26:55 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+09/24 14:26:55 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+09/24 14:26:56 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+09/24 14:26:56 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+09/24 14:26:58 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+09/24 14:26:58 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+09/24 14:26:58 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+09/24 14:26:58 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+09/24 14:27:00 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+09/24 14:27:00 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+09/24 14:27:01 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+09/24 14:27:02 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+09/24 14:27:07 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+09/24 14:27:10 DEBUG|     utils:0151| [stdout] * pts/universe-cli                 - Universe CLI Test Suite          System
+09/24 14:27:11 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+09/24 14:27:11 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+09/24 14:27:12 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+09/24 14:27:13 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+09/24 14:27:13 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+09/24 14:27:13 DEBUG|     utils:0151| [stdout] 
+09/24 14:27:13 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+09/24 14:27:13 DEBUG|     utils:0151| [stdout] 
+09/24 14:27:13 DEBUG|     utils:0151| [stdout] 
+09/24 14:27:15 INFO |       pts:0066| 0
+09/24 14:27:15 INFO |       pts:0067| now start first expect.........
+09/24 14:27:15 DEBUG|       pts:0075| 
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results 
+09/24 14:27:15 DEBUG|       pts:0078|  y
+
+Recently Saved Test Results:
+- desktop-graphics-result   [Today]
+- compression-result        [Today]
+- encoding-result           [Today]
+- compiler-result           [Today]
+
+    Enter a name to save these results 
+09/24 14:27:15 DEBUG|       pts:0081|  encoding-result
+
+Current Test Identifiers:
+- encoding-conf
+
+    Enter a unique name to describe this test run / 
+09/24 14:27:16 DEBUG|       pts:0084|  encoding-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current 
+09/24 14:27:16 INFO |       pts:0085| now start run test..............
+09/24 14:33:11 DEBUG|       pts:0096|  Running pts/x264-1.9.0, pts/encode-ape-1.3.0, pts/encode-flac-1.5.0, pts/encode-mp3-1.4.0, pts/encode-ogg-1.4.1, pts/encode-wavpack-1.2.0, pts/ffmpeg-2.4.0, pts/mencoder-1.4.1 via the Phoronix Test Suite.
+
+New Description: 
+
+
+x264 2014-08-30:
+    pts/x264-1.9.0
+    Test 1 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 20 Minutes
+        Started Run 1 @ 01:27:16
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:27:18
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:27:20
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 01:27:22
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 01:27:24
+        The test exited with a non-zero exit status.
+        E: ./x264_/bin/x264: error while loading shared libraries: libavformat.so.55: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+Monkey Audio Encoding 3.99u4b5s6:
+    pts/encode-ape-1.3.0
+    Test 2 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 17 Minutes
+        Started Run 1 @ 01:27:30
+        Started Run 2 @ 01:27:50
+        Started Run 3 @ 01:28:05
+        Started Run 4 @ 01:28:20
+        Started Run 5 @ 01:28:35  [Std. Dev: 0.19%]
+
+    Test Results:
+        13.086894035339
+        13.052757978439
+        13.054480791092
+        13.097728967667
+        13.037179946899
+
+    Average: 13.07 Seconds
+
+
+FLAC Audio Encoding 1.3.1:
+    pts/encode-flac-1.5.0
+    Test 3 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 01:28:56
+        Started Run 2 @ 01:29:07
+        Started Run 3 @ 01:29:19
+        Started Run 4 @ 01:29:30
+        Started Run 5 @ 01:29:42  [Std. Dev: 0.34%]
+
+    Test Results:
+        9.49054479599
+        9.4860370159149
+        9.499932050705
+        9.5355110168457
+        9.5617740154266
+
+    Average: 9.51 Seconds
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 4 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 14 Minutes
+        Started Run 1 @ 01:29:57
+        Started Run 2 @ 01:30:15
+        Started Run 3 @ 01:30:33
+        Started Run 4 @ 01:30:51
+        Started Run 5 @ 01:31:09  [Std. Dev: 0.25%]
+
+    Test Results:
+        15.740355014801
+        15.775367021561
+        15.83193898201
+        15.824166059494
+        15.769151926041
+
+    Average: 15.79 Seconds
+
+
+Ogg Encoding 1.3.0:
+    pts/encode-ogg-1.4.1
+    Test 5 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 01:31:32
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:31:34
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:31:36
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 01:31:38
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 01:31:40
+        The test exited with a non-zero exit status.
+        E: ./vorbis/bin/oggenc: error while loading shared libraries: liboggkate.so.1: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+WavPack Audio Encoding 4.41.0:
+    pts/encode-wavpack-1.2.0
+    Test 6 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 7 Minutes
+        Started Run 1 @ 01:31:46
+        Started Run 2 @ 01:31:59
+        Started Run 3 @ 01:32:12
+        Started Run 4 @ 01:32:25
+        Started Run 5 @ 01:32:38  [Std. Dev: 0.04%]
+
+    Test Results:
+        11.02051782608
+        11.021728038788
+        11.018112182617
+        11.025954008102
+        11.015002965927
+
+    Average: 11.02 Seconds
+
+
+FFmpeg 2.6.2:
+    pts/ffmpeg-2.4.0
+    Test 7 of 8
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 01:32:57
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:32:59
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:33:01
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Mencoder 1.1:
+    pts/mencoder-1.4.1
+    Test 8 of 8
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 4 Minutes
+        Started Run 1 @ 01:33:07
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:33:09
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:33:11
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/x264-1.9.0: H.264 Video Encoding
+	- pts/encode-ogg-1.4.1: WAV To Ogg
+	- pts/ffmpeg-2.4.0: H.264 HD To NTSC DV
+	- pts/mencoder-1.4.1: AVI To LAVC
+
+
+
+[NOTICE] No title supplied for result file meta-data. 
+    Do you want to view the results in your web browser 
+09/24 14:33:42 ERROR|      test:0414| Exception escaping from test:
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 411, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/root/autotest/client/shared/test.py", line 830, in _call_test_function
+    raise error.UnhandledTestFail(e)
+UnhandledTestFail: Unhandled TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7fd4359f3e10>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'encoding']
+searcher: <pexpect.searcher_re object at 0x7fd435984050>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4468
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.encoding/results/raw_output_encoding', mode 'w' at 0x7fd43597e0c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+    return func(*args, **dargs)
+  File "/root/autotest/client/shared/test.py", line 291, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/root/autotest/client/tests/pts/pts.py", line 97, in run_once
+    runpts.expect(pexpect.EOF)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1418, in expect
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1433, in expect_list
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1535, in expect_loop
+    raise TIMEOUT(str(err) + '\n' + str(self))
+TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7fd4359f3e10>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'encoding']
+searcher: <pexpect.searcher_re object at 0x7fd435984050>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 4468
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.encoding/results/raw_output_encoding', mode 'w' at 0x7fd43597e0c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+

@@ -1,0 +1,21 @@
+09/25 14:05:36 INFO |       job:0189| Writing results to /root/autotest/client/results/default
+09/25 14:05:36 DEBUG|       job:0965| Initializing the state engine
+09/25 14:05:36 DEBUG|  base_job:0394| Persistent state client.steps now set to []
+09/25 14:05:36 DEBUG|       job:0987| Persistent option harness now set to None
+09/25 14:05:36 DEBUG|       job:0987| Persistent option harness_args now set to None
+09/25 14:05:36 DEBUG|   harness:0087| Selected harness: standalone
+09/25 14:05:36 INFO |       job:0216| START	----	----	timestamp=1443161136	localtime=Sep 25 14:05:36	
+09/25 14:05:36 DEBUG|  base_job:0394| Persistent state client._record_indent now set to 1
+09/25 14:05:36 INFO |       job:0216| 	START	infotest	infotest	timestamp=1443161136	localtime=Sep 25 14:05:36	
+09/25 14:05:36 DEBUG|  base_job:0394| Persistent state client._record_indent now set to 2
+09/25 14:05:36 DEBUG|  base_job:0394| Persistent state client.unexpected_reboot now set to ('infotest', 'infotest')
+09/25 14:05:36 DEBUG|     utils:0114| Running 'sh sysinfo.sh '
+09/25 14:05:49 DEBUG|     utils:0114| Running 'cp -a /root/autotest/client/tmp/infotest/src/sysinfo  /root/autotest/client/results/default/infotest/results'
+09/25 14:05:50 INFO |base_sysin:0371| System log file not found (looked for ['/var/log/messages', '/var/log/syslog'])
+09/25 14:05:50 INFO |       job:0216| 		GOOD	infotest	infotest	timestamp=1443161150	localtime=Sep 25 14:05:50	completed successfully
+09/25 14:05:50 INFO |       job:0216| 	END GOOD	infotest	infotest	timestamp=1443161150	localtime=Sep 25 14:05:50	
+09/25 14:05:50 DEBUG|  base_job:0394| Persistent state client._record_indent now set to 1
+09/25 14:05:50 DEBUG|  base_job:0428| Persistent state client.unexpected_reboot deleted
+09/25 14:05:50 INFO |       job:0216| END GOOD	----	----	timestamp=1443161150	localtime=Sep 25 14:05:50	
+09/25 14:05:50 DEBUG|  base_job:0394| Persistent state client._record_indent now set to 0
+09/25 14:05:50 INFO |    report:0295| Report successfully generated at /root/autotest/client/results/default/job_report.html

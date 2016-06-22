@@ -1,0 +1,43 @@
+12/26 21:15:43 DEBUG|     utils:0114| Running 'which gcc'
+12/26 21:15:44 DEBUG|     utils:0151| [stdout] /usr/lib/ccache/gcc
+12/26 21:15:44 DEBUG|     utils:0114| Running 'cat /root/autotest/client/tests/iozone/iozone3_414.tar | tar xvf - 2>/dev/null'
+12/26 21:15:45 DEBUG|     utils:0114| Running 'patch -p3 < /root/autotest/client/tests/iozone/makefile.patch'
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] patching file makefile
+12/26 21:15:45 DEBUG|     utils:0114| Running 'make  linux-AMD64'
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] 
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] Building iozone for Linux-AMD64
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] 
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] cc -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -DNAME='"linux-AMD64"' \
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] 	-D__AMD64__ -DSHARED_MEM -Dlinux -D_LARGEFILE64_SOURCE \
+12/26 21:15:45 DEBUG|     utils:0151| [stdout] 	-DHAVE_PREAD  iozone.c -o iozone_linux-AMD64.o
+12/26 21:16:05 DEBUG|     utils:0151| [stdout] cc -c -O3 -Dunix -DHAVE_ANSIC_C -DASYNC_IO -D_LARGEFILE64_SOURCE \
+12/26 21:16:05 DEBUG|     utils:0151| [stdout] 	-DSHARED_MEM -Dlinux  libbif.c -o libbif.o
+12/26 21:16:05 DEBUG|     utils:0151| [stdout] cc -c -O3 -Dunix -Dlinux -DHAVE_ANSIC_C -DASYNC_IO \
+12/26 21:16:05 DEBUG|     utils:0151| [stdout] 	-D_LARGEFILE64_SOURCE  libasync.c  -o libasync.o 
+12/26 21:16:06 DEBUG|     utils:0151| [stdout] 
+12/26 21:16:06 DEBUG|     utils:0151| [stdout] Building fileop for Linux-AMD64
+12/26 21:16:06 DEBUG|     utils:0151| [stdout] 
+12/26 21:16:06 DEBUG|     utils:0151| [stdout] cc -Wall -c -O3  fileop.c -o fileop_linux-AMD64.o
+12/26 21:16:07 ERROR|     utils:0151| [stderr] fileop.c: In function ‘validate’:
+12/26 21:16:07 ERROR|     utils:0151| [stderr] fileop.c:1377:15: warning: variable ‘size1’ set but not used [-Wunused-but-set-variable]
+12/26 21:16:07 ERROR|     utils:0151| [stderr]   register int size1;
+12/26 21:16:07 ERROR|     utils:0151| [stderr]                ^
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] 
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] Building the pit_server
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] 
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] cc -c   pit_server.c  -o pit_server.o 
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] cc  -O3  iozone_linux-AMD64.o libbif.o libasync.o \
+12/26 21:16:07 DEBUG|     utils:0151| [stdout] 	-lrt -lpthread -o iozone
+12/26 21:16:08 DEBUG|     utils:0151| [stdout] cc  -O3 -Dlinux fileop_linux-AMD64.o -o fileop
+12/26 21:16:08 DEBUG|     utils:0151| [stdout] cc  -O3 -Dlinux pit_server.o -o pit_server
+12/26 21:16:08 DEBUG|      test:0285| Test started. Specified 3 iterations
+12/26 21:16:08 DEBUG|      test:0289| Executing iteration 1 of 3
+12/26 21:16:08 DEBUG|     utils:0114| Running 'echo 3 >/proc/sys/vm/drop_caches'
+12/26 21:16:08 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/iozone/src/src/current/iozone -Rb /mnt/iozone_results_io.xls  -i 0 -i 1 -i 2 -I -f /mnt/iozone_io.file -r 32 -s 8g'
+12/26 22:16:39 DEBUG|      test:0289| Executing iteration 2 of 3
+12/26 22:16:39 DEBUG|     utils:0114| Running 'echo 3 >/proc/sys/vm/drop_caches'
+12/26 22:16:39 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/iozone/src/src/current/iozone -Rb /mnt/iozone_results_io.xls  -i 0 -i 1 -i 2 -I -f /mnt/iozone_io.file -r 32 -s 8g'
+12/26 23:16:56 DEBUG|      test:0289| Executing iteration 3 of 3
+12/26 23:16:56 DEBUG|     utils:0114| Running 'echo 3 >/proc/sys/vm/drop_caches'
+12/26 23:16:56 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/iozone/src/src/current/iozone -Rb /mnt/iozone_results_io.xls  -i 0 -i 1 -i 2 -I -f /mnt/iozone_io.file -r 32 -s 8g'
+12/27 00:17:57 DEBUG|     utils:0114| Running './iozone.sh'

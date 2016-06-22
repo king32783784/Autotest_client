@@ -1,0 +1,7 @@
+Program: Unknown
+PID: 16837
+Signal: 11
+Hostname: localhost.localdomain
+Time of the crash (according to kernel): Thu Sep 24 09:59:29 2015
+Program backtrace:
+Could not determine backtrace for core file /mnt/results/default/pts.compiler/debug/crash.conftest.16837/core

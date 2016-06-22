@@ -1,0 +1,93 @@
+Module                  Size  Used by
+binfmt_misc            20480  1 
+bnep                   20480  2 
+bluetooth             544768  5 bnep
+rfkill                 28672  2 bluetooth
+fuse                   98304  3 
+nf_conntrack_netbios_ns    16384  0 
+nf_conntrack_broadcast    16384  1 nf_conntrack_netbios_ns
+ip6t_rpfilter          16384  1 
+ip6t_REJECT            16384  2 
+nf_reject_ipv6         16384  1 ip6t_REJECT
+xt_conntrack           16384  21 
+ebtable_nat            16384  1 
+ebtable_broute         16384  1 
+bridge                139264  1 ebtable_broute
+ebtable_filter         16384  1 
+ebtables               36864  3 ebtable_broute,ebtable_nat,ebtable_filter
+ip6table_nat           16384  1 
+nf_conntrack_ipv6      20480  12 
+nf_defrag_ipv6        102400  1 nf_conntrack_ipv6
+nf_nat_ipv6            16384  1 ip6table_nat
+ip6table_mangle        16384  1 
+ip6table_security      16384  1 
+ip6table_raw           16384  1 
+ip6table_filter        16384  1 
+ip6_tables             28672  5 ip6table_filter,ip6table_mangle,ip6table_security,ip6table_nat,ip6table_raw
+iptable_nat            16384  1 
+nf_conntrack_ipv4      20480  11 
+nf_defrag_ipv4         16384  1 nf_conntrack_ipv4
+nf_nat_ipv4            16384  1 iptable_nat
+nf_nat                 28672  2 nf_nat_ipv4,nf_nat_ipv6
+nf_conntrack          122880  8 nf_conntrack_netbios_ns,nf_nat,nf_nat_ipv4,nf_nat_ipv6,xt_conntrack,nf_conntrack_broadcast,nf_conntrack_ipv4,nf_conntrack_ipv6
+iptable_mangle         16384  1 
+iptable_security       16384  1 
+iptable_raw            16384  1 
+snd_hda_codec_hdmi     53248  1 
+snd_hda_codec_realtek    86016  1 
+snd_hda_codec_generic    69632  1 snd_hda_codec_realtek
+snd_hda_intel          32768  7 
+snd_hda_controller     36864  1 snd_hda_intel
+snd_hda_codec         143360  5 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_intel,snd_hda_controller
+iTCO_wdt               16384  0 
+snd_hwdep              20480  1 snd_hda_codec
+snd_seq                73728  0 
+snd_seq_device         16384  1 snd_seq
+intel_rapl             20480  0 
+snd_pcm               122880  4 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_hda_controller
+iTCO_vendor_support    16384  1 iTCO_wdt
+snd_timer              32768  2 snd_pcm,snd_seq
+iosf_mbi               16384  1 intel_rapl
+x86_pkg_temp_thermal    16384  0 
+coretemp               16384  0 
+ppdev                  20480  0 
+snd                    86016  24 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_seq,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_seq_device
+kvm_intel             163840  0 
+dcdbas                 16384  0 
+soundcore              16384  2 snd,snd_hda_codec
+parport_pc             28672  0 
+serio_raw              16384  0 
+kvm                   536576  1 kvm_intel
+crct10dif_pclmul       16384  0 
+crc32_pclmul           16384  0 
+crc32c_intel           24576  0 
+ghash_clmulni_intel    16384  0 
+parport                40960  2 ppdev,parport_pc
+shpchp                 40960  0 
+mei_me                 20480  0 
+i2c_i801               20480  0 
+mei                    90112  1 mei_me
+lpc_ich                24576  0 
+mfd_core               16384  1 lpc_ich
+nfsd                  385024  1 
+auth_rpcgss            73728  1 nfsd
+nfs_acl                16384  1 nfsd
+lockd                 102400  1 nfsd
+grace                  16384  2 nfsd,lockd
+sunrpc                364544  7 nfsd,auth_rpcgss,lockd,nfs_acl
+i915                 1126400  6 
+8021q                  40960  0 
+garp                   20480  1 8021q
+stp                    16384  2 garp,bridge
+llc                    16384  3 stp,garp,bridge
+mrp                    20480  1 8021q
+tg3                   176128  0 
+i2c_algo_bit           16384  1 i915
+e1000e                241664  0 
+drm_kms_helper        118784  1 i915
+drm                   335872  8 i915,drm_kms_helper
+ptp                    20480  2 tg3,e1000e
+pps_core               20480  1 ptp
+ata_generic            16384  0 
+pata_acpi              16384  0 
+video                  24576  1 i915

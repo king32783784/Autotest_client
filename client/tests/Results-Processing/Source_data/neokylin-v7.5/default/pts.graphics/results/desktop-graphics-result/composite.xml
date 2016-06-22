@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>desktop-graphics-result</Title>
+    <LastModified>2015-09-24 01:16:10</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel Gen6 on Fedora 22 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>desktop-graphics-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User></User>
+    <TimeStamp>2015-09-24 01:16:10</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/qgears2-1.0.1</Identifier>
+    <Title>QGears2</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-render COMPO</Arguments>
+    <Description>XRender + Image Scaling</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>233.17</Value>
+        <RawString>232.44945:234.121075:232.95045</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nexuiz-1.6.1</Identifier>
+    <Title>Nexuiz</Title>
+    <AppVersion>2.5.2</AppVersion>
+    <Arguments>+vid_width 1440 +vid_height 900 +r_hdr 1 -nosound</Arguments>
+    <Description>1440 x 900 w/ HDR</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>22.05</Value>
+        <RawString>22.0738043:22.0251014:22.0609245</RawString>
+        <JSON>{"min-result":13,"max-result":31}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/gtkperf-1.2.1</Identifier>
+    <Title>GtkPerf</Title>
+    <AppVersion>0.40</AppVersion>
+    <Arguments>DRAWING_PIXBUFS</Arguments>
+    <Description>GtkDrawingArea - Pixbufs</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>2.63</Value>
+        <RawString>2.63:2.64:2.61</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lgtk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lfreetype -lfontconfig -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

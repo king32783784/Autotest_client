@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>desktop-graphics-result</Title>
+    <LastModified>2015-12-11 04:45:28</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Enterprise Desktop 4.0 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>desktop-graphics-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: iSoft Enterprise Desktop 4.0, Kernel: 4.4.0-10 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.2.0-devel, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush &lt;bool&gt;] [-i &lt;file&gt;] [-o &lt;file&gt;] [-c &lt;file&gt;] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.0 (SVN 252402) + LLVM 3.7.0, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User></User>
+    <TimeStamp>2015-12-11 04:45:28</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"cpu-scaling-governor":"intel_pstate powersave","graphics-2d-acceleration":"SNA"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/qgears2-1.0.1</Identifier>
+    <Title>QGears2</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-render COMPO</Arguments>
+    <Description>XRender + Image Scaling</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>1692.27</Value>
+        <RawString>1724.0185:1684.888425:1667.889525</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nexuiz-1.6.1</Identifier>
+    <Title>Nexuiz</Title>
+    <AppVersion>2.5.2</AppVersion>
+    <Arguments>+vid_width 1440 +vid_height 900 +r_hdr 1 -nosound</Arguments>
+    <Description>1440 x 900 w/ HDR</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>21.17</Value>
+        <RawString>21.142398:21.1730334:21.1995231</RawString>
+        <JSON>{"min-result":13,"max-result":29}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/gtkperf-1.2.1</Identifier>
+    <Title>GtkPerf</Title>
+    <AppVersion>0.40</AppVersion>
+    <Arguments>DRAWING_PIXBUFS</Arguments>
+    <Description>GtkDrawingArea - Pixbufs</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>0.43</Value>
+        <RawString>0.41:0.48:0.43:0.38:0.44:0.41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lgtk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lfreetype -lfontconfig -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

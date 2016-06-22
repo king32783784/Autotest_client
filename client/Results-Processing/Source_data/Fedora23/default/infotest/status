@@ -1,0 +1,3 @@
+	START	infotest	infotest	timestamp=1449113546	localtime=Dec 03 11:32:26	
+		GOOD	infotest	infotest	timestamp=1449113562	localtime=Dec 03 11:32:42	completed successfully
+	END GOOD	infotest	infotest	timestamp=1449113562	localtime=Dec 03 11:32:42	

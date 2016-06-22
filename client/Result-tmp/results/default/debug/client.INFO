@@ -1,0 +1,29 @@
+06/22 09:32:18 INFO |       job:0189| Writing results to /home/isoft_lp/Github/Autotest_client/client/Result-tmp/results/default
+06/22 09:32:19 INFO |harness_st:0100| Could not symlink init scripts (lack of permissions)
+06/22 09:32:21 INFO |       job:0216| START	----	----	timestamp=1466559141	localtime=6月 22 09:32:21	
+06/22 09:32:21 INFO |       job:0216| 	START	sysbench.cpu	sysbench.cpu	timestamp=1466559141	localtime=6月 22 09:32:21	
+06/22 09:32:43 ERROR|     utils:0151| [stderr] /home/isoft_lp/Github/Autotest_client/client/tmp/sysbench/src/config/missing: Unknown `--is-lightweight' option
+06/22 09:32:43 ERROR|     utils:0151| [stderr] Try `/home/isoft_lp/Github/Autotest_client/client/tmp/sysbench/src/config/missing --help' for more information
+06/22 09:32:43 ERROR|     utils:0151| [stderr] configure: WARNING: 'missing' script is too old or missing
+06/22 09:32:55 INFO |  sysbench:0078| clean caches....
+06/22 09:32:55 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:33:07 INFO |  sysbench:0078| clean caches....
+06/22 09:33:07 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:33:21 INFO |  sysbench:0078| clean caches....
+06/22 09:33:21 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:33:34 INFO |  sysbench:0078| clean caches....
+06/22 09:33:34 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:34:07 INFO |  sysbench:0078| clean caches....
+06/22 09:34:07 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:34:40 INFO |  sysbench:0078| clean caches....
+06/22 09:34:40 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:35:13 INFO |  sysbench:0078| clean caches....
+06/22 09:35:13 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:36:09 INFO |  sysbench:0078| clean caches....
+06/22 09:36:09 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:37:05 INFO |  sysbench:0078| clean caches....
+06/22 09:37:06 INFO |  sysbench:0079| ===============Start sysbench cpu
+06/22 09:38:03 INFO |       job:0216| 		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1466559483	localtime=6月 22 09:38:03	completed successfully
+06/22 09:38:03 INFO |       job:0216| 	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1466559483	localtime=6月 22 09:38:03	
+06/22 09:38:03 INFO |       job:0216| END GOOD	----	----	timestamp=1466559483	localtime=6月 22 09:38:03	
+06/22 09:38:03 INFO |    report:0295| Report successfully generated at /home/isoft_lp/Github/Autotest_client/client/Result-tmp/results/default/job_report.html

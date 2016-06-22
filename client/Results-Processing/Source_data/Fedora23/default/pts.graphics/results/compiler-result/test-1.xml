@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compiler-result</Title>
+    <LastModified>2015-12-14 19:11:52</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>compiler-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.0.3 (git-b4bfea0), Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User></User>
+    <TimeStamp>2015-12-14 19:11:52</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-libmpx --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-isl --with-linker-hash-style=gnu --with-tune=generic","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/hmmer-1.1.0</Identifier>
+    <Title>Timed HMMer Search</Title>
+    <AppVersion>2.3.2</AppVersion>
+    <Arguments></Arguments>
+    <Description>Pfam Database Search</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>16.18</Value>
+        <RawString>16.432368040085:16.069903850555:16.035356998444</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -pthread -lhmmer -lsquid -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/gcrypt-1.0.3</Identifier>
+    <Title>Gcrypt Library</Title>
+    <AppVersion>1.4.4</AppVersion>
+    <Arguments></Arguments>
+    <Description>CAMELLIA256-ECB Cipher</Description>
+    <Scale>Microseconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>2913</Value>
+        <RawString>2890:2910:2940</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -fvisibility=hidden"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/john-the-ripper-1.5.1</Identifier>
+    <Title>John The Ripper</Title>
+    <AppVersion>1.8.0</AppVersion>
+    <Arguments>BLOWFISH</Arguments>
+    <Description>Test: Blowfish</Description>
+    <Scale>Real C/S</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>2590</Value>
+        <RawString>2567:2592:2610</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-fopenmp -lcrypt"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/graphics-magick-1.6.1</Identifier>
+    <Title>GraphicsMagick</Title>
+    <AppVersion>1.3.19</AppVersion>
+    <Arguments>-sharpen 0x1.0</Arguments>
+    <Description>Operation: Sharpen</Description>
+    <Scale>Iterations Per Minute</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>41</Value>
+        <RawString>41:41:41</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-std=gnu99 -fopenmp -O2 -pthread -lfreetype -ljpeg -lXext -lSM -lICE -lX11 -lbz2 -lxml2 -lz -lm -lgomp -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/graphics-magick-1.6.1</Identifier>
+    <Title>GraphicsMagick</Title>
+    <AppVersion>1.3.19</AppVersion>
+    <Arguments>-resize 50%</Arguments>
+    <Description>Operation: Resizing</Description>
+    <Scale>Iterations Per Minute</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>106</Value>
+        <RawString>107:106:105</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-std=gnu99 -fopenmp -O2 -pthread -lfreetype -ljpeg -lXext -lSM -lICE -lX11 -lbz2 -lxml2 -lz -lm -lgomp -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/graphics-magick-1.6.1</Identifier>
+    <Title>GraphicsMagick</Title>
+    <AppVersion>1.3.19</AppVersion>
+    <Arguments>-colorspace HWB</Arguments>
+    <Description>Operation: HWB Color Space</Description>
+    <Scale>Iterations Per Minute</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>127</Value>
+        <RawString>128:127:126</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-std=gnu99 -fopenmp -O2 -pthread -lfreetype -ljpeg -lXext -lSM -lICE -lX11 -lbz2 -lxml2 -lz -lm -lgomp -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-7zip-1.6.0</Identifier>
+    <Title>7-Zip Compression</Title>
+    <AppVersion>9.20.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Compress Speed Test</Description>
+    <Scale>MIPS</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>11394</Value>
+        <RawString>11383:11403:11395</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-pipe -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/build-imagemagick-1.7.1</Identifier>
+    <Title>Timed ImageMagick Compilation</Title>
+    <AppVersion>6.9.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>Time To Compile</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>77.65</Value>
+        <RawString>77.472341060638:77.758329153061:77.712108850479</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/c-ray-1.1.0</Identifier>
+    <Title>C-Ray</Title>
+    <AppVersion>1.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>Total Time</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>67.12</Value>
+        <RawString>67.107:67.153:67.106</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lm -lpthread -O3"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/encode-mp3-1.4.0</Identifier>
+    <Title>LAME MP3 Encoding</Title>
+    <AppVersion>3.99.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To MP3</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>17.10</Value>
+        <RawString>17.194924116135:17.082811117172:17.069617986679:17.086790800095:17.072443008423</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -fomit-frame-pointer -ffast-math -pipe -lncurses -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/openssl-1.9.0</Identifier>
+    <Title>OpenSSL</Title>
+    <AppVersion>1.0.1g</AppVersion>
+    <Arguments></Arguments>
+    <Description>RSA 4096-bit Performance</Description>
+    <Scale>Signs Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compiler-conf</Identifier>
+        <Value>384.53</Value>
+        <RawString>384.4:384:385.2</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-m64 -O3 -lssl -lcrypto -ldl"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

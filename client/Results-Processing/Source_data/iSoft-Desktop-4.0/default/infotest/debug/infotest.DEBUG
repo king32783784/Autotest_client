@@ -1,0 +1,5 @@
+06/22 09:32:04 DEBUG|     utils:0114| Running 'which gcc'
+06/22 09:32:04 DEBUG|     utils:0151| [stdout] /bin/gcc
+06/22 09:32:04 DEBUG|     utils:0114| Running 'cat /home/isoft_lp/Github/Autotest_client/client/tests/infotest/infotest1.0.tar.gz | tar xvf - 2>/dev/null'
+06/22 09:32:05 DEBUG|     utils:0114| Running 'sh sysinfo.sh '
+06/22 09:32:17 DEBUG|     utils:0114| Running 'mv /home/isoft_lp/Github/Autotest_client/client/tmp/infotest/src/*info  /home/isoft_lp/Github/Autotest_client/client/Result-tmp/results/default/infotest/results'

@@ -1,0 +1,2623 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Autotest job execution results</title>
+<style type="text/css">
+html, body {
+    padding: 0;
+    color: #222;
+    background: #FFFFFF;
+}
+body {
+    padding: 0px;
+    font: 76% /150% sans-serif;
+}
+h2.page_title {
+    text-decoration: none;
+    font: bold 2em /2em sans-serif;
+    text-transform: none;
+    text-align: left;
+    color: #555555;
+    border-bottom: 1px solid #555555;
+}
+h2.page_sub_title {
+    text-decoration: none;
+    font: bold 16px sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+    color: #555555;
+    margin-bottom: 0;
+}
+h2.comment {
+    text-decoration: none;
+    font: bold 10px sans-serif;
+    text-transform: none;
+    text-align: left;
+    color: #999999;
+    margin-top: 0;
+}
+#meta_headline {
+    text-decoration: none;
+    font-family: sans-serif;
+    text-align: left;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+}
+table.meta_table {
+    text-align: center;
+    font-family: sans-serif;
+    width: 90%;
+    background-color: #FFFFFF;
+    border: 0px;
+    border-top: 1px #BBBBBB solid;
+    border-bottom: 1px #BBBBBB solid;
+    border-right: 1px #BBBBBB solid;
+    border-left: 1px #BBBBBB solid;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+table.meta_table td {
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 4px;
+    border-top: 1px #BBBBBB solid;
+    border-bottom: 1px #BBBBBB solid;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: monospace;
+}
+table.stats {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0px;
+    border-top: 1px #BBBBBB solid;
+    border-bottom: 1px #BBBBBB solid;
+    border-right: 1px #BBBBBB solid;
+    border-left: 1px #BBBBBB solid;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+table.stats td {
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 4px;
+    border-top: 1px #BBBBBB solid;
+    border-bottom: 1px #BBBBBB solid;
+    font-weight: normal;
+    font-size: 11px;
+}
+table.stats th {
+    background: #dcdcdc;
+    color: #000;
+    padding: 6px;
+    font-size: 12px;
+    border-bottom: 1px #BBBBBB solid;
+    font-weight: bold;
+}
+table.stats td.top {
+    background-color: #dcdcdc;
+    color: #000;
+    padding: 6px;
+    text-align: center;
+    border: 0px;
+    border-bottom: 1px #BBBBBB solid;
+    font-size: 10px;
+    font-weight: bold;
+}
+table.stats th.table-sorted-asc {
+    background-image: url(ascending.gif);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+table.stats th.table-sorted-desc {
+    background-image: url(descending.gif);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+table.stats2 {
+    text-align: left;
+    font-family: sans-serif;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 0px;
+}
+table.stats2 td {
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+table.stats div.test_GOOD {
+    background-color: #FFFFFF;
+    color: #00CC00;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+table.stats div.test_FAIL {
+    background-color: #FFFFFF;
+    color: red;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+table.stats div.test_ERROR {
+    background-color: #FFFFFF;
+    color: red;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Put this inside a @media qualifier so Netscape 4 ignores it */
+@media screen, print {
+    /* Turn off list bullets */
+    ul.mktree  li {
+        list-style: none;
+    }
+    /* Control how "spaced out" the tree is */
+    ul.mktree, ul.mktree ul, ul.mktree li {
+        margin-left: 10px;
+        padding: 0px;
+    }
+    /* Provide space for our own "bullet" inside the LI */
+    ul.mktree  li           .bullet {
+        padding-left: 15px;
+    }
+    /* Show "bullets" in the links, depending on the class of the LI that the link's in */
+    ul.mktree  li.liOpen    .bullet {
+        cursor: pointer;
+    }
+    ul.mktree  li.liClosed  .bullet {
+        cursor: pointer;
+    }
+    ul.mktree  li.liBullet  .bullet {
+        cursor: default;
+    }
+    /* Sublists are visible or not based on class of parent LI */
+    ul.mktree  li.liOpen    ul {
+        display: block;
+    }
+    ul.mktree  li.liClosed  ul {
+        display: none;
+    }
+    ul.mktree  li ul li {
+        font-size: 90%
+    }
+}
+
+</style>
+<script type="text/javascript">
+/**
+ * Copyright (c)2005-2009 Matt Kruse (javascripttoolbox.com)
+ * 
+ * Dual licensed under the MIT and GPL licenses. 
+ * This basically means you can use this code however you want for
+ * free, but don't claim to have written it yourself!
+ * Donations always accepted: http://www.JavascriptToolbox.com/donate/
+ * 
+ * Please do not link to the .js files on javascripttoolbox.com from
+ * your site. Copy the files locally to your server instead.
+ * 
+ */
+/*
+This code is inspired by and extended from Stuart Langridge's aqlist code:
+		http://www.kryogenix.org/code/browser/aqlists/
+		Stuart Langridge, November 2002
+		sil@kryogenix.org
+		Inspired by Aaron's labels.js (http://youngpup.net/demos/labels/) 
+		and Dave Lindquist's menuDropDown.js (http://www.gazingus.org/dhtml/?id=109)
+*/
+
+// Automatically attach a listener to the window onload, to convert the trees
+addEvent(window,"load",convertTrees);
+
+// Utility function to add an event listener
+function addEvent(o,e,f){
+	if (o.addEventListener){ o.addEventListener(e,f,false); return true; }
+	else if (o.attachEvent){ return o.attachEvent("on"+e,f); }
+	else { return false; }
+}
+
+// utility function to set a global variable if it is not already set
+function setDefault(name,val) {
+	if (typeof(window[name])=="undefined" || window[name]==null) {
+		window[name]=val;
+	}
+}
+
+// Full expands a tree with a given ID
+function expandTree(treeId) {
+	var ul = document.getElementById(treeId);
+	if (ul == null) { return false; }
+	expandCollapseList(ul,nodeOpenClass);
+}
+
+// Fully collapses a tree with a given ID
+function collapseTree(treeId) {
+	var ul = document.getElementById(treeId);
+	if (ul == null) { return false; }
+	expandCollapseList(ul,nodeClosedClass);
+}
+
+// Expands enough nodes to expose an LI with a given ID
+function expandToItem(treeId,itemId) {
+	var ul = document.getElementById(treeId);
+	if (ul == null) { return false; }
+	var ret = expandCollapseList(ul,nodeOpenClass,itemId);
+	if (ret) {
+		var o = document.getElementById(itemId);
+		if (o.scrollIntoView) {
+			o.scrollIntoView(false);
+		}
+	}
+}
+
+// Performs 3 functions:
+// a) Expand all nodes
+// b) Collapse all nodes
+// c) Expand all nodes to reach a certain ID
+function expandCollapseList(ul,cName,itemId) {
+	if (!ul.childNodes || ul.childNodes.length==0) { return false; }
+	// Iterate LIs
+	for (var itemi=0;itemi<ul.childNodes.length;itemi++) {
+		var item = ul.childNodes[itemi];
+		if (itemId!=null && item.id==itemId) { return true; }
+		if (item.nodeName == "LI") {
+			// Iterate things in this LI
+			var subLists = false;
+			for (var sitemi=0;sitemi<item.childNodes.length;sitemi++) {
+				var sitem = item.childNodes[sitemi];
+				if (sitem.nodeName=="UL") {
+					subLists = true;
+					var ret = expandCollapseList(sitem,cName,itemId);
+					if (itemId!=null && ret) {
+						item.className=cName;
+						return true;
+					}
+				}
+			}
+			if (subLists && itemId==null) {
+				item.className = cName;
+			}
+		}
+	}
+}
+
+// Search the document for UL elements with the correct CLASS name, then process them
+function convertTrees() {
+	setDefault("treeClass","mktree");
+	setDefault("nodeClosedClass","liClosed");
+	setDefault("nodeOpenClass","liOpen");
+	setDefault("nodeBulletClass","liBullet");
+	setDefault("nodeLinkClass","bullet");
+	setDefault("preProcessTrees",true);
+	if (preProcessTrees) {
+		if (!document.createElement) { return; } // Without createElement, we can't do anything
+		var uls = document.getElementsByTagName("ul");
+		if (uls==null) { return; }
+		var uls_length = uls.length;
+		for (var uli=0;uli<uls_length;uli++) {
+			var ul=uls[uli];
+			if (ul.nodeName=="UL" && ul.className==treeClass) {
+				processList(ul);
+			}
+		}
+	}
+}
+
+function treeNodeOnclick() {
+	this.parentNode.className = (this.parentNode.className==nodeOpenClass) ? nodeClosedClass : nodeOpenClass;
+	return false;
+}
+function retFalse() {
+	return false;
+}
+// Process a UL tag and all its children, to convert to a tree
+function processList(ul) {
+	if (!ul.childNodes || ul.childNodes.length==0) { return; }
+	// Iterate LIs
+	var childNodesLength = ul.childNodes.length;
+	for (var itemi=0;itemi<childNodesLength;itemi++) {
+		var item = ul.childNodes[itemi];
+		if (item.nodeName == "LI") {
+			// Iterate things in this LI
+			var subLists = false;
+			var itemChildNodesLength = item.childNodes.length;
+			for (var sitemi=0;sitemi<itemChildNodesLength;sitemi++) {
+				var sitem = item.childNodes[sitemi];
+				if (sitem.nodeName=="UL") {
+					subLists = true;
+					processList(sitem);
+				}
+			}
+			var s= document.createElement("SPAN");
+			var t= '\u00A0'; // &nbsp;
+			s.className = nodeLinkClass;
+			if (subLists) {
+				// This LI has UL's in it, so it's a +/- node
+				if (item.className==null || item.className=="") {
+					item.className = nodeClosedClass;
+				}
+				// If it's just text, make the text work as the link also
+				if (item.firstChild.nodeName=="#text") {
+					t = t+item.firstChild.nodeValue;
+					item.removeChild(item.firstChild);
+				}
+				s.onclick = treeNodeOnclick;
+			}
+			else {
+				// No sublists, so it's just a bullet node
+				item.className = nodeBulletClass;
+				s.onclick = retFalse;
+			}
+			s.appendChild(document.createTextNode(t));
+			item.insertBefore(s,item.firstChild);
+		}
+	}
+}
+
+/**
+ * Copyright (c)2005-2009 Matt Kruse (javascripttoolbox.com)
+ * 
+ * Dual licensed under the MIT and GPL licenses. 
+ * This basically means you can use this code however you want for
+ * free, but don't claim to have written it yourself!
+ * Donations always accepted: http://www.JavascriptToolbox.com/donate/
+ * 
+ * Please do not link to the .js files on javascripttoolbox.com from
+ * your site. Copy the files locally to your server instead.
+ * 
+ */
+/**
+ * Table.js
+ * Functions for interactive Tables
+ *
+ * Copyright (c) 2007 Matt Kruse (javascripttoolbox.com)
+ * Dual licensed under the MIT and GPL licenses. 
+ *
+ * @version 0.981
+ *
+ * @history 0.981 2007-03-19 Added Sort.numeric_comma, additional date parsing formats
+ * @history 0.980 2007-03-18 Release new BETA release pending some testing. Todo: Additional docs, examples, plus jQuery plugin.
+ * @history 0.959 2007-03-05 Added more "auto" functionality, couple bug fixes
+ * @history 0.958 2007-02-28 Added auto functionality based on class names
+ * @history 0.957 2007-02-21 Speed increases, more code cleanup, added Auto Sort functionality
+ * @history 0.956 2007-02-16 Cleaned up the code and added Auto Filter functionality.
+ * @history 0.950 2006-11-15 First BETA release.
+ *
+ * @todo Add more date format parsers
+ * @todo Add style classes to colgroup tags after sorting/filtering in case the user wants to highlight the whole column
+ * @todo Correct for colspans in data rows (this may slow it down)
+ * @todo Fix for IE losing form control values after sort?
+ */
+
+/**
+ * Sort Functions
+ */
+var Sort = (function(){
+	var sort = {};
+	// Default alpha-numeric sort
+	// --------------------------
+	sort.alphanumeric = function(a,b) {
+		return (a==b)?0:(a<b)?-1:1;
+	};
+	sort['default'] = sort.alphanumeric; // IE chokes on sort.default
+
+	// This conversion is generalized to work for either a decimal separator of , or .
+	sort.numeric_converter = function(separator) {
+		return function(val) {
+			if (typeof(val)=="string") {
+				val = parseFloat(val.replace(/^[^\d\.]*([\d., ]+).*/g,"$1").replace(new RegExp("[^\\\d"+separator+"]","g"),'').replace(/,/,'.')) || 0;
+			}
+			return val || 0;
+		};
+	};
+
+	// Numeric Sort	
+	// ------------
+	sort.numeric = function(a,b) {
+		return sort.numeric.convert(a)-sort.numeric.convert(b);
+	};
+	sort.numeric.convert = sort.numeric_converter(".");
+
+	// Numeric Sort	- comma decimal separator
+	// --------------------------------------
+	sort.numeric_comma = function(a,b) {
+		return sort.numeric_comma.convert(a)-sort.numeric_comma.convert(b);
+	};
+	sort.numeric_comma.convert = sort.numeric_converter(",");
+
+	// Case-insensitive Sort
+	// ---------------------
+	sort.ignorecase = function(a,b) {
+		return sort.alphanumeric(sort.ignorecase.convert(a),sort.ignorecase.convert(b));
+	};
+	sort.ignorecase.convert = function(val) {
+		if (val==null) { return ""; }
+		return (""+val).toLowerCase();
+	};
+
+	// Currency Sort
+	// -------------
+	sort.currency = sort.numeric; // Just treat it as numeric!
+	sort.currency_comma = sort.numeric_comma;
+
+	// Date sort
+	// ---------
+	sort.date = function(a,b) {
+		return sort.numeric(sort.date.convert(a),sort.date.convert(b));
+	};
+	// Convert 2-digit years to 4
+	sort.date.fixYear=function(yr) {
+		yr = +yr;
+		if (yr<50) { yr += 2000; }
+		else if (yr<100) { yr += 1900; }
+		return yr;
+	};
+	sort.date.formats = [
+		// YY[YY]-MM-DD
+		{ re:/(\d{2,4})-(\d{1,2})-(\d{1,2})/ , f:function(x){ return (new Date(sort.date.fixYear(x[1]),+x[2],+x[3])).getTime(); } }
+		// MM/DD/YY[YY] or MM-DD-YY[YY]
+		,{ re:/(\d{1,2})[\/-](\d{1,2})[\/-](\d{2,4})/ , f:function(x){ return (new Date(sort.date.fixYear(x[3]),+x[1],+x[2])).getTime(); } }
+		// Any catch-all format that new Date() can handle. This is not reliable except for long formats, for example: 31 Jan 2000 01:23:45 GMT
+		,{ re:/(.*\d{4}.*\d+:\d+\d+.*)/, f:function(x){ var d=new Date(x[1]); if(d){return d.getTime();} } }
+	];
+	sort.date.convert = function(val) {
+		var m,v, f = sort.date.formats;
+		for (var i=0,L=f.length; i<L; i++) {
+			if (m=val.match(f[i].re)) {
+				v=f[i].f(m);
+				if (typeof(v)!="undefined") { return v; }
+			}
+		}
+		return 9999999999999; // So non-parsed dates will be last, not first
+	};
+
+	return sort;
+})();
+
+/**
+ * The main Table namespace
+ */
+var Table = (function(){
+
+	/**
+	 * Determine if a reference is defined
+	 */
+	function def(o) {return (typeof o!="undefined");};
+
+	/**
+	 * Determine if an object or class string contains a given class.
+	 */
+	function hasClass(o,name) {
+		return new RegExp("(^|\\s)"+name+"(\\s|$)").test(o.className);
+	};
+
+	/**
+	 * Add a class to an object
+	 */
+	function addClass(o,name) {
+		var c = o.className || "";
+		if (def(c) && !hasClass(o,name)) {
+			o.className += (c?" ":"") + name;
+		}
+	};
+
+	/**
+	 * Remove a class from an object
+	 */
+	function removeClass(o,name) {
+		var c = o.className || "";
+		o.className = c.replace(new RegExp("(^|\\s)"+name+"(\\s|$)"),"$1");
+	};
+
+	/**
+	 * For classes that match a given substring, return the rest
+	 */
+	function classValue(o,prefix) {
+		var c = o.className;
+		if (c.match(new RegExp("(^|\\s)"+prefix+"([^ ]+)"))) {
+			return RegExp.$2;
+		}
+		return null;
+	};
+
+	/**
+	 * Return true if an object is hidden.
+	 * This uses the "russian doll" technique to unwrap itself to the most efficient
+	 * function after the first pass. This avoids repeated feature detection that 
+	 * would always fall into the same block of code.
+	 */
+	 function isHidden(o) {
+		if (window.getComputedStyle) {
+			var cs = window.getComputedStyle;
+			return (isHidden = function(o) {
+				return 'none'==cs(o,null).getPropertyValue('display');
+			})(o);
+		}
+		else if (window.currentStyle) {
+			return(isHidden = function(o) {
+				return 'none'==o.currentStyle['display'];
+			})(o);
+		}
+		return (isHidden = function(o) {
+			return 'none'==o.style['display'];
+		})(o);
+	};
+
+	/**
+	 * Get a parent element by tag name, or the original element if it is of the tag type
+	 */
+	function getParent(o,a,b) {
+		if (o!=null && o.nodeName) {
+			if (o.nodeName==a || (b && o.nodeName==b)) {
+				return o;
+			}
+			while (o=o.parentNode) {
+				if (o.nodeName && (o.nodeName==a || (b && o.nodeName==b))) {
+					return o;
+				}
+			}
+		}
+		return null;
+	};
+
+	/**
+	 * Utility function to copy properties from one object to another
+	 */
+	function copy(o1,o2) {
+		for (var i=2;i<arguments.length; i++) {
+			var a = arguments[i];
+			if (def(o1[a])) {
+				o2[a] = o1[a];
+			}
+		}
+	}
+
+	// The table object itself
+	var table = {
+		//Class names used in the code
+		AutoStripeClassName:"table-autostripe",
+		StripeClassNamePrefix:"table-stripeclass:",
+
+		AutoSortClassName:"table-autosort",
+		AutoSortColumnPrefix:"table-autosort:",
+		AutoSortTitle:"Click to sort",
+		SortedAscendingClassName:"table-sorted-asc",
+		SortedDescendingClassName:"table-sorted-desc",
+		SortableClassName:"table-sortable",
+		SortableColumnPrefix:"table-sortable:",
+		NoSortClassName:"table-nosort",
+
+		AutoFilterClassName:"table-autofilter",
+		FilteredClassName:"table-filtered",
+		FilterableClassName:"table-filterable",
+		FilteredRowcountPrefix:"table-filtered-rowcount:",
+		RowcountPrefix:"table-rowcount:",
+		FilterAllLabel:"Filter: All",
+
+		AutoPageSizePrefix:"table-autopage:",
+		AutoPageJumpPrefix:"table-page:",
+		PageNumberPrefix:"table-page-number:",
+		PageCountPrefix:"table-page-count:"
+	};
+
+	/**
+	 * A place to store misc table information, rather than in the table objects themselves
+	 */
+	table.tabledata = {};
+
+	/**
+	 * Resolve a table given an element reference, and make sure it has a unique ID
+	 */
+	table.uniqueId=1;
+	table.resolve = function(o,args) {
+		if (o!=null && o.nodeName && o.nodeName!="TABLE") {
+			o = getParent(o,"TABLE");
+		}
+		if (o==null) { return null; }
+		if (!o.id) {
+			var id = null;
+			do { var id = "TABLE_"+(table.uniqueId++); } 
+				while (document.getElementById(id)!=null);
+			o.id = id;
+		}
+		this.tabledata[o.id] = this.tabledata[o.id] || {};
+		if (args) {
+			copy(args,this.tabledata[o.id],"stripeclass","ignorehiddenrows","useinnertext","sorttype","col","desc","page","pagesize");
+		}
+		return o;
+	};
+
+
+	/**
+	 * Run a function against each cell in a table header or footer, usually 
+	 * to add or remove css classes based on sorting, filtering, etc.
+	 */
+	table.processTableCells = function(t, type, func, arg) {
+		t = this.resolve(t);
+		if (t==null) { return; }
+		if (type!="TFOOT") {
+			this.processCells(t.tHead, func, arg);
+		}
+		if (type!="THEAD") {
+			this.processCells(t.tFoot, func, arg);
+		}
+	};
+
+	/**
+	 * Internal method used to process an arbitrary collection of cells.
+	 * Referenced by processTableCells.
+	 * It's done this way to avoid getElementsByTagName() which would also return nested table cells.
+	 */
+	table.processCells = function(section,func,arg) {
+		if (section!=null) {
+			if (section.rows && section.rows.length && section.rows.length>0) { 
+				var rows = section.rows;
+				for (var j=0,L2=rows.length; j<L2; j++) { 
+					var row = rows[j];
+					if (row.cells && row.cells.length && row.cells.length>0) {
+						var cells = row.cells;
+						for (var k=0,L3=cells.length; k<L3; k++) {
+							var cellsK = cells[k];
+							func.call(this,cellsK,arg);
+						}
+					}
+				}
+			}
+		}
+	};
+
+	/**
+	 * Get the cellIndex value for a cell. This is only needed because of a Safari
+	 * bug that causes cellIndex to exist but always be 0.
+	 * Rather than feature-detecting each time it is called, the function will
+	 * re-write itself the first time it is called.
+	 */
+	table.getCellIndex = function(td) {
+		var tr = td.parentNode;
+		var cells = tr.cells;
+		if (cells && cells.length) {
+			if (cells.length>1 && cells[cells.length-1].cellIndex>0) {
+				// Define the new function, overwrite the one we're running now, and then run the new one
+				(this.getCellIndex = function(td) {
+					return td.cellIndex;
+				})(td);
+			}
+			// Safari will always go through this slower block every time. Oh well.
+			for (var i=0,L=cells.length; i<L; i++) {
+				if (tr.cells[i]==td) {
+					return i;
+				}
+			}
+		}
+		return 0;
+	};
+
+	/**
+	 * A map of node names and how to convert them into their "value" for sorting, filtering, etc.
+	 * These are put here so it is extensible.
+	 */
+	table.nodeValue = {
+		'INPUT':function(node) { 
+			if (def(node.value) && node.type && ((node.type!="checkbox" && node.type!="radio") || node.checked)) {
+				return node.value;
+			}
+			return "";
+		},
+		'SELECT':function(node) {
+			if (node.selectedIndex>=0 && node.options) {
+				// Sort select elements by the visible text
+				return node.options[node.selectedIndex].text;
+			}
+			return "";
+		},
+		'IMG':function(node) {
+			return node.name || "";
+		}
+	};
+
+	/**
+	 * Get the text value of a cell. Only use innerText if explicitly told to, because 
+	 * otherwise we want to be able to handle sorting on inputs and other types
+	 */
+	table.getCellValue = function(td,useInnerText) {
+		if (useInnerText && def(td.innerText)) {
+			return td.innerText;
+		}
+		if (!td.childNodes) { 
+			return ""; 
+		}
+		var childNodes=td.childNodes;
+		var ret = "";
+		for (var i=0,L=childNodes.length; i<L; i++) {
+			var node = childNodes[i];
+			var type = node.nodeType;
+			// In order to get realistic sort results, we need to treat some elements in a special way.
+			// These behaviors are defined in the nodeValue() object, keyed by node name
+			if (type==1) {
+				var nname = node.nodeName;
+				if (this.nodeValue[nname]) {
+					ret += this.nodeValue[nname](node);
+				}
+				else {
+					ret += this.getCellValue(node);
+				}
+			}
+			else if (type==3) {
+				if (def(node.innerText)) {
+					ret += node.innerText;
+				}
+				else if (def(node.nodeValue)) {
+					ret += node.nodeValue;
+				}
+			}
+		}
+		return ret;
+	};
+
+	/**
+	 * Consider colspan and rowspan values in table header cells to calculate the actual cellIndex
+	 * of a given cell. This is necessary because if the first cell in row 0 has a rowspan of 2, 
+	 * then the first cell in row 1 will have a cellIndex of 0 rather than 1, even though it really
+	 * starts in the second column rather than the first.
+	 * See: http://www.javascripttoolbox.com/temp/table_cellindex.html
+	 */
+	table.tableHeaderIndexes = {};
+	table.getActualCellIndex = function(tableCellObj) {
+		if (!def(tableCellObj.cellIndex)) { return null; }
+		var tableObj = getParent(tableCellObj,"TABLE");
+		var cellCoordinates = tableCellObj.parentNode.rowIndex+"-"+this.getCellIndex(tableCellObj);
+
+		// If it has already been computed, return the answer from the lookup table
+		if (def(this.tableHeaderIndexes[tableObj.id])) {
+			return this.tableHeaderIndexes[tableObj.id][cellCoordinates];      
+		} 
+
+		var matrix = [];
+		this.tableHeaderIndexes[tableObj.id] = {};
+		var thead = getParent(tableCellObj,"THEAD");
+		var trs = thead.getElementsByTagName('TR');
+
+		// Loop thru every tr and every cell in the tr, building up a 2-d array "grid" that gets
+		// populated with an "x" for each space that a cell takes up. If the first cell is colspan
+		// 2, it will fill in values [0] and [1] in the first array, so that the second cell will
+		// find the first empty cell in the first row (which will be [2]) and know that this is
+		// where it sits, rather than its internal .cellIndex value of [1].
+		for (var i=0; i<trs.length; i++) {
+			var cells = trs[i].cells;
+			for (var j=0; j<cells.length; j++) {
+				var c = cells[j];
+				var rowIndex = c.parentNode.rowIndex;
+				var cellId = rowIndex+"-"+this.getCellIndex(c);
+				var rowSpan = c.rowSpan || 1;
+				var colSpan = c.colSpan || 1;
+				var firstAvailCol;
+				if(!def(matrix[rowIndex])) { 
+					matrix[rowIndex] = []; 
+				}
+				var m = matrix[rowIndex];
+				// Find first available column in the first row
+				for (var k=0; k<m.length+1; k++) {
+					if (!def(m[k])) {
+						firstAvailCol = k;
+						break;
+					}
+				}
+				this.tableHeaderIndexes[tableObj.id][cellId] = firstAvailCol;
+				for (var k=rowIndex; k<rowIndex+rowSpan; k++) {
+					if(!def(matrix[k])) { 
+						matrix[k] = []; 
+					}
+					var matrixrow = matrix[k];
+					for (var l=firstAvailCol; l<firstAvailCol+colSpan; l++) {
+						matrixrow[l] = "x";
+					}
+				}
+			}
+		}
+		// Store the map so future lookups are fast.
+		return this.tableHeaderIndexes[tableObj.id][cellCoordinates];
+	};
+
+	/**
+	 * Sort all rows in each TBODY (tbodies are sorted independent of each other)
+	 */
+	table.sort = function(o,args) {
+		var t, tdata, sortconvert=null;
+		// Allow for a simple passing of sort type as second parameter
+		if (typeof(args)=="function") {
+			args={sorttype:args};
+		}
+		args = args || {};
+
+		// If no col is specified, deduce it from the object sent in
+		if (!def(args.col)) { 
+			args.col = this.getActualCellIndex(o) || 0; 
+		}
+		// If no sort type is specified, default to the default sort
+		args.sorttype = args.sorttype || Sort['default'];
+
+		// Resolve the table
+		t = this.resolve(o,args);
+		tdata = this.tabledata[t.id];
+
+		// If we are sorting on the same column as last time, flip the sort direction
+		if (def(tdata.lastcol) && tdata.lastcol==tdata.col && def(tdata.lastdesc)) {
+			tdata.desc = !tdata.lastdesc;
+		}
+		else {
+			tdata.desc = !!args.desc;
+		}
+
+		// Store the last sorted column so clicking again will reverse the sort order
+		tdata.lastcol=tdata.col;
+		tdata.lastdesc=!!tdata.desc;
+
+		// If a sort conversion function exists, pre-convert cell values and then use a plain alphanumeric sort
+		var sorttype = tdata.sorttype;
+		if (typeof(sorttype.convert)=="function") {
+			sortconvert=tdata.sorttype.convert;
+			sorttype=Sort.alphanumeric;
+		}
+
+		// Loop through all THEADs and remove sorted class names, then re-add them for the col
+		// that is being sorted
+		this.processTableCells(t,"THEAD",
+			function(cell) {
+				if (hasClass(cell,this.SortableClassName)) {
+					removeClass(cell,this.SortedAscendingClassName);
+					removeClass(cell,this.SortedDescendingClassName);
+					// If the computed colIndex of the cell equals the sorted colIndex, flag it as sorted
+					if (tdata.col==table.getActualCellIndex(cell) && (classValue(cell,table.SortableClassName))) {
+						addClass(cell,tdata.desc?this.SortedAscendingClassName:this.SortedDescendingClassName);
+					}
+				}
+			}
+		);
+
+		// Sort each tbody independently
+		var bodies = t.tBodies;
+		if (bodies==null || bodies.length==0) { return; }
+
+		// Define a new sort function to be called to consider descending or not
+		var newSortFunc = (tdata.desc)?
+			function(a,b){return sorttype(b[0],a[0]);}
+			:function(a,b){return sorttype(a[0],b[0]);};
+
+		var useinnertext=!!tdata.useinnertext;
+		var col = tdata.col;
+
+		for (var i=0,L=bodies.length; i<L; i++) {
+			var tb = bodies[i], tbrows = tb.rows, rows = [];
+
+			// Allow tbodies to request that they not be sorted
+			if(!hasClass(tb,table.NoSortClassName)) {
+				// Create a separate array which will store the converted values and refs to the
+				// actual rows. This is the array that will be sorted.
+				var cRow, cRowIndex=0;
+				if (cRow=tbrows[cRowIndex]){
+					// Funky loop style because it's considerably faster in IE
+					do {
+						if (rowCells = cRow.cells) {
+							var cellValue = (col<rowCells.length)?this.getCellValue(rowCells[col],useinnertext):null;
+							if (sortconvert) cellValue = sortconvert(cellValue);
+							rows[cRowIndex] = [cellValue,tbrows[cRowIndex]];
+						}
+					} while (cRow=tbrows[++cRowIndex]);
+				}
+
+				// Do the actual sorting
+				rows.sort(newSortFunc);
+
+				// Move the rows to the correctly sorted order. Appending an existing DOM object just moves it!
+				cRowIndex=0;
+				var displayedCount=0;
+				var f=[removeClass,addClass];
+				if (cRow=rows[cRowIndex]){
+					do { 
+						tb.appendChild(cRow[1]); 
+					} while (cRow=rows[++cRowIndex]);
+				}
+			}
+		}
+
+		// If paging is enabled on the table, then we need to re-page because the order of rows has changed!
+		if (tdata.pagesize) {
+			this.page(t); // This will internally do the striping
+		}
+		else {
+			// Re-stripe if a class name was supplied
+			if (tdata.stripeclass) {
+				this.stripe(t,tdata.stripeclass,!!tdata.ignorehiddenrows);
+			}
+		}
+	};
+
+	/**
+	* Apply a filter to rows in a table and hide those that do not match.
+	*/
+	table.filter = function(o,filters,args) {
+		var cell;
+		args = args || {};
+
+		var t = this.resolve(o,args);
+		var tdata = this.tabledata[t.id];
+
+		// If new filters were passed in, apply them to the table's list of filters
+		if (!filters) {
+			// If a null or blank value was sent in for 'filters' then that means reset the table to no filters
+			tdata.filters = null;
+		}
+		else {
+			// Allow for passing a select list in as the filter, since this is common design
+			if (filters.nodeName=="SELECT" && filters.type=="select-one" && filters.selectedIndex>-1) {
+				filters={ 'filter':filters.options[filters.selectedIndex].value };
+			}
+			// Also allow for a regular input
+			if (filters.nodeName=="INPUT" && filters.type=="text") {
+				filters={ 'filter':"/^"+filters.value+"/" };
+			}
+			// Force filters to be an array
+			if (typeof(filters)=="object" && !filters.length) {
+				filters = [filters];
+			}
+
+			// Convert regular expression strings to RegExp objects and function strings to function objects
+			for (var i=0,L=filters.length; i<L; i++) {
+				var filter = filters[i];
+				if (typeof(filter.filter)=="string") {
+					// If a filter string is like "/expr/" then turn it into a Regex
+					if (filter.filter.match(/^\/(.*)\/$/)) {
+						filter.filter = new RegExp(RegExp.$1);
+						filter.filter.regex=true;
+					}
+					// If filter string is like "function (x) { ... }" then turn it into a function
+					else if (filter.filter.match(/^function\s*\(([^\)]*)\)\s*\{(.*)}\s*$/)) {
+						filter.filter = Function(RegExp.$1,RegExp.$2);
+					}
+				}
+				// If some non-table object was passed in rather than a 'col' value, resolve it 
+				// and assign it's column index to the filter if it doesn't have one. This way, 
+				// passing in a cell reference or a select object etc instead of a table object 
+				// will automatically set the correct column to filter.
+				if (filter && !def(filter.col) && (cell=getParent(o,"TD","TH"))) {
+					filter.col = this.getCellIndex(cell);
+				}
+
+				// Apply the passed-in filters to the existing list of filters for the table, removing those that have a filter of null or ""
+				if ((!filter || !filter.filter) && tdata.filters) {
+					delete tdata.filters[filter.col];
+				}
+				else {
+					tdata.filters = tdata.filters || {};
+					tdata.filters[filter.col] = filter.filter;
+				}
+			}
+			// If no more filters are left, then make sure to empty out the filters object
+			for (var j in tdata.filters) { var keep = true; }
+			if (!keep) {
+				tdata.filters = null;
+			}
+		}		
+		// Everything's been setup, so now scrape the table rows
+		return table.scrape(o);
+	};
+
+	/**
+	 * "Page" a table by showing only a subset of the rows
+	 */
+	table.page = function(t,page,args) {
+		args = args || {};
+		if (def(page)) { args.page = page; }
+		return table.scrape(t,args);
+	};
+
+	/**
+	 * Jump forward or back any number of pages
+	 */
+	table.pageJump = function(t,count,args) {
+		t = this.resolve(t,args);
+		return this.page(t,(table.tabledata[t.id].page||0)+count,args);
+	};
+
+	/**
+	 * Go to the next page of a paged table
+	 */	
+	table.pageNext = function(t,args) {
+		return this.pageJump(t,1,args);
+	};
+
+	/**
+	 * Go to the previous page of a paged table
+	 */	
+	table.pagePrevious = function(t,args) {
+		return this.pageJump(t,-1,args);
+	};
+
+	/**
+	* Scrape a table to either hide or show each row based on filters and paging
+	*/
+	table.scrape = function(o,args) {
+		var col,cell,filterList,filterReset=false,filter;
+		var page,pagesize,pagestart,pageend;
+		var unfilteredrows=[],unfilteredrowcount=0,totalrows=0;
+		var t,tdata,row,hideRow;
+		args = args || {};
+
+		// Resolve the table object
+		t = this.resolve(o,args);
+		tdata = this.tabledata[t.id];
+
+		// Setup for Paging
+		var page = tdata.page;
+		if (def(page)) {
+			// Don't let the page go before the beginning
+			if (page<0) { tdata.page=page=0; }
+			pagesize = tdata.pagesize || 25; // 25=arbitrary default
+			pagestart = page*pagesize+1;
+			pageend = pagestart + pagesize - 1;
+		}
+
+		// Scrape each row of each tbody
+		var bodies = t.tBodies;
+		if (bodies==null || bodies.length==0) { return; }
+		for (var i=0,L=bodies.length; i<L; i++) {
+			var tb = bodies[i];
+			for (var j=0,L2=tb.rows.length; j<L2; j++) {
+				row = tb.rows[j];
+				hideRow = false;
+
+				// Test if filters will hide the row
+				if (tdata.filters && row.cells) {
+					var cells = row.cells;
+					var cellsLength = cells.length;
+					// Test each filter
+					for (col in tdata.filters) {
+						if (!hideRow) {
+							filter = tdata.filters[col];
+							if (filter && col<cellsLength) {
+								var val = this.getCellValue(cells[col]);
+								if (filter.regex && val.search) {
+									hideRow=(val.search(filter)<0);
+								}
+								else if (typeof(filter)=="function") {
+									hideRow=!filter(val,cells[col]);
+								}
+								else {
+									hideRow = (val!=filter);
+								}
+							}
+						}
+					}
+				}
+
+				// Keep track of the total rows scanned and the total runs _not_ filtered out
+				totalrows++;
+				if (!hideRow) {
+					unfilteredrowcount++;
+					if (def(page)) {
+						// Temporarily keep an array of unfiltered rows in case the page we're on goes past
+						// the last page and we need to back up. Don't want to filter again!
+						unfilteredrows.push(row);
+						if (unfilteredrowcount<pagestart || unfilteredrowcount>pageend) {
+							hideRow = true;
+						}
+					}
+				}
+
+				row.style.display = hideRow?"none":"";
+			}
+		}
+
+		if (def(page)) {
+			// Check to see if filtering has put us past the requested page index. If it has, 
+			// then go back to the last page and show it.
+			if (pagestart>=unfilteredrowcount) {
+				pagestart = unfilteredrowcount-(unfilteredrowcount%pagesize);
+				tdata.page = page = pagestart/pagesize;
+				for (var i=pagestart,L=unfilteredrows.length; i<L; i++) {
+					unfilteredrows[i].style.display="";
+				}
+			}
+		}
+
+		// Loop through all THEADs and add/remove filtered class names
+		this.processTableCells(t,"THEAD",
+			function(c) {
+				((tdata.filters && def(tdata.filters[table.getCellIndex(c)]) && hasClass(c,table.FilterableClassName))?addClass:removeClass)(c,table.FilteredClassName);
+			}
+		);
+
+		// Stripe the table if necessary
+		if (tdata.stripeclass) {
+			this.stripe(t);
+		}
+
+		// Calculate some values to be returned for info and updating purposes
+		var pagecount = Math.floor(unfilteredrowcount/pagesize)+1;
+		if (def(page)) {
+			// Update the page number/total containers if they exist
+			if (tdata.container_number) {
+				tdata.container_number.innerHTML = page+1;
+			}
+			if (tdata.container_count) {
+				tdata.container_count.innerHTML = pagecount;
+			}
+		}
+
+		// Update the row count containers if they exist
+		if (tdata.container_filtered_count) {
+			tdata.container_filtered_count.innerHTML = unfilteredrowcount;
+		}
+		if (tdata.container_all_count) {
+			tdata.container_all_count.innerHTML = totalrows;
+		}
+		return { 'data':tdata, 'unfilteredcount':unfilteredrowcount, 'total':totalrows, 'pagecount':pagecount, 'page':page, 'pagesize':pagesize };
+	};
+
+	/**
+	 * Shade alternate rows, aka Stripe the table.
+	 */
+	table.stripe = function(t,className,args) { 
+		args = args || {};
+		args.stripeclass = className;
+
+		t = this.resolve(t,args);
+		var tdata = this.tabledata[t.id];
+
+		var bodies = t.tBodies;
+		if (bodies==null || bodies.length==0) { 
+			return; 
+		}
+
+		className = tdata.stripeclass;
+		// Cache a shorter, quicker reference to either the remove or add class methods
+		var f=[removeClass,addClass];
+		for (var i=0,L=bodies.length; i<L; i++) {
+			var tb = bodies[i], tbrows = tb.rows, cRowIndex=0, cRow, displayedCount=0;
+			if (cRow=tbrows[cRowIndex]){
+				// The ignorehiddenrows test is pulled out of the loop for a slight speed increase.
+				// Makes a bigger difference in FF than in IE.
+				// In this case, speed always wins over brevity!
+				if (tdata.ignoreHiddenRows) {
+					do {
+						f[displayedCount++%2](cRow,className);
+					} while (cRow=tbrows[++cRowIndex]);
+				}
+				else {
+					do {
+						if (!isHidden(cRow)) {
+							f[displayedCount++%2](cRow,className);
+						}
+					} while (cRow=tbrows[++cRowIndex]);
+				}
+			}
+		}
+	};
+
+	/**
+	 * Build up a list of unique values in a table column
+	 */
+	table.getUniqueColValues = function(t,col) {
+		var values={}, bodies = this.resolve(t).tBodies;
+		for (var i=0,L=bodies.length; i<L; i++) {
+			var tbody = bodies[i];
+			for (var r=0,L2=tbody.rows.length; r<L2; r++) {
+				values[this.getCellValue(tbody.rows[r].cells[col])] = true;
+			}
+		}
+		var valArray = [];
+		for (var val in values) {
+			valArray.push(val);
+		}
+		return valArray.sort();
+	};
+
+	/**
+	 * Scan the document on load and add sorting, filtering, paging etc ability automatically
+	 * based on existence of class names on the table and cells.
+	 */
+	table.auto = function(args) {
+		var cells = [], tables = document.getElementsByTagName("TABLE");
+		var val,tdata;
+		if (tables!=null) {
+			for (var i=0,L=tables.length; i<L; i++) {
+				var t = table.resolve(tables[i]);
+				tdata = table.tabledata[t.id];
+				if (val=classValue(t,table.StripeClassNamePrefix)) {
+					tdata.stripeclass=val;
+				}
+				// Do auto-filter if necessary
+				if (hasClass(t,table.AutoFilterClassName)) {
+					table.autofilter(t);
+				}
+				// Do auto-page if necessary
+				if (val = classValue(t,table.AutoPageSizePrefix)) {
+					table.autopage(t,{'pagesize':+val});
+				}
+				// Do auto-sort if necessary
+				if ((val = classValue(t,table.AutoSortColumnPrefix)) || (hasClass(t,table.AutoSortClassName))) {
+					table.autosort(t,{'col':(val==null)?null:+val});
+				}
+				// Do auto-stripe if necessary
+				if (tdata.stripeclass && hasClass(t,table.AutoStripeClassName)) {
+					table.stripe(t);
+				}
+			}
+		}
+	};
+
+	/**
+	 * Add sorting functionality to a table header cell
+	 */
+	table.autosort = function(t,args) {
+		t = this.resolve(t,args);
+		var tdata = this.tabledata[t.id];
+		this.processTableCells(t, "THEAD", function(c) {
+			var type = classValue(c,table.SortableColumnPrefix);
+			if (type!=null) {
+				type = type || "default";
+				c.title =c.title || table.AutoSortTitle;
+				addClass(c,table.SortableClassName);
+				c.onclick = Function("","Table.sort(this,{'sorttype':Sort['"+type+"']})");
+				// If we are going to auto sort on a column, we need to keep track of what kind of sort it will be
+				if (args.col!=null) {
+					if (args.col==table.getActualCellIndex(c)) {
+						tdata.sorttype=Sort['"+type+"'];
+					}
+				}
+			}
+		} );
+		if (args.col!=null) {
+			table.sort(t,args);
+		}
+	};
+
+	/**
+	 * Add paging functionality to a table 
+	 */
+	table.autopage = function(t,args) {
+		t = this.resolve(t,args);
+		var tdata = this.tabledata[t.id];
+		if (tdata.pagesize) {
+			this.processTableCells(t, "THEAD,TFOOT", function(c) {
+				var type = classValue(c,table.AutoPageJumpPrefix);
+				if (type=="next") { type = 1; }
+				else if (type=="previous") { type = -1; }
+				if (type!=null) {
+					c.onclick = Function("","Table.pageJump(this,"+type+")");
+				}
+			} );
+			if (val = classValue(t,table.PageNumberPrefix)) {
+				tdata.container_number = document.getElementById(val);
+			}
+			if (val = classValue(t,table.PageCountPrefix)) {
+				tdata.container_count = document.getElementById(val);
+			}
+			return table.page(t,0,args);
+		}
+	};
+
+	/**
+	 * A util function to cancel bubbling of clicks on filter dropdowns
+	 */
+	table.cancelBubble = function(e) {
+		e = e || window.event;
+		if (typeof(e.stopPropagation)=="function") { e.stopPropagation(); } 
+		if (def(e.cancelBubble)) { e.cancelBubble = true; }
+	};
+
+	/**
+	 * Auto-filter a table
+	 */
+	table.autofilter = function(t,args) {
+		args = args || {};
+		t = this.resolve(t,args);
+		var tdata = this.tabledata[t.id],val;
+		table.processTableCells(t, "THEAD", function(cell) {
+			if (hasClass(cell,table.FilterableClassName)) {
+				var cellIndex = table.getCellIndex(cell);
+				var colValues = table.getUniqueColValues(t,cellIndex);
+				if (colValues.length>0) {
+					if (typeof(args.insert)=="function") {
+						func.insert(cell,colValues);
+					}
+					else {
+						var sel = '<select onchange="Table.filter(this,this)" onclick="Table.cancelBubble(event)" class="'+table.AutoFilterClassName+'"><option value="">'+table.FilterAllLabel+'</option>';
+						for (var i=0; i<colValues.length; i++) {
+							sel += '<option value="'+colValues[i]+'">'+colValues[i]+'</option>';
+						}
+						sel += '</select>';
+						cell.innerHTML += "<br>"+sel;
+					}
+				}
+			}
+		});
+		if (val = classValue(t,table.FilteredRowcountPrefix)) {
+			tdata.container_filtered_count = document.getElementById(val);
+		}
+		if (val = classValue(t,table.RowcountPrefix)) {
+			tdata.container_all_count = document.getElementById(val);
+		}
+	};
+
+	/**
+	 * Attach the auto event so it happens on load.
+	 * use jQuery's ready() function if available
+	 */
+	if (typeof(jQuery)!="undefined") {
+		jQuery(table.auto);
+	}
+	else if (window.addEventListener) {
+		window.addEventListener( "load", table.auto, false );
+	}
+	else if (window.attachEvent) {
+		window.attachEvent( "onload", table.auto );
+	}
+
+	return table;
+})();
+
+</script>
+</head>
+<body>
+
+<h2 class="page_title">Autotest job execution report</h2>
+
+<table class="stats2">
+<tr><td>HOST</td><td>:</td><td>localhost
+<br></td></tr>
+<tr><td>RESULTS DIR</td><td>:</td><td>/mnt/results/default</td></tr>
+<tr><td>REPORT GENERATED AT</td><td>:</td><td>Fri Dec  4 00:06:31 2015</td></tr>
+<tr><td>STATS</td><td>:</td><td>From 11 tests executed, 7 have passed (pass rate of 63.0%)</td></tr>
+</table>
+
+<br>
+
+<h2 class="page_sub_title">Test Results</h2>
+<h2 class="comment">click on table headers to asc/desc sort</h2>
+
+<table id="t1" class="stats table-autosort:4 table-autofilter table-stripeclass:alternate table-page-number:t1page table-page-count:t1pages table-filtered-rowcount:t1filtercount table-rowcount:t1allcount">
+<thead class="th table-sorted-asc table-sorted-desc">
+<tr>
+<th align="left" class="table-sortable:alphanumeric">Date/Time</th>
+<th align="left" class="filterable table-sortable:alphanumeric">Test Case<br>
+<input name="tc_filter" size="10" onkeyup="Table.filter(this,this)" onclick="Table.cancelBubble(event)"></th>
+<th align="left" class="table-filterable table-sortable:alphanumeric">Status</th>
+<th align="left">Time (sec)</th>
+<th align="left">Info</th>
+<th align="left">Debug</th>
+</tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td align="left">Dec 03 11:32:26</td>
+        <td align="left">infotest</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">16</td>
+        <td align="left"></td>
+        <td align="left"><a href="infotest/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 11:32:42</td>
+        <td align="left">netperf2</td>
+        <td align="left"><div class="test_ERROR">ERROR</div></td>
+        <td align="left">15</td>
+        <td align="left"></td>
+        <td align="left"><a href="netperf2/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 11:32:58</td>
+        <td align="left">iozone</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">10600</td>
+        <td align="left"></td>
+        <td align="left"><a href="iozone/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 14:29:38</td>
+        <td align="left">sysbench.cpu</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">295</td>
+        <td align="left"></td>
+        <td align="left"><a href="sysbench.cpu/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 14:34:34</td>
+        <td align="left">sysbench.mem</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">19</td>
+        <td align="left"></td>
+        <td align="left"><a href="sysbench.mem/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 14:34:53</td>
+        <td align="left">pingpong</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">2731</td>
+        <td align="left"></td>
+        <td align="left"><a href="pingpong/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 15:20:24</td>
+        <td align="left">unixbench5</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">13206</td>
+        <td align="left"></td>
+        <td align="left"><a href="unixbench5/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 19:00:30</td>
+        <td align="left">lmbench</td>
+        <td align="left"><div class="test_GOOD">GOOD</div></td>
+        <td align="left">3415</td>
+        <td align="left"></td>
+        <td align="left"><a href="lmbench/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 03 19:57:25</td>
+        <td align="left">ltp</td>
+        <td align="left"><div class="test_FAIL">FAIL</div></td>
+        <td align="left">14943</td>
+        <td align="left"></td>
+        <td align="left"><a href="ltp/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 04 00:06:29</td>
+        <td align="left">pts.compiler</td>
+        <td align="left"><div class="test_ERROR">ERROR</div></td>
+        <td align="left">1</td>
+        <td align="left"></td>
+        <td align="left"><a href="pts.compiler/debug">Debug</A></td>
+    </tr>
+    <tr>
+        <td align="left">Dec 04 00:06:30</td>
+        <td align="left">pts.encoding</td>
+        <td align="left"><div class="test_ERROR">ERROR</div></td>
+        <td align="left">1</td>
+        <td align="left"></td>
+        <td align="left"><a href="pts.encoding/debug">Debug</A></td>
+    </tr>
+</tbody>
+</table>
+
+<h2 class="page_sub_title">Host Info</h2>
+<h2 class="comment">click on each item to expend/collapse</h2>
+
+<p>
+<a class="button" href="#" onClick="expandTree('meta_tree'); return false;">Expand All</a>
+&nbsp;&nbsp;&nbsp;
+<a class="button" href="#" onClick="collapseTree('meta_tree'); return false;">Collapse All</a>
+</p>
+
+<ul class="mktree" id="meta_tree">
+<li id="meta_headline">uname<ul><table class="meta_table"><tr><td align="left">Linux localhost 4.2.3-300.fc23.x86_64 #1 SMP Mon Oct 5 15:42:54 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+<br></td></tr></table></ul></li>
+<li id="meta_headline">cpuinfo<ul><table class="meta_table"><tr><td align="left">processor	: 0
+<br>vendor_id	: GenuineIntel
+<br>cpu family	: 6
+<br>model		: 42
+<br>model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+<br>stepping	: 7
+<br>microcode	: 0x29
+<br>cpu MHz		: 1698.097
+<br>cache size	: 6144 KB
+<br>physical id	: 0
+<br>siblings	: 4
+<br>core id		: 0
+<br>cpu cores	: 4
+<br>apicid		: 0
+<br>initial apicid	: 0
+<br>fpu		: yes
+<br>fpu_exception	: yes
+<br>cpuid level	: 13
+<br>wp		: yes
+<br>flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+<br>bugs		:
+<br>bogomips	: 6186.00
+<br>clflush size	: 64
+<br>cache_alignment	: 64
+<br>address sizes	: 36 bits physical, 48 bits virtual
+<br>power management:
+<br>
+<br>processor	: 1
+<br>vendor_id	: GenuineIntel
+<br>cpu family	: 6
+<br>model		: 42
+<br>model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+<br>stepping	: 7
+<br>microcode	: 0x29
+<br>cpu MHz		: 1671.335
+<br>cache size	: 6144 KB
+<br>physical id	: 0
+<br>siblings	: 4
+<br>core id		: 1
+<br>cpu cores	: 4
+<br>apicid		: 2
+<br>initial apicid	: 2
+<br>fpu		: yes
+<br>fpu_exception	: yes
+<br>cpuid level	: 13
+<br>wp		: yes
+<br>flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+<br>bugs		:
+<br>bogomips	: 6186.00
+<br>clflush size	: 64
+<br>cache_alignment	: 64
+<br>address sizes	: 36 bits physical, 48 bits virtual
+<br>power management:
+<br>
+<br>processor	: 2
+<br>vendor_id	: GenuineIntel
+<br>cpu family	: 6
+<br>model		: 42
+<br>model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+<br>stepping	: 7
+<br>microcode	: 0x29
+<br>cpu MHz		: 1763.730
+<br>cache size	: 6144 KB
+<br>physical id	: 0
+<br>siblings	: 4
+<br>core id		: 2
+<br>cpu cores	: 4
+<br>apicid		: 4
+<br>initial apicid	: 4
+<br>fpu		: yes
+<br>fpu_exception	: yes
+<br>cpuid level	: 13
+<br>wp		: yes
+<br>flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+<br>bugs		:
+<br>bogomips	: 6186.00
+<br>clflush size	: 64
+<br>cache_alignment	: 64
+<br>address sizes	: 36 bits physical, 48 bits virtual
+<br>power management:
+<br>
+<br>processor	: 3
+<br>vendor_id	: GenuineIntel
+<br>cpu family	: 6
+<br>model		: 42
+<br>model name	: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+<br>stepping	: 7
+<br>microcode	: 0x29
+<br>cpu MHz		: 1606.429
+<br>cache size	: 6144 KB
+<br>physical id	: 0
+<br>siblings	: 4
+<br>core id		: 3
+<br>cpu cores	: 4
+<br>apicid		: 6
+<br>initial apicid	: 6
+<br>fpu		: yes
+<br>fpu_exception	: yes
+<br>cpuid level	: 13
+<br>wp		: yes
+<br>flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid xsaveopt
+<br>bugs		:
+<br>bogomips	: 6186.00
+<br>clflush size	: 64
+<br>cache_alignment	: 64
+<br>address sizes	: 36 bits physical, 48 bits virtual
+<br>power management:
+<br>
+<br></td></tr></table></ul></li>
+<li id="meta_headline">meminfo<ul><table class="meta_table"><tr><td align="left">MemTotal:        3923972 kB
+<br>MemFree:         2783752 kB
+<br>MemAvailable:    3068140 kB
+<br>Buffers:            6408 kB
+<br>Cached:           348344 kB
+<br>SwapCached:          164 kB
+<br>Active:           680608 kB
+<br>Inactive:         285248 kB
+<br>Active(anon):     448104 kB
+<br>Inactive(anon):   232404 kB
+<br>Active(file):     232504 kB
+<br>Inactive(file):    52844 kB
+<br>Unevictable:          32 kB
+<br>Mlocked:              32 kB
+<br>SwapTotal:       4194300 kB
+<br>SwapFree:        4192528 kB
+<br>Dirty:               292 kB
+<br>Writeback:             0 kB
+<br>AnonPages:        611272 kB
+<br>Mapped:           283444 kB
+<br>Shmem:             69216 kB
+<br>Slab:              75884 kB
+<br>SReclaimable:      28308 kB
+<br>SUnreclaim:        47576 kB
+<br>KernelStack:        6064 kB
+<br>PageTables:        42740 kB
+<br>NFS_Unstable:          0 kB
+<br>Bounce:                0 kB
+<br>WritebackTmp:          0 kB
+<br>CommitLimit:     6156284 kB
+<br>Committed_AS:    2509400 kB
+<br>VmallocTotal:   34359738367 kB
+<br>VmallocUsed:      363812 kB
+<br>VmallocChunk:   34358945788 kB
+<br>HardwareCorrupted:     0 kB
+<br>AnonHugePages:         0 kB
+<br>HugePages_Total:       0
+<br>HugePages_Free:        0
+<br>HugePages_Rsvd:        0
+<br>HugePages_Surp:        0
+<br>Hugepagesize:       2048 kB
+<br>DirectMap4k:      128464 kB
+<br>DirectMap2M:     3944448 kB
+<br></td></tr></table></ul></li>
+<li id="meta_headline">df<ul><table class="meta_table"><tr><td align="left">文件系统       1048576-块  已用  可用 配额 挂载点
+<br>devtmpfs             1907     0  1907   0% /dev
+<br>tmpfs                1916     1  1916   1% /dev/shm
+<br>tmpfs                1916     1  1916   1% /run
+<br>tmpfs                1916     0  1916   0% /sys/fs/cgroup
+<br>/dev/sda1          100666  5329 90201   6% /
+<br>tmpfs                1916     1  1916   1% /tmp
+<br>tmpfs                 384     0   384   0% /run/user/989
+<br>tmpfs                 384     1   384   1% /run/user/1000
+<br>tmpfs                 384     0   384   0% /run/user/0
+<br></td></tr></table></ul></li>
+<li id="meta_headline">modules<ul><table class="meta_table"><tr><td align="left">bnep 20480 2 - Live 0xffffffffa0635000
+<br>bluetooth 483328 5 bnep, Live 0xffffffffa05be000
+<br>rfkill 24576 3 bluetooth, Live 0xffffffffa05b2000
+<br>ip6t_rpfilter 16384 1 - Live 0xffffffffa05ad000
+<br>ip6t_REJECT 16384 2 - Live 0xffffffffa05a8000
+<br>nf_reject_ipv6 16384 1 ip6t_REJECT, Live 0xffffffffa05a3000
+<br>xt_conntrack 16384 13 - Live 0xffffffffa059e000
+<br>ebtable_nat 16384 1 - Live 0xffffffffa0594000
+<br>ebtable_filter 16384 1 - Live 0xffffffffa058f000
+<br>ebtable_broute 16384 1 - Live 0xffffffffa0599000
+<br>bridge 114688 1 ebtable_broute, Live 0xffffffffa0572000
+<br>stp 16384 1 bridge, Live 0xffffffffa056d000
+<br>llc 16384 2 bridge,stp, Live 0xffffffffa0568000
+<br>ebtables 32768 3 ebtable_nat,ebtable_filter,ebtable_broute, Live 0xffffffffa055b000
+<br>ip6table_security 16384 1 - Live 0xffffffffa0556000
+<br>ip6table_mangle 16384 1 - Live 0xffffffffa0551000
+<br>ip6table_raw 16384 1 - Live 0xffffffffa054c000
+<br>ip6table_nat 16384 1 - Live 0xffffffffa0547000
+<br>nf_conntrack_ipv6 20480 8 - Live 0xffffffffa053d000
+<br>nf_defrag_ipv6 36864 1 nf_conntrack_ipv6, Live 0xffffffffa051a000
+<br>nf_nat_ipv6 16384 1 ip6table_nat, Live 0xffffffffa0515000
+<br>ip6table_filter 16384 1 - Live 0xffffffffa0510000
+<br>ip6_tables 28672 5 ip6table_security,ip6table_mangle,ip6table_raw,ip6table_nat,ip6table_filter, Live 0xffffffffa0504000
+<br>iptable_security 16384 1 - Live 0xffffffffa04ff000
+<br>iptable_mangle 16384 1 - Live 0xffffffffa04e4000
+<br>iptable_raw 16384 1 - Live 0xffffffffa04fa000
+<br>iptable_nat 16384 1 - Live 0xffffffffa04f5000
+<br>nf_conntrack_ipv4 16384 7 - Live 0xffffffffa04df000
+<br>nf_defrag_ipv4 16384 1 nf_conntrack_ipv4, Live 0xffffffffa04da000
+<br>nf_nat_ipv4 16384 1 iptable_nat, Live 0xffffffffa0472000
+<br>nf_nat 28672 2 nf_nat_ipv6,nf_nat_ipv4, Live 0xffffffffa047d000
+<br>nf_conntrack 106496 6 xt_conntrack,nf_conntrack_ipv6,nf_nat_ipv6,nf_conntrack_ipv4,nf_nat_ipv4,nf_nat, Live 0xffffffffa04b7000
+<br>intel_rapl 20480 0 - Live 0xffffffffa04b1000
+<br>iosf_mbi 16384 1 intel_rapl, Live 0xffffffffa04d5000
+<br>x86_pkg_temp_thermal 16384 0 - Live 0xffffffffa045d000
+<br>coretemp 16384 0 - Live 0xffffffffa0478000
+<br>snd_hda_codec_hdmi 49152 1 - Live 0xffffffffa0465000
+<br>snd_hda_codec_realtek 86016 1 - Live 0xffffffffa03cc000
+<br>snd_hda_codec_generic 73728 1 snd_hda_codec_realtek, Live 0xffffffffa0526000
+<br>snd_hda_intel 36864 4 - Live 0xffffffffa04eb000
+<br>kvm_intel 167936 0 - Live 0xffffffffa0487000
+<br>snd_hda_codec 126976 4 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel, Live 0xffffffffa0656000
+<br>kvm 499712 1 kvm_intel, Live 0xffffffffa03e2000
+<br>crct10dif_pclmul 16384 0 - Live 0xffffffffa03c7000
+<br>crc32_pclmul 16384 0 - Live 0xffffffffa03bc000
+<br>crc32c_intel 24576 0 - Live 0xffffffffa03b5000
+<br>ghash_clmulni_intel 16384 0 - Live 0xffffffffa03c2000
+<br>snd_hda_core 61440 5 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel,snd_hda_codec, Live 0xffffffffa03a5000
+<br>iTCO_wdt 16384 0 - Live 0xffffffffa03a0000
+<br>snd_hwdep 16384 1 snd_hda_codec, Live 0xffffffffa037a000
+<br>ppdev 20480 0 - Live 0xffffffffa0396000
+<br>iTCO_vendor_support 16384 1 iTCO_wdt, Live 0xffffffffa0352000
+<br>dcdbas 16384 0 - Live 0xffffffffa0375000
+<br>snd_seq 69632 0 - Live 0xffffffffa0384000
+<br>snd_seq_device 16384 1 snd_seq, Live 0xffffffffa037f000
+<br>snd_pcm 114688 4 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core, Live 0xffffffffa0358000
+<br>parport_pc 28672 0 - Live 0xffffffffa0330000
+<br>mei_me 24576 0 - Live 0xffffffffa0314000
+<br>mei 90112 1 mei_me, Live 0xffffffffa033b000
+<br>shpchp 36864 0 - Live 0xffffffffa0322000
+<br>snd_timer 32768 2 snd_seq,snd_pcm, Live 0xffffffffa009a000
+<br>snd 77824 18 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_seq,snd_seq_device,snd_pcm,snd_timer, Live 0xffffffffa0300000
+<br>soundcore 16384 1 snd, Live 0xffffffffa0052000
+<br>parport 49152 2 ppdev,parport_pc, Live 0xffffffffa02f3000
+<br>i2c_i801 20480 0 - Live 0xffffffffa012e000
+<br>lpc_ich 24576 0 - Live 0xffffffffa031b000
+<br>nfsd 315392 1 - Live 0xffffffffa02a5000
+<br>auth_rpcgss 61440 1 nfsd, Live 0xffffffffa0295000
+<br>nfs_acl 16384 1 nfsd, Live 0xffffffffa0095000
+<br>lockd 94208 1 nfsd, Live 0xffffffffa00f7000
+<br>grace 16384 2 nfsd,lockd, Live 0xffffffffa0024000
+<br>sunrpc 311296 7 nfsd,auth_rpcgss,nfs_acl,lockd, Live 0xffffffffa0248000
+<br>i915 1110016 7 - Live 0xffffffffa0138000
+<br>i2c_algo_bit 16384 1 i915, Live 0xffffffffa001f000
+<br>drm_kms_helper 118784 1 i915, Live 0xffffffffa0110000
+<br>drm 335872 9 i915,drm_kms_helper, Live 0xffffffffa00a4000
+<br>e1000e 237568 0 - Live 0xffffffffa005a000
+<br>serio_raw 16384 0 - Live 0xffffffffa000a000
+<br>tg3 163840 0 - Live 0xffffffffa0029000
+<br>ptp 20480 2 e1000e,tg3, Live 0xffffffffa0019000
+<br>pps_core 20480 1 ptp, Live 0xffffffffa000f000
+<br>video 36864 1 i915, Live 0xffffffffa0000000
+<br></td></tr></table></ul></li>
+<li id="meta_headline">gcc<ul><table class="meta_table"><tr><td align="left">gcc (GCC) 5.1.1 20150618 (Red Hat 5.1.1-4)
+<br>Copyright © 2015 Free Software Foundation, Inc.
+<br>本程序是自由软件；请参看源代码的版权声明。本软件没有任何担保；
+<br>包括没有适销性和某一专用目的下的适用性担保。
+<br></td></tr></table></ul></li>
+<li id="meta_headline">dmidecode<ul><table class="meta_table"><tr><td align="left"># dmidecode 2.12
+<br>SMBIOS 2.6 present.
+<br>81 structures occupying 3389 bytes.
+<br>Table at 0x000F2640.
+<br>
+<br>Handle 0xDA00, DMI type 218, 251 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DA FB 00 DA B2 00 37 4F 1E 36 00 05 00 05 00 03
+<br>		00 06 00 06 00 05 00 0F 00 0F 00 00 00 11 00 11
+<br>		00 02 00 12 00 12 00 04 00 22 00 22 00 01 00 23
+<br>		00 23 00 00 00 28 00 28 00 00 00 29 00 29 00 01
+<br>		00 2A 00 2A 00 02 00 2B 00 2B 00 FF FF 2C 00 2C
+<br>		00 FF FF 2D 00 2D 00 02 00 2E 00 2E 00 00 00 42
+<br>		00 42 00 01 00 43 00 43 00 00 00 55 00 55 00 00
+<br>		00 5C 00 5C 00 01 00 5D 00 5D 00 00 00 6D 00 6D
+<br>		00 05 00 6E 00 6E 00 01 00 90 00 90 00 01 00 91
+<br>		00 91 00 00 00 92 00 92 00 02 00 93 00 93 00 01
+<br>		00 94 00 94 00 00 00 97 00 97 00 01 00 98 00 98
+<br>		00 00 00 9B 00 9B 00 01 00 9C 00 9C 00 00 00 9D
+<br>		00 9D 00 01 00 9E 00 9E 00 00 00 9F 00 9F 00 00
+<br>		00 A0 00 A0 00 01 00 A1 00 A1 00 00 00 A2 00 A2
+<br>		00 02 00 A3 00 A3 00 01 00 D1 00 D1 00 01 00 D2
+<br>		00 D2 00 00 00 FF FF FF FF 00 00
+<br>
+<br>Handle 0xDA01, DMI type 218, 251 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DA FB 01 DA B2 00 37 4F 1E 36 00 E4 00 E4 00 01
+<br>		00 E5 00 E5 00 00 00 EA 00 EA 00 00 00 EB 00 EB
+<br>		00 01 00 EC 00 EC 00 02 00 ED 00 ED 00 00 00 F0
+<br>		00 F0 00 01 00 F5 00 F5 00 04 00 F6 00 F6 00 00
+<br>		00 FB 00 FB 00 02 00 FC 00 FC 00 00 00 09 01 09
+<br>		01 00 00 17 01 17 01 00 00 18 01 18 01 01 00 19
+<br>		01 19 01 00 00 1A 01 1A 01 01 00 1B 01 1B 01 00
+<br>		00 1C 01 1C 01 01 00 1D 01 1D 01 00 00 1E 01 1E
+<br>		01 01 00 2B 01 2B 01 01 00 2C 01 2C 01 00 00 2D
+<br>		01 2D 01 01 00 2E 01 2E 01 00 00 35 01 35 01 FF
+<br>		00 37 01 37 01 00 00 38 01 38 01 01 00 39 01 39
+<br>		01 02 00 40 01 40 01 00 00 41 01 41 01 01 00 4A
+<br>		01 4A 01 00 00 4B 01 4B 01 01 00 4E 01 4E 01 00
+<br>		00 4F 01 4F 01 01 00 54 01 54 01 00 00 55 01 55
+<br>		01 01 00 75 01 75 01 02 00 76 01 76 01 01 00 9B
+<br>		01 9B 01 00 00 FF FF FF FF 00 00
+<br>
+<br>Handle 0xDA02, DMI type 218, 251 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DA FB 02 DA B2 00 37 4F 1E 36 00 9C 01 9C 01 01
+<br>		00 C1 01 C1 01 00 00 C2 01 C2 01 02 00 C3 01 C3
+<br>		01 01 00 D2 01 D2 01 00 00 D3 01 D3 01 01 00 D4
+<br>		01 D4 01 00 00 D5 01 D5 01 01 00 E0 01 E0 01 05
+<br>		00 EA 01 EA 01 00 00 EB 01 EB 01 01 00 02 02 02
+<br>		02 00 00 03 02 03 02 01 00 04 02 04 02 00 00 05
+<br>		02 05 02 01 00 32 02 32 02 02 00 33 02 33 02 01
+<br>		00 4B 02 4B 02 01 00 4C 02 4C 02 00 00 62 02 62
+<br>		02 01 00 63 02 63 02 00 00 64 02 64 02 01 00 65
+<br>		02 65 02 00 00 66 02 66 02 01 00 67 02 67 02 00
+<br>		00 68 02 68 02 01 00 69 02 69 02 00 00 6C 02 6C
+<br>		02 01 00 6D 02 6D 02 00 00 6E 02 6E 02 00 00 A7
+<br>		02 A7 02 01 00 A8 02 A8 02 00 00 BD 02 BD 02 01
+<br>		00 BE 02 BE 02 00 00 CD 02 CD 02 01 00 D8 02 D8
+<br>		02 FF FF D9 02 D9 02 FF FF DA 02 DA 02 FF FF DB
+<br>		02 DB 02 FF FF FF FF FF FF 00 00
+<br>
+<br>Handle 0xDA03, DMI type 218, 251 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DA FB 03 DA B2 00 37 4F 1E 36 00 DC 02 DC 02 FF
+<br>		FF DD 02 DD 02 FF FF DE 02 DE 02 FF FF DF 02 DF
+<br>		02 FF FF E3 02 E3 02 01 00 E8 02 E8 02 01 00 E9
+<br>		02 E9 02 00 00 F4 02 F4 02 01 00 F5 02 F5 02 00
+<br>		00 FD 02 FD 02 01 00 FE 02 FE 02 00 00 0F 03 0F
+<br>		03 02 00 12 03 12 03 03 00 13 03 13 03 01 00 14
+<br>		03 14 03 00 00 15 03 15 03 01 00 16 03 16 03 00
+<br>		00 17 03 17 03 01 00 18 03 18 03 00 00 19 03 19
+<br>		03 01 00 1A 03 1A 03 00 00 1B 03 1B 03 01 00 1C
+<br>		03 1C 03 00 00 1D 03 1D 03 01 00 1E 03 1E 03 00
+<br>		00 1F 03 1F 03 01 00 20 03 20 03 00 00 25 03 25
+<br>		03 01 00 26 03 26 03 01 00 3E 40 3E 40 00 00 3F
+<br>		40 3F 40 01 00 00 80 00 80 00 00 02 80 02 80 02
+<br>		00 03 80 03 80 03 00 0D 80 0D 80 00 00 00 A0 00
+<br>		A0 01 00 00 F0 00 F0 01 00 02 F0 02 F0 03 00 05
+<br>		F0 05 F0 7F 00 FF FF FF FF 00 00
+<br>
+<br>Handle 0xDA04, DMI type 218, 23 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DA 17 04 DA B2 00 37 4F 1E 36 00 06 F0 06 F0 00
+<br>		00 FF FF FF FF 00 00
+<br>
+<br>Handle 0x0000, DMI type 0, 24 bytes
+<br>BIOS Information
+<br>	Vendor: Dell Inc.
+<br>	Version: A15
+<br>	Release Date: 07/17/2012
+<br>	Address: 0xF0000
+<br>	Runtime Size: 64 kB
+<br>	ROM Size: 10240 kB
+<br>	Characteristics:
+<br>		PCI is supported
+<br>		BIOS is upgradeable
+<br>		BIOS shadowing is allowed
+<br>		Boot from CD is supported
+<br>		Selectable boot is supported
+<br>		EDD is supported
+<br>		5.25/1.2 MB floppy services are supported (int 13h)
+<br>		3.5/720 kB floppy services are supported (int 13h)
+<br>		3.5/2.88 MB floppy services are supported (int 13h)
+<br>		Print screen service is supported (int 5h)
+<br>		8042 keyboard services are supported (int 9h)
+<br>		Serial services are supported (int 14h)
+<br>		Printer services are supported (int 17h)
+<br>		ACPI is supported
+<br>		USB legacy is supported
+<br>		BIOS boot specification is supported
+<br>		Function key-initiated network boot is supported
+<br>		Targeted content distribution is supported
+<br>	BIOS Revision: 4.6
+<br>
+<br>Handle 0x0001, DMI type 1, 27 bytes
+<br>System Information
+<br>	Manufacturer: Dell Inc.
+<br>	Product Name: OptiPlex 790
+<br>	Version: 01
+<br>	Serial Number: JJH10W1
+<br>	UUID: 4C4C4544-004A-4810-8031-CAC04F305731
+<br>	Wake-up Type: Power Switch
+<br>	SKU Number: Not Specified
+<br>	Family: Not Specified
+<br>
+<br>Handle 0x0002, DMI type 2, 15 bytes
+<br>Base Board Information
+<br>	Manufacturer: Dell Inc.
+<br>	Product Name: 0V5HMK
+<br>	Version: A00
+<br>	Serial Number: /JJH10W1/CN7220028V01AX/
+<br>	Asset Tag: Not Specified
+<br>	Features:
+<br>		Board is a hosting board
+<br>		Board is replaceable
+<br>	Location In Chassis: Not Specified
+<br>	Chassis Handle: 0x0003
+<br>	Type: Motherboard
+<br>	Contained Object Handles: 0
+<br>
+<br>Handle 0x0003, DMI type 3, 21 bytes
+<br>Chassis Information
+<br>	Manufacturer: Dell Inc.
+<br>	Type: Mini Tower
+<br>	Lock: Not Present
+<br>	Version: Not Specified
+<br>	Serial Number: JJH10W1
+<br>	Asset Tag: Not Specified
+<br>	Boot-up State: Safe
+<br>	Power Supply State: Safe
+<br>	Thermal State: Safe
+<br>	Security Status: None
+<br>	OEM Information: 0x00000000
+<br>	Height: Unspecified
+<br>	Number Of Power Cords: 1
+<br>	Contained Elements: 0
+<br>
+<br>Handle 0x0004, DMI type 4, 42 bytes
+<br>Processor Information
+<br>	Socket Designation: CPU 1
+<br>	Type: Central Processor
+<br>	Family: Core i5
+<br>	Manufacturer: Intel            
+<br>	ID: A7 06 02 00 FF FB EB BF
+<br>	Signature: Type 0, Family 6, Model 42, Stepping 7
+<br>	Flags:
+<br>		FPU (Floating-point unit on-chip)
+<br>		VME (Virtual mode extension)
+<br>		DE (Debugging extension)
+<br>		PSE (Page size extension)
+<br>		TSC (Time stamp counter)
+<br>		MSR (Model specific registers)
+<br>		PAE (Physical address extension)
+<br>		MCE (Machine check exception)
+<br>		CX8 (CMPXCHG8 instruction supported)
+<br>		APIC (On-chip APIC hardware supported)
+<br>		SEP (Fast system call)
+<br>		MTRR (Memory type range registers)
+<br>		PGE (Page global enable)
+<br>		MCA (Machine check architecture)
+<br>		CMOV (Conditional move instruction supported)
+<br>		PAT (Page attribute table)
+<br>		PSE-36 (36-bit page size extension)
+<br>		CLFSH (CLFLUSH instruction supported)
+<br>		DS (Debug store)
+<br>		ACPI (ACPI supported)
+<br>		MMX (MMX technology supported)
+<br>		FXSR (FXSAVE and FXSTOR instructions supported)
+<br>		SSE (Streaming SIMD extensions)
+<br>		SSE2 (Streaming SIMD extensions 2)
+<br>		SS (Self-snoop)
+<br>		HTT (Multi-threading)
+<br>		TM (Thermal monitor supported)
+<br>		PBE (Pending break enabled)
+<br>	Version: Intel(R) Core(TM) i5-2400 CPU @ 3.10GH         
+<br>	Voltage: 0.0 V
+<br>	External Clock: 100 MHz
+<br>	Max Speed: 4000 MHz
+<br>	Current Speed: 3100 MHz
+<br>	Status: Populated, Enabled
+<br>	Upgrade: Other
+<br>	L1 Cache Handle: 0x0005
+<br>	L2 Cache Handle: 0x0006
+<br>	L3 Cache Handle: 0x0007
+<br>	Serial Number: Not Specified
+<br>	Asset Tag: Not Specified
+<br>	Part Number: Not Specified
+<br>	Core Count: 4
+<br>	Core Enabled: 4
+<br>	Thread Count: 4
+<br>	Characteristics:
+<br>		64-bit capable
+<br>
+<br>Handle 0x0005, DMI type 7, 19 bytes
+<br>Cache Information
+<br>	Socket Designation: L1-Cache
+<br>	Configuration: Enabled, Not Socketed, Level 1
+<br>	Operational Mode: Write Back
+<br>	Location: Internal
+<br>	Installed Size: 256 kB
+<br>	Maximum Size: 256 kB
+<br>	Supported SRAM Types:
+<br>		Other
+<br>	Installed SRAM Type: Other
+<br>	Speed: Unknown
+<br><font color=red>	Error Correction Type: None
+</font><br>	System Type: Unified
+<br>	Associativity: 8-way Set-associative
+<br>
+<br>Handle 0x0006, DMI type 7, 19 bytes
+<br>Cache Information
+<br>	Socket Designation: L2-Cache
+<br>	Configuration: Enabled, Not Socketed, Level 2
+<br>	Operational Mode: Varies With Memory Address
+<br>	Location: Internal
+<br>	Installed Size: 1024 kB
+<br>	Maximum Size: 1024 kB
+<br>	Supported SRAM Types:
+<br>		Other
+<br>	Installed SRAM Type: Other
+<br>	Speed: Unknown
+<br><font color=red>	Error Correction Type: None
+</font><br>	System Type: Unified
+<br>	Associativity: 8-way Set-associative
+<br>
+<br>Handle 0x0007, DMI type 7, 19 bytes
+<br>Cache Information
+<br>	Socket Designation: L3-Cache
+<br>	Configuration: Enabled, Not Socketed, Level 3
+<br>	Operational Mode: Varies With Memory Address
+<br>	Location: Internal
+<br>	Installed Size: 6144 kB
+<br>	Maximum Size: 6144 kB
+<br>	Supported SRAM Types:
+<br>		Other
+<br>	Installed SRAM Type: Other
+<br>	Speed: Unknown
+<br><font color=red>	Error Correction Type: None
+</font><br>	System Type: Unified
+<br>	Associativity: Other
+<br>
+<br>Handle 0x0008, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: Serial Port
+<br>	External Connector Type: DB-9 male
+<br>	Port Type: Serial Port 16550A Compatible
+<br>
+<br>Handle 0x0009, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: Keyboard Port
+<br>	External Connector Type: PS/2
+<br>	Port Type: Keyboard Port
+<br>
+<br>Handle 0x000A, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: Mouse Port
+<br>	External Connector Type: PS/2
+<br>	Port Type: Mouse Port
+<br>
+<br>Handle 0x000B, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB1
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x000C, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB2
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x000D, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB3
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x000E, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB4
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x000F, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB5
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0010, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB6
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0011, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB7
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0012, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB8
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0013, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB9
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0014, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: USB10
+<br>	External Connector Type: Access Bus (USB)
+<br>	Port Type: USB
+<br>
+<br>Handle 0x0015, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: Network Port
+<br>	External Connector Type: RJ-45
+<br>	Port Type: Network Port
+<br>
+<br>Handle 0x0016, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: MIC-IN
+<br>	External Connector Type: Mini Jack (headphones)
+<br>	Port Type: Audio Port
+<br>
+<br>Handle 0x0017, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: HP-OUT
+<br>	External Connector Type: Mini Jack (headphones)
+<br>	Port Type: Audio Port
+<br>
+<br>Handle 0x0018, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: LINE-OUT
+<br>	External Connector Type: Mini Jack (headphones)
+<br>	Port Type: Audio Port
+<br>
+<br>Handle 0x0019, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: LINE-IN
+<br>	External Connector Type: Mini Jack (headphones)
+<br>	Port Type: Audio Port
+<br>
+<br>Handle 0x001A, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: VGA Port
+<br>	External Connector Type: DB-15 female
+<br>	Port Type: Video Port
+<br>
+<br>Handle 0x001B, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: 00H
+<br>	Internal Connector Type: None
+<br>	External Reference Designator: DISPLAY PORT
+<br>	External Connector Type: Other
+<br>	Port Type: Video Port
+<br>
+<br>Handle 0x001C, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: SATA0
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x001D, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: SATA1
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x001E, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: SATA2
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x001F, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: SATA3
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x0020, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: FAN_CPU
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x0021, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: FAN_HDD
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x0022, DMI type 8, 9 bytes
+<br>Port Connector Information
+<br>	Internal Reference Designator: INT_SPKR
+<br>	Internal Connector Type: Other
+<br>	External Reference Designator: Not Specified
+<br>	External Connector Type: None
+<br>	Port Type: Other
+<br>
+<br>Handle 0x0023, DMI type 9, 17 bytes
+<br>System Slot Information
+<br>	Designation: Slot1
+<br>	Type: x16 PCI Express 2
+<br>	Current Usage: Available
+<br>	Length: Long
+<br>	ID: 1
+<br>	Characteristics:
+<br>		3.3 V is provided
+<br>		PME signal is supported
+<br>	Bus Address: 0000:00:01.0
+<br>
+<br>Handle 0x0024, DMI type 9, 17 bytes
+<br>System Slot Information
+<br>	Designation: Slot2
+<br>	Type: x4 PCI Express 2 x16
+<br>	Current Usage: Available
+<br>	Length: Short
+<br>	ID: 2
+<br>	Characteristics:
+<br>		3.3 V is provided
+<br>		PME signal is supported
+<br>	Bus Address: 0000:00:1c.2
+<br>
+<br>Handle 0x0025, DMI type 9, 17 bytes
+<br>System Slot Information
+<br>	Designation: Slot3
+<br>	Type: 32-bit PCI
+<br>	Current Usage: Available
+<br>	Length: Long
+<br>	ID: 3
+<br>	Characteristics:
+<br>		5.0 V is provided
+<br>		3.3 V is provided
+<br>		PME signal is supported
+<br>	Bus Address: 0000:00:1e.0
+<br>
+<br>Handle 0x0026, DMI type 9, 17 bytes
+<br>System Slot Information
+<br>	Designation: Slot4
+<br>	Type: x1 PCI Express 2
+<br>	Current Usage: Available
+<br>	Length: Long
+<br>	ID: 4
+<br>	Characteristics:
+<br>		3.3 V is provided
+<br>		PME signal is supported
+<br>	Bus Address: 0000:00:1c.4
+<br>
+<br>Handle 0x0027, DMI type 10, 6 bytes
+<br>On Board Device Information
+<br>	Type: Video
+<br>	Status: Enabled
+<br>	Description: Intel Integrated Graphics
+<br>
+<br>Handle 0x0028, DMI type 10, 6 bytes
+<br>On Board Device Information
+<br>	Type: Ethernet
+<br>	Status: Disabled
+<br>	Description: Intel Gigabit Ethernet Controller
+<br>
+<br>Handle 0x0029, DMI type 10, 6 bytes
+<br>On Board Device Information
+<br>	Type: Sound
+<br>	Status: Enabled
+<br>	Description: Intel(R) High Definition Audio Controller
+<br>
+<br>Handle 0x002A, DMI type 11, 5 bytes
+<br>OEM Strings
+<br>	String 1: Dell System
+<br>	String 2: 1[04AD]
+<br>	String 3: 3[1.0]
+<br>	String 4: 12[www.dell.com]
+<br>
+<br>Handle 0x002B, DMI type 13, 22 bytes
+<br>BIOS Language Information
+<br>	Language Description Format: Long
+<br>	Installable Languages: 1
+<br>		en|US|iso8859-1
+<br>	Currently Installed Language: en|US|iso8859-1
+<br>
+<br>Handle 0x002C, DMI type 15, 35 bytes
+<br>System Event Log
+<br>	Area Length: 4 bytes
+<br>	Header Start Offset: 0x0000
+<br>	Header Length: 2 bytes
+<br>	Data Start Offset: 0x0002
+<br>	Access Method: Indexed I/O, one 16-bit index port, one 8-bit data port
+<br>	Access Address: Index 0x046A, Data 0x046C
+<br>	Status: Invalid, Not Full
+<br>	Change Token: 0x00000000
+<br>	Header Format: No Header
+<br>	Supported Log Type Descriptors: 6
+<br>	Descriptor 1: End of log
+<br>	Data Format 1: OEM-specific
+<br>	Descriptor 2: End of log
+<br>	Data Format 2: OEM-specific
+<br>	Descriptor 3: End of log
+<br>	Data Format 3: OEM-specific
+<br>	Descriptor 4: End of log
+<br>	Data Format 4: OEM-specific
+<br>	Descriptor 5: End of log
+<br>	Data Format 5: OEM-specific
+<br>	Descriptor 6: End of log
+<br>	Data Format 6: OEM-specific
+<br>
+<br>Handle 0x002D, DMI type 16, 15 bytes
+<br>Physical Memory Array
+<br>	Location: System Board Or Motherboard
+<br>	Use: System Memory
+<br><font color=red>	Error Correction Type: None
+</font><br>	Maximum Capacity: 32 GB
+<br><font color=red>	Error Information Handle: Not Provided
+</font><br>	Number Of Devices: 4
+<br>
+<br>Handle 0x002E, DMI type 17, 28 bytes
+<br>Memory Device
+<br>	Array Handle: 0x002D
+<br><font color=red>	Error Information Handle: Not Provided
+</font><br>	Total Width: Unknown
+<br>	Data Width: Unknown
+<br>	Size: No Module Installed
+<br>	Form Factor: DIMM
+<br>	Set: None
+<br>	Locator: ChannelA-DIMM0
+<br>	Bank Locator: BANK 0
+<br>	Type: Unknown
+<br>	Type Detail: None
+<br>	Speed: Unknown
+<br>	Manufacturer: [Empty]
+<br>	Serial Number: [Empty]
+<br>	Asset Tag: 9876543210
+<br>	Part Number: [Empty]
+<br>	Rank: Unknown
+<br>
+<br>Handle 0x002F, DMI type 17, 28 bytes
+<br>Memory Device
+<br>	Array Handle: 0x002D
+<br><font color=red>	Error Information Handle: Not Provided
+</font><br>	Total Width: 64 bits
+<br>	Data Width: 64 bits
+<br>	Size: 2048 MB
+<br>	Form Factor: DIMM
+<br>	Set: None
+<br>	Locator: ChannelA-DIMM1
+<br>	Bank Locator: BANK 1
+<br>	Type: DDR3
+<br>	Type Detail: Synchronous
+<br>	Speed: 1333 MHz
+<br>	Manufacturer: Samsung
+<br>	Serial Number: 647FFBE8
+<br>	Asset Tag: 9876543210
+<br>	Part Number: M378B5773CH0-CH9  
+<br>	Rank: 1
+<br>
+<br>Handle 0x0031, DMI type 17, 28 bytes
+<br>Memory Device
+<br>	Array Handle: 0x002D
+<br><font color=red>	Error Information Handle: Not Provided
+</font><br>	Total Width: Unknown
+<br>	Data Width: Unknown
+<br>	Size: No Module Installed
+<br>	Form Factor: DIMM
+<br>	Set: None
+<br>	Locator: ChannelB-DIMM0
+<br>	Bank Locator: BANK 2
+<br>	Type: Unknown
+<br>	Type Detail: None
+<br>	Speed: Unknown
+<br>	Manufacturer: [Empty]
+<br>	Serial Number: [Empty]
+<br>	Asset Tag: 9876543210
+<br>	Part Number: [Empty]
+<br>	Rank: Unknown
+<br>
+<br>Handle 0x0032, DMI type 17, 28 bytes
+<br>Memory Device
+<br>	Array Handle: 0x002D
+<br><font color=red>	Error Information Handle: Not Provided
+</font><br>	Total Width: 64 bits
+<br>	Data Width: 64 bits
+<br>	Size: 2048 MB
+<br>	Form Factor: DIMM
+<br>	Set: None
+<br>	Locator: ChannelB-DIMM1
+<br>	Bank Locator: BANK 3
+<br>	Type: DDR3
+<br>	Type Detail: Synchronous
+<br>	Speed: 1333 MHz
+<br>	Manufacturer: Kingston
+<br>	Serial Number: 33340607
+<br>	Asset Tag: 9876543210
+<br>	Part Number: K1N7HK-HYC        
+<br>	Rank: 1
+<br>
+<br>Handle 0x003D, DMI type 19, 15 bytes
+<br>Memory Array Mapped Address
+<br>	Starting Address: 0x00000000000
+<br>	Ending Address: 0x000FFFFFFFF
+<br>	Range Size: 4 GB
+<br>	Physical Array Handle: 0x002D
+<br>	Partition Width: 4
+<br>
+<br>Handle 0x0030, DMI type 20, 19 bytes
+<br>Memory Device Mapped Address
+<br>	Starting Address: 0x00000000000
+<br>	Ending Address: 0x0007FFFFFFF
+<br>	Range Size: 2 GB
+<br>	Physical Device Handle: 0x002F
+<br>	Memory Array Mapped Address Handle: 0x003D
+<br>	Partition Row Position: 1
+<br>	Interleave Position: 1
+<br>	Interleaved Data Depth: 2
+<br>
+<br>Handle 0x003E, DMI type 20, 19 bytes
+<br>Memory Device Mapped Address
+<br>	Starting Address: 0x00080000000
+<br>	Ending Address: 0x000FFFFFFFF
+<br>	Range Size: 2 GB
+<br>	Physical Device Handle: 0x0032
+<br>	Memory Array Mapped Address Handle: 0x003D
+<br>	Partition Row Position: 1
+<br>	Interleave Position: 2
+<br>	Interleaved Data Depth: 2
+<br>
+<br>Handle 0x0033, DMI type 24, 5 bytes
+<br>Hardware Security
+<br>	Power-On Password Status: Disabled
+<br>	Keyboard Password Status: Disabled
+<br>	Administrator Password Status: Disabled
+<br>	Front Panel Reset Status: Disabled
+<br>
+<br>Handle 0x0034, DMI type 25, 9 bytes
+<br>	System Power Controls
+<br>	Next Scheduled Power-on: *-* 00:00:00
+<br>
+<br>Handle 0x1B00, DMI type 27, 12 bytes
+<br>Cooling Device
+<br>	Type: Fan
+<br>	Status: OK
+<br>	OEM-specific Information: 0x0000DD00
+<br>
+<br>Handle 0x1B01, DMI type 27, 12 bytes
+<br>Cooling Device
+<br>	Type: Fan
+<br>	Status: OK
+<br>	OEM-specific Information: 0x0000DD01
+<br>
+<br>Handle 0x1C00, DMI type 28, 20 bytes
+<br>Temperature Probe
+<br>	Description: CPU Internal Temperature
+<br>	Location: Processor
+<br>	Status: OK
+<br>	Maximum Value: 127.0 deg C
+<br>	Minimum Value: 0.0 deg C
+<br>	Resolution: 1.000 deg C
+<br>	Tolerance: 0.5 deg C
+<br>	Accuracy: Unknown
+<br>	OEM-specific Information: 0x0000DC00
+<br>
+<br>Handle 0x0035, DMI type 32, 20 bytes
+<br>System Boot Information
+<br>	Status: No errors detected
+<br>
+<br>Handle 0x0036, DMI type 34, 11 bytes
+<br>Management Device
+<br>	Description: LM78-1
+<br>	Type: LM78
+<br>	Address: 0x00000000
+<br>	Address Type: I/O Port
+<br>
+<br>Handle 0x003A, DMI type 41, 11 bytes
+<br>Onboard Device
+<br>	Reference Designation:  Onboard IGD
+<br>	Type: Video
+<br>	Status: Enabled
+<br>	Type Instance: 1
+<br>	Bus Address: 0000:00:02.0
+<br>
+<br>Handle 0x003B, DMI type 41, 11 bytes
+<br>Onboard Device
+<br>	Reference Designation:  Onboard LAN
+<br>	Type: Ethernet
+<br>	Status: Disabled
+<br>	Type Instance: 1
+<br>	Bus Address: 0000:00:19.0
+<br>
+<br>Handle 0x003C, DMI type 41, 11 bytes
+<br>Onboard Device
+<br>	Reference Designation:  Onboard Audio
+<br>	Type: Sound
+<br>	Status: Enabled
+<br>	Type Instance: 1
+<br>	Bus Address: 0000:00:1b.0
+<br>
+<br>Handle 0xB100, DMI type 177, 12 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		B1 0C 00 B1 00 00 00 00 00 00 00 00
+<br>
+<br>Handle 0xD000, DMI type 208, 16 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		D0 10 00 D0 02 05 FE 00 AD 04 01 02 00 00 00 00
+<br>	Strings:
+<br>		20120915
+<br>		20121009
+<br>
+<br>Handle 0xD200, DMI type 210, 12 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		D2 0C 00 D2 F8 03 04 03 06 80 04 03
+<br>
+<br>Handle 0xD800, DMI type 216, 9 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		D8 09 00 D8 01 02 01 10 01
+<br>	Strings:
+<br>		Intel Corp.
+<br>		2089
+<br>
+<br>Handle 0xD900, DMI type 217, 8 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		D9 08 00 D9 01 02 01 03
+<br>	Strings:
+<br>		US-101
+<br>		Proprietary
+<br>
+<br>Handle 0xDC00, DMI type 220, 20 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DC 14 00 DC 01 F0 00 00 03 F0 00 00 00 00 06 F0
+<br>		07 F0 00 00
+<br>
+<br>Handle 0xDD00, DMI type 221, 19 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DD 13 00 DD 00 00 00 00 00 03 00 00 00 00 00 00
+<br>		00 00 00
+<br>
+<br>Handle 0xDD01, DMI type 221, 19 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DD 13 01 DD 00 00 00 00 00 03 00 00 00 00 00 00
+<br>		00 00 00
+<br>
+<br>Handle 0xDE00, DMI type 222, 16 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		DE 10 00 DE 01 04 00 00 12 09 15 09 23 01 00 00
+<br>
+<br>Handle 0xDE01, DMI type 129, 8 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		81 08 01 DE 01 01 02 01
+<br>	Strings:
+<br>		Intel_ASF
+<br>		Intel_ASF_001
+<br>
+<br>Handle 0xDE02, DMI type 130, 20 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		82 14 02 DE 24 41 4D 54 00 00 00 00 00 A5 2F 02
+<br>		00 00 00 00
+<br>
+<br>Handle 0xDE03, DMI type 131, 64 bytes
+<br>OEM-specific Type
+<br>	Header and Data:
+<br>		83 40 03 DE 35 00 00 00 07 00 00 00 00 00 3F 00
+<br>		F8 00 4C 1C FF FF FF FF 01 20 00 00 01 00 07 00
+<br>		98 04 34 00 00 00 00 00 C8 00 02 15 00 00 00 02
+<br>		5A 16 00 00 36 00 00 00 76 50 72 6F 00 00 00 00
+<br>
+<br>Handle 0xDE04, DMI type 127, 4 bytes
+<br>End Of Table
+<br>
+<br></td></tr></table></ul></li>
+<li id="meta_headline">dmesg<ul><table class="meta_table"><tr><td align="left">File not found.<br></td></tr></table></ul></li>
+</ul>
+
+</body>
+

@@ -1,0 +1,8 @@
+12/29 01:43:46 ERROR|     utils:0151| [stderr] netlib.c: In function ‘bind_to_specific_processor’:
+12/29 01:43:46 ERROR|     utils:0151| [stderr] netlib.c:2292:9: warning: implicit declaration of function ‘sched_setaffinity’ [-Wimplicit-function-declaration]
+12/29 01:43:46 ERROR|     utils:0151| [stderr]      if (sched_setaffinity(getpid(), len, &netperf_cpu_set)) {
+12/29 01:43:46 ERROR|     utils:0151| [stderr]          ^
+12/29 01:43:46 ERROR|     utils:0151| [stderr] nettest_omni.c: In function ‘recv_data_no_copy’:
+12/29 01:43:46 ERROR|     utils:0151| [stderr] nettest_omni.c:2943:19: warning: implicit declaration of function ‘splice’ [-Wimplicit-function-declaration]
+12/29 01:43:46 ERROR|     utils:0151| [stderr]      bytes_recvd = splice(data_socket,
+12/29 01:43:46 ERROR|     utils:0151| [stderr]                    ^

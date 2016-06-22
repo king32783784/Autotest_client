@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>desktop-graphics-result</Title>
+    <LastModified>2015-12-28 06:31:23</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Desktop 4.0 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>desktop-graphics-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: iSoft Desktop 4.0, Kernel: 4.4.0-15 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.1.0, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush &lt;bool&gt;] [-i &lt;file&gt;] [-o &lt;file&gt;] [-c &lt;file&gt;] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.1 + LLVM 3.7.1, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User>root</User>
+    <TimeStamp>2015-12-28 06:31:23</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-isoft-linux --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --enable-__cxa_atexit --enable-bootstrap --enable-c99 --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,lto,go,fortran --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libmpx --enable-libquadmath --enable-libsanitizer --enable-long-long --enable-lto --enable-plugin --enable-shared --enable-symvers --enable-threads=posix --host=x86_64-isoft-linux --target=x86_64-isoft-linux --with-cpu=generic --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate powersave","graphics-2d-acceleration":"SNA"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/qgears2-1.0.1</Identifier>
+    <Title>QGears2</Title>
+    <AppVersion></AppVersion>
+    <Arguments>-render COMPO</Arguments>
+    <Description>XRender + Image Scaling</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>1688.26</Value>
+        <RawString>1695.71355:1698.127675:1670.948375</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core -lGL -lpthread"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/nexuiz-1.6.1</Identifier>
+    <Title>Nexuiz</Title>
+    <AppVersion>2.5.2</AppVersion>
+    <Arguments>+vid_width 1440 +vid_height 900 +r_hdr 1 -nosound</Arguments>
+    <Description>1440 x 900 w/ HDR</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>21.10</Value>
+        <RawString>21.1115674:21.0802135:21.0957954</RawString>
+        <JSON>{"min-result":13,"max-result":29}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unigine-sanctuary-1.6.2</Identifier>
+    <Title>Unigine Sanctuary</Title>
+    <AppVersion>2.3</AppVersion>
+    <Arguments>-video_width 1440 -video_height 900</Arguments>
+    <Description>1440 x 900</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>8.28</Value>
+        <RawString>8.2785:8.27477:8.2878</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/unigine-tropics-1.6.2</Identifier>
+    <Title>Unigine Tropics</Title>
+    <AppVersion>1.3</AppVersion>
+    <Arguments>-video_width 1440 -video_height 900</Arguments>
+    <Description>1440 x 900</Description>
+    <Scale>Frames Per Second</Scale>
+    <Proportion>HIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>8.60</Value>
+        <RawString>8.59912:8.59913:8.60534</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/gtkperf-1.2.1</Identifier>
+    <Title>GtkPerf</Title>
+    <AppVersion>0.40</AppVersion>
+    <Arguments>DRAWING_PIXBUFS</Arguments>
+    <Description>GtkDrawingArea - Pixbufs</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>desktop-graphics-conf</Identifier>
+        <Value>0.43</Value>
+        <RawString>0.41:0.44:0.41:0.41:0.44:0.45</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-lgtk-x11-2.0 -latk-1.0 -lgio-2.0 -lpangoft2-1.0 -lfreetype -lfontconfig -lgdk-x11-2.0 -lgdk_pixbuf-2.0 -lpangocairo-1.0 -lpango-1.0 -lcairo -lgobject-2.0 -lgmodule-2.0 -lglib-2.0"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

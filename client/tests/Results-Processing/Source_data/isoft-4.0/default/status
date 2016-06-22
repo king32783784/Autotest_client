@@ -1,0 +1,32 @@
+START	----	----	timestamp=1442306910	localtime=Sep 15 16:48:30	
+	START	iozone	iozone	timestamp=1442306910	localtime=Sep 15 16:48:30	
+		GOOD	iozone	iozone	timestamp=1442310609	localtime=Sep 15 17:50:09	completed successfully
+	END GOOD	iozone	iozone	timestamp=1442310609	localtime=Sep 15 17:50:09	
+	START	sysbench.cpu	sysbench.cpu	timestamp=1442310609	localtime=Sep 15 17:50:09	
+		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1442310890	localtime=Sep 15 17:54:50	completed successfully
+	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1442310890	localtime=Sep 15 17:54:50	
+	START	sysbench.mem	sysbench.mem	timestamp=1442310890	localtime=Sep 15 17:54:50	
+		GOOD	sysbench.mem	sysbench.mem	timestamp=1442310923	localtime=Sep 15 17:55:23	completed successfully
+	END GOOD	sysbench.mem	sysbench.mem	timestamp=1442310923	localtime=Sep 15 17:55:23	
+	START	pingpong	pingpong	timestamp=1442310924	localtime=Sep 15 17:55:24	
+		GOOD	pingpong	pingpong	timestamp=1442311323	localtime=Sep 15 18:02:03	completed successfully
+	END GOOD	pingpong	pingpong	timestamp=1442311323	localtime=Sep 15 18:02:03	
+	START	netperf2	netperf2	timestamp=1442311323	localtime=Sep 15 18:02:03	
+		ERROR	netperf2	netperf2	timestamp=1442311342	localtime=Sep 15 18:02:22	Command </root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.221 -t TCP_STREAM -l 120> failed, rc=255, Command returned non-zero exit status
+  * Command: 
+      /root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.221 -t
+      TCP_STREAM -l 120
+  Exit status: 255
+  Duration: 3.08321380615
+  
+  stdout:
+  establish control: are you sure there is a netserver listening on 192.168.32.221 at port 12865?
+  establish_control could not establish the control connection from 0.0.0.0 port 0 address family AF_UNSPEC to 192.168.32.221 port 12865 address family AF_INET
+	END ERROR	netperf2	netperf2	timestamp=1442311342	localtime=Sep 15 18:02:22	
+	START	unixbench5	unixbench5	timestamp=1442311342	localtime=Sep 15 18:02:22	
+		GOOD	unixbench5	unixbench5	timestamp=1442324694	localtime=Sep 15 21:44:54	completed successfully
+	END GOOD	unixbench5	unixbench5	timestamp=1442324694	localtime=Sep 15 21:44:54	
+	START	lmbench	lmbench	timestamp=1442324694	localtime=Sep 15 21:44:54	
+		GOOD	lmbench	lmbench	timestamp=1442328082	localtime=Sep 15 22:41:22	completed successfully
+	END GOOD	lmbench	lmbench	timestamp=1442328082	localtime=Sep 15 22:41:22	
+END GOOD	----	----	timestamp=1442328083	localtime=Sep 15 22:41:23	

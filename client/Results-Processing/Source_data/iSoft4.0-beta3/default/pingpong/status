@@ -1,0 +1,3 @@
+	START	pingpong	pingpong	timestamp=1449752417	localtime=Dec 10 21:00:17	
+		GOOD	pingpong	pingpong	timestamp=1449755156	localtime=Dec 10 21:45:56	completed successfully
+	END GOOD	pingpong	pingpong	timestamp=1449755156	localtime=Dec 10 21:45:56	

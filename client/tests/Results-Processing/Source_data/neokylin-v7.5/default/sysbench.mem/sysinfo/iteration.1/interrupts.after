@@ -1,0 +1,32 @@
+           CPU0       CPU1       CPU2       CPU3       
+  0:         39          0          0          0  IR-IO-APIC-edge      timer
+  1:       9289          0          0          0  IR-IO-APIC-edge      i8042
+  8:          1          0          0          0  IR-IO-APIC-edge      rtc0
+  9:          3          0          0          0  IR-IO-APIC-fasteoi   acpi
+ 12:     136427          0          0          0  IR-IO-APIC-edge      i8042
+ 16:         31          0          0          0  IR-IO-APIC  16-fasteoi   ehci_hcd:usb1
+ 17:         35          0          0          0  IR-IO-APIC  17-fasteoi   ehci_hcd:usb2
+ 18:    1699056          0          0          0  IR-IO-APIC  18-fasteoi   ata_piix, ata_piix
+ 24:          0          0          0          0  DMAR_MSI-edge      dmar0
+ 25:          0          0          0          0  DMAR_MSI-edge      dmar1
+ 26:      20226          0          0          0  IR-PCI-MSI-edge      eno1
+ 27:      59542          0          0          0  IR-PCI-MSI-edge      i915
+ 28:         25          0          0          0  IR-PCI-MSI-edge      mei_me
+ 29:        694          0          0          0  IR-PCI-MSI-edge      snd_hda_intel
+ 30:    1115307          0          0          0  IR-PCI-MSI-edge      enp2s0
+NMI:         77         34         28         36   Non-maskable interrupts
+LOC:    1195201     844445     845900     932266   Local timer interrupts
+SPU:          0          0          0          0   Spurious interrupts
+PMI:         77         34         28         36   Performance monitoring interrupts
+IWI:          4          0          0          0   IRQ work interrupts
+RTR:          0          0          0          0   APIC ICR read retries
+RES:      14734     132257      69379      60100   Rescheduling interrupts
+CAL:        735        956       1017        970   Function call interrupts
+TLB:       2821       5004       2409       3013   TLB shootdowns
+TRM:          0          0          0          0   Thermal event interrupts
+THR:          0          0          0          0   Threshold APIC interrupts
+MCE:          0          0          0          0   Machine check exceptions
+MCP:        136        136        136        136   Machine check polls
+HYP:          0          0          0          0   Hypervisor callback interrupts
+ERR:          0
+MIS:          0

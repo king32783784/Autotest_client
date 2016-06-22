@@ -1,0 +1,6 @@
+param-iterations=3
+version=4
+sysinfo-cmdline=BOOT_IMAGE=/boot/vmlinuz-4.4.0-10 root=UUID=d47462f1-c4be-4105-8518-426dd3fa5411 ro quiet splash
+sysinfo-memtotal-in-kb=3926264
+sysinfo-phys-mbytes=4096
+sysinfo-uname=4.4.0-10 #1 SMP Mon Dec 7 13:01:25 CST 2015 x86_64 GNU/Linux

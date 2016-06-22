@@ -1,0 +1,35 @@
+START	----	----	timestamp=1451135715	localtime=12月 26 21:15:15	
+	START	infotest	infotest	timestamp=1451135715	localtime=12月 26 21:15:15	
+		GOOD	infotest	infotest	timestamp=1451135720	localtime=12月 26 21:15:20	completed successfully
+	END GOOD	infotest	infotest	timestamp=1451135720	localtime=12月 26 21:15:20	
+	START	netperf2	netperf2	timestamp=1451135720	localtime=12月 26 21:15:20	
+		ERROR	netperf2	netperf2	timestamp=1451135742	localtime=12月 26 21:15:42	Command </root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.57 -t TCP_STREAM -l 120> failed, rc=255, Command returned non-zero exit status
+  * Command: 
+      /root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.57 -t
+      TCP_STREAM -l 120
+  Exit status: 255
+  Duration: 0.684457778931
+  
+  stdout:
+  establish control: are you sure there is a netserver listening on 192.168.32.57 at port 12865?
+  establish_control could not establish the control connection from 0.0.0.0 port 0 address family AF_UNSPEC to 192.168.32.57 port 12865 address family AF_INET
+	END ERROR	netperf2	netperf2	timestamp=1451135742	localtime=12月 26 21:15:42	
+	START	iozone	iozone	timestamp=1451135743	localtime=12月 26 21:15:43	
+		GOOD	iozone	iozone	timestamp=1451146677	localtime=12月 27 00:17:57	completed successfully
+	END GOOD	iozone	iozone	timestamp=1451146677	localtime=12月 27 00:17:57	
+	START	sysbench.cpu	sysbench.cpu	timestamp=1451146677	localtime=12月 27 00:17:57	
+		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1451146990	localtime=12月 27 00:23:10	completed successfully
+	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1451146990	localtime=12月 27 00:23:10	
+	START	sysbench.mem	sysbench.mem	timestamp=1451146991	localtime=12月 27 00:23:11	
+		GOOD	sysbench.mem	sysbench.mem	timestamp=1451147015	localtime=12月 27 00:23:35	completed successfully
+	END GOOD	sysbench.mem	sysbench.mem	timestamp=1451147015	localtime=12月 27 00:23:35	
+	START	pingpong	pingpong	timestamp=1451147015	localtime=12月 27 00:23:35	
+		GOOD	pingpong	pingpong	timestamp=1451149754	localtime=12月 27 01:09:14	completed successfully
+	END GOOD	pingpong	pingpong	timestamp=1451149754	localtime=12月 27 01:09:14	
+	START	unixbench5	unixbench5	timestamp=1451149754	localtime=12月 27 01:09:14	
+		GOOD	unixbench5	unixbench5	timestamp=1451163141	localtime=12月 27 04:52:21	completed successfully
+	END GOOD	unixbench5	unixbench5	timestamp=1451163141	localtime=12月 27 04:52:21	
+	START	lmbench	lmbench	timestamp=1451163141	localtime=12月 27 04:52:21	
+		GOOD	lmbench	lmbench	timestamp=1451166755	localtime=12月 27 05:52:35	completed successfully
+	END GOOD	lmbench	lmbench	timestamp=1451166755	localtime=12月 27 05:52:35	
+	START	ltp	ltp	timestamp=1451166755	localtime=12月 27 05:52:35	

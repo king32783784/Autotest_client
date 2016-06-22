@@ -1,0 +1,56 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.414 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England.
+
+	Run began: Thu Dec  3 13:30:23 2015
+
+	Excel chart generation enabled
+	O_DIRECT feature enabled
+	Record Size 32 KB
+	File size set to 8388608 KB
+	Command line used: /root/autotest/client/tmp/iozone/src/src/current/iozone -Rb /mnt/iozone_results_io.xls -i 0 -i 1 -i 2 -I -f /mnt/iozone_io.file -r 32 -s 8g
+	Output is in Kbytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 Kbytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                            random  random    bkwd   record   stride                                   
+              KB  reclen   write rewrite    read    reread    read   write    read  rewrite     read   fwrite frewrite   fread  freread
+         8388608      32  127660  128561   123881   124342    4064    6856                                                          
+
+iozone test complete.
+Excel output is below:
+
+"Writer report"
+        "32"
+"8388608"   127660 
+
+"Re-writer report"
+        "32"
+"8388608"   128561 
+
+"Reader report"
+        "32"
+"8388608"   123881 
+
+"Re-Reader report"
+        "32"
+"8388608"   124342 
+
+"Random read report"
+        "32"
+"8388608"   4064 
+
+"Random write report"
+        "32"
+"8388608"   6856 

@@ -1,0 +1,8 @@
+param-cpu_max_prime=[10000, 20000, 30000]
+param-runtimes=3
+param-test_type='cpu'
+version=1
+sysinfo-cmdline=BOOT_IMAGE=/boot/vmlinuz-4.4.1-1 root=UUID=057391f7-14c1-49c3-822e-3af82b5fd405 ro quiet splash
+sysinfo-memtotal-in-kb=3761304
+sysinfo-phys-mbytes=3840
+sysinfo-uname=4.4.1-1 #1 SMP Tue Feb 2 14:09:15 CST 2016 x86_64 GNU/Linux

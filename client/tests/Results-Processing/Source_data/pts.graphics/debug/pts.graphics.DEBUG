@@ -1,0 +1,300 @@
+09/24 14:15:35 DEBUG|     utils:0114| Running 'which gcc'
+09/24 14:15:35 DEBUG|     utils:0151| [stdout] /bin/gcc
+09/24 14:15:35 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite list-available-suites'
+09/24 14:15:37 DEBUG|     utils:0151| [stdout] 
+09/24 14:15:37 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+09/24 14:15:37 DEBUG|     utils:0151| [stdout] Available Suites
+09/24 14:15:37 DEBUG|     utils:0151| [stdout] 
+09/24 14:15:37 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+09/24 14:15:37 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+09/24 14:15:37 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+09/24 14:15:38 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+09/24 14:15:38 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+09/24 14:15:38 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+09/24 14:15:38 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+09/24 14:15:40 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+09/24 14:15:40 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+09/24 14:15:41 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+09/24 14:15:44 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+09/24 14:15:44 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+09/24 14:15:44 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+09/24 14:15:45 DEBUG|     utils:0151| [stdout] * pts/disk                         - Disk Test Suite                  Disk
+09/24 14:15:45 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+09/24 14:15:46 DEBUG|     utils:0151| [stdout] * pts/favorites                    - Favorites                        System
+09/24 14:15:46 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+09/24 14:15:46 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+09/24 14:15:47 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+09/24 14:15:47 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+09/24 14:15:47 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+09/24 14:15:47 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+09/24 14:15:47 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+09/24 14:15:47 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+09/24 14:15:48 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+09/24 14:15:49 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+09/24 14:15:49 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+09/24 14:15:49 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+09/24 14:15:50 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+09/24 14:15:51 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+09/24 14:15:52 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+09/24 14:15:52 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+09/24 14:15:53 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+09/24 14:15:53 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+09/24 14:15:53 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+09/24 14:15:53 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+09/24 14:15:55 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+09/24 14:15:55 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+09/24 14:15:56 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+09/24 14:15:57 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+09/24 14:16:02 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+09/24 14:16:05 DEBUG|     utils:0151| [stdout] * pts/universe-cli                 - Universe CLI Test Suite          System
+09/24 14:16:06 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+09/24 14:16:06 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+09/24 14:16:07 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+09/24 14:16:08 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+09/24 14:16:08 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+09/24 14:16:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:08 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+09/24 14:16:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:08 DEBUG|     utils:0114| Running 'export DISPLAY=:0.0;/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite run desktop-graphics <<TODO
+                        y
+                        desktop-graphics-result
+                        desktop-graphics-conf
+                        
+                        n                        
+                        TODO'
+09/24 14:16:08 ERROR|     utils:0151| [stderr] /bin/bash:行6: 警告:立即文档在第 0 行被文件结束符分隔 (需要 `TODO')
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] System Information
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Hardware:
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Software:
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Would you like to save these test results (Y/n): 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Recently Saved Test Results:
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] - compression-result   [Today]
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] - encoding-result      [Today]
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] - compiler-result      [Today]
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Enter a name to save these results under:     Enter a unique name to describe this test run / configuration: 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] If you wish, enter a new description below to better describe this result set / system configuration under test.
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Press ENTER to proceed without changes.
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel Gen6 on Fedora 22 via the Phoronix Test Suite.
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] New Description: 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] 
+09/24 14:16:10 DEBUG|     utils:0151| [stdout] QGears2:
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     pts/qgears2-1.0.1 [XRender + Image Scaling]
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Test 1 of 10
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      6 Minutes
+09/24 14:16:10 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 36 Minutes
+09/24 14:16:30 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:16:10
+09/24 14:16:50 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:16:30
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:16:50  [Std. Dev: 0.37%]
+09/24 14:17:07 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]         232.44945
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]         234.121075
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]         232.95045
+09/24 14:17:07 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:07 DEBUG|     utils:0151| [stdout]     Average: 233.17 Frames Per Second
+09/24 14:17:13 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:13 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:13 DEBUG|     utils:0151| [stdout] Doom 3 1.3.1:
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]     pts/doom3-1.1.0 [1440 x 900 - Ultra Quality]
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]     Test 2 of 10
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      4 Minutes
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 31 Minutes
+09/24 14:17:13 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:17:13
+09/24 14:17:15 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:15 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:17:15
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:17:17
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]         E: Sys_Error: Couldn't load default.cfg
+09/24 14:17:17 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:17:17 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:17:17 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:17:24 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:24 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:24 DEBUG|     utils:0151| [stdout] ET: Quake Wars 1.5:
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]     pts/etqw-1.1.0 [1440 x 900]
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]     Test 3 of 10
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      27 Minutes
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 27 Minutes
+09/24 14:17:24 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:17:24
+09/24 14:17:26 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:26 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:17:26
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:17:28
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]         E: ./etqw.x86: error while loading shared libraries: libSDL-1.2.so.0: cannot open shared object file: No such file or directory
+09/24 14:17:28 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:17:28 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:17:28 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:17:34 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:34 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:34 DEBUG|     utils:0151| [stdout] Lightsmark 2008:
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]     pts/lightsmark-1.2.0 [1440 x 900]
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]     Test 4 of 10
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      12 Minutes
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours
+09/24 14:17:34 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:17:34
+09/24 14:17:36 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:36 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:17:36
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:17:38
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]         E: ./backend: error while loading shared libraries: libGLEW.so.1.5: cannot open shared object file: No such file or directory
+09/24 14:17:38 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:17:38 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:17:38 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:17:44 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:44 DEBUG|     utils:0151| [stdout] 
+09/24 14:17:44 DEBUG|     utils:0151| [stdout] Nexuiz 2.5.2:
+09/24 14:17:44 DEBUG|     utils:0151| [stdout]     pts/nexuiz-1.6.1 [1440 x 900 w/ HDR]
+09/24 14:17:44 DEBUG|     utils:0151| [stdout]     Test 5 of 10
+09/24 14:17:44 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:17:44 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      2 Hours
+09/24 14:17:44 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 2 Hours, 49 Minutes
+09/24 14:18:35 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:17:44
+09/24 14:19:22 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:18:35
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:19:22  [Std. Dev: 0.11%]
+09/24 14:20:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]         22.0738043
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]         22.0251014
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]         22.0609245
+09/24 14:20:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]     Average: 22.05 Frames Per Second
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]     Minimum: 13
+09/24 14:20:08 DEBUG|     utils:0151| [stdout]     Maximum: 31
+09/24 14:20:15 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:15 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:15 DEBUG|     utils:0151| [stdout] Prey 1.4.119:
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]     pts/prey-1.1.2 [1440 x 900]
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]     Test 6 of 10
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      5 Minutes
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 49 Minutes
+09/24 14:20:15 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:20:15
+09/24 14:20:17 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:17 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:20:17
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:20:19
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:19 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:20:19 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:20:19 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:20:25 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:25 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:25 DEBUG|     utils:0151| [stdout] Unigine Sanctuary 2.3:
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]     pts/unigine-sanctuary-1.6.2 [1440 x 900]
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]     Test 7 of 10
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      24 Minutes
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 45 Minutes
+09/24 14:20:25 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:20:25
+09/24 14:20:27 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:27 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:20:27
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:20:29
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]         E: ./bin/Sanctuary: error while loading shared libraries: libXrandr.so.2: cannot open shared object file: No such file or directory
+09/24 14:20:29 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:20:29 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:20:29 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:20:35 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:35 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:35 DEBUG|     utils:0151| [stdout] Unigine Tropics 1.3:
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]     pts/unigine-tropics-1.6.2 [1440 x 900]
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]     Test 8 of 10
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      16 Minutes
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 22 Minutes
+09/24 14:20:35 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:20:35
+09/24 14:20:37 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:37 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:20:37
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:20:39
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]         E: ./bin/Tropics: error while loading shared libraries: libXrandr.so.2: cannot open shared object file: No such file or directory
+09/24 14:20:39 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:20:39 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:20:39 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:20:45 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:45 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:45 DEBUG|     utils:0151| [stdout] VDrift 2010-06-30:
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]     pts/vdrift-1.2.0 [1440 x 900]
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]     Test 9 of 10
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      7 Minutes
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 7 Minutes
+09/24 14:20:45 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:20:45
+09/24 14:20:47 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:47 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:20:47
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:20:49
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+09/24 14:20:49 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:20:49 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+09/24 14:20:49 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+09/24 14:20:55 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:55 DEBUG|     utils:0151| [stdout] 
+09/24 14:20:55 DEBUG|     utils:0151| [stdout] GtkPerf 0.40:
+09/24 14:20:55 DEBUG|     utils:0151| [stdout]     pts/gtkperf-1.2.1 [GtkDrawingArea - Pixbufs]
+09/24 14:20:55 DEBUG|     utils:0151| [stdout]     Test 10 of 10
+09/24 14:20:55 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+09/24 14:20:55 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 1 Minute
+09/24 14:21:01 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 01:20:55
+09/24 14:21:05 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 01:21:01
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 01:21:05  [Std. Dev: 0.58%]
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]     Test Results:
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]         2.63
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]         2.64
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]         2.61
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout]     Average: 2.63 Seconds
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] The following tests failed to properly run:
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/doom3-1.1.0: 1440 x 900 - Ultra Quality
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/etqw-1.1.0: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/lightsmark-1.2.0: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/prey-1.1.2: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/unigine-sanctuary-1.6.2: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/unigine-tropics-1.6.2: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 	- pts/vdrift-1.2.0: 1440 x 900
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:08 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:09 DEBUG|     utils:0151| [stdout]     Do you want to view the results in your web browser (Y/n):     Would you like to upload the results to OpenBenchmarking.org (Y/n):     Would you like to upload the results to OpenBenchmarking.org (Y/n):     Would you like to attach the system logs (lspci, dmesg, lsusb, etc) to the test result (Y/n): 
+09/24 14:21:09 DEBUG|     utils:0151| [stdout] [PROBLEM] Unhandled Exception 
+09/24 14:21:09 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:09 DEBUG|     utils:0151| [stdout] Results Failed To Upload.
+09/24 14:21:09 DEBUG|     utils:0151| [stdout] 
+09/24 14:21:09 DEBUG|     utils:0114| Running 'cp -a /root/.phoronix-test-suite/test-results/*  /mnt/results/default/pts.graphics/results'

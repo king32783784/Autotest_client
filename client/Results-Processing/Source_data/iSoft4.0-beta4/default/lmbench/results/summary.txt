@@ -1,0 +1,141 @@
+make: Entering directory '/root/autotest/client/tmp/lmbench/src/results'
+
+# LMBENCH 3.0 SUMMARY
+
+------------------------------------
+(Alpha software, do not distribute)
+
+## Basic system parameters
+
+*Host* | *OS* | *Description* | *Mhz* | *tlb pages* | *cache line bytes* | *mem par* | *scal load*
+------ | ---- | ------------- | ----- | ----------- | ------------------ | --------- | ------------
+hostB     | Linux 4.4.0-1 |        x86_64-linux-gnu |  3125 |           7 |                128 |    4.4300 |            1
+
+hostB     | Linux 4.4.0-1 |        x86_64-linux-gnu |  3125 |           7 |                128 |    4.4400 |            1
+
+hostB     | Linux 4.4.0-1 |        x86_64-linux-gnu |  3125 |           7 |                128 |    4.3600 |            1
+
+
+## Processor, Processes - times in microseconds - smaller is better
+
+*Host* | *OS* | *Mhz* | *null call* | *null I/O* | *stat* | *open clos* | *slct TCP* | *sig inst* | *sig hndl* | *fork proc* | *exec proc* | *sh proc*
+------ | ---- | ----- | ----------- | ---------- | ------ | ----------- | ---------- | ---------- | ---------- | ----------- | ----------- | ---------
+hostA     | Linux 4.4.0-1 |  3125 |        0.08 |       0.12 |   0.72 |        1.70 |       3.91 |       0.12 |       0.79 |        93.5 |        289. |       2405
+
+hostA     | Linux 4.4.0-1 |  3125 |        0.08 |       0.15 |   0.86 |        1.34 |       3.75 |       0.11 |       1.19 |        88.5 |        304. |       2432
+
+hostA     | Linux 4.4.0-1 |  3125 |        0.08 |       0.15 |   0.74 |        1.10 |       3.85 |       0.11 |       0.84 |        88.0 |        333. |       2474
+
+
+## Basic integer operations - times in nanoseconds - smaller is better
+
+*Host* | *OS* | *intgr bit* | *intgr add* | *intgr mul* | *intgr div* | *intgr mod*
+------ | ---- | ----------- | ----------- | ----------- | ----------- | -----------
+hostA     | Linux 4.4.0-1 | 0.5200 | 0.1500 | 0.0100 | 9.0600 | 8.0700
+
+hostA     | Linux 4.4.0-1 | 0.3200 | 0.2000 |        |   12.3 |   10.4
+
+hostA     | Linux 4.4.0-1 | 0.3500 | 0.1200 | 0.0100 | 8.0900 | 8.1000
+
+
+## Basic uint64 operations - times in nanoseconds - smaller is better
+
+*Host* | *OS* | *int64 bit* | *int64 add* | *int64 mul* | *int64 div* | *int64 mod*
+------ | ---- | ----------- | ----------- | ----------- | ----------- | -----------
+hostA     | Linux 4.4.0-1 |  0.320 | 0.1200 |        |   24.7 |   18.1
+
+hostA     | Linux 4.4.0-1 |  0.530 | 0.2000 |        |   24.8 |   24.0
+
+hostA     | Linux 4.4.0-1 |  0.550 | 0.2100 |        |   18.0 |   13.8
+
+
+## Basic float operations - times in nanoseconds - smaller is better
+
+*Host* | *OS* | *float add* | *float mul* | *float div* | *float bogo*
+------ | ---- | ----------- | ----------- | ----------- | ------------
+hostA     | Linux 4.4.0-1 | 1.0000 | 2.6400 | 7.8900 | 4.5900
+
+hostA     | Linux 4.4.0-1 | 1.5000 | 1.9300 | 4.7900 | 5.9600
+
+hostA     | Linux 4.4.0-1 | 0.9700 | 1.6200 | 7.7000 | 7.7300
+
+
+## Basic double operations - times in nanoseconds - smaller is better
+
+*Host* | *OS* | *double add* | *double mul* | *double div* | *double bogo*
+------ | ---- | ------------ | ------------ | ------------ | -------------
+hostA     | Linux 4.4.0-1 | 1.2500 | 1.6200 | 7.2300 | 9.4400
+
+hostA     | Linux 4.4.0-1 | 1.6100 | 2.7500 |   12.2 | 7.3600
+
+hostA     | Linux 4.4.0-1 | 1.5100 | 2.7600 |   12.3 | 9.2000
+
+
+## Context switching - times in microseconds - smaller is better
+
+*Host* | *OS* | *2p/0K ctxsw* | *2p/16K ctxsw* | *2p/64K ctxsw* | *8p/16K ctxsw* | *8p/64K ctxsw* | *16p/16K ctxsw* | *16p/64K ctxsw*
+------ | ---- | ------------- | -------------- | -------------- | -------------- | -------------- | --------------- | ----------------
+hostA     | Linux 4.4.0-1 | 1.0100 | 3.6000 | 1.6200 | 1.9200 | 1.8800 | 2.06000 | 1.65000|
+
+hostA     | Linux 4.4.0-1 | 1.8600 | 3.1700 | 2.0300 | 1.9800 | 0.3600 | 2.03000 | 0.31000|
+
+hostA     | Linux 4.4.0-1 | 1.8400 | 3.0800 | 3.3800 | 1.8900 | 4.6300 | 1.49000 | 3.38000|
+
+
+## *Local* Communication latencies in microseconds - smaller is better
+
+*Host* | *OS* | *2p/0K ctxsw* | *Pipe* | *AF UNIX* | *UDP* | *RPC/UDP* | *TCP* | *RPC/TCP* | *TCP conn*
+------ | ---- | ------------- | ------ | --------- | ----- | --------- | ----- | --------- | ----------
+hostA     | Linux 4.4.0-1 | 1.010 | 3.906 | 3.47 | 7.403 |       | 8.988 |       |  28.
+
+hostA     | Linux 4.4.0-1 | 1.860 | 3.886 | 3.53 | 7.369 |       | 9.009 |       |  14.
+
+hostA     | Linux 4.4.0-1 | 1.840 | 3.892 | 3.54 | 7.413 |       | 9.015 |       |  14.
+
+
+## *Remote* Communication latencies in microseconds - smaller is better
+
+*Host* | *OS* | *UDP* | *RPC/UDP* | *TCP* | *RPC/TCP* | *TCP conn*
+------ | ---- | ----- | --------- | ----- | --------- | ----------
+hostA     | Linux 4.4.0-1 |       |       |       |       |     
+
+hostA     | Linux 4.4.0-1 |       |       |       |       |     
+
+hostA     | Linux 4.4.0-1 |       |       |       |       |     
+
+
+## File & VM system latencies in microseconds - smaller is better
+
+*Host* | *OS* | *0K File Create* | *0K File Delete* | *10K File Create* | *10K File Delete* | *Mmap Latency* | *Prot Fault* | *Page Fault* | *100fd selct*
+------ | ---- | ---------------- | ---------------- | ----------------- | ----------------- | -------------- | ------------ | ------------ | -------------
+hostA     | Linux 4.4.0-1 | 8.9437 | 4.8117 |   20.3 | 7.8983 |   138.0 | 0.132 | 0.25390 | 1.715
+
+hostA     | Linux 4.4.0-1 | 9.0901 | 4.9271 |   20.3 | 9.1936 |    81.0 | 0.234 | 0.19730 | 1.685
+
+hostA     | Linux 4.4.0-1 | 9.3780 | 4.8746 |   20.0 | 7.9769 |    83.0 | 0.096 | 0.21000 | 1.715
+
+
+## *Local* Communication bandwidths in MB/s - bigger is better
+
+*Host* | *OS* | *Pipe* | *AF UNIX* | *TCP* | *File reread* | *Mmap reread* | *Bcopy(libc)* | *Bcopy(hand)* | *Mem read* | *Mem write*
+------ | ---- | ------ | --------- | ----- | ------------- | ------------- | ------------- | ------------- | ---------- | -----------
+hostA     | Linux 4.4.0-1 | 4715 | 11.K | 6686 | 5133.0 | 8897.2 | 6664.0 | 4890.6 | 9293 | 6313.
+
+hostA     | Linux 4.4.0-1 | 4827 | 11.K | 6732 | 7396.3 |  12.0K | 6737.8 | 4928.7 | 6569 | 6373.
+
+hostA     | Linux 4.4.0-1 | 4850 | 10.K | 6697 | 7357.4 | 8855.0 | 5757.4 | 4072.8 | 6459 | 6227.
+
+
+## Memory latencies in nanoseconds - smaller is better
+
+(WARNING - may not be correct, check graphs)
+
+*Host* | *OS* | *Mhz* | *L1 $* |  *L2 $* | *Main mem* | *Rand mem* | *Guesses*
+------ | ---- | ----- | ------- | -------- | ---------- | ---------- | ---------
+hostA     | Linux 4.4.0-1 |  3125|  1.2940 | 3.8840 |        20.4 |        67.7 |
+
+hostA     | Linux 4.4.0-1 |  3125|  1.2940 | 3.8840 |        20.1 |        67.3 |
+
+hostA     | Linux 4.4.0-1 |  3125|  1.2940 | 4.8900 |        20.1 |        67.4 |
+
+make: Leaving directory '/root/autotest/client/tmp/lmbench/src/results'

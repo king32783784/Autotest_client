@@ -1,0 +1,9 @@
+12/27 01:09:17 ERROR|     utils:0151| [stderr] ./src/syscall.c: In function ‘main’:
+12/27 01:09:17 ERROR|     utils:0151| [stderr] ./src/syscall.c:93:21: warning: null argument where non-null required (argument 2) [-Wnonnull]
+12/27 01:09:17 ERROR|     utils:0151| [stderr]                      execl("/bin/true", (char *) 0);
+12/27 01:09:17 ERROR|     utils:0151| [stderr]                      ^
+12/27 01:09:18 ERROR|     utils:0151| [stderr] In file included from ./src/execl.c:34:0:
+12/27 01:09:18 ERROR|     utils:0151| [stderr] ./src/big.c: In function ‘getwork’:
+12/27 01:09:18 ERROR|     utils:0151| [stderr] ./src/big.c:452:11: warning: variable ‘c’ set but not used [-Wunused-but-set-variable]
+12/27 01:09:18 ERROR|     utils:0151| [stderr]      char  c;
+12/27 01:09:18 ERROR|     utils:0151| [stderr]            ^

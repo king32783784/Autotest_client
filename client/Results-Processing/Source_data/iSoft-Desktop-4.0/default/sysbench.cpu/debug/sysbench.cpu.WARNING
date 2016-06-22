@@ -1,0 +1,3 @@
+06/22 09:32:43 ERROR|     utils:0151| [stderr] /home/isoft_lp/Github/Autotest_client/client/tmp/sysbench/src/config/missing: Unknown `--is-lightweight' option
+06/22 09:32:43 ERROR|     utils:0151| [stderr] Try `/home/isoft_lp/Github/Autotest_client/client/tmp/sysbench/src/config/missing --help' for more information
+06/22 09:32:43 ERROR|     utils:0151| [stderr] configure: WARNING: 'missing' script is too old or missing

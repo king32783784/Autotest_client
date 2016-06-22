@@ -1,0 +1,465 @@
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): y
+y
+
+Recently Saved Test Results:
+- compiler-result   [Today]
+
+    Enter a name to save these results under: compiler-result
+compiler-result
+
+Current Test Identifiers:
+- compiler-conf
+
+    Enter a unique name to describe this test run / configuration: compiler-conf
+compiler-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Running pts/npb-1.2.1, pts/hmmer-1.1.0, pts/gcrypt-1.0.3, pts/john-the-ripper-1.5.1, pts/x264-1.9.0, pts/graphics-magick-1.6.1, pts/compress-7zip-1.6.0, pts/build-apache-1.5.1, pts/build-imagemagick-1.7.1, pts/build-php-1.3.1, pts/c-ray-1.1.0, pts/bullet-1.2.1, pts/encode-mp3-1.4.0, pts/openssl-1.9.0, pts/apache-1.6.1 via the Phoronix Test Suite.
+
+New Description: 
+
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: LU.A]
+    Test 1 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 1 Hour, 16 Minutes
+        Started Run 1 @ 20:29:58
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 20:30:00
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 20:30:02
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Total Mop/s
+    This test failed to run properly.
+
+
+Timed HMMer Search 2.3.2:
+    pts/hmmer-1.1.0
+    Test 2 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 1 Hour, 10 Minutes
+        Started Run 1 @ 20:30:08
+        Started Run 2 @ 20:30:35
+        Started Run 3 @ 20:30:54  [Std. Dev: 10.89%]
+        Started Run 4 @ 20:31:12  [Std. Dev: 9.55%]
+        Started Run 5 @ 20:31:30  [Std. Dev: 8.59%]
+        Started Run 6 @ 20:31:49  [Std. Dev: 7.87%]
+
+    Test Results:
+        19.674750089645
+        16.414855957031
+        16.341597080231
+        16.408409118652
+        16.427886009216
+        16.453054904938
+
+    Average: 10.95 Seconds
+
+
+Gcrypt Library 1.4.4:
+    pts/gcrypt-1.0.3
+    Test 3 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 1 Hour, 8 Minutes
+        Started Run 1 @ 20:32:12
+        Started Run 2 @ 20:32:45
+        Started Run 3 @ 20:33:16  [Std. Dev: 0.57%]
+
+    Test Results:
+        2690
+        2670
+        2660
+
+    Average: 2273 Microseconds
+
+
+John The Ripper 1.8.0:
+    pts/john-the-ripper-1.5.1 [Test: Blowfish]
+    Test 4 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      8 Minutes
+    Estimated Time To Completion: 1 Hour, 6 Minutes
+        Started Run 1 @ 20:33:55
+        Started Run 2 @ 20:35:02
+        Started Run 3 @ 20:36:09  [Std. Dev: 0.47%]
+
+    Test Results:
+        2928
+        2902
+        2922
+
+    Average: 2117 Real C/S
+
+
+x264 2014-08-30:
+    pts/x264-1.9.0
+    Test 5 of 21
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 59 Minutes
+        Started Run 1 @ 20:37:29
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 20:37:31
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 20:37:33
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 20:37:35
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 20:37:37
+        The test exited with a non-zero exit status.
+        E: ./x264_/bin/x264: error while loading shared libraries: libavformat.so.55: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Sharpen]
+    Test 6 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 55 Minutes
+        Started Run 1 @ 20:37:43
+        Started Run 2 @ 20:38:45
+        Started Run 3 @ 20:39:49  [Std. Dev: 1.35%]
+
+    Test Results:
+        42
+        43
+        43
+
+    Average: 23 Iterations Per Minute
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Resizing]
+    Test 7 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 52 Minutes
+        Started Run 1 @ 20:41:16
+        Started Run 2 @ 20:42:18
+        Started Run 3 @ 20:43:21  [Std. Dev: 0.00%]
+
+    Test Results:
+        106
+        106
+        106
+
+    Average: 10 Iterations Per Minute
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: HWB Color Space]
+    Test 8 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 49 Minutes
+        Started Run 1 @ 20:44:29
+        Started Run 2 @ 20:45:32
+        Started Run 3 @ 20:46:34  [Std. Dev: 0.00%]
+
+    Test Results:
+        134
+        134
+        134
+
+    Average: 14 Iterations Per Minute
+
+
+7-Zip Compression 9.20.1:
+    pts/compress-7zip-1.6.0
+    Test 9 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 46 Minutes
+        Started Run 1 @ 20:47:42
+        Started Run 2 @ 20:48:06
+        Started Run 3 @ 20:48:31  [Std. Dev: 0.55%]
+
+    Test Results:
+        11032
+        10958
+        11077
+
+    Average: 1022 MIPS
+
+
+Timed Apache Compilation 2.4.7:
+    pts/build-apache-1.5.1
+    Test 10 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 44 Minutes
+        Running Pre-Test Script @ 20:49:02
+        Started Run 1 @ 20:50:01
+        Running Interim Test Script @ 20:50:56
+        Started Run 2 @ 20:50:59
+        Running Interim Test Script @ 20:51:54
+        Started Run 3 @ 20:51:57  [Std. Dev: 0.59%]
+        Running Post-Test Script @ 20:52:52
+
+    Test Results:
+        54.888866186142
+        54.400898933411
+        55.014285087585
+
+    Average: 44.77 Seconds
+
+
+Timed ImageMagick Compilation 6.9.0:
+    pts/build-imagemagick-1.7.1
+    Test 11 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      12 Minutes
+    Estimated Time To Completion: 41 Minutes
+        Running Pre-Test Script @ 20:53:00
+        Started Run 1 @ 20:53:56
+        Running Interim Test Script @ 20:55:32
+        Started Run 2 @ 20:55:35
+        Running Interim Test Script @ 20:57:11
+        Started Run 3 @ 20:57:14  [Std. Dev: 0.26%]
+        Running Post-Test Script @ 20:58:50
+
+    Test Results:
+        96.77929019928
+        96.376110076904
+        96.329287052155
+
+    Average: 36.49 Seconds
+
+
+Timed PHP Compilation 5.2.9:
+    pts/build-php-1.3.1
+    Test 12 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 29 Minutes
+        Running Pre-Test Script @ 20:58:59
+        Started Run 1 @ 20:59:46
+        Running Interim Test Script @ 21:01:01
+        Started Run 2 @ 21:01:03
+        Running Interim Test Script @ 21:02:19
+        Started Run 3 @ 21:02:21  [Std. Dev: 0.31%]
+        Running Post-Test Script @ 21:03:36
+
+    Test Results:
+        74.88604092598
+        75.35565495491
+        75.122601985931
+
+    Average: 25.12 Seconds
+
+
+C-Ray 1.1:
+    pts/c-ray-1.1.0
+    Test 13 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 27 Minutes
+        Started Run 1 @ 21:03:44
+        Started Run 2 @ 21:04:52
+        Started Run 3 @ 21:06:00  [Std. Dev: 0.15%]
+
+    Test Results:
+        65.442
+        65.633
+        65.584
+
+    Average: 25.55 Seconds
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Raytests]
+    Test 14 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 24 Minutes
+        Started Run 1 @ 21:07:20
+        The test run did not produce a result.
+        Started Run 2 @ 21:07:22
+        The test run did not produce a result.
+        Started Run 3 @ 21:07:24
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 3000 Fall]
+    Test 15 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 21 Minutes
+        Started Run 1 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 2 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 3 @ 21:07:24
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Stack]
+    Test 16 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 18 Minutes
+        Started Run 1 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 2 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 3 @ 21:07:24
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Convex]
+    Test 17 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 2 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 3 @ 21:07:24
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Convex Trimesh]
+    Test 18 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 2 @ 21:07:24
+        The test run did not produce a result.
+        Started Run 3 @ 21:07:24
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 19 of 21
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 9 Minutes
+        Started Run 1 @ 21:07:30
+        Started Run 2 @ 21:07:49
+        Started Run 3 @ 21:08:06
+        Started Run 4 @ 21:08:24
+        Started Run 5 @ 21:08:42  [Std. Dev: 1.19%]
+
+    Test Results:
+        16.146857976913
+        15.796154022217
+        15.786399126053
+        15.803973913193
+        16.138941049576
+
+    Average: 5.93 Seconds
+
+
+OpenSSL 1.0.1g:
+    pts/openssl-1.9.0
+    Test 20 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 21:09:21
+        Started Run 2 @ 21:09:43
+        Started Run 3 @ 21:10:05  [Std. Dev: 0.12%]
+
+    Test Results:
+        394.5
+        393.9
+        394.8
+
+    Average: 394.40 Signs Per Second
+
+
+Apache Benchmark 2.4.7:
+    pts/apache-1.6.1
+    Test 21 of 21
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes
+        Running Pre-Test Script @ 21:10:33
+        Started Run 1 @ 21:10:38
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 21:10:40
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 21:10:42
+        The test exited with a non-zero exit status.
+        Running Post-Test Script @ 21:10:42
+
+    Test Results:
+
+    Average: 0 Requests Per Second
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/npb-1.2.1: Test / Class: LU.A
+	- pts/x264-1.9.0: H.264 Video Encoding
+	- pts/bullet-1.2.1: Test: Raytests
+	- pts/bullet-1.2.1: Test: 3000 Fall
+	- pts/bullet-1.2.1: Test: 1000 Stack
+	- pts/bullet-1.2.1: Test: 1000 Convex
+	- pts/bullet-1.2.1: Test: Convex Trimesh
+	- pts/apache-1.6.1: Static Web Page Serving
+
+
+
+[NOTICE] No title supplied for result file meta-data. 
+    Do you want to view the results in your web browser (Y/n): n
+n
+    Would you like to upload the results to OpenBenchmarking.org (Y/n): 

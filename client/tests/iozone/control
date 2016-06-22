@@ -1,0 +1,27 @@
+import os
+from autotest.client import test, utils
+from autotest.client.shared import error
+
+AUTHOR = "Ying Tao <yingtao@cn.ibm.com>"
+TIME = "MEDIUM"
+NAME = "permance"
+TEST_TYPE = "client"
+TEST_CLASS = "Kernel"
+TEST_CATEGORY = "Benchmark"
+
+DOC = """
+Iozone is useful for performing a broad filesystem analysis of a vendors
+computer platform. The benchmark tests file I/O performance for the following
+operations:
+      Read, write, re-read, re-write, read backwards, read strided, fread,
+      fwrite, random read, pread ,mmap, aio_read, aio_write
+
+For more information see http://www.iozone.org
+"""
+
+job.run_test('iozone',iterations=3)
+job.run_test('sysbench', cpu_max_prime=[10000,20000,30000], test_type='cpu', runtimes=3, tag='cpu')
+job.run_test('sysbench', num_threads=[4,8], test_type='memory', block_size='4096', total_size='8G', runtimes=3, tag='mem')
+job.run_test('pingpong',OS='client')
+job.run_test('unixbench5',iterations=3)
+job.run_test('lmbench',iterations=3)

@@ -1,0 +1,8 @@
+cautotest.client.shared.error
+TestFail
+p0
+(S"LTP tests failed: ['netns_sysfs', '/root/autotest/client/tmp/ltp/src/bin/testscripts/test_fs_bind.sh', 'cgroup_regression_test', 'memcg_function_test', 'memcg_stat_test', 'memcg_use_hierarchy_test', 'cgroup_test_fj', 'cpuctl_test_fj', 'cpuset_regression_test', 'Power_Management06', 'Initnuma', 'file09', 'cron01', 'du01', 'cpufreq_boost', 'dma_thread_diotest']"
+p1
+tp2
+Rp3
+.

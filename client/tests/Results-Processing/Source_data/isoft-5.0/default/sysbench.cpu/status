@@ -1,0 +1,3 @@
+	START	sysbench.cpu	sysbench.cpu	timestamp=1442310609	localtime=Sep 15 17:50:09	
+		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1442310890	localtime=Sep 15 17:54:50	completed successfully
+	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1442310890	localtime=Sep 15 17:54:50	

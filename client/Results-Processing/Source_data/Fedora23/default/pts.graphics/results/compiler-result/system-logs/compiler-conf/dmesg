@@ -1,0 +1,8 @@
+bash (3058): drop_caches: 3
+usb 2-1.8: USB disconnect, device number 4
+usb 2-1.8: new low-speed USB device number 5 using ehci-pci
+usb 2-1.8: New USB device found, idVendor=17ef, idProduct=6019
+usb 2-1.8: New USB device strings: Mfr=0, Product=2, SerialNumber=0
+usb 2-1.8: Product: Lenovo Optical USB Mouse
+input: Lenovo Optical USB Mouse as /devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.8/2-1.8:1.0/0003:17EF:6019.0004/input/input14
+hid-generic 0003:17EF:6019.0004: input,hidraw2: USB HID v1.11 Mouse [Lenovo Optical USB Mouse] on usb-0000:00:1d.0-1.8/input0

@@ -1,0 +1,7 @@
+
+##Lmbench-Performance Test of Kernel 
+
+### Processor, Processes - times in microseconds - smaller is better
+
+*OS* | *null call* | *null I/O* | *stat* | *open clos* | *slct TCP* | *sig inst* | *sig hndl* | *fork proc* | *exec proc* | *sh proc*
+------ | ----------- | ---------- | ------ | ----------- | ---------- | ---------- | ---------- | ----------- | ----------- | ---------

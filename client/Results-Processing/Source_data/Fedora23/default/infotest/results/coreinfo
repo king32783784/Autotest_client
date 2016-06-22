@@ -1,0 +1,34 @@
+**OS** | Fedora release 23 (Twenty Three)
+**Kerne** | 4.2.3-300.fc23.x86_64
+**File-System** | ext4
+**Gcc** | gcc (GCC) 5.1.1 20150618 (Red Hat 5.1.1-4)
+**G++** | null
+**Gdb** | GNU gdb (GDB) Fedora 7.10-23.fc23
+**Make** | Gnu make 4.0
+**Binutils** | binutils     version 2.25-15.fc23
+**Util-linux** | util-linux   linux 2.27
+**Mount** | mount  linux 2.27(libmount 2.27.0: selinux, assert, debug)
+**Modutils** | modutils   21
+**E2fsprogs** | e2fsprogs    1.42.13
+**PPP** | PPP  2.4.7
+**CLibrary** | Linux C Library   > libc.2.22
+**LLVM** | llvm-libs-3.7.0-1.fc23.x86_64
+**Ldd** | Dynamic linker (ldd)   2.22
+**C++Library** | null
+**Procps** | Procps   3.3.10
+**Net-tools** | Net-tools    2.10-alpha
+**Iproute2** | iproute2              iproute2-ss150706
+**Kbd** | Kbd   2.0.2
+**Sh-utils** | Sh-utils     8.24
+**Modules** | bnep bluetooth rfkill ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ebtable_nat ebtable_filter ebtable_broute bridge stp llc ebtables ip6table_security ip6table_mangle ip6table_raw ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 ip6table_filter ip6_tables iptable_security iptable_mangle iptable_raw iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack intel_rapl iosf_mbi x86_pkg_temp_thermal coretemp snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic snd_hda_intel kvm_intel snd_hda_codec kvm crct10dif_pclmul crc32_pclmul crc32c_intel ghash_clmulni_intel snd_hda_core iTCO_wdt snd_hwdep ppdev iTCO_vendor_support dcdbas snd_seq snd_seq_device snd_pcm parport_pc mei_me mei shpchp snd_timer snd soundcore parport i2c_i801 lpc_ich nfsd auth_rpcgss nfs_acl lockd grace sunrpc i915 i2c_algo_bit drm_kms_helper drm e1000e serio_raw tg3 ptp pps_core video
+**Kde** | 4.14.12
+**Gnome** | null
+**Xorg** | xorg-x11-server-Xorg-1.18.0-0.4.20150907.fc23.x86_64
+**MESA** | 11.0.3
+ **JAVA** | null
+**Chrome** | null
+**Firefox** | Mozilla Firefox 41.0.1
+**Root** | sda1   8:1    0   100G  0 part /
+**MEM** | 3832
+**SWAP** | 4095 
+

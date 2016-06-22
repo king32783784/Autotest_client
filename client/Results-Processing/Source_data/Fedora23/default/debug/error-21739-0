@@ -1,0 +1,8 @@
+cautotest.client.shared.error
+UnhandledTestError
+p0
+(S'Unhandled ImportError: No module named pexpect\nTraceback (most recent call last):\n  File "/root/autotest/client/parallel.py", line 25, in fork_start\n    l()\n  File "/root/autotest/client/job.py", line 508, in <lambda>\n    args, dargs))\n  File "/root/autotest/client/test.py", line 125, in runtest\n    job.sysinfo.log_after_each_iteration)\n  File "/root/autotest/client/shared/test.py", line 893, in runtest\n    exec (\'import %s\' % modulename, local_namespace, global_namespace)\n  File "<string>", line 1, in <module>\n  File "/root/autotest/client/tests/pts/pts.py", line 3, in <module>\n    import pexpect\nImportError: No module named pexpect\n'
+p1
+tp2
+Rp3
+.

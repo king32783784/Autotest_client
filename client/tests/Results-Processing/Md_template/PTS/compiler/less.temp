@@ -1,0 +1,5 @@
+
+Compiler -Timed less is better
+
+*OS* | *hmmer (Seconds)* | *gcrypt (Microseconds)* | *TimedApache (senconds)* | *TimedImageMagick (seconds)* | *Timedphp (seconds)* | *C-ray (seconds)* | *Bullet-Raytests (seconds    )* | *Bullet-3000Fall (seconds)* | *Bullet-1000Stack (seconds)* | *Bullet-1000Convex (seconds)* | *Bullet-Convex-Trimesh (seconds)* | *LAME-MP3 (seconds)*
+----| ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----

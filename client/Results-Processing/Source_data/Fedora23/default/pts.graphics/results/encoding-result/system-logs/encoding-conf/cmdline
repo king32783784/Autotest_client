@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-0-rescue-572d4e3e015b4635aa4e017e74035151 root=/dev/sda1

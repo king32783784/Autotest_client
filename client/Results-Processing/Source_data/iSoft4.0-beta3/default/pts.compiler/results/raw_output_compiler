@@ -1,0 +1,433 @@
+
+[NOTICE] pts/build-imagemagick: The latest test profile version available for upgrade is 1.7.2 but version 1.7.1 is the latest currently installed. 
+
+[NOTICE] pts/compress-7zip: The latest test profile version available for upgrade is 1.6.1 but version 1.6.0 is the latest currently installed. 
+
+[NOTICE] pts/x264: The latest test profile version available for upgrade is 2.0.0 but version 1.9.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+        The test executable for pts/build-imagemagick-1.7.2 could not be located.
+        The test executable for pts/compress-7zip-1.6.1 could not be located.
+        The test executable for pts/x264-2.0.0 could not be located.
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: iSoft Enterprise Desktop 4.0, Kernel: 4.4.0-10 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.2.0-devel, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush <bool>] [-i <file>] [-o <file>] [-c <file>] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.0 (SVN 252402) + LLVM 3.7.0, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): y
+y
+    Enter a name to save these results under: compiler-result
+compiler-result
+    Enter a unique name to describe this test run / configuration: compiler-conf
+compiler-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Enterprise Desktop 4.0 via the Phoronix Test Suite.
+
+New Description: 
+
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: LU.A]
+    Test 1 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 58 Minutes
+        Started Run 1 @ 04:15:03
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:15:05
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:15:07
+        The test exited with a non-zero exit status.
+        E: ./npb: line 19: mpiexec: command not found
+
+    Test Results:
+
+    Average: 0 Total Mop/s
+    This test failed to run properly.
+
+
+Timed HMMer Search 2.3.2:
+    pts/hmmer-1.1.0
+    Test 2 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 53 Minutes
+        Started Run 1 @ 04:15:13
+        Started Run 2 @ 04:15:37
+        Started Run 3 @ 04:15:55  [Std. Dev: 1.56%]
+
+    Test Results:
+        16.515455007553
+        16.146637201309
+        16.032003164291
+
+    Average: 16.23 Seconds
+
+
+Gcrypt Library 1.4.4:
+    pts/gcrypt-1.0.3
+    Test 3 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 51 Minutes
+        Started Run 1 @ 04:16:17
+        Started Run 2 @ 04:16:52
+        Started Run 3 @ 04:17:26  [Std. Dev: 0.20%]
+
+    Test Results:
+        2900
+        2910
+        2900
+
+    Average: 2903 Microseconds
+
+
+John The Ripper 1.8.0:
+    pts/john-the-ripper-1.5.1 [Test: Blowfish]
+    Test 4 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      8 Minutes
+    Estimated Time To Completion: 49 Minutes
+        Started Run 1 @ 04:18:06
+        Started Run 2 @ 04:19:13
+        Started Run 3 @ 04:20:20  [Std. Dev: 0.00%]
+
+    Test Results:
+        2859
+        2859
+        2859
+
+    Average: 2859 Real C/S
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Sharpen]
+    Test 5 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 42 Minutes
+        Started Run 1 @ 04:21:32
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:21:35
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:21:37
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Resizing]
+    Test 6 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 39 Minutes
+        Started Run 1 @ 04:21:43
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:21:45
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:21:47
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: HWB Color Space]
+    Test 7 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 35 Minutes
+        Started Run 1 @ 04:21:53
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:21:55
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:21:57
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+Timed Apache Compilation 2.4.7:
+    pts/build-apache-1.5.1
+    Test 8 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 32 Minutes
+        Running Pre-Test Script @ 04:22:03
+        Started Run 1 @ 04:22:36
+        Running Interim Test Script @ 04:22:44
+        Started Run 2 @ 04:22:46
+        Running Interim Test Script @ 04:22:54
+        Started Run 3 @ 04:22:56  [Std. Dev: 3.46%]
+        Running Post-Test Script @ 04:23:03
+
+    Test Results:
+        7.6697461605072
+        7.2749040126801
+        7.192391872406
+
+    Average: 7.38 Seconds
+
+
+Timed PHP Compilation 5.2.9:
+    pts/build-php-1.3.1
+    Test 9 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 29 Minutes
+        Running Pre-Test Script @ 04:23:10
+        Started Run 1 @ 04:23:35
+        Running Interim Test Script @ 04:23:43
+        Started Run 2 @ 04:23:45
+        Running Interim Test Script @ 04:23:52
+        Started Run 3 @ 04:23:54  [Std. Dev: 0.97%]
+        Running Post-Test Script @ 04:24:02
+
+    Test Results:
+        7.5613939762115
+        7.4186501502991
+        7.4677209854126
+
+    Average: 7.48 Seconds
+
+
+C-Ray 1.1:
+    pts/c-ray-1.1.0
+    Test 10 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 27 Minutes
+        Started Run 1 @ 04:24:08
+        Started Run 2 @ 04:25:17
+        Started Run 3 @ 04:26:27  [Std. Dev: 0.06%]
+
+    Test Results:
+        67.133
+        67.063
+        67.064
+
+    Average: 67.09 Seconds
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Raytests]
+    Test 11 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 24 Minutes
+        Started Run 1 @ 04:27:41
+        The test run did not produce a result.
+        Started Run 2 @ 04:27:43
+        The test run did not produce a result.
+        Started Run 3 @ 04:27:45
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 3000 Fall]
+    Test 12 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 21 Minutes
+        Started Run 1 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 2 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 3 @ 04:27:45
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Stack]
+    Test 13 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 18 Minutes
+        Started Run 1 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 2 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 3 @ 04:27:45
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Convex]
+    Test 14 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 2 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 3 @ 04:27:45
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Convex Trimesh]
+    Test 15 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 2 @ 04:27:45
+        The test run did not produce a result.
+        Started Run 3 @ 04:27:45
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 16 of 18
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 9 Minutes
+        Started Run 1 @ 04:27:51
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:27:53
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:27:55
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 04:27:57
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 04:27:59
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+OpenSSL 1.0.1g:
+    pts/openssl-1.9.0
+    Test 17 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 04:28:05
+        Started Run 2 @ 04:28:28
+        Started Run 3 @ 04:28:50  [Std. Dev: 0.12%]
+
+    Test Results:
+        385.7
+        384.9
+        384.9
+
+    Average: 385.17 Signs Per Second
+
+
+Apache Benchmark 2.4.7:
+    pts/apache-1.6.1
+    Test 18 of 18
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes
+        Running Pre-Test Script @ 04:29:16
+        Started Run 1 @ 04:29:21
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 04:29:24
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 04:29:26
+        The test exited with a non-zero exit status.
+        E: ./httpd_/bin/ab: error while loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
+        Running Post-Test Script @ 04:29:26
+
+    Test Results:
+
+    Average: 0 Requests Per Second
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/npb-1.2.1: Test / Class: LU.A
+	- pts/graphics-magick-1.6.1: Operation: Sharpen
+	- pts/graphics-magick-1.6.1: Operation: Resizing
+	- pts/graphics-magick-1.6.1: Operation: HWB Color Space
+	- pts/bullet-1.2.1: Test: Raytests
+	- pts/bullet-1.2.1: Test: 3000 Fall
+	- pts/bullet-1.2.1: Test: 1000 Stack
+	- pts/bullet-1.2.1: Test: 1000 Convex
+	- pts/bullet-1.2.1: Test: Convex Trimesh
+	- pts/encode-mp3-1.4.0: WAV To MP3
+	- pts/apache-1.6.1: Static Web Page Serving
+
+
+    Do you want to view the results in your web browser (Y/n): n
+n
+    Would you like to upload the results to OpenBenchmarking.org (Y/n): 

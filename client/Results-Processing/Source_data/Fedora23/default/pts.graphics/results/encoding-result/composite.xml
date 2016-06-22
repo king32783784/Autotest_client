@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>encoding-result</Title>
+    <LastModified>2015-12-14 19:43:44</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>encoding-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.0.3 (git-b4bfea0), Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User></User>
+    <TimeStamp>2015-12-14 19:43:44</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes>SELinux: Enabled.</Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-redhat-linux --disable-libgcj --disable-libunwind-exceptions --enable-__cxa_atexit --enable-bootstrap --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,objc,obj-c++,fortran,ada,go,lto --enable-libmpx --enable-multilib --enable-plugin --enable-shared --enable-threads=posix --mandir=\/usr\/share\/man --with-arch_32=i686 --with-isl --with-linker-hash-style=gnu --with-tune=generic","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/encode-ape-1.3.0</Identifier>
+    <Title>Monkey Audio Encoding</Title>
+    <AppVersion>3.99u4b5s6</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To APE</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>encoding-conf</Identifier>
+        <Value>14.21</Value>
+        <RawString>14.467621088028:14.154795885086:14.151621103287:14.138961076736:14.158496856689</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O3 -pedantic"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/encode-flac-1.5.0</Identifier>
+    <Title>FLAC Audio Encoding</Title>
+    <AppVersion>1.3.1</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To FLAC</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>encoding-conf</Identifier>
+        <Value>10.21</Value>
+        <RawString>10.240875005722:10.197568893433:10.186120033264:10.204742193222:10.199732065201</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2 -fvisibility=hidden -logg -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/encode-mp3-1.4.0</Identifier>
+    <Title>LAME MP3 Encoding</Title>
+    <AppVersion>3.99.3</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To MP3</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>encoding-conf</Identifier>
+        <Value>17.10</Value>
+        <RawString>17.178622961044:17.077916145325:17.091315984726:17.076298952103:17.084909200668</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O3 -fomit-frame-pointer -ffast-math -pipe -lncurses -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/encode-wavpack-1.2.0</Identifier>
+    <Title>WavPack Audio Encoding</Title>
+    <AppVersion>4.41.0</AppVersion>
+    <Arguments></Arguments>
+    <Description>WAV To WavPack</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>encoding-conf</Identifier>
+        <Value>11.47</Value>
+        <RawString>11.476767063141:11.46875:11.471580982208:11.47177696228:11.468588113785</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CC","compiler":"gcc","compiler-options":"-O2 -lm"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

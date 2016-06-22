@@ -1,0 +1,7 @@
+
+## Iozone -Performance Test of File I/O 
+
+Value -Kbytes/s- bigger is better
+
+*OS* | *KB* | *Reclen* | *Write* | *Rewrite* | *Read* | *Reread* | *Rondom read* | *Rondom write*
+------ | ---- | -------- | ------- | --------- | ------ | -------- | ------------- | --------------

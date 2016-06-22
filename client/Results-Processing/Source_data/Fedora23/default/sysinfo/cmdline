@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-4.2.3-300.fc23.x86_64 root=/dev/sda1 ro rhgb quiet LANG=zh_CN.UTF-8

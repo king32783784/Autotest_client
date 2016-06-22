@@ -1,0 +1,10 @@
+import os 
+from autotest.client import utils
+
+#LTP_stress test
+def ltpstress():
+    job.run_test('ltp_stress')
+    res_path=os.path.join(job.bindir, 'tests/ltp_stress')
+    os.chdir(res_path)
+
+ltpstress()

@@ -1,0 +1,5 @@
+START	----	----	timestamp=1466559141	localtime=6月 22 09:32:21	
+	START	sysbench.cpu	sysbench.cpu	timestamp=1466559141	localtime=6月 22 09:32:21	
+		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1466559483	localtime=6月 22 09:38:03	completed successfully
+	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1466559483	localtime=6月 22 09:38:03	
+END GOOD	----	----	timestamp=1466559483	localtime=6月 22 09:38:03	

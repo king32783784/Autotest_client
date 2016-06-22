@@ -1,0 +1,140 @@
+import os
+from autotest.client import utils
+
+#infotest
+def infotest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('infotest')
+    res_path=os.path.join(job.bindir, 'tests/infotest')
+    os.chdir(res_path)
+    utils.system('./infotest.sh')
+
+#iozone test
+def iozonetest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('iozone',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/iozone')
+    os.chdir(res_path)
+    utils.system('./iozone.sh')
+
+#sysbench cpu test
+def syscputest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('sysbench', cpu_max_prime=[10000,20000,30000], test_type='cpu', runtimes=3, tag='cpu')
+    res_path=os.path.join(job.bindir, 'tests/sysbench')
+    os.chdir(res_path)
+    utils.system('./sysbench-cpu.sh')
+
+#sysbench mem test
+def sysmemtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('sysbench', num_threads=[4,8], test_type='memory', block_size='4096', total_size='8G', runtimes=3, tag='mem')
+    res_path=os.path.join(job.bindir, 'tests/sysbench')
+    os.chdir(res_path)
+    utils.system('./sysbench-mem.sh')
+
+#pingpong test
+def pingpong():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pingpong', table=16, runtimes=3)
+
+#netperf test
+def nettest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('netperf2',
+             server_ip='192.168.32.57',
+             tests=['TCP_STREAM','UDP_STREAM','TCP_RR','TCP_CRR'],
+             test_time=120,
+             stream_list=[1,1,1])
+    res_path=os.path.join(job.bindir, 'tests/netperf2')
+    os.chdir(res_path)
+    utils.system('./netperf.sh')
+
+#lmbench test
+def lmbenchtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('lmbench',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/lmbench')
+    os.chdir(res_path)
+    utils.system('./lmbench.sh')
+
+#PTS total test
+def ptstotal():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['compiler','encoding','compression','desktop-graphics'])
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+    utils.system('./ptsresult.sh')
+
+#PTS-compiler test
+def ptscompiler():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['compiler'], tag='compiler')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+    utils.system('./compiler.sh')
+
+#PTS-encoding test
+def ptsencoding():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['encoding'],tag='encoding')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+    utils.system('./encoding.sh')
+
+#PTS-compression test
+def ptscompress():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['compression'],tag='compression')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+    utils.system('./compression.sh')
+
+#PTS-graphics test
+def ptsgraphics():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['desktop-graphics'], tag='graphics')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+    utils.system('./graphics.sh')
+
+   
+#unixbench test
+def unixtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('unixbench5',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/unixbench5')
+    os.chdir(res_path)
+    utils.system('./unixbench.sh')
+
+#LTP_stress test
+def ltpstress():
+    job.run_test('ltp_stress')
+    res_path=os.path.join(job.bindir, 'tests/ltp_stress')
+    os.chdir(res_path)
+    utils.system('./ltpstress.sh')
+
+#LTP_basic test
+def ltpbasic():
+    job.run_test('ltp')
+    res_path=os.path.join(job.bindir, 'tests/ltp')
+    os.chdir(res_path)
+    utils.system('./ltprun.sh')
+
+
+##test choice###
+infotest()
+nettest()
+iozonetest()
+syscputest()
+sysmemtest()
+pingpong()
+unixtest()
+lmbenchtest()
+ltpbasic()
+#ptstotal()
+ptscompiler()
+ptsencoding()
+ptscompress()
+ptsgraphics()
+#ltpstress()

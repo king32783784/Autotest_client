@@ -1,0 +1,15 @@
+import os 
+from autotest.client import utils
+
+
+def nettest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('netperf2',
+             server_ip='',
+             tests=['TCP_STREAM','UDP_STREAM','TCP_RR','TCP_CRR'],
+             test_time=120,
+             stream_list=[1],
+             iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/netperf2')
+    os.chdir(res_path)
+nettest()

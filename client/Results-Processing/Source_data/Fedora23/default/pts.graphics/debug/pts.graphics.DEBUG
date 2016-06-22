@@ -1,0 +1,302 @@
+12/15 10:03:46 DEBUG|     utils:0114| Running 'which gcc'
+12/15 10:03:46 DEBUG|     utils:0151| [stdout] /usr/bin/gcc
+12/15 10:03:46 DEBUG|     utils:0114| Running 'phoronix-test-suite list-available-suites'
+12/15 10:03:50 DEBUG|     utils:0151| [stdout] 
+12/15 10:03:50 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+12/15 10:03:50 DEBUG|     utils:0151| [stdout] Available Suites
+12/15 10:03:50 DEBUG|     utils:0151| [stdout] 
+12/15 10:03:50 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+12/15 10:03:51 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+12/15 10:03:51 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+12/15 10:03:52 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+12/15 10:03:52 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+12/15 10:03:53 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+12/15 10:03:53 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+12/15 10:03:54 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+12/15 10:03:54 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+12/15 10:03:56 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+12/15 10:03:58 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+12/15 10:03:58 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+12/15 10:03:59 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+12/15 10:04:00 DEBUG|     utils:0151| [stdout] * pts/disk                         - Disk Test Suite                  Disk
+12/15 10:04:00 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+12/15 10:04:01 DEBUG|     utils:0151| [stdout] * pts/favorites                    - Favorites                        System
+12/15 10:04:02 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+12/15 10:04:02 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+12/15 10:04:02 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+12/15 10:04:02 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+12/15 10:04:02 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+12/15 10:04:03 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+12/15 10:04:03 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+12/15 10:04:03 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+12/15 10:04:04 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+12/15 10:04:05 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+12/15 10:04:05 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+12/15 10:04:05 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+12/15 10:04:06 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+12/15 10:04:07 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+12/15 10:04:08 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+12/15 10:04:08 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+12/15 10:04:09 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+12/15 10:04:10 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+12/15 10:04:10 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+12/15 10:04:10 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+12/15 10:04:12 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+12/15 10:04:12 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+12/15 10:04:13 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+12/15 10:04:14 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+12/15 10:04:19 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+12/15 10:04:23 DEBUG|     utils:0151| [stdout] * pts/universe-cli                 - Universe CLI Test Suite          System
+12/15 10:04:24 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+12/15 10:04:24 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+12/15 10:04:25 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+12/15 10:04:26 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+12/15 10:04:26 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+12/15 10:04:26 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:26 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+12/15 10:04:26 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:26 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:26 DEBUG|     utils:0114| Running 'export DISPLAY=:0.0;phoronix-test-suite run desktop-graphics <<TODO
+                        y
+                        desktop-graphics-result
+                        desktop-graphics-conf
+                        
+                        n                        
+                        TODO'
+12/15 10:04:26 ERROR|     utils:0151| [stderr] /bin/bash: line 6: warning: here-document at line 0 delimited by end-of-file (wanted `TODO')
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] System Information
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Hardware:
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000, Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Software:
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Would you like to save these test results (Y/n): 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Recently Saved Test Results:
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] - compression-result   [Today]
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] - encoding-result      [Today]
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] - compiler-result      [Today]
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Enter a name to save these results under:     Enter a unique name to describe this test run / configuration: 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] If you wish, enter a new description below to better describe this result set / system configuration under test.
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Press ENTER to proceed without changes.
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] New Description: 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:28 DEBUG|     utils:0151| [stdout] QGears2:
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     pts/qgears2-1.0.1 [XRender + Image Scaling]
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Test 1 of 10
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      6 Minutes
+12/15 10:04:28 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 36 Minutes
+12/15 10:04:31 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:04:28
+12/15 10:04:33 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:33 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:04:33
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:04:35
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:35 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:04:35 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:04:35 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:04:41 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:41 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:41 DEBUG|     utils:0151| [stdout] Doom 3 1.3.1:
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]     pts/doom3-1.1.0 [1440 x 900 - Ultra Quality]
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]     Test 2 of 10
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      4 Minutes
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 31 Minutes
+12/15 10:04:41 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:04:41
+12/15 10:04:43 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:43 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:04:43
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:04:45
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:45 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:04:45 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:04:45 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:04:51 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:51 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:51 DEBUG|     utils:0151| [stdout] ET: Quake Wars 1.5:
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]     pts/etqw-1.1.0 [1440 x 900]
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]     Test 3 of 10
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      27 Minutes
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours, 27 Minutes
+12/15 10:04:51 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:04:51
+12/15 10:04:53 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:53 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:04:53
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:04:55
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:04:55 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:04:55 DEBUG|     utils:0151| [stdout] 
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:04:55 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:01 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:01 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:01 DEBUG|     utils:0151| [stdout] Lightsmark 2008:
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]     pts/lightsmark-1.2.0 [1440 x 900]
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]     Test 4 of 10
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      12 Minutes
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 3 Hours
+12/15 10:05:01 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:01
+12/15 10:05:03 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:03 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:03
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:05
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]         E: ./backend: error while loading shared libraries: libfreeimage.so.3: cannot open shared object file: No such file or directory
+12/15 10:05:05 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:05 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:05 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:11 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:11 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:11 DEBUG|     utils:0151| [stdout] Nexuiz 2.5.2:
+12/15 10:05:11 DEBUG|     utils:0151| [stdout]     pts/nexuiz-1.6.1 [1440 x 900 w/ HDR]
+12/15 10:05:11 DEBUG|     utils:0151| [stdout]     Test 5 of 10
+12/15 10:05:11 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:11 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      2 Hours
+12/15 10:05:11 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 2 Hours, 49 Minutes
+12/15 10:05:12 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:11
+12/15 10:05:14 DEBUG|     utils:0151| [stdout]         The test run ended prematurely.
+12/15 10:05:14 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:14
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]         The test run ended prematurely.
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:16
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]         The test run ended prematurely.
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]         E: Quake Error: Video modes failed
+12/15 10:05:16 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:16 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:16 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:22 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:22 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:22 DEBUG|     utils:0151| [stdout] Prey 1.4.119:
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]     pts/prey-1.1.2 [1440 x 900]
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]     Test 6 of 10
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      5 Minutes
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 49 Minutes
+12/15 10:05:22 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:22
+12/15 10:05:24 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:24 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:24
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:26
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:26 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:26 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:26 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:32 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:32 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:32 DEBUG|     utils:0151| [stdout] Unigine Sanctuary 2.3:
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]     pts/unigine-sanctuary-1.6.2 [1440 x 900]
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]     Test 7 of 10
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      24 Minutes
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 45 Minutes
+12/15 10:05:32 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:32
+12/15 10:05:34 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:34 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:34
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:36
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:36 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:36 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:36 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:42 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:42 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:42 DEBUG|     utils:0151| [stdout] Unigine Tropics 1.3:
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]     pts/unigine-tropics-1.6.2 [1440 x 900]
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]     Test 8 of 10
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      16 Minutes
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 22 Minutes
+12/15 10:05:42 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:42
+12/15 10:05:44 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:44 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:44
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:46
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:46 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:46 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:46 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:05:52 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:52 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:52 DEBUG|     utils:0151| [stdout] VDrift 2010-06-30:
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]     pts/vdrift-1.2.0 [1440 x 900]
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]     Test 9 of 10
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]     Estimated Test Run-Time:      7 Minutes
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 7 Minutes
+12/15 10:05:52 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:05:52
+12/15 10:05:54 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:54 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:05:54
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:05:56
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:05:56 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:05:56 DEBUG|     utils:0151| [stdout] 
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]     Average: 0 Frames Per Second
+12/15 10:05:56 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:06:02 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:02 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:02 DEBUG|     utils:0151| [stdout] GtkPerf 0.40:
+12/15 10:06:02 DEBUG|     utils:0151| [stdout]     pts/gtkperf-1.2.1 [GtkDrawingArea - Pixbufs]
+12/15 10:06:02 DEBUG|     utils:0151| [stdout]     Test 10 of 10
+12/15 10:06:02 DEBUG|     utils:0151| [stdout]     Estimated Trial Run Count:    3
+12/15 10:06:02 DEBUG|     utils:0151| [stdout]     Estimated Time To Completion: 1 Minute
+12/15 10:06:03 DEBUG|     utils:0151| [stdout]         Started Run 1 @ 20:06:02
+12/15 10:06:05 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:06:05 DEBUG|     utils:0151| [stdout]         Started Run 2 @ 20:06:05
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]         Started Run 3 @ 20:06:07
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]         The test run did not produce a result.
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]     Test Results:
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]     Average: 0 Seconds
+12/15 10:06:07 DEBUG|     utils:0151| [stdout]     This test failed to run properly.
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] The following tests failed to properly run:
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/qgears2-1.0.1: XRender + Image Scaling
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/doom3-1.1.0: 1440 x 900 - Ultra Quality
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/etqw-1.1.0: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/lightsmark-1.2.0: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/nexuiz-1.6.1: 1440 x 900 w/ HDR
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/prey-1.1.2: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/unigine-sanctuary-1.6.2: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/unigine-tropics-1.6.2: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/vdrift-1.2.0: 1440 x 900
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 	- pts/gtkperf-1.2.1: GtkDrawingArea - Pixbufs
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 DEBUG|     utils:0151| [stdout] 
+12/15 10:06:07 ERROR|     utils:0151| [stderr] No protocol specified
+12/15 10:06:07 ERROR|     utils:0151| [stderr] xset:  unable to open display ":0.0"
+12/15 10:06:07 DEBUG|     utils:0114| Running 'cp -a /root/.phoronix-test-suite/test-results/*  /mnt/results/default/pts.graphics/results'
+12/15 10:06:07 WARNI|      test:0115| Programs crashed during test execution
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13666 for more info
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13646 for more info
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13656 for more info

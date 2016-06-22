@@ -1,0 +1,9 @@
+import os 
+from autotest.client import utils
+
+def lmbenchtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('lmbench',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/lmbench')
+    os.chdir(res_path)
+lmbenchtest()

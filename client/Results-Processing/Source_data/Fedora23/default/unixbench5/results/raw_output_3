@@ -1,0 +1,190 @@
+make all
+make[1]: Entering directory '/root/autotest/client/tmp/unixbench5/src'
+Checking distribution of files
+./pgms  exists
+./src  exists
+./testdir  exists
+./tmp  exists
+./results  exists
+make[1]: Leaving directory '/root/autotest/client/tmp/unixbench5/src'
+
+   #    #  #    #  #  #    #          #####   ######  #    #   ####   #    #
+   #    #  ##   #  #   #  #           #    #  #       ##   #  #    #  #    #
+   #    #  # #  #  #    ##            #####   #####   # #  #  #       ######
+   #    #  #  # #  #    ##            #    #  #       #  # #  #       #    #
+   #    #  #   ##  #   #  #           #    #  #       #   ##  #    #  #    #
+    ####   #    #  #  #    #          #####   ######  #    #   ####   #    #
+
+   Version 5.1.2                      Based on the Byte Magazine Unix Benchmark
+
+   Multi-CPU version                  Version 5 revisions by Ian Smith,
+                                      Sunnyvale, CA, USA
+   December 22, 2007                  johantheghost at yahoo period com
+
+
+1 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+1 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+1 x Execl Throughput  1 2 3
+
+1 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+1 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+1 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+1 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+1 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+1 x Process Creation  1 2 3
+
+1 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+1 x Shell Scripts (1 concurrent)  1 2 3
+
+1 x Shell Scripts (8 concurrent)  1 2 3
+
+1 x 2D graphics: rectangles  1 2 3
+
+1 x 2D graphics: ellipses  1 2 3
+
+1 x 2D graphics: aa polygons  1 2 3
+
+1 x 2D graphics: text  1 2 3
+
+1 x 2D graphics: images and blits  1 2 3
+
+1 x 2D graphics: windows  1 2 3
+
+1 x 3D graphics: gears  1 2 3
+
+4 x Dhrystone 2 using register variables  1 2 3 4 5 6 7 8 9 10
+
+4 x Double-Precision Whetstone  1 2 3 4 5 6 7 8 9 10
+
+4 x Execl Throughput  1 2 3
+
+4 x File Copy 1024 bufsize 2000 maxblocks  1 2 3
+
+4 x File Copy 256 bufsize 500 maxblocks  1 2 3
+
+4 x File Copy 4096 bufsize 8000 maxblocks  1 2 3
+
+4 x Pipe Throughput  1 2 3 4 5 6 7 8 9 10
+
+4 x Pipe-based Context Switching  1 2 3 4 5 6 7 8 9 10
+
+4 x Process Creation  1 2 3
+
+4 x System Call Overhead  1 2 3 4 5 6 7 8 9 10
+
+4 x Shell Scripts (1 concurrent)  1 2 3
+
+4 x Shell Scripts (8 concurrent)  1 2 3
+
+========================================================================
+   BYTE UNIX Benchmarks (Version 5.1.2)
+
+   System: localhost.localdomain: GNU/Linux
+   OS: GNU/Linux -- 4.2.3-300.fc23.x86_64 -- #1 SMP Mon Oct 5 15:42:54 UTC 2015
+   Machine: x86_64 (x86_64)
+   Language: en_US.utf8 (charmap="UTF-8", collate="UTF-8")
+   CPU 0: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6186.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 1: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6186.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 2: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6186.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   CPU 3: Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz (6186.0 bogomips)
+          Hyper-Threading, x86-64, MMX, Physical Address Ext, SYSENTER/SYSEXIT, SYSCALL/SYSRET, Intel virtualization
+   17:47:09 up  8:09,  3 users,  load average: 19.14, 11.95, 6.38; runlevel 5
+
+------------------------------------------------------------------------
+Benchmark Run: 四 12月 03 2015 17:47:09 - 18:32:19
+4 CPUs in system; running 1 parallel copy of tests
+
+2D graphics: aa polygons                      13163.0 score (52.3 s, 2 samples)
+2D graphics: ellipses                          3128.2 score (49.1 s, 2 samples)
+2D graphics: images and blits                370235.3 score (55.4 s, 2 samples)
+2D graphics: rectangles                        4230.7 score (50.7 s, 2 samples)
+2D graphics: text                            222694.0 score (33.1 s, 2 samples)
+2D graphics: windows                            897.8 score (52.4 s, 2 samples)
+3D graphics: gears                              132.7 fps   (20.0 s, 2 samples)
+Dhrystone 2 using register variables       34200597.5 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                     4107.4 MWIPS (9.9 s, 7 samples)
+Execl Throughput                               3186.9 lps   (30.0 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1043053.0 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          289219.9 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       2572527.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             1831549.4 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                 217699.7 lps   (10.0 s, 7 samples)
+Process Creation                              14399.4 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                   8972.2 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   2726.3 lpm   (60.0 s, 2 samples)
+System Call Overhead                        4139913.6 lps   (10.0 s, 7 samples)
+
+3D Graphics Benchmarks Index Values          BASELINE       RESULT    INDEX
+3D graphics: gears                               33.4        132.7     39.7
+                                                                   ========
+3D Graphics Benchmarks Index Score                                     39.7
+
+2D Graphics Benchmarks Index Values          BASELINE       RESULT    INDEX
+2D graphics: aa polygons                         15.0      13163.0   8775.3
+2D graphics: ellipses                            15.0       3128.2   2085.4
+2D graphics: images and blits                    15.0     370235.3 246823.6
+2D graphics: rectangles                          15.0       4230.7   2820.5
+2D graphics: text                                15.0     222694.0 148462.7
+2D graphics: windows                             15.0        897.8    598.5
+                                                                   ========
+2D Graphics Benchmarks Index Score                                  10208.9
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0   34200597.5   2930.6
+Double-Precision Whetstone                       55.0       4107.4    746.8
+Execl Throughput                                 43.0       3186.9    741.1
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1043053.0   2634.0
+File Copy 256 bufsize 500 maxblocks            1655.0     289219.9   1747.6
+File Copy 4096 bufsize 8000 maxblocks          5800.0    2572527.0   4435.4
+Pipe Throughput                               12440.0    1831549.4   1472.3
+Pipe-based Context Switching                   4000.0     217699.7    544.2
+Process Creation                                126.0      14399.4   1142.8
+Shell Scripts (1 concurrent)                     42.4       8972.2   2116.1
+Shell Scripts (8 concurrent)                      6.0       2726.3   4543.9
+System Call Overhead                          15000.0    4139913.6   2759.9
+                                                                   ========
+System Benchmarks Index Score                                        1746.4
+
+------------------------------------------------------------------------
+Benchmark Run: 四 12月 03 2015 18:32:19 - 19:00:30
+4 CPUs in system; running 4 parallel copies of tests
+
+Dhrystone 2 using register variables      134958347.6 lps   (10.0 s, 7 samples)
+Double-Precision Whetstone                    16456.5 MWIPS (10.0 s, 7 samples)
+Execl Throughput                              19589.4 lps   (29.9 s, 2 samples)
+File Copy 1024 bufsize 2000 maxblocks       1426551.7 KBps  (30.0 s, 2 samples)
+File Copy 256 bufsize 500 maxblocks          380841.6 KBps  (30.0 s, 2 samples)
+File Copy 4096 bufsize 8000 maxblocks       3774432.0 KBps  (30.0 s, 2 samples)
+Pipe Throughput                             7288352.0 lps   (10.0 s, 7 samples)
+Pipe-based Context Switching                1299530.8 lps   (10.0 s, 7 samples)
+Process Creation                              42305.6 lps   (30.0 s, 2 samples)
+Shell Scripts (1 concurrent)                  21072.8 lpm   (60.0 s, 2 samples)
+Shell Scripts (8 concurrent)                   3354.0 lpm   (60.0 s, 2 samples)
+System Call Overhead                       11102057.9 lps   (10.0 s, 7 samples)
+
+System Benchmarks Index Values               BASELINE       RESULT    INDEX
+Dhrystone 2 using register variables         116700.0  134958347.6  11564.6
+Double-Precision Whetstone                       55.0      16456.5   2992.1
+Execl Throughput                                 43.0      19589.4   4555.7
+File Copy 1024 bufsize 2000 maxblocks          3960.0    1426551.7   3602.4
+File Copy 256 bufsize 500 maxblocks            1655.0     380841.6   2301.2
+File Copy 4096 bufsize 8000 maxblocks          5800.0    3774432.0   6507.6
+Pipe Throughput                               12440.0    7288352.0   5858.8
+Pipe-based Context Switching                   4000.0    1299530.8   3248.8
+Process Creation                                126.0      42305.6   3357.6
+Shell Scripts (1 concurrent)                     42.4      21072.8   4970.0
+Shell Scripts (8 concurrent)                      6.0       3354.0   5589.9
+System Call Overhead                          15000.0   11102057.9   7401.4
+                                                                   ========
+System Benchmarks Index Score                                        4684.8

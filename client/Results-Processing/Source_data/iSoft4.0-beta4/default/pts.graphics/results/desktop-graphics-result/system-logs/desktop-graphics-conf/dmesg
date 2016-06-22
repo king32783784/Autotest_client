@@ -1,0 +1,5 @@
+bash (2027): drop_caches: 3
+usb 1-1.4: USB disconnect, device number 3
+usb 1-1.4: new low-speed USB device number 4 using ehci-pci
+input: Lenovo Optical USB Mouse as /devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.4/1-1.4:1.0/0003:17EF:6019.0004/input/input15
+hid-generic 0003:17EF:6019.0004: input,hidraw0: USB HID v1.11 Mouse [Lenovo Optical USB Mouse] on usb-0000:00:1a.0-1.4/input0

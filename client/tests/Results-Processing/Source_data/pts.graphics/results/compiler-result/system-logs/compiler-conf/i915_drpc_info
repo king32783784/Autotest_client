@@ -1,0 +1,17 @@
+RC information accurate: yes
+Video Turbo Mode: yes
+HW control enabled: yes
+SW control enabled: no
+RC1e Enabled: no
+RC6 Enabled: yes
+Deep RC6 Enabled: no
+Deepest RC6 Enabled: no
+Current RC state: RC6
+Core Power Down: no
+RC6 "Locked to RPn" residency since boot: 0
+RC6 residency since boot: 456123907
+RC6+ residency since boot: 0
+RC6++ residency since boot: 1211953
+RC6   voltage: 450mV
+RC6+  voltage: 245mV
+RC6++ voltage: 245mV

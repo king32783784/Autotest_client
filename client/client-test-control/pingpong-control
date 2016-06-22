@@ -1,0 +1,8 @@
+import os 
+from autotest.client import utils
+
+def pingpong():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pingpong', table=16, runtimes=3)
+
+pingpong()

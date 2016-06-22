@@ -1,0 +1,9 @@
+12/03 15:20:26 ERROR|     utils:0151| [stderr] ./src/syscall.c: 在函数‘main’中:
+12/03 15:20:26 ERROR|     utils:0151| [stderr] ./src/syscall.c:93:21: 警告：实参为 NULL，需要非 NULL 值(实参 2) [-Wnonnull]
+12/03 15:20:26 ERROR|     utils:0151| [stderr]                      execl("/bin/true", (char *) 0);
+12/03 15:20:26 ERROR|     utils:0151| [stderr]                      ^
+12/03 15:20:27 ERROR|     utils:0151| [stderr] In file included from ./src/execl.c:34:0:
+12/03 15:20:27 ERROR|     utils:0151| [stderr] ./src/big.c: 在函数‘getwork’中:
+12/03 15:20:27 ERROR|     utils:0151| [stderr] ./src/big.c:452:11: 警告：变量‘c’被设定但未被使用 [-Wunused-but-set-variable]
+12/03 15:20:27 ERROR|     utils:0151| [stderr]      char  c;
+12/03 15:20:27 ERROR|     utils:0151| [stderr]            ^

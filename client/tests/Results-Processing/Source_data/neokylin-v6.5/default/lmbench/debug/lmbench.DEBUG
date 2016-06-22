@@ -1,0 +1,545 @@
+09/15 21:44:54 DEBUG|     utils:0114| Running 'which gcc'
+09/15 21:44:54 DEBUG|     utils:0151| [stdout] /usr/bin/gcc
+09/15 21:44:54 DEBUG|     utils:0114| Running 'bzcat /root/autotest/client/tests/lmbench/lmbench3.tar.bz2 | tar xvf - 2>/dev/null'
+09/15 21:44:55 DEBUG|     utils:0114| Running 'patch -p1 < /root/autotest/client/tests/lmbench/0001-Fix-build-issues-with-lmbench.patch'
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file Makefile
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/config-run
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] Hunk #2 succeeded at 661 (offset 1 line).
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/getlist
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file src/Makefile
+09/15 21:44:55 DEBUG|     utils:0114| Running 'patch -p1 < /root/autotest/client/tests/lmbench/0002-Changing-shebangs-on-lmbench-scripts.patch'
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/build
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/compiler
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/config
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/config-run
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/config-scaling
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/do_ctx
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/info
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/lmbench
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/make
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/mkrelease
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/os
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/output
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/results
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/synchronize
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/target
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/version
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file scripts/xroff
+09/15 21:44:55 DEBUG|     utils:0114| Running 'patch -p1 < /root/autotest/client/tests/lmbench/0003-makefile.patch'
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] patching file src/Makefile
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] Hunk #1 succeeded at 35 (offset 1 line).
+09/15 21:44:55 DEBUG|     utils:0114| Running 'make  '
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] cd src && make
+09/15 21:44:55 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_tcp.c -o ../bin/x86_64-linux-gnu/lib_tcp.o
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_tcp.c: 在函数‘tcp_server’中:
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_tcp.c:48:9: 警告：隐式声明函数‘pmap_unset’ [-Wimplicit-function-declaration]
+09/15 21:44:56 ERROR|     utils:0151| [stderr]    (void)pmap_unset((u_long)prog, (u_long)1);
+09/15 21:44:56 ERROR|     utils:0151| [stderr]          ^
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_tcp.c:49:8: 警告：隐式声明函数‘pmap_set’ [-Wimplicit-function-declaration]
+09/15 21:44:56 ERROR|     utils:0151| [stderr]    if (!pmap_set((u_long)prog, (u_long)1, (u_long)IPPROTO_TCP,
+09/15 21:44:56 ERROR|     utils:0151| [stderr]         ^
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_tcp.c: 在函数‘tcp_connect’中:
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_tcp.c:163:16: 警告：隐式声明函数‘pmap_getport’ [-Wimplicit-function-declaration]
+09/15 21:44:56 ERROR|     utils:0151| [stderr]     save_port = pmap_getport(&s, prog,
+09/15 21:44:56 ERROR|     utils:0151| [stderr]                 ^
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_udp.c -o ../bin/x86_64-linux-gnu/lib_udp.o
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_udp.c: 在函数‘udp_done’中:
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_udp.c:54:8: 警告：隐式声明函数‘pmap_unset’ [-Wimplicit-function-declaration]
+09/15 21:44:56 ERROR|     utils:0151| [stderr]   (void)pmap_unset((u_long)prog, (u_long)1);
+09/15 21:44:56 ERROR|     utils:0151| [stderr]         ^
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_unix.c -o ../bin/x86_64-linux-gnu/lib_unix.o
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_timing.c -o ../bin/x86_64-linux-gnu/lib_timing.o
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_timing.c: 在函数‘touch’中:
+09/15 21:44:56 ERROR|     utils:0151| [stderr] lib_timing.c:1626:9: 警告：在‘psize’的声明中，类型默认为‘int’ [-Wimplicit-int]
+09/15 21:44:56 ERROR|     utils:0151| [stderr]   static psize;
+09/15 21:44:56 ERROR|     utils:0151| [stderr]          ^
+09/15 21:44:56 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_mem.c -o ../bin/x86_64-linux-gnu/lib_mem.o
+09/15 21:44:57 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_stats.c -o ../bin/x86_64-linux-gnu/lib_stats.o
+09/15 21:44:57 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_debug.c -o ../bin/x86_64-linux-gnu/lib_debug.o
+09/15 21:44:57 ERROR|     utils:0151| [stderr] lib_debug.c: 在函数‘percent_point’中:
+09/15 21:44:57 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: 警告：隐式声明函数‘floor’ [-Wimplicit-function-declaration]
+09/15 21:44:57 ERROR|     utils:0151| [stderr]   if (t == floor(t)) {
+09/15 21:44:57 ERROR|     utils:0151| [stderr]            ^
+09/15 21:44:57 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: 警告：隐式声明与内建函数‘floor’不兼容
+09/15 21:44:57 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: 附注：include ‘<math.h>’ or provide a declaration of ‘floor’
+09/15 21:44:57 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c getopt.c -o ../bin/x86_64-linux-gnu/getopt.o
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -c lib_sched.c -o ../bin/x86_64-linux-gnu/lib_sched.o
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lib_sched.c: 在函数‘handle_scheduler’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lib_sched.c:94:3: 警告：在有返回值的的函数中，‘return’不带返回值
+09/15 21:44:58 ERROR|     utils:0151| [stderr]    return;
+09/15 21:44:58 ERROR|     utils:0151| [stderr]    ^
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lib_sched.c: 在函数‘sched_pin’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lib_sched.c:207:12: 警告：隐式声明函数‘sched_getaffinity’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]    retval = sched_getaffinity(0, sz * sizeof(unsigned long), cpumask);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]             ^
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lib_sched.c:231:11: 警告：隐式声明函数‘sched_setaffinity’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]   retval = sched_setaffinity(0, sz * sizeof(unsigned long), mask);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]            ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] /bin/rm -f ../bin/x86_64-linux-gnu/lmbench.a
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] ar cr ../bin/x86_64-linux-gnu/lmbench.a ../bin/x86_64-linux-gnu/lib_tcp.o ../bin/x86_64-linux-gnu/lib_udp.o ../bin/x86_64-linux-gnu/lib_unix.o ../bin/x86_64-linux-gnu/lib_timing.o ../bin/x86_64-linux-gnu/lib_mem.o ../bin/x86_64-linux-gnu/lib_stats.o ../bin/x86_64-linux-gnu/lib_debug.o ../bin/x86_64-linux-gnu/getopt.o ../bin/x86_64-linux-gnu/lib_sched.o
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] ranlib ../bin/x86_64-linux-gnu/lmbench.a
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_file_rd bw_file_rd.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_file_rd.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_file_rd.c:149:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_mem bw_mem.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_mem.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_mem.c:76:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_mmap_rd bw_mmap_rd.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_mmap_rd.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_mmap_rd.c:64:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_pipe bw_pipe.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_pipe.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_pipe.c:157:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_tcp bw_tcp.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_tcp.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_tcp.c:74:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/bw_unix bw_unix.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_unix.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] bw_unix.c:153:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(argc, argv, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/hello hello.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_select lat_select.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lat_select.c: 在函数‘main’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lat_select.c:53:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:58 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lat_select.c: 在函数‘doit’中:
+09/15 21:44:58 ERROR|     utils:0151| [stderr] lat_select.c:167:9: 警告：在‘count’的声明中，类型默认为‘int’ [-Wimplicit-int]
+09/15 21:44:58 ERROR|     utils:0151| [stderr]   static count = 0;
+09/15 21:44:58 ERROR|     utils:0151| [stderr]          ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_pipe lat_pipe.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_pipe.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_pipe.c:41:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_rpc lat_rpc.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_rpc.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_rpc.c:136:5: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      ^
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_rpc.c: 在函数‘server_main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_rpc.c:211:9: 警告：隐式声明函数‘pmap_unset’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]   (void) pmap_unset(XACT_PROG, XACT_VERS);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]          ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_syscall lat_syscall.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_syscall.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_syscall.c:116:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_tcp lat_tcp.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_tcp.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_tcp.c:64:5: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_udp lat_udp.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_udp.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_udp.c:78:5: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_mmap lat_mmap.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_mmap.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] lat_mmap.c:58:5: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]      ^
+09/15 21:44:59 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/mhz mhz.c ../bin/x86_64-linux-gnu/lmbench.a -lm -lm
+09/15 21:44:59 ERROR|     utils:0151| [stderr] mhz.c: 在函数‘main’中:
+09/15 21:44:59 ERROR|     utils:0151| [stderr] mhz.c:492:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:44:59 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:44:59 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_proc lat_proc.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_proc.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_proc.c:60:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_pagefault lat_pagefault.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_pagefault.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_pagefault.c:54:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_connect lat_connect.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_connect.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_connect.c:63:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_fs lat_fs.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_fs.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_fs.c:55:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 ERROR|     utils:0151| [stderr] /tmp/ccZ7bh0D.o：在函数‘setup_names’中：
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_fs.c:(.text+0x833): 警告：the use of `tempnam' is dangerous, better use `mkstemp'
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_sig lat_sig.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_sig.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_sig.c:182:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_mem_rd lat_mem_rd.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_mem_rd.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_mem_rd.c:47:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_ctx lat_ctx.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_ctx.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_ctx.c:74:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_sem lat_sem.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_sem.c: 在函数‘main’中:
+09/15 21:45:00 ERROR|     utils:0151| [stderr] lat_sem.c:42:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:00 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:00 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/memsize memsize.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_unix lat_unix.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_unix.c: 在函数‘main’中:
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_unix.c:46:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:01 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:01 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lmdd lmdd.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/timing_o timing_o.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/enough enough.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/msleep msleep.c
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/loop_o loop_o.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_fifo lat_fifo.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_fifo.c: 在函数‘main’中:
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_fifo.c:45:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:01 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:01 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lmhttp lmhttp.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_http lat_http.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_http.c: 在函数‘main’中:
+09/15 21:45:01 ERROR|     utils:0151| [stderr] lat_http.c:84:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:01 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:01 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_fcntl lat_fcntl.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_fcntl.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_fcntl.c:203:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/disk disk.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_unix_connect lat_unix_connect.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_unix_connect.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_unix_connect.c:63:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -DMAIN -o ../bin/x86_64-linux-gnu/flushdisk flushdisk.c
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_ops lat_ops.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_ops.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] lat_ops.c:393:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/line line.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] line.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] line.c:54:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/tlb tlb.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] tlb.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] tlb.c:69:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:02 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/par_mem par_mem.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:02 ERROR|     utils:0151| [stderr] par_mem.c: 在函数‘main’中:
+09/15 21:45:02 ERROR|     utils:0151| [stderr] par_mem.c:64:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:02 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:03 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/par_ops par_ops.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:03 ERROR|     utils:0151| [stderr] par_ops.c: 在函数‘main’中:
+09/15 21:45:03 ERROR|     utils:0151| [stderr] par_ops.c:413:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:03 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:03 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:06 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/stream stream.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:06 ERROR|     utils:0151| [stderr] stream.c: 在函数‘main’中:
+09/15 21:45:06 ERROR|     utils:0151| [stderr] stream.c:70:5: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:06 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+09/15 21:45:06 ERROR|     utils:0151| [stderr]      ^
+09/15 21:45:06 DEBUG|     utils:0151| [stdout] rm -f ../bin/x86_64-linux-gnu/lmbench
+09/15 21:45:06 DEBUG|     utils:0151| [stdout] sed -e "s/<version>/666/g" < ../scripts/lmbench > ../bin/x86_64-linux-gnu/lmbench
+09/15 21:45:06 DEBUG|     utils:0151| [stdout] chmod +x ../bin/x86_64-linux-gnu/lmbench
+09/15 21:45:06 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/cache cache.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] cache.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] cache.c:123:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_dram_page lat_dram_page.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_dram_page.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_dram_page.c:66:4: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_pmake lat_pmake.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_pmake.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_pmake.c:47:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_rand lat_rand.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_rand.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_rand.c:39:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_usleep lat_usleep.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_usleep.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_usleep.c:204:3: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]    lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]    ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cc -O -DRUSAGE -DHAVE_uint=1 -DHAVE_int64_t=1 -DHAVE_DRAND48 -DHAVE_SCHED_SETAFFINITY=1   -o ../bin/x86_64-linux-gnu/lat_cmd lat_cmd.c ../bin/x86_64-linux-gnu/lmbench.a -lm
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_cmd.c: 在函数‘main’中:
+09/15 21:45:08 ERROR|     utils:0151| [stderr] lat_cmd.c:40:23: 警告：隐式声明函数‘lmbench_usage’ [-Wimplicit-function-declaration]
+09/15 21:45:08 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+09/15 21:45:08 ERROR|     utils:0151| [stderr]                        ^
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:08 DEBUG|     utils:0114| Running 'yes "" | make config'
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] cd src && make config
+09/15 21:45:08 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:10 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:10 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'all'.
+09/15 21:45:10 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'opt'.
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] =====================================================================
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 		L M B E N C H   C ON F I G U R A T I O N
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 		----------------------------------------
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] You need to configure some parameters to lmbench.  Once you have configured
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] these parameters, you may do multiple runs by saying
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 	"make rerun"
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] in the src subdirectory.
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] NOTICE: please do not have any other activity on the system if you can
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] help it.  Things like the second hand on your xclock or X perfmeters
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] are not so good when benchmarking.  In fact, X is not so good when
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] benchmarking.
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] =====================================================================
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:11 DEBUG|     utils:0151| [stdout] Hang on, we are calculating your timing granularity.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] OK, it looks like you can time stuff down to 5000 usec resolution.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Hang on, we are calculating your timing overhead.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] OK, it looks like your gettimeofday() costs 0 usecs.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Hang on, we are calculating your loop overhead.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] OK, it looks like your benchmark loop costs 0.00008244 usecs.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] =====================================================================
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] If you are running on an MP machine and you want to try running
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] multiple copies of lmbench in parallel, you can specify how many here.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Using this option will make the benchmark run 100x slower (sorry).
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] NOTE:  WARNING! This feature is experimental and many results are 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 	known to be incorrect or random!
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] MULTIPLE COPIES [default 1] Options to control job placement
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 1) Allow scheduler to place jobs
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 2) Assign each benchmark process with any attendent child processes
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    to its own processor
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 3) Assign each benchmark process with any attendent child processes
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    to its own processor, except that it will be as far as possible
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    from other processes
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 4) Assign each benchmark and attendent processes to their own
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    processors
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 5) Assign each benchmark and attendent processes to their own
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    processors, except that they will be as far as possible from
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    each other and other processes
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 6) Custom placement: you assign each benchmark process with attendent
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    child processes to processors
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 7) Custom placement: you assign each benchmark and attendent
+09/15 21:45:12 DEBUG|     utils:0151| [stdout]    processes to processors
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Note: some benchmarks, such as bw_pipe, create attendent child
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] processes for each benchmark process.  For example, bw_pipe
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] needs a second process to send data down the pipe to be read
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] by the benchmark process.  If you have three copies of the
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] benchmark process running, then you actually have six processes;
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] three attendent child processes sending data down the pipes and 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] three benchmark processes reading data and doing the measurements.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Job placement selection [DEFAULT: 1]: =====================================================================
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Several benchmarks operate on a range of memory.  This memory should be
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] sized such that it is at least 4 times as big as the external cache[s]
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] on your system.   It should be no more than 80% of your physical memory.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] The bigger the range, the more accurate the results, but larger sizes
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] take somewhat longer to run the benchmark.
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] MB [default 24] Checking to see if you have 24 MB; please wait for a moment...
+09/15 21:45:12 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+09/15 21:45:12 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+09/15 21:45:12 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+09/15 21:45:12 DEBUG|     utils:0151| [stdout] Hang on, we are calculating your cache line size.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] OK, it looks like your cache line is  bytes.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] lmbench measures a wide variety of system performance, and the full suite
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] of benchmarks can take a long time on some platforms.  Consequently, we
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] offer the capability to run only predefined subsets of benchmarks, one
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] for operating system specific benchmarks and one for hardware specific
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] benchmarks.  We also offer the option of running only selected benchmarks
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] which is useful during operating system development.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] Please remember that if you intend to publish the results you either need
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] to do a full run or one of the predefined OS or hardware subsets.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] SUBSET (ALL|HARWARE|OS|DEVELOPMENT) [default all] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] This benchmark measures, by default, memory latency for a number of
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] different strides.  That can take a long time and is most useful if you
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] are trying to figure out your cache line size or if your cache line size
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] is greater than 128 bytes.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you are planning on sending in these results, please don't do a fast
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] run.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] Answering yes means that we measure memory latency with a 128 byte stride.  
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] FASTMEM [default no] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] This benchmark measures, by default, file system latency.  That can
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] take a long time on systems with old style file systems (i.e., UFS,
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] FFS, etc.).  Linux' ext2fs and Sun's tmpfs are fast enough that this
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] test is not painful.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you are planning on sending in these results, please don't do a fast
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] run.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you want to skip the file system latency tests, answer "yes" below.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] SLOWFS [default no] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] This benchmark can measure disk zone bandwidths and seek times.  These can
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] be turned into whizzy graphs that pretty much tell you everything you might
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] need to know about the performance of your disk.  
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] This takes a while and requires read access to a disk drive.  
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] Write is not measured, see disk.c to see how if you want to do so.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you want to skip the disk tests, hit return below.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you want to include disk tests, then specify the path to the disk
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] device, such as /dev/sda.  For each disk that is readable, you'll be
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] prompted for a one line description of the drive, i.e., 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 	Iomega IDE ZIP
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] or
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 	HP C3725S 2GB on 10MB/sec NCR SCSI bus
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] DISKS [default none] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] If you are running on an idle network and there are other, identically
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] configured systems, on the same wire (no gateway between you and them),
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] and you have rsh access to them, then you should run the network part
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] of the benchmarks to them.  Please specify any such systems as a space
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] separated list such as: ether-host fddi-host hippi-host.
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] REMOTE [default none] =====================================================================
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:13 DEBUG|     utils:0151| [stdout] Calculating mhz, please wait for a moment...
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] I think your CPU mhz is 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 	3373 MHz, 0.2965 nanosec clock
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 	
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] but I am frequently wrong.  If that is the wrong Mhz, type in your
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] best guess as to your processor speed.  It doesn't have to be exact,
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] but if you know it is around 800, say 800.  
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Please note that some processors, such as the P4, have a core which
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] is double-clocked, so on those processors the reported clock speed
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] will be roughly double the advertised clock rate.  For example, a
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 1.8GHz P4 may be reported as a 3592MHz processor.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Processor mhz [default 3373 MHz, 0.2965 nanosec clock] =====================================================================
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] We need a place to store a 24 Mbyte file as well as create and delete a
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] large number of small files.  We default to /usr/tmp.  If /usr/tmp is a
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] memory resident file system (i.e., tmpfs), pick a different place.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Please specify a directory that has enough space and is a local file
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] system.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] FSDIR [default /usr/tmp] =====================================================================
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] lmbench outputs status information as it runs various benchmarks.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] By default this output is sent to /dev/tty, but you may redirect
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] it to any file you wish (such as /dev/null...).
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Status output file [default /dev/tty] =====================================================================
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] There is a database of benchmark results that is shipped with new
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] releases of lmbench.  Your results can be included in the database
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] if you wish.  The more results the better, especially if they include
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] remote networking.  If your results are interesting, i.e., for a new
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] fast box, they may be made available on the lmbench web page, which is
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 	http://www.bitmover.com/lmbench
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Mail results [default no] =====================================================================
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Confguration done, thanks.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] There is a mailing list for discussing lmbench hosted at BitMover. 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] Send mail to majordomo@bitmover.com to join the list.
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] 
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:14 DEBUG|     utils:0114| Running 'ls -1 bin/*/CONFIG*'
+09/15 21:45:14 DEBUG|     utils:0114| Running 'sed 's!^FSDIR=.*$!FSDIR=/root/autotest/client/tmp/tmp/tmpfFE24h_lmbench!' 'bin/x86_64-linux-gnu/CONFIG.localhost.localdomain' > 'bin/x86_64-linux-gnu/CONFIG.localhost.localdomain.tmp''
+09/15 21:45:14 DEBUG|     utils:0114| Running 'sed 's!^FILE=.*$!FILE=/root/autotest/client/tmp/tmp/tmpfFE24h_lmbench/XXX!' 'bin/x86_64-linux-gnu/CONFIG.localhost.localdomain.tmp' > 'bin/x86_64-linux-gnu/CONFIG.localhost.localdomain''
+09/15 21:45:14 DEBUG|      test:0285| Test started. Specified 3 iterations
+09/15 21:45:14 DEBUG|      test:0289| Executing iteration 1 of 3
+09/15 21:45:14 DEBUG|     utils:0114| Running 'make  rerun'
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] cd src && make rerun
+09/15 21:45:14 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:15 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:15 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'all'.
+09/15 21:45:15 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:16 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 21:45:16 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'opt'.
+09/15 21:45:16 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:56 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:56 DEBUG|      test:0289| Executing iteration 2 of 3
+09/15 22:03:56 DEBUG|     utils:0114| Running 'make  rerun'
+09/15 22:03:56 DEBUG|     utils:0151| [stdout] cd src && make rerun
+09/15 22:03:56 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:57 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:57 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'all'.
+09/15 22:03:57 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:59 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:03:59 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'opt'.
+09/15 22:03:59 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:39 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:39 DEBUG|      test:0289| Executing iteration 3 of 3
+09/15 22:22:39 DEBUG|     utils:0114| Running 'make  rerun'
+09/15 22:22:39 DEBUG|     utils:0151| [stdout] cd src && make rerun
+09/15 22:22:39 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:40 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:40 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'all'.
+09/15 22:22:40 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:41 DEBUG|     utils:0151| [stdout] gmake[2]: Entering directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:22:41 DEBUG|     utils:0151| [stdout] gmake[2]: Nothing to be done for 'opt'.
+09/15 22:22:41 DEBUG|     utils:0151| [stdout] gmake[2]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:41:22 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/lmbench/src/src'
+09/15 22:41:22 DEBUG|     utils:0114| Running 'make  -C /root/autotest/client/tmp/lmbench/src/results summary > /mnt/results/default/lmbench/results/summary.txt'
+09/15 22:41:22 ERROR|     utils:0151| [stderr] Name "main::host" used only once: possible typo at ../scripts/getsummary line 20.
+09/15 22:41:22 ERROR|     utils:0151| [stderr] x86_64-linux-gnu: no data for Memory load parallelism
+09/15 22:41:22 ERROR|     utils:0151| [stderr] x86_64-linux-gnu: no data for Memory load parallelism
+09/15 22:41:22 ERROR|     utils:0151| [stderr] x86_64-linux-gnu: no data for Memory load parallelism

@@ -1,0 +1,37 @@
+msgctl10 msgctl10
+readahead02 readahead02
+settimeofday01 settimeofday01
+syslog01 syslog01
+syslog02 syslog02
+syslog03 syslog03
+syslog04 syslog04
+syslog05 syslog05
+syslog06 syslog06
+syslog07 syslog07
+syslog08 syslog08
+syslog09 syslog09
+syslog10 syslog10
+proc01 proc01 -m 128
+netns_crtchild netns_crtchild
+netns_two_children_ns netns_two_children_ns
+netns_crtchild_delchild netns_crtchild_delchild
+netns_par_chld_ipv6 netns_par_chld_ipv6
+cgroup 	cgroup_regression_test.sh
+memcg_function 	memcg_function_test.sh
+memcg_memsw_limit_in_bytes memcg_memsw_limit_in_bytes_test.sh
+memcg_stat memcg_stat_test.sh
+memcg_use_hierarchy memcg_use_hierarchy_test.sh
+cgroup_xattr cgroup_xattr
+su01 export TCbin=$LTPROOT/testcases/bin;su01
+cron_allow01 cron_allow01
+clock_settime02 clock_settime02
+cron export TCdat=$LTPROOT/testcases/bin; cron_tests.sh
+mail export TCdat=$LTPROOT/testcases/bin; mail_tests.sh
+cpufreq_boost cpufreq_boost
+dma_thread_diotest1 dma_thread_diotest -a 512
+dma_thread_diotest2 dma_thread_diotest -a 1024
+dma_thread_diotest3 dma_thread_diotest -a 1536
+dma_thread_diotest4 dma_thread_diotest -a 2048
+dma_thread_diotest5 dma_thread_diotest -a 2560
+dma_thread_diotest6 dma_thread_diotest -a 3072
+dma_thread_diotest7 dma_thread_diotest -a 3584

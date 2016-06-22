@@ -1,0 +1,34 @@
+           CPU0       CPU1       CPU2       CPU3       
+  0:         24          0          0          0  IR-IO-APIC   2-edge      timer
+  1:          2          0          0          0  IR-IO-APIC   1-edge      i8042
+  8:          1          0          0          0  IR-IO-APIC   8-edge      rtc0
+  9:          3          0          0          0  IR-IO-APIC   9-fasteoi   acpi
+ 12:          4          0          0          0  IR-IO-APIC  12-edge      i8042
+ 16:       1154          0          0          0  IR-IO-APIC  16-fasteoi   ehci_hcd:usb1
+ 17:       2431          0          0          0  IR-IO-APIC  17-fasteoi   ehci_hcd:usb2
+ 24:          0          0          0          0  DMAR-MSI   0-edge      dmar0
+ 25:          0          0          0          0  DMAR-MSI   1-edge      dmar1
+ 26:       1362          0          0          0  IR-PCI-MSI 32768-edge      i915
+ 27:    4765397          0          0          0  IR-PCI-MSI 512000-edge      0000:00:1f.2
+ 28:         25          0          0          0  IR-PCI-MSI 360448-edge      mei_me
+ 29:      27048          0          0          0  IR-PCI-MSI 409600-edge      enp0s25
+ 30:        852          0          0          0  IR-PCI-MSI 442368-edge      snd_hda_intel
+ 31:          4          0          0          0  IR-PCI-MSI 1048576-edge      enp2s0
+NMI:          0          0          0          0   Non-maskable interrupts
+LOC:     241362     124727     113477     121046   Local timer interrupts
+SPU:          0          0          0          0   Spurious interrupts
+PMI:          0          0          0          0   Performance monitoring interrupts
+IWI:          1          0          0          0   IRQ work interrupts
+RTR:          0          0          0          0   APIC ICR read retries
+RES:       6494       4742       1919       2739   Rescheduling interrupts
+CAL:         45    1400350     791601     646022   Function call interrupts
+TLB:        187        129        225        201   TLB shootdowns
+TRM:          0          0          0          0   Thermal event interrupts
+THR:          0          0          0          0   Threshold APIC interrupts
+DFR:          0          0          0          0   Deferred Error APIC interrupts
+MCE:          0          0          0          0   Machine check exceptions
+MCP:         38         38         38         38   Machine check polls
+ERR:          0
+MIS:          0
+PIN:          0          0          0          0   Posted-interrupt notification event
+PIW:          0          0          0          0   Posted-interrupt wakeup event

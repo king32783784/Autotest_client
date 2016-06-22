@@ -1,0 +1,5 @@
+
+Encoding -Less is better (seconds)
+
+*Item* | *encode-ape* | *encode-flac* | *encode-mp3* | *encode-ogg* | *encode-wavpack* | *ffmpeg* | *mencoder*
+------ | ------------ | ------------- | ------------ | ------------ | ---------------- | -------- | ----------

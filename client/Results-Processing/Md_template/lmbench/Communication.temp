@@ -1,0 +1,5 @@
+
+### \*Local\* Communication bandwidths in MB/s - bigger is better 
+
+ *OS* | *Pipe* | *AF UNIX* | *TCP* | *File reread* | *Mmap reread* | *Bcopy(libc)* | *Bcopy(hand)* | *Mem read* | *Mem write*
+ ------ | ------ | --------- | ----- | ------------- | ------------- | ------------- | ------------- | ---------- | -----------

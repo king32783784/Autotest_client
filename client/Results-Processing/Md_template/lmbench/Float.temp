@@ -1,0 +1,5 @@
+
+### Basic float operations - times in nanoseconds - smaller is better
+
+*OS* |*float add* | *float mul* | *float div* | *float bogo*
+------ |----------- |------------ |------------ |-------------

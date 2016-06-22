@@ -1,0 +1,38 @@
+
+## Ltp - Stress Test of System 
+
+### Case Execution Status 
+
+*Test Time* | *Total Num* | *Execution Efficiency* | *Fail Types* | *Pass-Total* | *Fail-Total* | *Success Rate*
+----------- | ----------- | ---------------- | ----------- | ------------ | ------------ | --------------
+ 72 h | 849 | 11 | 19 | 825 | 24 | 97.17%
+
+### System Load Status 
+
+*CPU Utilization* | *MEM Utilization* | *SWAP Utilization* | *Ldavg-1* | *Ldavg-5* | *Ldavg-15*
+----------------- | ----------------- | ------------------ | --------- | --------- | ----------
+99.39% | 95.30% | 29.70% | 25.94% | 21.92% | 14.09%
+
+### FAIL Case Status
+
+*Casename* | *Total-num* | *Fail-num*
+---------- | ----------- | ----------
+access06             |           1 |                        1
+acct01               |           1 |                        1
+chmod06              |           1 |                        1
+chown04              |           1 |                        1
+fchmod06             |           1 |                        1
+float_power          |           7 |                        1
+ftest05              |           1 |                        1
+msgget03             |           2 |                        1
+nfs01                |           2 |                        2
+nfs02                |           3 |                        3
+nfs03                |           2 |                        2
+nfsstress            |           2 |                        2
+nfsx-linux           |           1 |                        1
+recv01               |           1 |                        1
+recvfrom01           |           1 |                        1
+recvmsg01            |           1 |                        1
+rpc01                |           1 |                        1
+run_rpc_tests.sh     |           1 |                        1
+setpgid03            |           1 |                        1

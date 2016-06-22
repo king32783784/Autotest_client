@@ -1,0 +1,9 @@
+param-server_ip='192.168.32.254'
+param-stream_list=[1, 1, 1]
+param-test_time=120
+param-tests=['TCP_STREAM', 'UDP_STREAM', 'TCP_RR', 'TCP_CRR']
+version=1
+sysinfo-cmdline=BOOT_IMAGE=/vmlinuz-4.0.4-301.fc22.x86_64+debug root=/dev/mapper/fedora-root ro rd.lvm.lv=fedora/swap rd.lvm.lv=fedora/root rhgb quiet LANG=zh_CN.UTF-8
+sysinfo-memtotal-in-kb=3878084
+sysinfo-phys-mbytes=4096
+sysinfo-uname=4.0.4-301.fc22.x86_64+debug #1 SMP Thu May 21 12:56:19 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux

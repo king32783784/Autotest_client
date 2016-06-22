@@ -1,0 +1,34 @@
+**OS** | iSoft Enterprise Desktop 4.0 (Nvwa)
+**Kerne** | 4.4.0-10
+**File-System** | ext4
+**Gcc** | gcc (GCC) 5.3.0 20151204 (iSoft 5.3.0-12)
+**G++** | g++ (GCC) 5.3.0 20151204 (iSoft 5.3.0-12)
+**Gdb** | GNU gdb (GDB) 7.10
+**Make** | Gnu make 4.1
+**Binutils** | binutils     (GNU Binutils
+**Util-linux** | util-linux   linux 2.27.1
+**Mount** | mount  linux 2.27.1 (libmount 2.27.0: assert, debug)
+**Modutils** | modutils   21
+**E2fsprogs** | e2fsprogs    1.43-WIP
+**PPP** | PPP  2.4.6
+**CLibrary** | Linux C Library   > libc.2.22
+**LLVM** | 
+**Ldd** | Dynamic linker (ldd)   2.22
+**C++Library** | null
+**Procps** | Procps   3.3.10
+**Net-tools** | Net-tools    2.10-alpha
+**Iproute2** | iproute2              iproute2-ss150831
+**Kbd** | Kbd   2.0.2
+**Sh-utils** | Sh-utils     8.24
+**Modules** | bridge stp llc nvram msr bnep bluetooth rfkill intel_rapl input_leds iosf_mbi led_class mousedev x86_pkg_temp_thermal snd_hda_codec_hdmi intel_powerclamp snd_hda_codec_realtek snd_hda_codec_generic coretemp snd_hda_intel snd_hda_codec kvm_intel kvm snd_hda_core snd_hwdep snd_seq snd_seq_device irqbypass snd_pcm iTCO_wdt iTCO_vendor_support ppdev e1000e dcdbas crct10dif_pclmul crc32_pclmul aesni_intel aes_x86_64 tg3 lrw gf128mul glue_helper ablk_helper cryptd evdev i2c_i801 snd_timer parport_pc snd parport mei_me soundcore mei shpchp ptp pps_core lpc_ich mac_hid nfsd auth_rpcgss oid_registry nfs_acl lockd grace sunrpc sch_fq_codel ip_tables x_tables uas usb_storage hid_generic sr_mod cdrom sd_mod ahci libahci i915 intel_gtt i2c_algo_bit drm_kms_helper libata crc32c_intel scsi_mod serio_raw drm ehci_pci ehci_hcd i2c_core video dm_mirror dm_region_hash dm_log dm_mod autofs4
+**Kde** | 
+**Gnome** | null
+**Xorg** | null
+**MESA** | 
+ **JAVA** | null
+**Chrome** | null
+**Firefox** | null
+**Root** | sda4   8:4    0  93.1G  0 part /
+**MEM** | 3834
+**SWAP** | 4095 
+

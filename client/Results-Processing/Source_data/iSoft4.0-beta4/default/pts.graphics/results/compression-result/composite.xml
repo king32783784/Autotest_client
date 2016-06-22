@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v5.2.1 (Khanino)-->
+<?xml-stylesheet type="text/xsl" href="pts-results-viewer.xsl"?>
+<PhoronixTestSuite>
+  <Generated>
+    <Title>compression-result</Title>
+    <LastModified>2015-12-28 06:21:22</LastModified>
+    <TestClient>Phoronix Test Suite v5.2.1 (Khanino)</TestClient>
+    <Description>Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Desktop 4.0 via the Phoronix Test Suite.</Description>
+    <PreSetEnvironmentVariables></PreSetEnvironmentVariables>
+  </Generated>
+  <System>
+    <Identifier>compression-conf</Identifier>
+    <Hardware>Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection</Hardware>
+    <Software>OS: iSoft Desktop 4.0, Kernel: 4.4.0-15 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.1.0, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush &lt;bool&gt;] [-i &lt;file&gt;] [-o &lt;file&gt;] [-c &lt;file&gt;] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.1 + LLVM 3.7.1, File-System: ext4, Screen Resolution: 1440x900</Software>
+    <User>root</User>
+    <TimeStamp>2015-12-28 06:21:22</TimeStamp>
+    <TestClientVersion>5.2.1</TestClientVersion>
+    <Notes></Notes>
+    <JSON>{"compiler-configuration":"--build=x86_64-isoft-linux --disable-libstdcxx-pch --disable-libunwind-exceptions --disable-multilib --enable-__cxa_atexit --enable-bootstrap --enable-c99 --enable-checking=release --enable-gnu-indirect-function --enable-gnu-unique-object --enable-initfini-array --enable-languages=c,c++,lto,go,fortran --enable-libatomic --enable-libcilkrts --enable-libgomp --enable-libitm --enable-libmpx --enable-libquadmath --enable-libsanitizer --enable-long-long --enable-lto --enable-plugin --enable-shared --enable-symvers --enable-threads=posix --host=x86_64-isoft-linux --target=x86_64-isoft-linux --with-cpu=generic --with-linker-hash-style=gnu","cpu-scaling-governor":"intel_pstate powersave"}</JSON>
+  </System>
+  <Result>
+    <Identifier>pts/compress-gzip-1.1.0</Identifier>
+    <Title>Gzip Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>2GB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>15.98</Value>
+        <RawString>16.29271697998:15.632162809372:16.01025390625</RawString>
+      </Entry>
+    </Data>
+  </Result>
+  <Result>
+    <Identifier>pts/compress-lzma-1.2.0</Identifier>
+    <Title>LZMA Compression</Title>
+    <AppVersion></AppVersion>
+    <Arguments></Arguments>
+    <Description>256MB File Compression</Description>
+    <Scale>Seconds</Scale>
+    <Proportion>LIB</Proportion>
+    <DisplayFormat>BAR_GRAPH</DisplayFormat>
+    <Data>
+      <Entry>
+        <Identifier>compression-conf</Identifier>
+        <Value>138.44</Value>
+        <RawString>138.00233411789:138.18896794319:139.13252282143</RawString>
+        <JSON>{"compiler-options":{"compiler-type":"CXX","compiler":"g++","compiler-options":"-O2"}}</JSON>
+      </Entry>
+    </Data>
+  </Result>
+</PhoronixTestSuite>

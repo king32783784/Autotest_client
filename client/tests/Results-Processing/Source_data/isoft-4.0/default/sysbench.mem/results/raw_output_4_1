@@ -1,0 +1,33 @@
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 4K
+
+Memory transfer size: 8192M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 2097152 (3305087.60 ops/sec)
+
+8192.00 MB transferred (12910.50 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.6345s
+    total number of events:              2097152
+    total time taken by event execution: 2.0354
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  7.15ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           524288.0000/9632.78
+    execution time (avg/stddev):   0.5088/0.00

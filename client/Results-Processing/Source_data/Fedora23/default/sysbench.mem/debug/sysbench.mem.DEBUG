@@ -1,0 +1,617 @@
+12/03 14:34:34 DEBUG|     utils:0114| Running 'which gcc'
+12/03 14:34:34 DEBUG|     utils:0151| [stdout] /bin/gcc
+12/03 14:34:34 DEBUG|     utils:0114| Running './configure --without-mysql'
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking build system type... x86_64-unknown-linux-gnu
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking host system type... x86_64-unknown-linux-gnu
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking target system type... x86_64-unknown-linux-gnu
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for a BSD-compatible install... /bin/install -c
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether build environment is sane... yes
+12/03 14:34:36 ERROR|     utils:0151| [stderr] /root/autotest/client/tmp/sysbench/src/config/missing: Unknown `--is-lightweight' option
+12/03 14:34:36 ERROR|     utils:0151| [stderr] Try `/root/autotest/client/tmp/sysbench/src/config/missing --help' for more information
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for a thread-safe mkdir -p... /bin/mkdir -p
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for gawk... gawk
+12/03 14:34:36 ERROR|     utils:0151| [stderr] configure: WARNING: 'missing' script is too old or missing
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether make sets $(MAKE)... yes
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether make supports nested variables... yes
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether to compile with MySQL support... (cached) no
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether to compile with Oracle support... (cached) no
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether to compile with PostgreSQL support... (cached) no
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for style of include used by make... GNU
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for gcc... gcc
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether the C compiler works... yes
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for C compiler default output file name... a.out
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for suffix of executables... 
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether we are cross compiling... no
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking for suffix of object files... o
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether we are using the GNU C compiler... yes
+12/03 14:34:36 DEBUG|     utils:0151| [stdout] checking whether gcc accepts -g... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for gcc option to accept ISO C89... none needed
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether gcc understands -c and -o together... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking dependency style of gcc... gcc3
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether SHM_HUGETLB is declared... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether O_SYNC is declared... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for gcc... (cached) gcc
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether we are using the GNU C compiler... (cached) yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether gcc accepts -g... (cached) yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for gcc option to accept ISO C89... (cached) none needed
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether gcc understands -c and -o together... (cached) yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking dependency style of gcc... (cached) gcc3
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to print strings... printf
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for a sed that does not truncate output... /bin/sed
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for grep that handles long lines and -e... /bin/grep
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for egrep... /bin/grep -E
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for fgrep... /bin/grep -F
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for ld used by gcc... /bin/ld
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking if the linker (/bin/ld) is GNU ld... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for BSD- or MS-compatible name lister (nm)... /bin/nm -B
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking the name lister (/bin/nm -B) interface... BSD nm
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking whether ln -s works... yes
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking the maximum length of command line arguments... 1572864
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to convert x86_64-unknown-linux-gnu file names to x86_64-unknown-linux-gnu format... func_convert_file_noop
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to convert x86_64-unknown-linux-gnu file names to toolchain format... func_convert_file_noop
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for /bin/ld option to reload object files... -r
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for objdump... objdump
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to recognize dependent libraries... pass_all
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for dlltool... no
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to associate runtime and link libraries... printf %s\n
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for ar... ar
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for archiver @FILE support... @
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for strip... strip
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for ranlib... ranlib
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking command to parse /bin/nm -B output from gcc object... ok
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for sysroot... no
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for a working dd... /bin/dd
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking for mt... no
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking if : is a manifest tool... no
+12/03 14:34:37 DEBUG|     utils:0151| [stdout] checking how to run the C preprocessor... gcc -E
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for ANSI C header files... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for sys/types.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for sys/stat.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for stdlib.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for string.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for memory.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for strings.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for inttypes.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for stdint.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for unistd.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for dlfcn.h... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for objdir... .libs
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if gcc supports -fno-rtti -fno-exceptions... no
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for gcc option to produce PIC... -fPIC -DPIC
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if gcc PIC flag -fPIC -DPIC works... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if gcc static flag -static works... no
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if gcc supports -c -o file.o... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if gcc supports -c -o file.o... (cached) yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking whether the gcc linker (/bin/ld -m elf_x86_64) supports shared libraries... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking whether -lc should be explicitly linked in... no
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking dynamic linker characteristics... GNU/Linux ld.so
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking how to hardcode library paths into programs... immediate
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking whether stripping libraries is possible... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking if libtool supports shared libraries... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking whether to build shared libraries... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking whether to build static libraries... yes
+12/03 14:34:38 DEBUG|     utils:0151| [stdout] checking for xsltproc... xsltproc
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking whether xsltproc works... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for the pthreads library -lpthreads... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking whether pthreads work without any flags... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking whether pthreads work with -Kthread... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking whether pthreads work with -kthread... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for the pthreads library -llthread... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking whether pthreads work with -pthread... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking if more special flags are required for pthreads... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for cc_r... gcc
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for sqrt in -lm... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking libaio.h usability... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking libaio.h presence... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for libaio.h... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for malloc in -lumem... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for malloc in -lmtmalloc... no
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for ANSI C header files... (cached) yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking errno.h usability... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking errno.h presence... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for errno.h... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking fcntl.h usability... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking fcntl.h presence... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking for fcntl.h... yes
+12/03 14:34:39 DEBUG|     utils:0151| [stdout] checking math.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking math.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for math.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking pthread.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking pthread.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for pthread.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sched.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sched.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sched.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking signal.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking signal.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for signal.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for string.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/aio.h usability... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/aio.h presence... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/aio.h... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/ipc.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/ipc.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/ipc.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/time.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/time.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/time.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/mman.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/mman.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/mman.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/shm.h usability... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking sys/shm.h presence... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/shm.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking thread.h usability... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking thread.h presence... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for thread.h... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for unistd.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for inline... inline
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for off_t... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for size_t... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking whether time.h and sys/time.h may both be included... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for special C compiler options needed for large files... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for _FILE_OFFSET_BITS value needed for large files... no
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking size of size_t... 8
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for GNU libc compatible malloc... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for unistd.h... (cached) yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for sys/param.h... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for getpagesize... yes
+12/03 14:34:40 DEBUG|     utils:0151| [stdout] checking for working mmap... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking whether strerror_r is declared... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for strerror_r... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking whether strerror_r returns char *... no
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking whether clock_gettime is declared... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for library containing clock_gettime... none required
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for alarm... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for fdatasync... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for gettimeofday... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for lrand48... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for memalign... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for memset... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for posix_memalign... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for pthread_yield... no
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for setvbuf... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for sqrt... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for strdup... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for thr_setconcurrency... no
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking for valloc... yes
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] checking that generated files are newer than configure... done
+12/03 14:34:41 DEBUG|     utils:0151| [stdout] configure: creating ./config.status
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating doc/xsl/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating doc/xsl/catalog.xml
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating doc/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/drivers/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/drivers/mysql/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/drivers/oracle/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/drivers/pgsql/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/cpu/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/fileio/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/memory/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/threads/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/mutex/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/oltp/Makefile
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: creating config/config.h
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: config/config.h is unchanged
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:42 DEBUG|     utils:0151| [stdout] config.status: executing libtool commands
+12/03 14:34:42 DEBUG|     utils:0114| Running './autogen.sh'
+12/03 14:34:45 DEBUG|     utils:0114| Running 'make  LIBTOOL=/usr/bin/libtool'
+12/03 14:34:45 DEBUG|     utils:0151| [stdout]  cd . && /bin/sh ./config.status Makefile 
+12/03 14:34:45 DEBUG|     utils:0151| [stdout] config.status: creating Makefile
+12/03 14:34:45 DEBUG|     utils:0151| [stdout] Making all in doc
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd .. && /bin/sh ./config.status doc/Makefile 
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating doc/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in xsl
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../.. && /bin/sh ./config.status doc/xsl/Makefile 
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating doc/xsl/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Nothing to be done for 'all'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Nothing to be done for 'all-am'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in sysbench
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd .. && /bin/sh ./config.status sysbench/Makefile depfiles
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in drivers
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../.. && /bin/sh ./config.status sysbench/drivers/Makefile 
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/drivers/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all-am'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in tests
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../.. && /bin/sh ./config.status sysbench/tests/Makefile 
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in cpu
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/cpu/Makefile depfiles
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/cpu/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in fileio
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/fileio/Makefile depfiles
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/fileio/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in memory
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/memory/Makefile depfiles
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/memory/Makefile
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] Making all in threads
+12/03 14:34:46 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:46 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/threads/Makefile depfiles
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/threads/Makefile
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making all in mutex
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/mutex/Makefile depfiles
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/mutex/Makefile
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making all in oltp
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]  cd ../../.. && /bin/sh ./config.status sysbench/tests/oltp/Makefile depfiles
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: creating sysbench/tests/oltp/Makefile
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making all in .
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Nothing to be done for 'all-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Nothing to be done for 'all-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0114| Running 'make  LIBTOOL=/usr/bin/libtool install'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in doc
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in xsl
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc/xsl'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]  /bin/mkdir -p '/usr/local/share/doc/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]  /bin/install -c -m 644 manual.html '/usr/local/share/doc/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src/doc'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in sysbench
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in drivers
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/drivers'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in tests
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in cpu
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/cpu'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in fileio
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/fileio'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in memory
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/memory'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in threads
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/threads'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in mutex
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/mutex'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in oltp
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests/oltp'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench/tests'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Making install in .
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]  /bin/mkdir -p '/usr/local/bin'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout]   /usr/bin/libtool   --mode=install /bin/install -c sysbench '/usr/local/bin'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] libtool: install: /bin/install -c sysbench /usr/local/bin/sysbench
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src/sysbench'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Nothing to be done for 'install-exec-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Nothing to be done for 'install-data-am'.
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/sysbench/src'
+12/03 14:34:47 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:47 INFO |  sysbench:0062| clean caches....
+12/03 14:34:47 INFO |  sysbench:0063| ==============Start sysbench memory 4 threads test for 1th =======
+12/03 14:34:47 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=4 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Number of threads: 4
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:47 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3363448.31 ops/sec)
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13138.47 MB/sec)
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     total time:                          0.6235s
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 2.0700
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]          max:                                  0.23ms
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           524288.0000/4672.55
+12/03 14:34:48 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.5175/0.00
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:48 INFO |  sysbench:0062| clean caches....
+12/03 14:34:48 INFO |  sysbench:0063| ==============Start sysbench memory 4 threads test for 2th =======
+12/03 14:34:48 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=4 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Number of threads: 4
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:48 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3347077.58 ops/sec)
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13074.52 MB/sec)
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     total time:                          0.6266s
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 2.0734
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]          max:                                  0.21ms
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           524288.0000/5783.13
+12/03 14:34:49 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.5184/0.00
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:49 INFO |  sysbench:0062| clean caches....
+12/03 14:34:49 INFO |  sysbench:0063| ==============Start sysbench memory 4 threads test for 3th =======
+12/03 14:34:49 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=4 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Number of threads: 4
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:49 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3344713.37 ops/sec)
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13065.29 MB/sec)
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     total time:                          0.6270s
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 2.0857
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]          max:                                  1.04ms
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           524288.0000/4998.99
+12/03 14:34:50 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.5214/0.00
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:50 INFO |  sysbench:0062| clean caches....
+12/03 14:34:50 INFO |  sysbench:0063| ==============Start sysbench memory 8 threads test for 1th =======
+12/03 14:34:50 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=8 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Number of threads: 8
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:50 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3443445.33 ops/sec)
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13450.96 MB/sec)
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total time:                          0.6090s
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 3.1826
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          max:                                  4.14ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           262144.0000/11983.98
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.3978/0.01
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:51 INFO |  sysbench:0062| clean caches....
+12/03 14:34:51 INFO |  sysbench:0063| ==============Start sysbench memory 8 threads test for 2th =======
+12/03 14:34:51 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=8 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Number of threads: 8
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3420881.06 ops/sec)
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13362.82 MB/sec)
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total time:                          0.6130s
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 3.2760
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          max:                                  4.67ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           262144.0000/12589.19
+12/03 14:34:51 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.4095/0.01
+12/03 14:34:51 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:51 DEBUG|     utils:0114| Running 'echo 3 > /proc/sys/vm/drop_caches'
+12/03 14:34:51 INFO |  sysbench:0062| clean caches....
+12/03 14:34:52 INFO |  sysbench:0063| ==============Start sysbench memory 8 threads test for 3th =======
+12/03 14:34:52 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/sysbench/src/sysbench/sysbench --test=memory --num-threads=8 --memory-block-size=4096 --memory-total-size=8G run'
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] sysbench 0.4.12:  multi-threaded system evaluation benchmark
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Running the test with following options:
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Number of threads: 8
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Doing memory operations speed test
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Memory block size: 4K
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Memory transfer size: 8192M
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Memory operations type: write
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Memory scope type: global
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Threads started!
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Done.
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Operations performed: 2097152 (3509526.48 ops/sec)
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 8192.00 MB transferred (13709.09 MB/sec)
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Test execution summary:
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     total time:                          0.5976s
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     total number of events:              2097152
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     total time taken by event execution: 3.3188
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     per-request statistics:
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]          min:                                  0.00ms
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]          avg:                                  0.00ms
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]          max:                                  4.37ms
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]          approx.  95 percentile:               0.00ms
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] Threads fairness:
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     events (avg/stddev):           262144.0000/11157.66
+12/03 14:34:52 DEBUG|     utils:0151| [stdout]     execution time (avg/stddev):   0.4149/0.01
+12/03 14:34:52 DEBUG|     utils:0151| [stdout] 

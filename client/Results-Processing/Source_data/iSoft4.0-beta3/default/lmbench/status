@@ -1,0 +1,3 @@
+	START	lmbench	lmbench	timestamp=1449768537	localtime=Dec 11 01:28:57	
+		GOOD	lmbench	lmbench	timestamp=1449772142	localtime=Dec 11 02:29:02	completed successfully
+	END GOOD	lmbench	lmbench	timestamp=1449772142	localtime=Dec 11 02:29:02	

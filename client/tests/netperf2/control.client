@@ -1,0 +1,17 @@
+NAME = "Netperf2 (Client)"
+AUTHOR = "Martin Bligh <mbligh@google.com>"
+TIME = "MEDIUM"
+TEST_CATEGORY = "BENCHMARK"
+TEST_CLASS = "HARDWARE"
+TEST_TYPE = "CLIENT"
+DOC = """
+TCP/UDP/sockets/etc performance benchmark.
+See http://www.netperf.org/netperf/NetperfPage.html.
+"""
+
+job.run_test('netperf2',
+             server_ip='192.168.32.221',
+             tests=['TCP_STREAM','UDP_STREAM','TCP_RR','TCP_CRR'],
+             test_time=60,
+             stream_list=[1,1,1])
+

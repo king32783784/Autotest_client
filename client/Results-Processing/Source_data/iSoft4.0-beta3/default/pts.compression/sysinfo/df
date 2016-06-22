@@ -1,0 +1,8 @@
+文件系统       1048576-块  已用  可用 配额 挂载点
+devtmpfs             1901     0  1901   0% /dev
+tmpfs                1918     1  1917   1% /dev/shm
+tmpfs                1918     1  1917   1% /run
+tmpfs                1918     0  1918   0% /sys/fs/cgroup
+/dev/sda4           93745 29298 64432  32% /
+tmpfs                1918     1  1918   1% /tmp
+tmpfs                 384     1   384   1% /run/user/1000

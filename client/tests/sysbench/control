@@ -1,0 +1,13 @@
+NAME = "Sysbench (cpu)"
+AUTHOR = "Anton Blanchard <anton@samba.org>"
+TIME = 'MEDIUM'
+TEST_CLASS = 'cpu'
+TEST_CATEGORY = 'Benchmark'
+TEST_TYPE = 'CLIENT'
+
+DOC = """
+The idea is to quickly get an impression about system performance for memory
+"""
+
+job.run_test('sysbench', cpu_max_prime=[10000,20000,30000], test_type='cpu', runtimes=3, tag='cpu')
+job.run_test('sysbench', num_threads=[4,8], test_type='memory', block_size='4096', total_size='8G', runtimes=3, tag='mem')

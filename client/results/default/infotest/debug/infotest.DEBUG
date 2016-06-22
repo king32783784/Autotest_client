@@ -1,0 +1,2 @@
+09/25 14:05:36 DEBUG|     utils:0114| Running 'sh sysinfo.sh '
+09/25 14:05:49 DEBUG|     utils:0114| Running 'cp -a /root/autotest/client/tmp/infotest/src/sysinfo  /root/autotest/client/results/default/infotest/results'

@@ -1,0 +1,231 @@
+DMA-API: debugging out of memory - disabling
+------------[ cut here ]------------
+WARNING: CPU: 1 PID: 3707 at lib/dma-debug.c:601 debug_dma_assert_idle+0x1a4/0x220()
+i915 0000:00:02.0: DMA-API: cpu touching an active dma mapped cacheline [cln=0x0000000004756dc0]
+Modules linked in: binfmt_misc bnep bluetooth rfkill fuse nf_conntrack_netbios_ns nf_conntrack_broadcast ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ebtable_nat ebtable_broute bridge ebtable_filter ebtables ip6table_nat
+------------[ cut here ]------------
+WARNING: CPU: 2 PID: 3740 at lib/dma-debug.c:601 debug_dma_assert_idle+0x1a4/0x220()
+ nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6
+i915 0000:00:02.0: DMA-API: cpu touching an active dma mapped cacheline [cln=0x0000000004756dc0]
+Modules linked in:
+ ip6table_mangle
+ ip6table_security
+ binfmt_misc
+ ip6table_raw
+ bnep
+ bluetooth
+ ip6table_filter ip6_tables
+ rfkill
+ iptable_nat
+ fuse
+ nf_conntrack_ipv4
+ nf_conntrack_netbios_ns nf_conntrack_broadcast
+ nf_defrag_ipv4
+ ip6t_rpfilter
+ nf_nat_ipv4
+ ip6t_REJECT
+ nf_nat
+ nf_reject_ipv6
+ nf_conntrack iptable_mangle
+ xt_conntrack
+ iptable_security
+ ebtable_nat ebtable_broute
+ iptable_raw
+ bridge ebtable_filter
+ snd_hda_codec_hdmi
+ snd_hda_codec_realtek
+ ebtables
+ snd_hda_codec_generic
+ ip6table_nat
+ snd_hda_intel
+ snd_hda_controller
+ nf_conntrack_ipv6
+ snd_hda_codec
+ nf_defrag_ipv6
+ iTCO_wdt
+ nf_nat_ipv6
+ snd_hwdep
+ snd_seq
+ ip6table_mangle
+ snd_seq_device
+ intel_rapl
+ ip6table_security
+ snd_pcm
+ ip6table_raw
+ iTCO_vendor_support
+ ip6table_filter
+ snd_timer
+ iosf_mbi
+ ip6_tables
+ x86_pkg_temp_thermal
+ coretemp
+ iptable_nat
+ ppdev
+ nf_conntrack_ipv4
+ snd
+ kvm_intel
+ nf_defrag_ipv4
+ dcdbas
+ nf_nat_ipv4
+ nf_nat
+ soundcore
+ nf_conntrack iptable_mangle
+ parport_pc
+ iptable_security
+ serio_raw
+ iptable_raw
+ kvm
+ snd_hda_codec_hdmi
+ snd_hda_codec_realtek
+ crct10dif_pclmul
+ snd_hda_codec_generic
+ snd_hda_intel
+ crc32_pclmul
+ snd_hda_controller
+ snd_hda_codec
+ crc32c_intel
+ iTCO_wdt
+ snd_hwdep
+ ghash_clmulni_intel
+ snd_seq
+ snd_seq_device intel_rapl
+ parport
+ shpchp
+ snd_pcm
+ mei_me
+ iTCO_vendor_support
+ i2c_i801
+ snd_timer
+ mei
+ lpc_ich
+ iosf_mbi
+ mfd_core
+ x86_pkg_temp_thermal
+ nfsd
+ coretemp
+ auth_rpcgss
+ ppdev
+ nfs_acl
+ lockd
+ snd
+ grace
+ kvm_intel
+ sunrpc
+ dcdbas
+ i915
+ soundcore
+ 8021q garp
+ parport_pc serio_raw
+ stp llc
+ kvm
+ mrp
+ crct10dif_pclmul
+ tg3
+ crc32_pclmul
+ i2c_algo_bit
+ crc32c_intel
+ e1000e
+ ghash_clmulni_intel
+ drm_kms_helper
+ parport
+ drm
+ shpchp
+ ptp
+ pps_core
+ mei_me
+ ata_generic
+ pata_acpi
+ i2c_i801 mei
+ video
+ lpc_ich
+
+ mfd_core nfsd
+CPU: 1 PID: 3707 Comm: systemd Not tainted 4.0.4-301.fc22.x86_64+debug #1
+Hardware name: Dell Inc. OptiPlex 790/0V5HMK, BIOS A15 07/17/2012
+ auth_rpcgss nfs_acl
+ 0000000000000000
+ lockd
+ 000000008ec484e6
+ grace
+ sunrpc
+ ffff88007d767c68 ffffffff81881788
+ i915
+ 8021q
+
+ garp
+ 0000000000000000 ffff88007d767cc0
+ stp
+ ffff88007d767ca8
+ llc
+ ffffffff810ac4ba
+ mrp
+ tg3
+
+ i2c_algo_bit e1000e
+ 0000000000000006
+ drm_kms_helper
+ ffff880126319d80 ffff880036064a80 00007f01b7918b94
+Call Trace:
+ [<ffffffff81881788>] dump_stack+0x4c/0x65
+ [<ffffffff810ac4ba>] warn_slowpath_common+0x8a/0xc0
+ [<ffffffff810ac545>] warn_slowpath_fmt+0x55/0x70
+ drm ptp
+
+ pps_core
+ [<ffffffff8110bf1d>] ? trace_hardirqs_on+0xd/0x10
+ ata_generic pata_acpi video
+ [<ffffffff8145d5b4>] debug_dma_assert_idle+0x1a4/0x220
+ [<ffffffff8121ec16>] do_wp_page+0x1a6/0x9f0
+ [<ffffffff812216c8>] ? handle_mm_fault+0x348/0x17d0
+ [<ffffffff812221e3>] handle_mm_fault+0xe63/0x17d0
+ [<ffffffff81070301>] __do_page_fault+0x1d1/0x4b0
+ [<ffffffff81070611>] do_page_fault+0x31/0x70
+ [<ffffffff8188d3e8>] page_fault+0x28/0x30
+---[ end trace 19310820a671e97f ]---
+CPU: 2 PID: 3740 Comm: systemd Not tainted 4.0.4-301.fc22.x86_64+debug #1
+Hardware name: Dell Inc. OptiPlex 790/0V5HMK, BIOS A15 07/17/2012
+Mapped at:
+ 
+ 0000000000000000
+[<ffffffff8145b976>] debug_dma_map_sg+0x176/0x1c0
+ 00000000007d5551
+ 
+ ffff88011d467b98
+[<ffffffffa017261b>] i915_gem_gtt_prepare_object+0xdb/0x110 [i915]
+ ffffffff81881788
+ 
+
+[<ffffffffa017c42b>] i915_gem_object_pin_view+0x71b/0x980 [i915]
+ 0000000000000000
+ [<ffffffffa016bd0f>] i915_gem_execbuffer_reserve_vma.isra.17+0x6f/0x100 [i915]
+ ffff88011d467bf0
+ 
+ ffff88011d467bd8
+[<ffffffffa016c0c0>] i915_gem_execbuffer_reserve+0x320/0x390 [i915]
+ ffffffff810ac4ba
+
+ 0000000000000006 ffff880126319d80 ffff880036064a80 00007f01b7918b90
+Call Trace:
+ [<ffffffff81881788>] dump_stack+0x4c/0x65
+ [<ffffffff810ac4ba>] warn_slowpath_common+0x8a/0xc0
+ [<ffffffff810ac545>] warn_slowpath_fmt+0x55/0x70
+ [<ffffffff8110bf1d>] ? trace_hardirqs_on+0xd/0x10
+ [<ffffffff8145d5b4>] debug_dma_assert_idle+0x1a4/0x220
+ [<ffffffff8121ec16>] do_wp_page+0x1a6/0x9f0
+ [<ffffffff812216c8>] ? handle_mm_fault+0x348/0x17d0
+ [<ffffffff812221e3>] handle_mm_fault+0xe63/0x17d0
+ [<ffffffff81070301>] __do_page_fault+0x1d1/0x4b0
+ [<ffffffff8121cb9f>] ? might_fault+0x5f/0xb0
+ [<ffffffff81070611>] do_page_fault+0x31/0x70
+ [<ffffffff8188d3e8>] page_fault+0x28/0x30
+ [<ffffffff81436680>] ? __put_user_4+0x20/0x30
+ [<ffffffff810e34e9>] ? schedule_tail+0x59/0xa0
+ [<ffffffff8188b18f>] ret_from_fork+0xf/0x90
+---[ end trace 19310820a671e980 ]---
+Mapped at:
+ [<ffffffff8145b976>] debug_dma_map_sg+0x176/0x1c0
+ [<ffffffffa017261b>] i915_gem_gtt_prepare_object+0xdb/0x110 [i915]
+ [<ffffffffa017c42b>] i915_gem_object_pin_view+0x71b/0x980 [i915]
+ [<ffffffffa016bd0f>] i915_gem_execbuffer_reserve_vma.isra.17+0x6f/0x100 [i915]
+ [<ffffffffa016c0c0>] i915_gem_execbuffer_reserve+0x320/0x390 [i915]
+traps: polkitd[767] general protection ip:7f792ce24de2 sp:7ffd1fff7b50 error:0 in libmozjs-17.0.so[7f792cce5000+3ba000]

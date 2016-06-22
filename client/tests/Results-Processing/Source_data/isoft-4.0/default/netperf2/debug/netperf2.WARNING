@@ -1,0 +1,8 @@
+09/22 12:13:30 ERROR|     utils:0151| [stderr] netlib.c: 在函数‘bind_to_specific_processor’中:
+09/22 12:13:30 ERROR|     utils:0151| [stderr] netlib.c:2292:9: 警告：隐式声明函数‘sched_setaffinity’ [-Wimplicit-function-declaration]
+09/22 12:13:30 ERROR|     utils:0151| [stderr]      if (sched_setaffinity(getpid(), len, &netperf_cpu_set)) {
+09/22 12:13:30 ERROR|     utils:0151| [stderr]          ^
+09/22 12:13:31 ERROR|     utils:0151| [stderr] nettest_omni.c: 在函数‘recv_data_no_copy’中:
+09/22 12:13:31 ERROR|     utils:0151| [stderr] nettest_omni.c:2943:19: 警告：隐式声明函数‘splice’ [-Wimplicit-function-declaration]
+09/22 12:13:31 ERROR|     utils:0151| [stderr]      bytes_recvd = splice(data_socket,
+09/22 12:13:31 ERROR|     utils:0151| [stderr]                    ^

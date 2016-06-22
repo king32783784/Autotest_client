@@ -1,0 +1,11 @@
+import os 
+from autotest.client import utils
+
+#infotest
+def infotest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('infotest')
+    res_path=os.path.join(job.bindir, 'tests/infotest')
+    os.chdir(res_path)
+
+infotest()

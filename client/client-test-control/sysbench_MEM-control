@@ -1,0 +1,11 @@
+import os 
+from autotest.client import utils
+
+#sysbench mem test
+def sysmemtest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('sysbench', num_threads=[4,8], test_type='memory', block_size='4096', total_size='8G', runtimes=3, tag='mem')
+    res_path=os.path.join(job.bindir, 'tests/sysbench')
+    os.chdir(res_path)
+
+sysmemtest()

@@ -1,0 +1,61 @@
+## Core Components and System Configuration Information 
+
+*Item* | *Details* 
+------ | --------- 
+**OS** | Fedora release 22 (Twenty Two)
+**Kerne** | 4.0.4-301.fc22.x86_64+debug
+**File System** | ext4
+**Gcc** | gcc (GCC) 5.1.1 20150618 (Red Hat 5.1.1-4)
+**G++** | g++ (GCC) 5.1.1 20150618 (Red Hat 5.1.1-4)
+**Gdb** | GNU gdb (GDB) Fedora 7.9-11.fc22
+**Make** | Gnu make 4.0
+**Binutils** | binutils     version 2.25-8.fc22
+**Util-linux** | util-linux   linux 2.26.2
+**Mount** | mount  linux 2.26.2(libmount 2.26.0: selinux, assert, debug)
+**Modutils** | modutils   20
+**E2fsprogs** | e2fsprogs    1.42.12
+**PPP** | PPP  2.4.7
+**Linux CLibrary** | Linux C Library   > libc.2.21
+**LLVM** | llvm-3.5.0-9.fc22.x86_64
+**Ldd** | Dynamic linker (ldd)   2.21
+**Linux C++Library** | null
+**Procps** | Procps   3.3.10
+**Net-tools** | Net-tools    2.10-alpha
+**Iproute2** | iproute2              iproute2-ss140804
+**Kbd** | Kbd   2.0.2
+**Sh-utils** | Sh-utils     8.23
+**Modules** | binfmt_misc bnep bluetooth rfkill fuse nf_conntrack_netbios_ns nf_conntrack_broadcast ip6t_rpfilter ip6t_REJECT nf_reject_ipv6 xt_conntrack ebtable_nat ebtable_broute bridge ebtable_filter ebtables ip6table_nat nf_conntrack_ipv6 nf_defrag_ipv6 nf_nat_ipv6 ip6table_mangle ip6table_security ip6table_raw ip6table_filter ip6_tables iptable_nat nf_conntrack_ipv4 nf_defrag_ipv4 nf_nat_ipv4 nf_nat nf_conntrack iptable_mangle iptable_security iptable_raw snd_hda_codec_hdmi snd_hda_codec_realtek snd_hda_codec_generic intel_rapl iosf_mbi x86_pkg_temp_thermal coretemp snd_hda_intel snd_hda_controller snd_hda_codec snd_hwdep kvm_intel snd_seq snd_seq_device kvm snd_pcm iTCO_wdt crct10dif_pclmul crc32_pclmul crc32c_intel ppdev parport_pc shpchp ghash_clmulni_intel iTCO_vendor_support parport i2c_i801 dcdbas serio_raw snd_timer mei_me lpc_ich mfd_core snd soundcore mei nfsd auth_rpcgss nfs_acl lockd grace sunrpc i915 8021q garp stp llc mrp i2c_algo_bit drm_kms_helper tg3 e1000e drm ata_generic pata_acpi ptp pps_core video
+**Kde** | 4.14.9
+**Gnome** | GNOME Shell 3.16.2
+**Xorg** | xorg-x11-server-Xorg-1.17.1-11.fc22.x86_64
+**MESA** | 10.6.3
+ **JAVA** | openjdk version "1.8.0_45"OpenJDK Runtime Environment (build 1.8.0_45-b13)OpenJDK 64-Bit Server VM (build 25.45-b02, mixed mode)
+**Chrome** | null
+**Firefox** | Mozilla Firefox 38.0.1
+**Root** |   fedora-root 253:1    0    50G  0 lvm  /
+**MEM** | 3787
+**SWAP** | 3839 
+
+## Hardware Info of Identifying by System 
+
+*Item* | *Details*
+------ | ---------
+**MB** | Dell -  OptiPlex 790
+**BIOS** | Dell-A15-07/17/2012
+**CPU** |  42 Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+**MEM** | Samsung-DDR3-1333 MHz-2048MB x2
+**NB** |  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09):snb_uncore
+**SB**|  Intel Corporation Q65 Express Chipset Family LPC Controller (rev 04):lpc_ich
+**Video Card** | { Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller (rev 09):i915}
+**Audio Card** | { Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 04):snd_hda_intel}
+**Wired LAN** | { Intel Corporation 82579LM Gigabit Network Connection (rev 04):e1000e}{ Broadcom Corporation NetXtreme BCM5722 Gigabit Ethernet PCI Express:tg3}
+**Wireless** | null
+**SATA Cotroller** | { Intel Corporation 6 Series/C200 Series Chipset Family 4 port SATA IDE Controller (rev 04):ata_piix}{ Intel Corporation 6 Series/C200 Series Chipset Family 2 port SATA IDE Controller (rev 04):ata_piix}
+**Hard Disk** | { ST500DM002-1BD14 }{ Hitachi HUA72201 }
+**CD-ROM** | PLDS DVD-ROM DH-16D6S
+**RAID** | null
+**Bluetooth** | null 
+**Keyboard** | "AT Translated Set 2 keyboard"
+**Mouse** | "ImPS/2 Logitech Wheel Mouse"
+**USB Flash Disk** | null 
+

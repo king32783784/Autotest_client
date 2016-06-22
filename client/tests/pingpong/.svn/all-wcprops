@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/TestDevelop/!svn/ver/192/autotest/source/autotest/client/tests/pingpong
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/TestDevelop/!svn/ver/191/autotest/source/autotest/client/tests/pingpong/control
+END
+Runtest.patch
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TestDevelop/!svn/ver/191/autotest/source/autotest/client/tests/pingpong/Runtest.patch
+END
+pingpong.tar.gz
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/TestDevelop/!svn/ver/1/autotest/source/autotest/client/tests/pingpong/pingpong.tar.gz
+END
+pingpong.py
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/TestDevelop/!svn/ver/192/autotest/source/autotest/client/tests/pingpong/pingpong.py
+END

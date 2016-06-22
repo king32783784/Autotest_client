@@ -1,0 +1,72 @@
+	START	pts.compression	pts.compression	timestamp=1443074487	localtime=Sep 24 14:01:27	
+		FAIL	pts.compression	pts.compression	timestamp=1443075334	localtime=Sep 24 14:15:34	Unhandled TIMEOUT: Timeout exceeded.
+  <pexpect.spawn object at 0x7f24c1d47f10>
+  version: 3.1
+  command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+  args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compression']
+  searcher: <pexpect.searcher_re object at 0x7f24c1cdc050>
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 3046
+  child_fd: 19
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.EOF'>
+  logfile: <open file '/mnt/results/default/pts.compression/results/raw_output_compression', mode 'w' at 0x7f24c1cd30c0>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  Traceback (most recent call last):
+    File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+      return func(*args, **dargs)
+    File "/root/autotest/client/shared/test.py", line 291, in execute
+      postprocess_profiled_run, args, dargs)
+    File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+      self.run_once(*args, **dargs)
+    File "/root/autotest/client/tests/pts/pts.py", line 97, in run_once
+      runpts.expect(pexpect.EOF)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1418, in expect
+      timeout, searchwindowsize)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1433, in expect_list
+      timeout, searchwindowsize)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1535, in expect_loop
+      raise TIMEOUT(str(err) + '\n' + str(self))
+  TIMEOUT: Timeout exceeded.
+  <pexpect.spawn object at 0x7f24c1d47f10>
+  version: 3.1
+  command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+  args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compression']
+  searcher: <pexpect.searcher_re object at 0x7f24c1cdc050>
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 3046
+  child_fd: 19
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.EOF'>
+  logfile: <open file '/mnt/results/default/pts.compression/results/raw_output_compression', mode 'w' at 0x7f24c1cd30c0>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  
+	END FAIL	pts.compression	pts.compression	timestamp=1443075334	localtime=Sep 24 14:15:34	

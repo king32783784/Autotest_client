@@ -1,0 +1,133 @@
+Slot:	00:00.0
+Class:	Host bridge [0600]
+Vendor:	Intel Corporation [8086]
+Device:	2nd Generation Core Processor Family DRAM Controller [0100]
+SVendor:	Dell [1028]
+SDevice:	2nd Generation Core Processor Family DRAM Controller [04ad]
+Rev:	09
+Driver:	snb_uncore
+
+Slot:	00:02.0
+Class:	VGA compatible controller [0300]
+Vendor:	Intel Corporation [8086]
+Device:	2nd Generation Core Processor Family Integrated Graphics Controller [0102]
+SVendor:	Dell [1028]
+SDevice:	2nd Generation Core Processor Family Integrated Graphics Controller [04ad]
+Rev:	09
+Driver:	i915
+Module:	i915
+
+Slot:	00:16.0
+Class:	Communication controller [0780]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family MEI Controller #1 [1c3a]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family MEI Controller [04ad]
+Rev:	04
+Driver:	mei_me
+Module:	mei_me
+
+Slot:	00:19.0
+Class:	Ethernet controller [0200]
+Vendor:	Intel Corporation [8086]
+Device:	82579LM Gigabit Network Connection [1502]
+SVendor:	Dell [1028]
+SDevice:	82579LM Gigabit Network Connection [047e]
+Rev:	04
+Driver:	e1000e
+Module:	e1000e
+
+Slot:	00:1a.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family USB Enhanced Host Controller #2 [1c2d]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family USB Enhanced Host Controller [04ad]
+Rev:	04
+ProgIf:	20
+Driver:	ehci-pci
+Module:	ehci_pci
+
+Slot:	00:1b.0
+Class:	Audio device [0403]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family High Definition Audio Controller [1c20]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family High Definition Audio Controller [04ad]
+Rev:	04
+Driver:	snd_hda_intel
+Module:	snd_hda_intel
+
+Slot:	00:1c.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family PCI Express Root Port 1 [1c10]
+Rev:	b4
+Driver:	pcieport
+Module:	shpchp
+
+Slot:	00:1c.2
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family PCI Express Root Port 3 [1c14]
+Rev:	b4
+Driver:	pcieport
+Module:	shpchp
+
+Slot:	00:1d.0
+Class:	USB controller [0c03]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family USB Enhanced Host Controller #1 [1c26]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family USB Enhanced Host Controller [04ad]
+Rev:	04
+ProgIf:	20
+Driver:	ehci-pci
+Module:	ehci_pci
+
+Slot:	00:1e.0
+Class:	PCI bridge [0604]
+Vendor:	Intel Corporation [8086]
+Device:	82801 PCI Bridge [244e]
+Rev:	a4
+ProgIf:	01
+
+Slot:	00:1f.0
+Class:	ISA bridge [0601]
+Vendor:	Intel Corporation [8086]
+Device:	Q65 Express Chipset Family LPC Controller [1c4c]
+SVendor:	Dell [1028]
+SDevice:	Q65 Express Chipset Family LPC Controller [04ad]
+Rev:	04
+Driver:	lpc_ich
+Module:	lpc_ich
+
+Slot:	00:1f.2
+Class:	SATA controller [0106]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family SATA AHCI Controller [1c02]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family SATA AHCI Controller [04ad]
+Rev:	04
+ProgIf:	01
+Driver:	ahci
+Module:	ahci
+
+Slot:	00:1f.3
+Class:	SMBus [0c05]
+Vendor:	Intel Corporation [8086]
+Device:	6 Series/C200 Series Chipset Family SMBus Controller [1c22]
+SVendor:	Dell [1028]
+SDevice:	6 Series/C200 Series Chipset Family SMBus Controller [04ad]
+Rev:	04
+Module:	i2c_i801
+
+Slot:	02:00.0
+Class:	Ethernet controller [0200]
+Vendor:	Broadcom Corporation [14e4]
+Device:	NetXtreme BCM5722 Gigabit Ethernet PCI Express [165a]
+SVendor:	Broadcom Corporation [14e4]
+SDevice:	NetXtreme BCM5722 Gigabit Ethernet PCI Express [165a]
+Driver:	tg3
+Module:	tg3
+

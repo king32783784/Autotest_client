@@ -1,0 +1,81 @@
+START	----	----	timestamp=1449113545	localtime=Dec 03 11:32:25	
+	START	infotest	infotest	timestamp=1449113546	localtime=Dec 03 11:32:26	
+		GOOD	infotest	infotest	timestamp=1449113562	localtime=Dec 03 11:32:42	completed successfully
+	END GOOD	infotest	infotest	timestamp=1449113562	localtime=Dec 03 11:32:42	
+	START	netperf2	netperf2	timestamp=1449113562	localtime=Dec 03 11:32:42	
+		ERROR	netperf2	netperf2	timestamp=1449113577	localtime=Dec 03 11:32:57	Command </root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.252 -t TCP_STREAM -l 120> failed, rc=255, Command returned non-zero exit status
+  * Command: 
+      /root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.252 -t
+      TCP_STREAM -l 120
+  Exit status: 255
+  Duration: 3.18474006653
+  
+  stdout:
+  establish control: are you sure there is a netserver listening on 192.168.32.252 at port 12865?
+  establish_control could not establish the control connection from 0.0.0.0 port 0 address family AF_UNSPEC to 192.168.32.252 port 12865 address family AF_INET
+	END ERROR	netperf2	netperf2	timestamp=1449113577	localtime=Dec 03 11:32:57	
+	START	iozone	iozone	timestamp=1449113578	localtime=Dec 03 11:32:58	
+		GOOD	iozone	iozone	timestamp=1449124178	localtime=Dec 03 14:29:38	completed successfully
+	END GOOD	iozone	iozone	timestamp=1449124178	localtime=Dec 03 14:29:38	
+	START	sysbench.cpu	sysbench.cpu	timestamp=1449124178	localtime=Dec 03 14:29:38	
+		GOOD	sysbench.cpu	sysbench.cpu	timestamp=1449124473	localtime=Dec 03 14:34:33	completed successfully
+	END GOOD	sysbench.cpu	sysbench.cpu	timestamp=1449124473	localtime=Dec 03 14:34:33	
+	START	sysbench.mem	sysbench.mem	timestamp=1449124474	localtime=Dec 03 14:34:34	
+		GOOD	sysbench.mem	sysbench.mem	timestamp=1449124493	localtime=Dec 03 14:34:53	completed successfully
+	END GOOD	sysbench.mem	sysbench.mem	timestamp=1449124493	localtime=Dec 03 14:34:53	
+	START	pingpong	pingpong	timestamp=1449124493	localtime=Dec 03 14:34:53	
+		GOOD	pingpong	pingpong	timestamp=1449127224	localtime=Dec 03 15:20:24	completed successfully
+	END GOOD	pingpong	pingpong	timestamp=1449127224	localtime=Dec 03 15:20:24	
+	START	unixbench5	unixbench5	timestamp=1449127224	localtime=Dec 03 15:20:24	
+		GOOD	unixbench5	unixbench5	timestamp=1449140430	localtime=Dec 03 19:00:30	completed successfully
+	END GOOD	unixbench5	unixbench5	timestamp=1449140430	localtime=Dec 03 19:00:30	
+	START	lmbench	lmbench	timestamp=1449140430	localtime=Dec 03 19:00:30	
+		GOOD	lmbench	lmbench	timestamp=1449143845	localtime=Dec 03 19:57:25	completed successfully
+	END GOOD	lmbench	lmbench	timestamp=1449143845	localtime=Dec 03 19:57:25	
+	START	ltp	ltp	timestamp=1449143845	localtime=Dec 03 19:57:25	
+		FAIL	ltp	ltp	timestamp=1449158788	localtime=Dec 04 00:06:28	LTP tests failed: ['netns_sysfs', '/root/autotest/client/tmp/ltp/src/bin/testscripts/test_fs_bind.sh', 'cgroup_regression_test', 'memcg_function_test', 'memcg_stat_test', 'memcg_use_hierarchy_test', 'cgroup_test_fj', 'cpuctl_test_fj', 'cpuset_regression_test', 'Power_Management06', 'Initnuma', 'file09', 'cron01', 'du01', 'cpufreq_boost', 'dma_thread_diotest']
+	END FAIL	ltp	ltp	timestamp=1449158788	localtime=Dec 04 00:06:28	
+	START	pts.compiler	pts.compiler	timestamp=1449158789	localtime=Dec 04 00:06:29	
+		ERROR	pts.compiler	pts.compiler	timestamp=1449158790	localtime=Dec 04 00:06:30	Unhandled ImportError: No module named pexpect
+  Traceback (most recent call last):
+    File "/root/autotest/client/parallel.py", line 25, in fork_start
+      l()
+    File "/root/autotest/client/job.py", line 508, in <lambda>
+      args, dargs))
+    File "/root/autotest/client/test.py", line 125, in runtest
+      job.sysinfo.log_after_each_iteration)
+    File "/root/autotest/client/shared/test.py", line 893, in runtest
+      exec ('import %s' % modulename, local_namespace, global_namespace)
+    File "<string>", line 1, in <module>
+    File "/root/autotest/client/tests/pts/pts.py", line 3, in <module>
+      import pexpect
+  ImportError: No module named pexpect
+  
+	END ERROR	pts.compiler	pts.compiler	timestamp=1449158790	localtime=Dec 04 00:06:30	
+	START	pts.encoding	pts.encoding	timestamp=1449158790	localtime=Dec 04 00:06:30	
+		ERROR	pts.encoding	pts.encoding	timestamp=1449158791	localtime=Dec 04 00:06:31	Unhandled ImportError: No module named pexpect
+  Traceback (most recent call last):
+    File "/root/autotest/client/parallel.py", line 25, in fork_start
+      l()
+    File "/root/autotest/client/job.py", line 508, in <lambda>
+      args, dargs))
+    File "/root/autotest/client/test.py", line 125, in runtest
+      job.sysinfo.log_after_each_iteration)
+    File "/root/autotest/client/shared/test.py", line 893, in runtest
+      exec ('import %s' % modulename, local_namespace, global_namespace)
+    File "<string>", line 1, in <module>
+    File "/root/autotest/client/tests/pts/pts.py", line 3, in <module>
+      import pexpect
+  ImportError: No module named pexpect
+  
+	END ERROR	pts.encoding	pts.encoding	timestamp=1449158791	localtime=Dec 04 00:06:31	
+END ABORT	----	----	timestamp=1449158791	localtime=Dec 04 00:06:31	Unhandled OSError: [Errno 2] No such file or directory: '/root/autotest/client/tests/pts-encoding'
+  Traceback (most recent call last):
+    File "/root/autotest/client/job.py", line 1111, in step_engine
+      execfile(self.control, global_control_vars, global_control_vars)
+    File "/root/autotest/client/control-client", line 138, in <module>
+      ptsencoding()
+    File "/root/autotest/client/control-client", line 82, in ptsencoding
+      os.chdir(res_path)
+  OSError: [Errno 2] No such file or directory: '/root/autotest/client/tests/pts-encoding'
+  

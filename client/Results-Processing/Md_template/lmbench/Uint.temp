@@ -1,0 +1,5 @@
+
+### Basic uint64 operations - times in nanoseconds - smaller is better
+
+*OS* | *int64 bit* | *int64 add* | *int64 mul* | *int64 div* | *int64 mod*
+------ | ----------- | ----------- | ----------- | ----------- |------------

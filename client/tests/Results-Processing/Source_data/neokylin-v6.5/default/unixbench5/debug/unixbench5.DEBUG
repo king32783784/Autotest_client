@@ -1,0 +1,52 @@
+09/15 18:02:22 DEBUG|     utils:0114| Running 'which gcc'
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] /usr/bin/gcc
+09/15 18:02:22 DEBUG|     utils:0114| Running 'cat /root/autotest/client/tests/unixbench5/UnixBench5.1.3.tgz | tar xvf - 2>/dev/null'
+09/15 18:02:22 DEBUG|     utils:0114| Running 'make  '
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] Checking distribution of files
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] ./pgms  exists
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] ./src  exists
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] ./testdir  exists
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] ./tmp  exists
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] ./results  exists
+09/15 18:02:22 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/arithoh -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Darithoh ./src/arith.c
+09/15 18:02:23 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/register -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum='register int' ./src/arith.c
+09/15 18:02:23 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/short -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=short ./src/arith.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/int -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=int ./src/arith.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/long -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=long ./src/arith.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/float -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=float ./src/arith.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -Ddatum=double ./src/arith.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/hanoi -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/hanoi.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/syscall -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/syscall.c
+09/15 18:02:24 ERROR|     utils:0151| [stderr] ./src/syscall.c: 在函数‘main’中:
+09/15 18:02:24 ERROR|     utils:0151| [stderr] ./src/syscall.c:93:21: 警告：实参为 NULL，需要非 NULL 值(实参 2) [-Wnonnull]
+09/15 18:02:24 ERROR|     utils:0151| [stderr]                      execl("/bin/true", (char *) 0);
+09/15 18:02:24 ERROR|     utils:0151| [stderr]                      ^
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/context1 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/context1.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/pipe -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/pipe.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/spawn -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/spawn.c
+09/15 18:02:24 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/execl -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/execl.c
+09/15 18:02:24 ERROR|     utils:0151| [stderr] In file included from ./src/execl.c:34:0:
+09/15 18:02:24 ERROR|     utils:0151| [stderr] ./src/big.c: 在函数‘getwork’中:
+09/15 18:02:24 ERROR|     utils:0151| [stderr] ./src/big.c:452:11: 警告：变量‘c’被设定但未被使用 [-Wunused-but-set-variable]
+09/15 18:02:24 ERROR|     utils:0151| [stderr]      char  c;
+09/15 18:02:24 ERROR|     utils:0151| [stderr]            ^
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/dhry2 -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1.o ./src/dhry_2.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; rm -f dhry_1.o dhry_2.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_1.c -o dhry_1_reg.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; gcc -c -DTIME -Wall -pedantic -ansi -DREG=register -DHZ= -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall dhry_2.c -o dhry_2_reg.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/dhry2reg -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/dhry_1_reg.o ./src/dhry_2_reg.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] cd ./src; rm -f dhry_1_reg.o dhry_2_reg.o
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/looper -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/looper.c
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/fstime -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/fstime.c
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/whetstone-double -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall -DDP -DUNIX -DUNIXBENCH ./src/whets.c -lm
+09/15 18:02:25 DEBUG|     utils:0151| [stdout] gcc -o ./pgms/ubgears -DTIME -Wall -pedantic -ansi -O2 -fomit-frame-pointer -fforce-addr -ffast-math -Wall ./src/ubgears.c -lGL -lXext -lX11 -lm
+09/15 18:02:26 DEBUG|      test:0285| Test started. Specified 3 iterations
+09/15 18:02:26 DEBUG|      test:0289| Executing iteration 1 of 3
+09/15 18:02:26 DEBUG|     utils:0114| Running 'export DISPLAY=:0.0;UB_TMPDIR="/root/autotest/client/tmp/tmp/tmph1fKKu_unixbench5" UB_RESULTDIR="/mnt/results/default/unixbench5/results" ./Run gindex'
+09/15 19:16:37 DEBUG|      test:0289| Executing iteration 2 of 3
+09/15 19:16:37 DEBUG|     utils:0114| Running 'export DISPLAY=:0.0;UB_TMPDIR="/root/autotest/client/tmp/tmp/tmph1fKKu_unixbench5" UB_RESULTDIR="/mnt/results/default/unixbench5/results" ./Run gindex'
+09/15 20:30:43 DEBUG|      test:0289| Executing iteration 3 of 3
+09/15 20:30:43 DEBUG|     utils:0114| Running 'export DISPLAY=:0.0;UB_TMPDIR="/root/autotest/client/tmp/tmp/tmph1fKKu_unixbench5" UB_RESULTDIR="/mnt/results/default/unixbench5/results" ./Run gindex'
+09/15 21:44:54 DEBUG|     utils:0114| Running './unixbench.sh'

@@ -1,0 +1,5 @@
+
+### Basic integer operations - times in nanoseconds - smaller is better
+
+*OS* | *intgr bit* | *intgr add* | *intgr mul* | *intgr div* | *intgr mod*
+------ | ----------- | ----------- | ----------- | ----------- | -----------

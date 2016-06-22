@@ -1,0 +1,7 @@
+
+## Netperf - Performance Test of Net 
+
+Tcp、Udp-Throughput bigger is better
+
+*Item* | *TCP STREAM(10^6bits/sec)* | *UDP STREAM(10^6bits/sec)*
+------ | ------------ | ------------ 

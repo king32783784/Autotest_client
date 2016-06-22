@@ -1,0 +1,91 @@
+Module                  Size  Used by
+bridge                106132  0
+stp                     1821  1 bridge
+llc                     3761  2 stp,bridge
+bnep                   13213  2
+bluetooth             429153  5 bnep
+rfkill                 15626  5 bluetooth
+intel_rapl             13149  0
+iosf_mbi                3162  1 intel_rapl
+x86_pkg_temp_thermal     7159  0
+intel_powerclamp        8118  0
+coretemp                6364  0
+kvm_intel             154914  0
+snd_hda_codec_hdmi     40694  1
+snd_hda_codec_realtek    60294  1
+kvm                   438411  1 kvm_intel
+snd_hda_codec_generic    58955  1 snd_hda_codec_realtek
+snd_hda_intel          25562  3
+snd_hda_codec          93880  4 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_intel
+input_leds              3150  0
+led_class               4306  1 input_leds
+irqbypass               2872  1 kvm
+snd_hda_core           40626  5 snd_hda_codec_realtek,snd_hda_codec_hdmi,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel
+snd_hwdep               6122  1 snd_hda_codec
+snd_seq                50322  0
+mousedev               10824  0
+snd_seq_device          3496  1 snd_seq
+crct10dif_pclmul        4580  0
+crc32_pclmul            3059  0
+snd_pcm                79448  4 snd_hda_codec_hdmi,snd_hda_codec,snd_hda_intel,snd_hda_core
+aesni_intel           158554  0
+aes_x86_64              7631  1 aesni_intel
+lrw                     3733  1 aesni_intel
+gf128mul                5930  1 lrw
+glue_helper             4021  1 aesni_intel
+ablk_helper             2140  1 aesni_intel
+ppdev                   7254  0
+cryptd                  8585  2 aesni_intel,ablk_helper
+snd_timer              19145  2 snd_pcm,snd_seq
+iTCO_wdt                5988  0
+parport_pc             30485  0
+tg3                   152182  0
+iTCO_vendor_support     2097  1 iTCO_wdt
+parport                32798  2 ppdev,parport_pc
+e1000e                203828  0
+mei_me                 21176  0
+dcdbas                  6599  0
+mei                    76227  1 mei_me
+snd                    58925  16 snd_hda_codec_realtek,snd_hwdep,snd_timer,snd_hda_codec_hdmi,snd_pcm,snd_seq,snd_hda_codec_generic,snd_hda_codec,snd_hda_intel,snd_seq_device
+evdev                  12055  9
+i2c_i801               12664  0
+lpc_ich                14432  0
+mac_hid                 3505  0
+soundcore               5347  1 snd
+ptp                    10652  2 tg3,e1000e
+pps_core                8961  1 ptp
+shpchp                 24409  0
+nfsd                  286168  1
+auth_rpcgss            46794  1 nfsd
+oid_registry            2499  1 auth_rpcgss
+nfs_acl                 2975  1 nfsd
+lockd                  74031  1 nfsd
+grace                   2050  2 nfsd,lockd
+sunrpc                255449  7 nfsd,auth_rpcgss,lockd,nfs_acl
+sch_fq_codel            8042  7
+ip_tables              16919  0
+x_tables               16360  1 ip_tables
+hid_generic             1385  0
+sr_mod                 13719  0
+cdrom                  42884  1 sr_mod
+sd_mod                 31263  3
+ahci                   26138  2
+libahci                21820  1 ahci
+i915                 1109262  25
+intel_gtt              12423  1 i915
+i2c_algo_bit            5456  1 i915
+drm_kms_helper         95434  1 i915
+drm                   272274  12 i915,drm_kms_helper
+serio_raw               5130  0
+crc32c_intel           13318  2
+libata                185345  2 ahci,libahci
+ehci_pci                4359  0
+scsi_mod              140559  3 libata,sd_mod,sr_mod
+ehci_hcd               62980  1 ehci_pci
+i2c_core               40919  5 drm,i915,i2c_i801,drm_kms_helper,i2c_algo_bit
+video                  24997  1 i915
+dm_mirror              13547  0
+dm_region_hash          7283  1 dm_mirror
+dm_log                  8651  2 dm_region_hash,dm_mirror
+dm_mod                 89849  2 dm_log,dm_mirror
+autofs4                28905  2

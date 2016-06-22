@@ -1,0 +1,7 @@
+使用内建 specs。
+COLLECT_GCC=/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-isoft-linux/5.3.0/lto-wrapper
+目标：x86_64-isoft-linux
+配置为：../configure --target=x86_64-isoft-linux --host=x86_64-isoft-linux --build=x86_64-isoft-linux --with-cpu=generic --prefix=/usr --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --enable-languages=c,c++,lto,go,fortran --enable-plugin --enable-initfini-array --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-__cxa_atexit --enable-gnu-indirect-function --enable-c99 --enable-long-long --enable-libgomp --enable-lto --enable-libsanitizer --enable-libatomic --enable-libquadmath --enable-libitm --enable-libcilkrts --enable-libmpx --enable-symvers --disable-libstdcxx-pch --disable-multilib --disable-libunwind-exceptions
+线程模型：posix
+gcc 版本 5.3.0 20151204 (iSoft 5.3.0-12) (GCC) 

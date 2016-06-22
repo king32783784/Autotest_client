@@ -1,0 +1,13 @@
+NAME = "PingPong"
+AUTHOR = "panpan.zhao <panpan.zhao@i-soft.com.cn>"
+TIME = 'MEDIUM'
+TEST_CLASS = 'Threads'
+TEST_CATEGORY = 'Benchmark'
+TEST_TYPE = 'CLIENT'
+
+DOC = """
+The idea is to quickly get an impression about system performance for multiple threads
+"""
+
+
+job.run_test('pingpong', table=64, runtimes=3)

@@ -1,0 +1,96 @@
+09/24 08:46:16 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install php php-xml'.
+09/24 08:46:16 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 08:46:16 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 08:46:16 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 08:46:16 ERROR|     utils:0151| [stderr] 
+09/24 08:46:17 ERROR|     utils:0151| [stderr] 软件包 php-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 08:46:17 ERROR|     utils:0151| [stderr] 软件包 php-xml-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 08:46:18 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install mpich2'.
+09/24 08:46:18 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 08:46:18 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 08:46:18 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 08:46:18 ERROR|     utils:0151| [stderr] 
+09/24 08:46:19 ERROR|     utils:0151| [stderr] 软件包 mpich-3.1.4-2.fc22.x86_64 已安装，跳过
+09/24 08:46:20 ERROR|     utils:0151| [stderr] 软件包 python-pexpect-3.1-3.fc21.noarch 已安装，跳过
+09/24 09:25:56 ERROR|     utils:0151| [stderr] 2015-09-24 09:25:56 URL:http://tfs.i-soft.com.cn/TestRepos/TestTools/PTS/phoronix-test-suite-pkg.tar.gz [8165376000/8165376000] -> "/root/phoronix-test-suite-pkg.tar.gz" [1]
+09/24 09:29:57 INFO |       pts:0069| now start first expect.........
+09/24 09:29:58 INFO |       pts:0087| now start run test..............
+09/24 10:11:17 ERROR|      test:0414| Exception escaping from test:
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 411, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/root/autotest/client/shared/test.py", line 830, in _call_test_function
+    raise error.UnhandledTestFail(e)
+UnhandledTestFail: Unhandled TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7f586a00afd0>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: <pexpect.searcher_re object at 0x7f586a00add0>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 1606
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7f5869f96270>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+    return func(*args, **dargs)
+  File "/root/autotest/client/shared/test.py", line 291, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/root/autotest/client/tests/pts/pts.py", line 99, in run_once
+    runpts.expect(pexpect.EOF)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1418, in expect
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1433, in expect_list
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1535, in expect_loop
+    raise TIMEOUT(str(err) + '\n' + str(self))
+TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7f586a00afd0>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: <pexpect.searcher_re object at 0x7f586a00add0>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 1606
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7f5869f96270>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+
+09/24 10:11:17 WARNI|      test:0115| Programs crashed during test execution
+09/24 10:11:17 WARNI|      test:0117| Please verify /mnt/results/default/pts.compiler/debug/crash.conftest.16802 for more info
+09/24 10:11:17 WARNI|      test:0117| Please verify /mnt/results/default/pts.compiler/debug/crash.conftest.16837 for more info

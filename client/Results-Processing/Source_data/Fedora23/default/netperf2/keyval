@@ -1,0 +1,10 @@
+param-iterations=3
+param-server_ip='192.168.32.47'
+param-stream_list=[1]
+param-test_time=120
+param-tests=['TCP_STREAM', 'UDP_STREAM', 'TCP_RR', 'TCP_CRR']
+version=1
+sysinfo-cmdline=BOOT_IMAGE=/boot/vmlinuz-0-rescue-572d4e3e015b4635aa4e017e74035151 root=/dev/sda1
+sysinfo-memtotal-in-kb=3923972
+sysinfo-phys-mbytes=4096
+sysinfo-uname=4.2.3-300.fc23.x86_64 #1 SMP Mon Oct 5 15:42:54 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux

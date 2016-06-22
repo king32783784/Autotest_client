@@ -1,0 +1,11 @@
+import os 
+from autotest.client import utils
+
+
+#PTS-graphics test
+def ptsgraphics():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('pts', testname=['desktop-graphics'], tag='graphics')
+    res_path=os.path.join(job.bindir, 'tests/pts')
+    os.chdir(res_path)
+ptsgraphics()

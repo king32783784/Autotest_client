@@ -1,0 +1,72 @@
+	START	pts.encoding	pts.encoding	timestamp=1451304947	localtime=12月 28 20:15:47	
+		FAIL	pts.encoding	pts.encoding	timestamp=1451305234	localtime=12月 28 20:20:34	Unhandled TIMEOUT: Timeout exceeded.
+  <pexpect.pty_spawn.spawn object at 0x7f7359746a10>
+  command: /bin/phoronix-test-suite
+  args: ['/bin/phoronix-test-suite', 'run', 'encoding']
+  searcher: None
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.exceptions.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 1317
+  child_fd: 21
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.exceptions.EOF'>
+  logfile: <open file '/home/Linux-version-test-result/PTS_encoding/results/default/pts.encoding/results/raw_output_encoding', mode 'w' at 0x7f735974f420>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  Traceback (most recent call last):
+    File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+      return func(*args, **dargs)
+    File "/root/autotest/client/shared/test.py", line 291, in execute
+      postprocess_profiled_run, args, dargs)
+    File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+      self.run_once(*args, **dargs)
+    File "/root/autotest/client/tests/pts/pts.py", line 93, in run_once
+      runpts.expect(pexpect.EOF)
+    File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 315, in expect
+      timeout, searchwindowsize, async)
+    File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 339, in expect_list
+      return exp.expect_loop(timeout)
+    File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 104, in expect_loop
+      return self.timeout(e)
+    File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 68, in timeout
+      raise TIMEOUT(msg)
+  TIMEOUT: Timeout exceeded.
+  <pexpect.pty_spawn.spawn object at 0x7f7359746a10>
+  command: /bin/phoronix-test-suite
+  args: ['/bin/phoronix-test-suite', 'run', 'encoding']
+  searcher: None
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.exceptions.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 1317
+  child_fd: 21
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.exceptions.EOF'>
+  logfile: <open file '/home/Linux-version-test-result/PTS_encoding/results/default/pts.encoding/results/raw_output_encoding', mode 'w' at 0x7f735974f420>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  
+	END FAIL	pts.encoding	pts.encoding	timestamp=1451305234	localtime=12月 28 20:20:34	

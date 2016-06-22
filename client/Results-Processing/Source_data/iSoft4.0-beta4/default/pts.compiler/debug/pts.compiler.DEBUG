@@ -1,0 +1,599 @@
+12/28 19:54:27 DEBUG|     utils:0114| Running 'which gcc'
+12/28 19:54:27 DEBUG|     utils:0151| [stdout] /usr/lib/ccache/gcc
+12/28 19:54:27 DEBUG|     utils:0114| Running 'zcat /root/autotest/client/tests/pts/phoronix-test-suite-5.2.1.tar.gz | tar xvf - 2>/dev/null'
+12/28 19:54:27 DEBUG|     utils:0114| Running 'sh install-sh'
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] 
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Installation Completed
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] 
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] Executable File: /usr/bin/phoronix-test-suite
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] Documentation: /usr/share/doc/phoronix-test-suite/
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Files: /usr/share/phoronix-test-suite/
+12/28 19:54:53 DEBUG|     utils:0151| [stdout] 
+12/28 19:54:53 DEBUG|     utils:0114| Running 'phoronix-test-suite list-available-suites'
+12/28 19:55:02 DEBUG|     utils:0151| [stdout] 
+12/28 19:55:02 DEBUG|     utils:0151| [stdout] NOTICE: The following PHP extensions are OPTIONAL but recommended:
+12/28 19:55:02 DEBUG|     utils:0151| [stdout] 
+12/28 19:55:02 DEBUG|     utils:0151| [stdout] PHP FPDF PHP FPDF is recommended if wishing to generate PDF reports.
+12/28 19:55:02 DEBUG|     utils:0151| [stdout] 
+12/28 19:55:12 DEBUG|     utils:0151| [stdout] 
+12/28 19:55:12 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+12/28 19:55:12 DEBUG|     utils:0151| [stdout] Available Suites
+12/28 19:55:12 DEBUG|     utils:0151| [stdout] 
+12/28 19:55:15 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+12/28 19:55:16 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+12/28 19:55:17 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+12/28 19:55:20 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+12/28 19:55:21 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+12/28 19:55:24 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+12/28 19:55:24 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+12/28 19:55:26 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+12/28 19:55:28 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+12/28 19:55:31 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+12/28 19:55:34 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+12/28 19:55:35 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+12/28 19:55:37 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+12/28 19:55:39 DEBUG|     utils:0151| [stdout]   pts/disk                         - Disk Test Suite                  Disk
+12/28 19:55:41 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+12/28 19:55:43 DEBUG|     utils:0151| [stdout]   pts/favorites                    - Favorites                        System
+12/28 19:55:48 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+12/28 19:55:48 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+12/28 19:55:48 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+12/28 19:55:50 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+12/28 19:55:50 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+12/28 19:55:51 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+12/28 19:55:53 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+12/28 19:55:54 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+12/28 19:55:56 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+12/28 19:55:58 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+12/28 19:55:59 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+12/28 19:56:00 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+12/28 19:56:02 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+12/28 19:56:04 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+12/28 19:56:06 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+12/28 19:56:07 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+12/28 19:56:09 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+12/28 19:56:11 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+12/28 19:56:13 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+12/28 19:56:14 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+12/28 19:56:17 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+12/28 19:56:19 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+12/28 19:56:21 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+12/28 19:56:22 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+12/28 19:56:30 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+12/28 19:56:34 DEBUG|     utils:0151| [stdout]   pts/universe-cli                 - Universe CLI Test Suite          System
+12/28 19:56:35 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+12/28 19:56:35 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+12/28 19:56:38 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+12/28 19:56:39 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+12/28 19:56:40 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+12/28 19:56:40 DEBUG|     utils:0151| [stdout] 
+12/28 19:56:40 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+12/28 19:56:40 DEBUG|     utils:0151| [stdout] 
+12/28 19:56:40 DEBUG|     utils:0151| [stdout] 
+12/28 19:56:44 INFO |       pts:0062| 0
+12/28 19:56:44 INFO |       pts:0063| now start first expect.........
+12/28 19:56:44 DEBUG|       pts:0071| 
+[NOTICE] pts/build-imagemagick: The latest test profile version available for upgrade is 1.7.2 but version 1.7.1 is the latest currently installed. 
+
+[NOTICE] pts/compress-7zip: The latest test profile version available for upgrade is 1.6.1 but version 1.6.0 is the latest currently installed. 
+
+[NOTICE] pts/x264: The latest test profile version available for upgrade is 2.0.0 but version 1.9.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+
+[NOTICE] pts/photo-sample: The latest test profile version available for upgrade is 1.0.1 but version 1.0.0 is the latest currently installed. 
+        The test executable for pts/build-imagemagick-1.7.2 could not be located.
+        The test executable for pts/compress-7zip-1.6.1 could not be located.
+        The test executable for pts/x264-2.0.0 could not be located.
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: iSoft Desktop 4.0, Kernel: 4.4.0-15 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.1.0, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush <bool>] [-i <file>] [-o <file>] [-c <file>] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.1 + LLVM 3.7.1, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results 
+12/28 19:56:44 DEBUG|       pts:0074|  y
+    Enter a name to save these results 
+12/28 19:56:44 DEBUG|       pts:0077|  compiler-result
+    Enter a unique name to describe this test run / 
+12/28 19:56:44 DEBUG|       pts:0080|  compiler-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current 
+12/28 19:56:44 INFO |       pts:0081| now start run test..............
+12/28 20:15:15 DEBUG|       pts:0092|  Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Desktop 4.0 via the Phoronix Test Suite.
+
+New Description: 
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: LU.A]
+    Test 1 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 58 Minutes
+        Started Run 1 @ 05:56:44
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 05:56:46
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 05:56:48
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Total Mop/s
+    This test failed to run properly.
+
+
+Timed HMMer Search 2.3.2:
+    pts/hmmer-1.1.0
+    Test 2 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 53 Minutes
+        Started Run 1 @ 05:56:54
+        Started Run 2 @ 05:57:18
+        Started Run 3 @ 05:57:37  [Std. Dev: 0.82%]
+
+    Test Results:
+        16.62066411972
+        16.407155990601
+        16.372525930405
+
+    Average: 16.47 Seconds
+
+
+Gcrypt Library 1.4.4:
+    pts/gcrypt-1.0.3
+    Test 3 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 51 Minutes
+        Started Run 1 @ 05:57:59
+        Started Run 2 @ 05:58:34
+        Started Run 3 @ 05:59:08  [Std. Dev: 1.19%]
+
+    Test Results:
+        2950
+        2910
+        2980
+
+    Average: 2947 Microseconds
+
+
+John The Ripper 1.8.0:
+    pts/john-the-ripper-1.5.1 [Test: Blowfish]
+    Test 4 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      8 Minutes
+    Estimated Time To Completion: 49 Minutes
+        Started Run 1 @ 05:59:48
+        Started Run 2 @ 06:00:55
+        Started Run 3 @ 06:02:03  [Std. Dev: 0.28%]
+
+    Test Results:
+        2731
+        2716
+        2726
+
+    Average: 2724 Real C/S
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Sharpen]
+    Test 5 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 42 Minutes
+        Started Run 1 @ 06:03:15
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:03:17
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:03:19
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Resizing]
+    Test 6 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 39 Minutes
+        Started Run 1 @ 06:03:25
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:03:27
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:03:29
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: HWB Color Space]
+    Test 7 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 35 Minutes
+        Started Run 1 @ 06:03:36
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:03:38
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:03:40
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Iterations Per Minute
+    This test failed to run properly.
+
+
+Timed Apache Compilation 2.4.7:
+    pts/build-apache-1.5.1
+    Test 8 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 32 Minutes
+        Running Pre-Test Script @ 06:03:46
+        Started Run 1 @ 06:04:26
+        Running Interim Test Script @ 06:05:41
+        Started Run 2 @ 06:05:43
+        Running Interim Test Script @ 06:05:51
+        Started Run 3 @ 06:05:53
+        Running Interim Test Script @ 06:06:00  [Std. Dev: 131.17%]
+        Started Run 4 @ 06:06:03
+        Running Interim Test Script @ 06:06:10  [Std. Dev: 139.96%]
+        Started Run 5 @ 06:06:13
+        Running Interim Test Script @ 06:06:20  [Std. Dev: 145.52%]
+        Started Run 6 @ 06:06:22  [Std. Dev: 149.20%]
+        Running Post-Test Script @ 06:06:30
+
+    Test Results:
+        75.111039876938
+        7.2765460014343
+        7.2213699817657
+        7.3255500793457
+        7.2980260848999
+        7.1675350666046
+
+    Average: 18.57 Seconds
+
+
+Timed PHP Compilation 5.2.9:
+    pts/build-php-1.3.1
+    Test 9 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 29 Minutes
+        Running Pre-Test Script @ 06:06:38
+        Started Run 1 @ 06:07:02
+        Running Interim Test Script @ 06:08:51
+        Started Run 2 @ 06:08:53
+        Running Interim Test Script @ 06:09:01
+        Started Run 3 @ 06:09:03
+        Running Interim Test Script @ 06:09:10  [Std. Dev: 141.34%]
+        Started Run 4 @ 06:09:12
+        Running Interim Test Script @ 06:09:20  [Std. Dev: 153.87%]
+        Started Run 5 @ 06:09:22
+        Running Interim Test Script @ 06:09:29  [Std. Dev: 162.75%]
+        Started Run 6 @ 06:09:32  [Std. Dev: 169.07%]
+        Running Post-Test Script @ 06:09:39
+
+    Test Results:
+        108.5736310482
+        7.6481781005859
+        7.5275349617004
+        7.5370631217957
+        7.5048360824585
+        7.561518907547
+
+    Average: 24.39 Seconds
+
+
+C-Ray 1.1:
+    pts/c-ray-1.1.0
+    Test 10 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 27 Minutes
+        Started Run 1 @ 06:09:46
+        Started Run 2 @ 06:10:56
+        Started Run 3 @ 06:12:06  [Std. Dev: 0.04%]
+
+    Test Results:
+        67.891
+        67.939
+        67.895
+
+    Average: 67.91 Seconds
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Raytests]
+    Test 11 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 24 Minutes
+        Started Run 1 @ 06:13:22
+        The test run did not produce a result.
+        Started Run 2 @ 06:13:24
+        The test run did not produce a result.
+        Started Run 3 @ 06:13:26
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 3000 Fall]
+    Test 12 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 21 Minutes
+        Started Run 1 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 2 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 3 @ 06:13:26
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Stack]
+    Test 13 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 18 Minutes
+        Started Run 1 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 2 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 3 @ 06:13:26
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Convex]
+    Test 14 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 2 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 3 @ 06:13:26
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Convex Trimesh]
+    Test 15 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 2 @ 06:13:26
+        The test run did not produce a result.
+        Started Run 3 @ 06:13:26
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 16 of 18
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 9 Minutes
+        Started Run 1 @ 06:13:32
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:13:34
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:13:36
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 06:13:38
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 06:13:40
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+OpenSSL 1.0.1g:
+    pts/openssl-1.9.0
+    Test 17 of 18
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 06:13:46
+        Started Run 2 @ 06:14:08
+        Started Run 3 @ 06:14:30  [Std. Dev: 0.08%]
+
+    Test Results:
+        380.4
+        380.7
+        380.1
+
+    Average: 380.40 Signs Per Second
+
+
+Apache Benchmark 2.4.7:
+    pts/apache-1.6.1
+    Test 18 of 18
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes
+        Running Pre-Test Script @ 06:14:58
+        Started Run 1 @ 06:15:03
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:15:05
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:15:07
+        The test exited with a non-zero exit status.
+        E: ./httpd_/bin/ab: error while loading shared libraries: libssl.so.10: cannot open shared object file: No such file or directory
+        Running Post-Test Script @ 06:15:07
+
+    Test Results:
+
+    Average: 0 Requests Per Second
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/npb-1.2.1: Test / Class: LU.A
+	- pts/graphics-magick-1.6.1: Operation: Sharpen
+	- pts/graphics-magick-1.6.1: Operation: Resizing
+	- pts/graphics-magick-1.6.1: Operation: HWB Color Space
+	- pts/bullet-1.2.1: Test: Raytests
+	- pts/bullet-1.2.1: Test: 3000 Fall
+	- pts/bullet-1.2.1: Test: 1000 Stack
+	- pts/bullet-1.2.1: Test: 1000 Convex
+	- pts/bullet-1.2.1: Test: Convex Trimesh
+	- pts/encode-mp3-1.4.0: WAV To MP3
+	- pts/apache-1.6.1: Static Web Page Serving
+
+
+    Do you want to view the results in your web browser 
+12/28 20:15:45 ERROR|      test:0414| Exception escaping from test:
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 411, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/root/autotest/client/shared/test.py", line 830, in _call_test_function
+    raise error.UnhandledTestFail(e)
+UnhandledTestFail: Unhandled TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7ff3b051a9d0>
+command: /bin/phoronix-test-suite
+args: ['/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: None
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3131
+child_fd: 21
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <open file '/home/Linux-version-test-result/PTS_compiler/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7ff3b0523390>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+    return func(*args, **dargs)
+  File "/root/autotest/client/shared/test.py", line 291, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/root/autotest/client/tests/pts/pts.py", line 93, in run_once
+    runpts.expect(pexpect.EOF)
+  File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 315, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 339, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 104, in expect_loop
+    return self.timeout(e)
+  File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 68, in timeout
+    raise TIMEOUT(msg)
+TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7ff3b051a9d0>
+command: /bin/phoronix-test-suite
+args: ['/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: None
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3131
+child_fd: 21
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <open file '/home/Linux-version-test-result/PTS_compiler/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7ff3b0523390>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+

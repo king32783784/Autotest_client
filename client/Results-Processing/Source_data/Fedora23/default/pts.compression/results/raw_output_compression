@@ -1,0 +1,110 @@
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.0.3 (git-b4bfea0), Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): y
+y
+
+Recently Saved Test Results:
+- encoding-result   [Today]
+- compiler-result   [Today]
+
+    Enter a name to save these results under: compression-result
+compression-result
+    Enter a unique name to describe this test run / configuration: compression-conf
+compression-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.
+
+New Description: 
+
+
+
+7-Zip Compression 9.20.1:
+    pts/compress-7zip-1.6.0
+    Test 1 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 23 Minutes
+        Started Run 1 @ 19:51:29
+        Started Run 2 @ 19:51:53
+        Started Run 3 @ 19:52:17  [Std. Dev: 0.66%]
+
+    Test Results:
+        11508
+        11390
+        11369
+
+    Average: 11422 MIPS
+
+
+Parallel BZIP2 Compression 1.1.6:
+    pts/compress-pbzip2-1.4.0
+    Test 2 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 22 Minutes
+        Running Pre-Test Script @ 19:52:46
+        Started Run 1 @ 19:53:01
+        Started Run 2 @ 19:53:21
+        Started Run 3 @ 19:53:35  [Std. Dev: 0.26%]
+        Running Post-Test Script @ 19:53:47
+
+    Test Results:
+        12.41777586937
+        12.461797952652
+        12.480161905289
+
+    Average: 12.45 Seconds
+
+
+Gzip Compression:
+    pts/compress-gzip-1.1.0
+    Test 3 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 19 Minutes
+        Running Pre-Test Script @ 19:53:55
+        Started Run 1 @ 19:54:07
+        Started Run 2 @ 19:54:26
+        Started Run 3 @ 19:54:43  [Std. Dev: 1.12%]
+        Running Post-Test Script @ 19:54:59
+
+    Test Results:
+        16.098492860794
+        15.819407939911
+        15.767304897308
+
+    Average: 15.90 Seconds
+
+
+LZMA Compression:
+    pts/compress-lzma-1.2.0
+    Test 4 of 4
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 17 Minutes
+        Running Pre-Test Script @ 19:55:06
+        Started Run 1 @ 19:55:21
+        Started Run 2 @ 19:57:59
+        Started Run 3 @ 20:00:37  [Std. Dev: 0.11%]
+        Running Post-Test Script @ 20:03:13
+
+    Test Results:
+        156.01623392105
+        155.66462993622
+        155.86971902847
+
+    Average: 155.85 Seconds
+
+    Do you want to view the results in your web browser (Y/n): n
+n
+    Would you like to upload the results to OpenBenchmarking.org (Y/n): 

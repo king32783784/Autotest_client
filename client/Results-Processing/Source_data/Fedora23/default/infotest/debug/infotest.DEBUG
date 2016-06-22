@@ -1,0 +1,5 @@
+12/03 11:32:26 DEBUG|     utils:0114| Running 'which gcc'
+12/03 11:32:26 DEBUG|     utils:0151| [stdout] /bin/gcc
+12/03 11:32:26 DEBUG|     utils:0114| Running 'zcat /root/autotest/client/tests/infotest/infotest1.0.tar.gz | tar xvf - 2>/dev/null'
+12/03 11:32:26 DEBUG|     utils:0114| Running 'sh sysinfo.sh '
+12/03 11:32:42 DEBUG|     utils:0114| Running 'mv /root/autotest/client/tmp/infotest/src/*info  /mnt/results/default/infotest/results'

@@ -1,0 +1,7 @@
+12/15 10:04:26 ERROR|     utils:0151| [stderr] /bin/bash: line 6: warning: here-document at line 0 delimited by end-of-file (wanted `TODO')
+12/15 10:06:07 ERROR|     utils:0151| [stderr] No protocol specified
+12/15 10:06:07 ERROR|     utils:0151| [stderr] xset:  unable to open display ":0.0"
+12/15 10:06:07 WARNI|      test:0115| Programs crashed during test execution
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13666 for more info
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13646 for more info
+12/15 10:06:07 WARNI|      test:0117| Please verify /mnt/results/default/pts.graphics/debug/crash.qgears.13656 for more info

@@ -1,0 +1,10 @@
+12/03 14:34:55 ERROR|     utils:0151| [stderr] pp32.c: 在函数‘main’中:
+12/03 14:34:55 ERROR|     utils:0151| [stderr] pp32.c:91:15: 警告：隐式声明函数‘getopt’ [-Wimplicit-function-declaration]
+12/03 14:34:55 ERROR|     utils:0151| [stderr]    while ((c = getopt (argc, argv, "?vri:n:z:p:s:c:S:")) != EOF)
+12/03 14:34:55 ERROR|     utils:0151| [stderr]                ^
+12/03 14:34:55 ERROR|     utils:0151| [stderr] pp32.c:113:6: 警告：隐式声明函数‘strcmp’ [-Wimplicit-function-declaration]
+12/03 14:34:55 ERROR|     utils:0151| [stderr]   if (strcmp (optarg, "shared") == 0)
+12/03 14:34:55 ERROR|     utils:0151| [stderr]       ^
+12/03 14:34:55 ERROR|     utils:0151| [stderr] pp32.c:193:7: 警告：隐式声明函数‘pthread_setconcurrency’ [-Wimplicit-function-declaration]
+12/03 14:34:55 ERROR|     utils:0151| [stderr]        pthread_setconcurrency (concurrency);
+12/03 14:34:55 ERROR|     utils:0151| [stderr]        ^

@@ -1,0 +1,598 @@
+12/15 09:10:13 DEBUG|     utils:0114| Running 'which gcc'
+12/15 09:10:13 DEBUG|     utils:0151| [stdout] /usr/bin/gcc
+12/15 09:10:13 DEBUG|     utils:0114| Running 'zcat /root/autotest/client/tests/pts/phoronix-test-suite-5.2.1.tar.gz | tar xvf - 2>/dev/null'
+12/15 09:10:13 DEBUG|     utils:0114| Running 'sh install-sh'
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Installation Completed
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] Executable File: /usr/bin/phoronix-test-suite
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] Documentation: /usr/share/doc/phoronix-test-suite/
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Files: /usr/share/phoronix-test-suite/
+12/15 09:11:01 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:01 DEBUG|     utils:0114| Running 'phoronix-test-suite list-available-suites'
+12/15 09:11:10 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:10 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+12/15 09:11:10 DEBUG|     utils:0151| [stdout] Available Suites
+12/15 09:11:10 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:11 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+12/15 09:11:11 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+12/15 09:11:12 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+12/15 09:11:15 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+12/15 09:11:15 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+12/15 09:11:16 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+12/15 09:11:16 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+12/15 09:11:17 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+12/15 09:11:17 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+12/15 09:11:19 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+12/15 09:11:22 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+12/15 09:11:22 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+12/15 09:11:22 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+12/15 09:11:23 DEBUG|     utils:0151| [stdout] * pts/disk                         - Disk Test Suite                  Disk
+12/15 09:11:23 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+12/15 09:11:24 DEBUG|     utils:0151| [stdout] * pts/favorites                    - Favorites                        System
+12/15 09:11:25 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+12/15 09:11:25 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+12/15 09:11:25 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+12/15 09:11:25 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+12/15 09:11:26 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+12/15 09:11:26 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+12/15 09:11:26 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+12/15 09:11:26 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+12/15 09:11:27 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+12/15 09:11:28 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+12/15 09:11:28 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+12/15 09:11:29 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+12/15 09:11:29 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+12/15 09:11:30 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+12/15 09:11:31 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+12/15 09:11:31 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+12/15 09:11:32 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+12/15 09:11:33 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+12/15 09:11:33 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+12/15 09:11:33 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+12/15 09:11:35 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+12/15 09:11:35 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+12/15 09:11:37 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+12/15 09:11:37 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+12/15 09:11:42 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+12/15 09:11:46 DEBUG|     utils:0151| [stdout] * pts/universe-cli                 - Universe CLI Test Suite          System
+12/15 09:11:47 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+12/15 09:11:47 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+12/15 09:11:48 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+12/15 09:11:49 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+12/15 09:11:49 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+12/15 09:11:49 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:49 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+12/15 09:11:49 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:49 DEBUG|     utils:0151| [stdout] 
+12/15 09:11:51 INFO |       pts:0062| 0
+12/15 09:11:51 INFO |       pts:0063| now start first expect.........
+12/15 09:11:51 DEBUG|       pts:0071| 
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 23, Kernel: 4.2.3-300.fc23.x86_64 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.17.99.901 (1.18.0 RC 1), Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.0.3 (git-b4bfea0), Compiler: GCC 5.1.1 20150618, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results 
+12/15 09:11:52 DEBUG|       pts:0074|  y
+    Enter a name to save these results 
+12/15 09:11:52 DEBUG|       pts:0077|  compiler-result
+    Enter a unique name to describe this test run / 
+12/15 09:11:52 DEBUG|       pts:0080|  compiler-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current 
+12/15 09:11:52 INFO |       pts:0081| now start run test..............
+12/15 09:42:23 DEBUG|       pts:0092|  Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on Fedora 23 via the Phoronix Test Suite.
+
+New Description: 
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: LU.A]
+    Test 1 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 1 Hour, 16 Minutes
+        Started Run 1 @ 19:11:52
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 19:11:54
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 19:11:56
+        The test exited with a non-zero exit status.
+        E: ./npb: line 19: mpiexec: command not found
+
+    Test Results:
+
+    Average: 0 Total Mop/s
+    This test failed to run properly.
+
+
+Timed HMMer Search 2.3.2:
+    pts/hmmer-1.1.0
+    Test 2 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 1 Hour, 10 Minutes
+        Started Run 1 @ 19:12:02
+        Started Run 2 @ 19:12:26
+        Started Run 3 @ 19:12:44  [Std. Dev: 1.36%]
+
+    Test Results:
+        16.432368040085
+        16.069903850555
+        16.035356998444
+
+    Average: 16.18 Seconds
+
+
+Gcrypt Library 1.4.4:
+    pts/gcrypt-1.0.3
+    Test 3 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 1 Hour, 8 Minutes
+        Started Run 1 @ 19:13:06
+        Started Run 2 @ 19:13:40
+        Started Run 3 @ 19:14:15  [Std. Dev: 0.86%]
+
+    Test Results:
+        2890
+        2910
+        2940
+
+    Average: 2913 Microseconds
+
+
+John The Ripper 1.8.0:
+    pts/john-the-ripper-1.5.1 [Test: Blowfish]
+    Test 4 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      8 Minutes
+    Estimated Time To Completion: 1 Hour, 6 Minutes
+        Started Run 1 @ 19:14:56
+        Started Run 2 @ 19:16:03
+        Started Run 3 @ 19:17:10  [Std. Dev: 0.83%]
+
+    Test Results:
+        2567
+        2592
+        2610
+
+    Average: 2590 Real C/S
+
+
+x264 2014-08-30:
+    pts/x264-1.9.0
+    Test 5 of 21
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 59 Minutes
+        Started Run 1 @ 19:18:23
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 19:18:25
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 19:18:27
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 19:18:29
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 19:18:31
+        The test exited with a non-zero exit status.
+        E: ./x264_/bin/x264: error while loading shared libraries: libavformat.so.55: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Sharpen]
+    Test 6 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 55 Minutes
+        Started Run 1 @ 19:18:37
+        Started Run 2 @ 19:19:39
+        Started Run 3 @ 19:20:42  [Std. Dev: 0.00%]
+
+    Test Results:
+        41
+        41
+        41
+
+    Average: 41 Iterations Per Minute
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: Resizing]
+    Test 7 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 52 Minutes
+        Started Run 1 @ 19:21:51
+        Started Run 2 @ 19:22:53
+        Started Run 3 @ 19:23:56  [Std. Dev: 0.94%]
+
+    Test Results:
+        107
+        106
+        105
+
+    Average: 106 Iterations Per Minute
+
+
+GraphicsMagick 1.3.19:
+    pts/graphics-magick-1.6.1 [Operation: HWB Color Space]
+    Test 8 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 49 Minutes
+        Started Run 1 @ 19:25:08
+        Started Run 2 @ 19:26:10
+        Started Run 3 @ 19:27:12  [Std. Dev: 0.79%]
+
+    Test Results:
+        128
+        127
+        126
+
+    Average: 127 Iterations Per Minute
+
+
+7-Zip Compression 9.20.1:
+    pts/compress-7zip-1.6.0
+    Test 9 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 46 Minutes
+        Started Run 1 @ 19:28:19
+        Started Run 2 @ 19:28:44
+        Started Run 3 @ 19:29:08  [Std. Dev: 0.09%]
+
+    Test Results:
+        11383
+        11403
+        11395
+
+    Average: 11394 MIPS
+
+
+Timed Apache Compilation 2.4.7:
+    pts/build-apache-1.5.1
+    Test 10 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 44 Minutes
+        Running Pre-Test Script @ 19:29:37
+        Started Run 1 @ 19:29:59
+        The test exited with a non-zero exit status.
+        Running Interim Test Script @ 19:29:59
+        Started Run 2 @ 19:30:01
+        The test exited with a non-zero exit status.
+        Running Interim Test Script @ 19:30:01
+        Started Run 3 @ 19:30:03
+        The test exited with a non-zero exit status.
+        Running Post-Test Script @ 19:30:03
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Timed ImageMagick Compilation 6.9.0:
+    pts/build-imagemagick-1.7.1
+    Test 11 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      12 Minutes
+    Estimated Time To Completion: 41 Minutes
+        Running Pre-Test Script @ 19:30:10
+        Started Run 1 @ 19:30:31
+        Running Interim Test Script @ 19:31:48
+        Started Run 2 @ 19:31:50
+        Running Interim Test Script @ 19:33:08
+        Started Run 3 @ 19:33:10  [Std. Dev: 0.20%]
+        Running Post-Test Script @ 19:34:28
+
+    Test Results:
+        77.472341060638
+        77.758329153061
+        77.712108850479
+
+    Average: 77.65 Seconds
+
+
+Timed PHP Compilation 5.2.9:
+    pts/build-php-1.3.1
+    Test 12 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 29 Minutes
+        Running Pre-Test Script @ 19:34:45
+        Started Run 1 @ 19:34:54
+        The test run did not produce a result.
+        Running Interim Test Script @ 19:34:55
+        Started Run 2 @ 19:34:57
+        The test run did not produce a result.
+        Running Interim Test Script @ 19:34:57
+        Started Run 3 @ 19:34:59
+        The test run did not produce a result.
+        Running Post-Test Script @ 19:34:59
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+C-Ray 1.1:
+    pts/c-ray-1.1.0
+    Test 13 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 27 Minutes
+        Started Run 1 @ 19:35:05
+        Started Run 2 @ 19:36:14
+        Started Run 3 @ 19:37:23  [Std. Dev: 0.04%]
+
+    Test Results:
+        67.107
+        67.153
+        67.106
+
+    Average: 67.12 Seconds
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Raytests]
+    Test 14 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 24 Minutes
+        Started Run 1 @ 19:38:38
+        The test run did not produce a result.
+        Started Run 2 @ 19:38:40
+        The test run did not produce a result.
+        Started Run 3 @ 19:38:42
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 3000 Fall]
+    Test 15 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 21 Minutes
+        Started Run 1 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 2 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 3 @ 19:38:42
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Stack]
+    Test 16 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 18 Minutes
+        Started Run 1 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 2 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 3 @ 19:38:42
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: 1000 Convex]
+    Test 17 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 2 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 3 @ 19:38:42
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Bullet Physics Engine 2.81:
+    pts/bullet-1.2.1 [Test: Convex Trimesh]
+    Test 18 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 2 @ 19:38:42
+        The test run did not produce a result.
+        Started Run 3 @ 19:38:42
+        The test run did not produce a result.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 19 of 21
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 9 Minutes
+        Started Run 1 @ 19:38:48
+        Started Run 2 @ 19:39:07
+        Started Run 3 @ 19:39:26
+        Started Run 4 @ 19:39:46
+        Started Run 5 @ 19:40:05  [Std. Dev: 0.31%]
+
+    Test Results:
+        17.194924116135
+        17.082811117172
+        17.069617986679
+        17.086790800095
+        17.072443008423
+
+    Average: 17.10 Seconds
+
+
+OpenSSL 1.0.1g:
+    pts/openssl-1.9.0
+    Test 20 of 21
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 19:40:29
+        Started Run 2 @ 19:40:51
+        Started Run 3 @ 19:41:13  [Std. Dev: 0.16%]
+
+    Test Results:
+        384.4
+        384
+        385.2
+
+    Average: 384.53 Signs Per Second
+
+
+Apache Benchmark 2.4.7:
+    pts/apache-1.6.1
+    Test 21 of 21
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 5 Minutes
+        Running Pre-Test Script @ 19:41:40
+        Started Run 1 @ 19:41:45
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 19:41:47
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 19:41:49
+        The test exited with a non-zero exit status.
+        Running Post-Test Script @ 19:41:49
+
+    Test Results:
+
+    Average: 0 Requests Per Second
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/npb-1.2.1: Test / Class: LU.A
+	- pts/x264-1.9.0: H.264 Video Encoding
+	- pts/build-apache-1.5.1: Time To Compile
+	- pts/build-php-1.3.1: Time To Compile
+	- pts/bullet-1.2.1: Test: Raytests
+	- pts/bullet-1.2.1: Test: 3000 Fall
+	- pts/bullet-1.2.1: Test: 1000 Stack
+	- pts/bullet-1.2.1: Test: 1000 Convex
+	- pts/bullet-1.2.1: Test: Convex Trimesh
+	- pts/apache-1.6.1: Static Web Page Serving
+
+
+    Do you want to view the results in your web browser 
+12/15 09:42:53 ERROR|      test:0414| Exception escaping from test:
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 411, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/root/autotest/client/shared/test.py", line 830, in _call_test_function
+    raise error.UnhandledTestFail(e)
+UnhandledTestFail: Unhandled TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7ff2f9546290>
+command: /usr/bin/phoronix-test-suite
+args: ['/usr/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: None
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3252
+child_fd: 21
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7ff2f9519ae0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+    return func(*args, **dargs)
+  File "/root/autotest/client/shared/test.py", line 291, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/root/autotest/client/tests/pts/pts.py", line 93, in run_once
+    runpts.expect(pexpect.EOF)
+  File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 315, in expect
+    timeout, searchwindowsize, async)
+  File "/usr/lib/python2.7/site-packages/pexpect/spawnbase.py", line 339, in expect_list
+    return exp.expect_loop(timeout)
+  File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 104, in expect_loop
+    return self.timeout(e)
+  File "/usr/lib/python2.7/site-packages/pexpect/expect.py", line 68, in timeout
+    raise TIMEOUT(msg)
+TIMEOUT: Timeout exceeded.
+<pexpect.pty_spawn.spawn object at 0x7ff2f9546290>
+command: /usr/bin/phoronix-test-suite
+args: ['/usr/bin/phoronix-test-suite', 'run', 'compiler']
+searcher: None
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.exceptions.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3252
+child_fd: 21
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.exceptions.EOF'>
+logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7ff2f9519ae0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+

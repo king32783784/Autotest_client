@@ -1,0 +1,11 @@
+文件系统                1048576-块  已用   可用 配额 挂载点
+devtmpfs                      1882     0   1882   0% /dev
+tmpfs                         1894     1   1894   1% /dev/shm
+tmpfs                         1894     2   1893   1% /run
+tmpfs                         1894     0   1894   0% /sys/fs/cgroup
+/dev/mapper/fedora-root      50269 26726  20968  57% /
+tmpfs                         1894     1   1894   1% /tmp
+/dev/sdb2                      477   135    314  30% /boot
+/dev/mapper/fedora-home     201459  8192 183012   5% /home
+tmpfs                          379     1    379   1% /run/user/42
+tmpfs                          379     1    379   1% /run/user/1000

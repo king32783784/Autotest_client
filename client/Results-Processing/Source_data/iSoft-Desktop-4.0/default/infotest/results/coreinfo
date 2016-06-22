@@ -1,0 +1,11 @@
+**OS** | iSoft Desktop 4.0
+**Kerne** | 4.4.1-1
+**File-System** | ext4
+**Gcc** | gcc (GCC) 5.3.0 20151204 (iSoft 5.3.0-12)
+**CLibrary** | Linux C Library   > libc.2.22
+**Modules** | bridge stp llc nls_utf8 ntfs drbg ansi_cprng ctr ccm rfcomm bnep nvram msr intel_rapl iosf_mbi x86_pkg_temp_thermal intel_powerclamp iTCO_wdt dell_wmi iTCO_vendor_support sparse_keymap dell_laptop coretemp dcdbas kvm_intel dell_smm_hwmon kvm irqbypass crct10dif_pclmul crc32_pclmul aesni_intel aes_x86_64 lrw gf128mul glue_helper ablk_helper cryptd rtsx_usb_ms memstick uvcvideo dell_led snd_hda_codec_hdmi snd_hda_codec_realtek videobuf2_vmalloc videobuf2_memops snd_hda_codec_generic videobuf2_v4l2 videobuf2_core v4l2_common videodev snd_hda_intel media snd_hda_codec ath3k btusb btrtl btbcm btintel vfat fat arc4 snd_hda_core bluetooth ath9k ath9k_common ath9k_hw snd_hwdep ath mac80211 snd_seq snd_seq_device r8169 cfg80211 mii joydev mousedev input_leds snd_pcm efi_pstore mei_me battery snd_timer snd ac soundcore efivars mei mac_hid evdev soc_button_array shpchp lpc_ich i2c_i801 dell_rbtn rfkill nfsd auth_rpcgss oid_registry nfs_acl lockd grace sunrpc sch_fq_codel ip_tables x_tables rtsx_usb_sdmmc led_class mmc_core rtsx_usb hid_multitouch hid_generic amdkfd amd_iommu_v2 ehci_pci ehci_hcd crc32c_intel i915 radeon serio_raw sr_mod cdrom intel_gtt i2c_algo_bit sd_mod ttm wmi xhci_pci drm_kms_helper drm i2c_core xhci_hcd video dm_mirror dm_region_hash dm_log dm_mod autofs4
+**Xorg** | X.Org X Server 1.18.0
+**Root** | sda13   8:13   0  93.2G  0 part /
+**MEM** | 3673
+**SWAP** | 4095 
+

@@ -1,0 +1,27 @@
+This test results
+Total hours of this test: 
+Total number of tests case: 2483 
+Case efficiency (cases/hour):
+Total number of tests PASS case: 2451
+Success rate:98.71%
+Total number of tests FAIL case: 32
+Test FAIL case number: 17
+The FAIL case status: 
+Casename                 | Total-num                 | Fail-num                
+access06             |           3 |                        3
+acct01               |           3 |                        3
+alarm05              |           3 |                        1
+alarm06              |           3 |                        1
+chmod06              |           3 |                        3
+chown04              |           3 |                        3
+fchmod06             |           3 |                        3
+float_bessel         |          24 |                        1
+fs_inod01            |           1 |                        1
+nfs02                |           1 |                        1
+nfs03                |           2 |                        2
+nfs04                |           1 |                        1
+nfsstress            |           1 |                        1
+nfsx-linux           |           1 |                        1
+rpc01                |           3 |                        3
+run_rpc_tests.sh     |           3 |                        3
+setpgid03            |           3 |                        1

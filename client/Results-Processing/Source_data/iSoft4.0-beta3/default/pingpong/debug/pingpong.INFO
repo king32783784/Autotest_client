@@ -1,0 +1,10 @@
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c: In function ‘main’:
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:91:15: warning: implicit declaration of function ‘getopt’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]    while ((c = getopt (argc, argv, "?vri:n:z:p:s:c:S:")) != EOF)
+12/10 21:00:19 ERROR|     utils:0151| [stderr]                ^
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:113:6: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]   if (strcmp (optarg, "shared") == 0)
+12/10 21:00:19 ERROR|     utils:0151| [stderr]       ^
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:193:7: warning: implicit declaration of function ‘pthread_setconcurrency’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]        pthread_setconcurrency (concurrency);
+12/10 21:00:19 ERROR|     utils:0151| [stderr]        ^

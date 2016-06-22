@@ -1,0 +1,3 @@
+bash (3344): drop_caches: 3
+conftest[18425]: segfault at 0 ip 0000000000400690 sp 00007ffc9281b700 error 4 in conftest[400000+1000]
+conftest[18453]: segfault at 0 ip 00007fb4e245272a sp 00007ffe0380d278 error 4 in libc-2.22.so[7fb4e23b3000+1b8000]

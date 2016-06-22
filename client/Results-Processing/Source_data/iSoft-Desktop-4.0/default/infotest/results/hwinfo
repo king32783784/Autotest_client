@@ -1,0 +1,19 @@
+**MB** | Dell1:2:3:4: -  Inspiron 5537
+**BIOS** | Dell-A04-08/19/2013
+**CPU** |  69 Intel(R) Core(TM) i5-4200U CPU @ 1.60GHz
+**MEM** | EmptySamsung-DDR3-Clock Speed:1600 MHz-MemoryModuleTotalMemorySize:40964096MB x5
+**NB** |  Intel Corporation Haswell-ULT DRAM Controller (rev 09):hsw_uncore
+**SB** |  Intel Corporation 8 Series LPC Controller (rev 04):lpc_ich
+**Video-Card** | { Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 09):i915}
+**Audio-Card** | { Intel Corporation Haswell-ULT HD Audio Controller (rev 09):snd_hda_intel}{ Intel Corporation 8 Series HD Audio Controller (rev 04):snd_hda_intel}
+**Wired-LAN** | { Realtek Semiconductor Co., Ltd. RTL8101/2/6E PCI Express Fast/Gigabit Ethernet controller (rev 07):r8169}{ Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter (rev 01):ath9k}
+**Wireless** | { Qualcomm Atheros QCA9565 / AR9565 Wireless Network Adapter (rev 01):ath9k}
+**SATA-Cotroller** | { Intel Corporation 8 Series SATA Controller 1 [AHCI mode] (rev 04):ahci}
+**Hard-Disk** | { WDC WD7500BPVX-7 }
+**CD-ROM** | PLDS DVD+-RW DU-8A5HH
+**RAID** | null
+**Bluetooth** | null 
+**Keyboard** | "AT Translated Set 2 keyboard"
+**Mouse** | "PixArt Lenovo USB Optical Mouse"
+**USB-Flash-Disk** | null 
+

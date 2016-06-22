@@ -1,0 +1,37 @@
+           CPU0       CPU1       CPU2       CPU3       
+  0:         51          0          0          0   IO-APIC   2-edge      timer
+  1:       1010      13547          0          0   IO-APIC   1-edge      i8042
+  8:          0          1          0          0   IO-APIC   8-edge      rtc0
+  9:        368        330          0          0   IO-APIC   9-fasteoi   acpi
+ 12:       1919      17746         20         56   IO-APIC  12-edge      i8042
+ 19:      10371      52846          0          0   IO-APIC  19-fasteoi   ath9k
+ 23:      32386     101074         54         52   IO-APIC  23-fasteoi   ehci_hcd:usb3
+ 40:          0          0          0          0   PCI-MSI 458752-edge      PCIe PME
+ 41:          0          0          0          0   PCI-MSI 464896-edge      PCIe PME
+ 42:          0          0          0          0   PCI-MSI 466944-edge      PCIe PME
+ 43:      92136     140274       1027        648   PCI-MSI 512000-edge      0000:00:1f.2
+ 44:          0          0          0          0   PCI-MSI 327680-edge      xhci_hcd
+ 45:      24728      40788          0          0   PCI-MSI 32768-edge      i915
+ 46:         11         10          1          0   PCI-MSI 1572864-edge      radeon
+ 47:          1          0          0         13   PCI-MSI 360448-edge      mei_me
+ 48:      40314      66591          0          0   PCI-MSI 524288-edge      enp1s0
+ 49:         20        684          0         78   PCI-MSI 442368-edge      snd_hda_intel
+ 50:        291        441          0         19   PCI-MSI 49152-edge      snd_hda_intel
+NMI:          0          0          0          0   Non-maskable interrupts
+LOC:     496768     796862     439256     509222   Local timer interrupts
+SPU:          0          0          0          0   Spurious interrupts
+PMI:          0          0          0          0   Performance monitoring interrupts
+IWI:          0          1          0          0   IRQ work interrupts
+RTR:          3          0          0          0   APIC ICR read retries
+RES:     186086     135000     127890     122036   Rescheduling interrupts
+CAL:      27426       5712      75101      55295   Function call interrupts
+TLB:      10090      10532      14987      12216   TLB shootdowns
+TRM:          0          0          0          0   Thermal event interrupts
+THR:          0          0          0          0   Threshold APIC interrupts
+DFR:          0          0          0          0   Deferred Error APIC interrupts
+MCE:          0          0          0          0   Machine check exceptions
+MCP:         14         14         14         14   Machine check polls
+ERR:          0
+MIS:          0
+PIN:          0          0          0          0   Posted-interrupt notification event
+PIW:          0          0          0          0   Posted-interrupt wakeup event

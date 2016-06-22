@@ -1,0 +1,15 @@
+--- RunTest.sh.orig	2015-06-26 17:01:17.580179015 +0800
++++ RunTest.sh	2015-06-26 17:01:47.409230599 +0800
+@@ -41,9 +41,9 @@
+ #Run test
+ i=1
+ while [ $i -le $RUN_TIMES ] ; do
++	table 4
++	table 6
++ 	table 8
+-	table 64
+-	table 128
+-	table 256
+ 	i=`expr $i + 1`
+ done
+ 

@@ -1,0 +1,5 @@
+
+### \*Remote\* Communication latencies in microseconds - smaller is better
+
+*OS* | *UDP* | *RPC/UDP* | *TCP* | *RPC/TCP* | *TCP conn*
+------ | ----- | --------- | ----- | --------- | ----------

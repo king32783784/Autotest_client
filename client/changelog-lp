@@ -1,0 +1,14 @@
+#Linux version check result test suite change log
+version1.5:
+1.修改hwinfo脚本，修改多设备信息换行引起，HTML转换异常的问题
+2.修改pts结果处理脚本，修改pts测试未出结果html转换异常的问题
+3.修改sysbench结果处理脚本，修改sysbench测试未出结果HTML转换异常的问题
+4.修改unixbench结果处理脚本，修改unixbench测试脚本未出结果html转换异常的问题
+5.修改ltp_stress测试结果处理脚本，修改case status
+6.修改client.sh脚本，增加判断安装automake、libtool解决sysbench依赖问题
+7.修改client.sh脚本，增加判断安装php/php-xml/wget等解决pts依赖问题
+8.修改client.sh脚本，增加判断安装xorg.* 解决unixbench依赖问题
+version1.6:
+1.修改coreinfo脚本，修改mesa/kde适应桌面4.0
+2.修改pts/pts.py，增加pexpect安装
+3.调整control-client中测试项顺序

@@ -1,0 +1,3 @@
+	START	netperf2	netperf2	timestamp=1450327801	localtime=Dec 17 12:50:01	
+		GOOD	netperf2	netperf2	timestamp=1450329331	localtime=Dec 17 13:15:31	completed successfully
+	END GOOD	netperf2	netperf2	timestamp=1450329331	localtime=Dec 17 13:15:31	

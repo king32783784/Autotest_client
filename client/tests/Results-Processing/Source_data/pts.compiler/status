@@ -1,0 +1,72 @@
+	START	pts.compiler	pts.compiler	timestamp=1443055576	localtime=Sep 24 08:46:16	
+		FAIL	pts.compiler	pts.compiler	timestamp=1443060678	localtime=Sep 24 10:11:18	Unhandled TIMEOUT: Timeout exceeded.
+  <pexpect.spawn object at 0x7f586a00afd0>
+  version: 3.1
+  command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+  args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compiler']
+  searcher: <pexpect.searcher_re object at 0x7f586a00add0>
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 1606
+  child_fd: 19
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.EOF'>
+  logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7f5869f96270>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  Traceback (most recent call last):
+    File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+      return func(*args, **dargs)
+    File "/root/autotest/client/shared/test.py", line 291, in execute
+      postprocess_profiled_run, args, dargs)
+    File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+      self.run_once(*args, **dargs)
+    File "/root/autotest/client/tests/pts/pts.py", line 99, in run_once
+      runpts.expect(pexpect.EOF)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1418, in expect
+      timeout, searchwindowsize)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1433, in expect_list
+      timeout, searchwindowsize)
+    File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1535, in expect_loop
+      raise TIMEOUT(str(err) + '\n' + str(self))
+  TIMEOUT: Timeout exceeded.
+  <pexpect.spawn object at 0x7f586a00afd0>
+  version: 3.1
+  command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+  args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compiler']
+  searcher: <pexpect.searcher_re object at 0x7f586a00add0>
+  buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+  after: <class 'pexpect.TIMEOUT'>
+  match: None
+  match_index: None
+  exitstatus: None
+  flag_eof: False
+  pid: 1606
+  child_fd: 19
+  closed: False
+  timeout: 30
+  delimiter: <class 'pexpect.EOF'>
+  logfile: <open file '/mnt/results/default/pts.compiler/results/raw_output_compiler', mode 'w' at 0x7f5869f96270>
+  logfile_read: None
+  logfile_send: None
+  maxread: 2000
+  ignorecase: False
+  searchwindowsize: None
+  delaybeforesend: 0.05
+  delayafterclose: 0.1
+  delayafterterminate: 0.1
+  
+	END FAIL	pts.compiler	pts.compiler	timestamp=1443060679	localtime=Sep 24 10:11:19	

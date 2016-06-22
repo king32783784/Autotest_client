@@ -1,0 +1,299 @@
+
+X.Org X Server 1.18.0
+Release Date: 2015-11-09
+X Protocol Version 11, Revision 0
+Build Operating System: Linux 4.3.0-112 x86_64 
+Current Operating System: Linux test 4.4.0-15 #1 SMP Mon Dec 21 12:05:32 CST 2015 x86_64
+Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.4.0-15 root=UUID=2fd6736a-20f0-4d05-a289-f2387bd9ba2d ro quiet splash
+Build Date: 10 December 2015  05:05:02PM
+Build ID: xorg-x11-server 1.18.0-7 
+Current version of pixman: 0.33.4
+	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+(==) Log file: "/var/log/Xorg.0.log", Time: Mon Dec 28 17:48:42 2015
+(==) Using config directory: "/etc/X11/xorg.conf.d"
+(==) Using system config directory "/usr/share/X11/xorg.conf.d"
+(==) No Layout section.  Using the first Screen section.
+(==) No screen section available. Using defaults.
+(**) |-->Screen "Default Screen Section" (0)
+(**) |   |-->Monitor "<default monitor>"
+(==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+(==) Automatically adding devices
+(==) Automatically enabling devices
+(==) Automatically adding GPU devices
+(==) Max clients allowed: 256, resource mask: 0x1fffff
+(==) FontPath set to:
+	/usr/share/fonts/X11/misc
+(==) ModulePath set to "/usr/lib/xorg/modules"
+(II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+(II) Loader magic: 0x80e620
+(II) Module ABI versions:
+	X.Org ANSI C Emulation: 0.4
+	X.Org Video Driver: 20.0
+	X.Org XInput driver : 22.1
+	X.Org Server Extension : 9.0
+(++) using VT number 1
+
+(II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+(II) xfree86: Adding drm device (/dev/dri/card0)
+(--) PCI:*(0:0:2:0) 8086:0102:1028:04ad rev 9, Mem @ 0xe0c00000/4194304, 0xd0000000/268435456, I/O @ 0x00003000/64
+(WW) Open ACPI failed (/var/run/acpid.socket) (No such file or directory)
+(II) LoadModule: "glx"
+(II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+(II) Module glx: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 1.0.0
+	ABI class: X.Org Server Extension, version 9.0
+(==) AIGLX enabled
+(==) Matched intel as autoconfigured driver 0
+(==) Matched intel as autoconfigured driver 1
+(==) Matched modesetting as autoconfigured driver 2
+(==) Matched fbdev as autoconfigured driver 3
+(==) Matched vesa as autoconfigured driver 4
+(==) Assigned the driver to the xf86ConfigLayout
+(II) LoadModule: "intel"
+(II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+(II) Module intel: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 2.99.917
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 20.0
+(II) LoadModule: "modesetting"
+(II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+(II) Module modesetting: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 1.18.0
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 20.0
+(II) LoadModule: "fbdev"
+(II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+(II) Module fbdev: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 0.4.4
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 20.0
+(II) LoadModule: "vesa"
+(II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+(II) Module vesa: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 2.3.4
+	Module class: X.Org Video Driver
+	ABI class: X.Org Video Driver, version 20.0
+(II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+(II) intel: Driver for Intel(R) HD Graphics: 2000-6000
+(II) intel: Driver for Intel(R) Iris(TM) Graphics: 5100, 6100
+(II) intel: Driver for Intel(R) Iris(TM) Pro Graphics: 5200, 6200, P6300
+(II) modesetting: Driver for Modesetting Kernel Drivers: kms
+(II) FBDEV: driver for framebuffer: fbdev
+(II) VESA: driver for VESA chipsets: vesa
+(II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20151010
+(II) intel(0): SNA compiled from 
+(WW) Falling back to old probe method for modesetting
+(WW) Falling back to old probe method for fbdev
+(II) Loading sub module "fbdevhw"
+(II) LoadModule: "fbdevhw"
+(II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+(II) Module fbdevhw: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 0.0.2
+	ABI class: X.Org Video Driver, version 20.0
+(WW) Falling back to old probe method for vesa
+(--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 2000
+(--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx; using a maximum of 4 threads
+(II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+(==) intel(0): Depth 24, (--) framebuffer bpp 32
+(==) intel(0): RGB weight 888
+(==) intel(0): Default visual is TrueColor
+(II) intel(0): Output VGA1 has no monitor section
+(II) intel(0): Enabled output VGA1
+(II) intel(0): Output HDMI1 has no monitor section
+(II) intel(0): Enabled output HDMI1
+(II) intel(0): Output DP1 has no monitor section
+(II) intel(0): Enabled output DP1
+(--) intel(0): Using a maximum size of 256x256 for hardware cursors
+(II) intel(0): Output VIRTUAL1 has no monitor section
+(II) intel(0): Enabled output VIRTUAL1
+(--) intel(0): Output VGA1 using initial mode 1440x900 on pipe 0
+(==) intel(0): TearFree disabled
+(==) intel(0): DPI set to (96, 96)
+(II) Loading sub module "dri3"
+(II) LoadModule: "dri3"
+(II) Module "dri3" already built-in
+(II) Loading sub module "dri2"
+(II) LoadModule: "dri2"
+(II) Module "dri2" already built-in
+(II) Loading sub module "present"
+(II) LoadModule: "present"
+(II) Module "present" already built-in
+(II) UnloadModule: "modesetting"
+(II) Unloading modesetting
+(II) UnloadModule: "fbdev"
+(II) Unloading fbdev
+(II) UnloadSubModule: "fbdevhw"
+(II) Unloading fbdevhw
+(II) UnloadModule: "vesa"
+(II) Unloading vesa
+(==) Depth 24 pixmap format is 32 bpp
+(II) intel(0): SNA initialized with Sandybridge (gen6, gt1) backend
+(==) intel(0): Backing store enabled
+(==) intel(0): Silken mouse enabled
+(II) intel(0): HW Cursor enabled
+(II) intel(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+(==) intel(0): DPMS enabled
+(==) intel(0): Display hotplug detection enabled
+(II) intel(0): [DRI2] Setup complete
+(II) intel(0): [DRI2]   DRI driver: i965
+(II) intel(0): [DRI2]   VDPAU driver: va_gl
+(II) intel(0): direct rendering: DRI2 DRI3 enabled
+(II) intel(0): hardware support for Present enabled
+(--) RandR disabled
+(II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+(II) AIGLX: enabled GLX_ARB_create_context
+(II) AIGLX: enabled GLX_ARB_create_context_profile
+(II) AIGLX: enabled GLX_EXT_create_context_es2_profile
+(II) AIGLX: enabled GLX_INTEL_swap_event
+(II) AIGLX: enabled GLX_SGI_swap_control and GLX_MESA_swap_control
+(II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
+(II) AIGLX: enabled GLX_ARB_fbconfig_float
+(II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+(II) AIGLX: enabled GLX_ARB_create_context_robustness
+(II) AIGLX: Loaded and initialized i965
+(II) GLX: Initialized DRI2 GL provider for screen 0
+(II) intel(0): switch to mode 1440x900@60.0 on VGA1 using pipe 0, position (0, 0), rotation normal, reflection none
+(II) intel(0): Setting screen physical size to 381 x 238
+(II) config/udev: Adding input device Power Button (/dev/input/event1)
+(**) Power Button: Applying InputClass "libinput keyboard catchall"
+(**) Power Button: Applying InputClass "system-keyboard"
+(II) LoadModule: "libinput"
+(II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+(II) Module libinput: vendor="X.Org Foundation"
+	compiled for 1.18.0, module version = 0.15.0
+	Module class: X.Org XInput Driver
+	ABI class: X.Org XInput driver, version 22.1
+(II) Using input driver 'libinput' for 'Power Button'
+(**) Power Button: always reports core events
+(**) Option "Device" "/dev/input/event1"
+(II) input device 'Power Button', /dev/input/event1 is tagged by udev as: Keyboard
+(II) input device 'Power Button', /dev/input/event1 is a keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input1/event1"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+(**) Option "xkb_layout" "cn"
+(II) input device 'Power Button', /dev/input/event1 is tagged by udev as: Keyboard
+(II) input device 'Power Button', /dev/input/event1 is a keyboard
+(II) config/udev: Adding input device Video Bus (/dev/input/event2)
+(**) Video Bus: Applying InputClass "libinput keyboard catchall"
+(**) Video Bus: Applying InputClass "system-keyboard"
+(II) Using input driver 'libinput' for 'Video Bus'
+(**) Video Bus: always reports core events
+(**) Option "Device" "/dev/input/event2"
+(II) input device 'Video Bus', /dev/input/event2 is tagged by udev as: Keyboard
+(II) input device 'Video Bus', /dev/input/event2 is a keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input5/event2"
+(II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+(**) Option "xkb_layout" "cn"
+(II) input device 'Video Bus', /dev/input/event2 is tagged by udev as: Keyboard
+(II) input device 'Video Bus', /dev/input/event2 is a keyboard
+(II) config/udev: Adding input device Power Button (/dev/input/event0)
+(**) Power Button: Applying InputClass "libinput keyboard catchall"
+(**) Power Button: Applying InputClass "system-keyboard"
+(II) Using input driver 'libinput' for 'Power Button'
+(**) Power Button: always reports core events
+(**) Option "Device" "/dev/input/event0"
+(II) input device 'Power Button', /dev/input/event0 is tagged by udev as: Keyboard
+(II) input device 'Power Button', /dev/input/event0 is a keyboard
+(**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input0/event0"
+(II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+(**) Option "xkb_layout" "cn"
+(II) input device 'Power Button', /dev/input/event0 is tagged by udev as: Keyboard
+(II) input device 'Power Button', /dev/input/event0 is a keyboard
+(II) config/udev: Adding input device Lenovo Optical USB Mouse (/dev/input/event3)
+(**) Lenovo Optical USB Mouse: Applying InputClass "libinput pointer catchall"
+(II) Using input driver 'libinput' for 'Lenovo Optical USB Mouse'
+(**) Lenovo Optical USB Mouse: always reports core events
+(**) Option "Device" "/dev/input/event3"
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is tagged by udev as: Mouse
+(II) Device 'Lenovo Optical USB Mouse' set to 1000 DPI
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is a pointer caps
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.4/1-1.4:1.0/0003:17EF:6019.0001/input/input6/event3"
+(II) XINPUT: Adding extended input device "Lenovo Optical USB Mouse" (type: MOUSE, id 9)
+(**) Option "AccelerationScheme" "none"
+(**) Lenovo Optical USB Mouse: (accel) selected scheme none/0
+(**) Lenovo Optical USB Mouse: (accel) acceleration factor: 2.000
+(**) Lenovo Optical USB Mouse: (accel) acceleration threshold: 4
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is tagged by udev as: Mouse
+(II) Device 'Lenovo Optical USB Mouse' set to 1000 DPI
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is a pointer caps
+(II) config/udev: Adding input device Lenovo Optical USB Mouse (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Rear Mic (/dev/input/event7)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Front Mic (/dev/input/event8)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Line Out (/dev/input/event9)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH Front Headphone (/dev/input/event10)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event11)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device HDA Digital PCBeep (/dev/input/event6)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device NOVATEK USB NETVISTA FULL WIDTH KEYBOARD (/dev/input/event4)
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: Applying InputClass "libinput keyboard catchall"
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: Applying InputClass "system-keyboard"
+(II) Using input driver 'libinput' for 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD'
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: always reports core events
+(**) Option "Device" "/dev/input/event4"
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event4 is tagged by udev as: Keyboard
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event4 is a keyboard
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.7/2-1.7:1.0/0003:0461:4E04.0002/input/input7/event4"
+(II) XINPUT: Adding extended input device "NOVATEK USB NETVISTA FULL WIDTH KEYBOARD" (type: KEYBOARD, id 10)
+(**) Option "xkb_layout" "cn"
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event4 is tagged by udev as: Keyboard
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event4 is a keyboard
+(II) config/udev: Adding input device NOVATEK USB NETVISTA FULL WIDTH KEYBOARD (/dev/input/event5)
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: Applying InputClass "libinput keyboard catchall"
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: Applying InputClass "system-keyboard"
+(II) Using input driver 'libinput' for 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD'
+(**) NOVATEK USB NETVISTA FULL WIDTH KEYBOARD: always reports core events
+(**) Option "Device" "/dev/input/event5"
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event5 is tagged by udev as: Keyboard
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event5 is a keyboard
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.7/2-1.7:1.1/0003:0461:4E04.0003/input/input8/event5"
+(II) XINPUT: Adding extended input device "NOVATEK USB NETVISTA FULL WIDTH KEYBOARD" (type: KEYBOARD, id 11)
+(**) Option "xkb_layout" "cn"
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event5 is tagged by udev as: Keyboard
+(II) input device 'NOVATEK USB NETVISTA FULL WIDTH KEYBOARD', /dev/input/event5 is a keyboard
+(II) intel(0): switch to mode 1440x900@75.0 on VGA1 using pipe 0, position (0, 0), rotation normal, reflection none
+(II) config/udev: removing device Lenovo Optical USB Mouse
+(II) UnloadModule: "libinput"
+(II) config/udev: Adding input device Lenovo Optical USB Mouse (/dev/input/mouse0)
+(II) No input driver specified, ignoring this device.
+(II) This device may have been added with another device file.
+(II) config/udev: Adding input device Lenovo Optical USB Mouse (/dev/input/event3)
+(**) Lenovo Optical USB Mouse: Applying InputClass "libinput pointer catchall"
+(II) Using input driver 'libinput' for 'Lenovo Optical USB Mouse'
+(**) Lenovo Optical USB Mouse: always reports core events
+(**) Option "Device" "/dev/input/event3"
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is tagged by udev as: Mouse
+(II) Device 'Lenovo Optical USB Mouse' set to 1000 DPI
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is a pointer caps
+(**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.4/1-1.4:1.0/0003:17EF:6019.0004/input/input15/event3"
+(II) XINPUT: Adding extended input device "Lenovo Optical USB Mouse" (type: MOUSE, id 9)
+(**) Option "AccelerationScheme" "none"
+(**) Lenovo Optical USB Mouse: (accel) selected scheme none/0
+(**) Lenovo Optical USB Mouse: (accel) acceleration factor: 2.000
+(**) Lenovo Optical USB Mouse: (accel) acceleration threshold: 4
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is tagged by udev as: Mouse
+(II) Device 'Lenovo Optical USB Mouse' set to 1000 DPI
+(II) input device 'Lenovo Optical USB Mouse', /dev/input/event3 is a pointer caps

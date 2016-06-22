@@ -1,0 +1,5 @@
+
+### File & VM system latencies in microseconds - smaller is better
+
+*OS* | *0K File Create* | *0K File Delete* | *10K File Create* | *10K File Delete* | *Mmap Latency* | *Prot Fault* | *Page Fault* | *100fd selct*
+------ | ---------------- | ---------------- | ----------------- | ----------------- | -------------- | ------------ | ------------ | ------------

@@ -1,0 +1,1252 @@
+#/bin/sh
+################################################################################
+##                                                                            ##
+## Copyright (c) International Business Machines  Corp., 2001                 ##
+##                                                                            ##
+## This program is free software;  you can redistribute it and#or modify      ##
+## it under the terms of the GNU General Public License as published by       ##
+## the Free Software Foundation; either version 2 of the License, or          ##
+## (at your option) any later version.                                        ##
+##                                                                            ##
+## This program is distributed in the hope that it will be useful, but        ##
+## WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY ##
+## or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License   ##
+## for more details.                                                          ##
+##                                                                            ##
+## You should have received a copy of the GNU General Public License          ##
+## along with this program;  if not, write to the Free Software               ##
+## Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301   ##
+## USA                                                                        ##
+##                                                                            ##
+################################################################################
+
+# File:mkresult
+#
+# Description:  This script can automatically generate performance test results formatted.
+#
+# Authors:      peng.li@i-soft.com.cn
+#               
+#
+# History:      September 14, 2015 to create
+
+##定义处理markdown格式数据的脚本
+IOZONESH="Md_process/iozone.sh"
+COMPILERSH="Md_process/compiler.sh"
+ENCODINGSH="Md_process/encoding.sh"
+NETPERFSH="Md_process/netperf.sh"
+SYSMEMSH="Md_process/sysbench-mem.sh"
+COMPRESSIONSH="Md_process/compression.sh"
+GRAPHICSSH="Md_process/graphics.sh"
+LMBENCHSH="Md_process/lmbench.sh"
+SYSCPUSH="Md_process/sysbench-cpu.sh"
+UNIXSH="Md_process/unixbench.sh"
+PINGPONGSH="Md_process/pingpong.sh"
+COMPILERSH="Md_process/compiler.sh"
+
+
+##定义处理chart格式的数据的脚本
+SYSCPUCTSH="Chart_process/sysbench-cpu.sh"
+SYSMEMCTSH="Chart_process/sysbench-mem.sh"
+IOZONECTSH="Chart_process/iozone.sh"
+UNIXCTSH="Chart_process/unixbench.sh"
+PINGPONGCTSH="Chart_process/pingpong.sh"
+NETPERFCTSH="Chart_process/netperf.sh"
+LMBENCHCTSH="Chart_process/lmbench.sh"
+COMPILERCTSH="Chart_process/compiler.sh"
+COMPRESSIONCTSH="Chart_process/compression.sh"
+ENCODINGCTSH="Chart_process/encoding.sh"
+GRAPHICSCTSH="Chart_process/graphics.sh"
+
+OSRSTDIR="Source_data"
+MDDATA="Md_data"
+
+
+##定义生成chart图片的目录
+SYSCPUCT="Chart/sysbench.cpu"
+IOZONECT="Chart/iozone"
+COMPILERCT="Chart/compiler"
+ENCODINGCT="Chart/encoding"
+NETPERFCT="Chart/netperf"
+SYSMEMCT="Chart/sysbench.mem"
+COMPRESSIONCT="Chart/compression"
+GRAPHICSCT="Chart/graphics"
+LMBENCHCT="Chart/lmbench"
+UNIXCT="Chart/unixbench"
+PINGPONGCT="Chart/pingpong"
+
+##定义工具对应markdown title文件的目录
+SYSCPUMD="Md_template/sysbench/sysbench-cpu.temp"
+SYSMEMMDA="Md_template/sysbench/sysbench-memA.temp"
+SYSMEMMDB="Md_template/sysbench/sysbench-memB.temp"
+IOZONEMD="Md_template/iozone/iozone.temp"
+COMPILERMD1="Md_template/PTS/compiler/more.temp"
+COMPILERMD2="Md_template/PTS/compiler/less.temp"
+COMPRESSIONMD1="Md_template/PTS/Compression/more.temp"
+COMPRESSIONMD2="Md_template/PTS/Compression/less.temp"
+ENCODINGMD1="Md_template/PTS/Encoding/more.temp"
+ENCODINGMD2="Md_template/PTS/Encoding/less.temp"
+NETPERFMD1="Md_template/netperf/stream.temp"
+NETPERFMD2="Md_template/netperf/rr.temp"
+UNIXBENCHMD1="Md_template/unixbench/system.temp"
+UNIXBENCHMD2="Md_template/unixbench/graphics.temp"
+PINGPONGMD1="Md_template/pingpong/threads.temp"
+PINGPONGMD2="Md_template/pingpong/game.temp"
+LMBENCHMD1="Md_template/lmbench/Processor.temp"
+LMBENCHMD2="Md_template/lmbench/Integer.temp"
+LMBENCHMD3="Md_template/lmbench/Uint.temp"
+LMBENCHMD4="Md_template/lmbench/Float.temp"
+LMBENCHMD5="Md_template/lmbench/Double.temp"
+LMBENCHMD6="Md_template/lmbench/Context.temp"
+LMBENCHMD10="Md_template/lmbench/Communication.temp"
+LMBENCHMD8="Md_template/lmbench/Remote.temp"
+LMBENCHMD9="Md_template/lmbench/File.temp"
+LMBENCHMD7="Md_template/lmbench/Local.temp"
+LMBENCHMD11="Md_template/lmbench/Memory.temp"
+GRAPHICSMD1="Md_template/PTS/Graphics/more.temp"
+GRAPHICSMD2="Md_template/PTS/Graphics/less.temp"
+
+RESULTDIR="Linux-version-test-result"
+RESULT="Linux-version-test-result"
+HWINFOSH="Md_info/hwinfotest.sh"
+COREINFOSH="Md_info/coreinfotest.sh"
+usage()
+{
+    cat <<-EOF >&2
+
+    usage: ${0##*/} [ -d DIRECTORY ] [ -i ITEMS ] [ -s SYSTEM ]
+    
+    -d DIRECTORY Results of the save directory.
+
+    -s SYSTEM Select the desired contrast system
+       ALL
+
+    -i ITEMS  Select the desired contrast test items.Test items can be selected as follows:"iozone" "sysbench.cpu" 
+              "sysbench.mem" "netperf2" "pingpong" "unixbench5" "lmbench" "pts.compiler" "pts.compression" "pts.encoding" "pts.graphics" "ltp" "ltp_stress" "ALL"
+              ALL:
+              iozone:
+              sysbench.cpu:
+              sysbench.mem:
+              netperf2:
+              pingpong:
+              unixbench5:
+              lmbench:
+              pts.compiler:
+              pts.compression:
+              pts.encoding:
+              pts.graphics:
+              ltp:
+              ltp_stress:
+                  
+    -h help
+    -v version
+    example: ${0##*/} -d "/tmp/" -i "iozone sysbench" -s "OSNAME1 OSNAME2"
+EOF
+exit 0
+}
+
+if [ $# = 0 ]
+then
+    usage
+    exit 1
+fi
+
+while getopts "d:i:s:hv" arg 
+do
+        case $arg in
+             d)
+                 ARGD=($OPTARG)
+                 if [ ${#ARGD[@]} -gt 1 ]
+                 then
+                     echo " -d:Error You can specify only one directory !"
+                     exit 1
+                 elif [ ${#ARGD[@]} -eq 0 ]
+                 then
+                     RDIR="/home"
+                 else
+                     RDIR=${ARGD[0]}   #"RDIR" 为保存处理后结果的目录
+                 fi
+                 if ls $RDIR >/dev/null 2>&1;then
+                    echo pass >/dev/null
+                 else
+                     echo "$RDIR is not found,Please check it !"
+                     exit 1
+                 fi
+                 ;;
+             s)
+                 TESTOS=($OPTARG)   #对比OS数组
+                 testosnum=${#TESTOS[@]}
+                 for ((i=0;i<$testosnum;i++)) #检查输入的对比OS是否存在
+                 do
+                     ls Source_data/${TESTOS[$i]} >/dev/null 2>&1
+                     returnno=`echo $?`
+                     if [ $returnno -ne 0 ];then
+                         echo "-s:Invalid input. No test result of ${TESTOS[$i]}"
+                         exit 1
+                     fi
+                 done   
+                             
+                ;;
+             i)
+                 TESTITEM=($OPTARG)     #对比item数组
+                ;;
+             h)
+                 usage
+                 ;;
+             v)
+                 echo "Linux-version-test-suite-v1.0"
+                 exit 1
+                 ;;
+             ?) 
+                 echo "unkonw argument"
+                 usage
+                 exit 1
+               ;;
+             esac
+done
+
+VERESULT="$RDIR/$RESULTDIR/$RESULT"
+Itemnum=${#TESTITEM[@]}
+Testosnum=${#TESTOS[@]}
+for ((i=0;i<$Itemnum;i++)) #Check Item
+do
+    items=`find Source_data/ -name ${TESTITEM[$i]} | wc -l`
+    if [ $items -eq 0 ];then
+        echo "-i:Invalid input.NO test result of ${TESTITEM[$i]}"
+        exit 0
+    fi
+ #   if [ $items -ne $Testosnum ];then
+ #       echo "Warning:No test result of ${TESTITEM[$i]} for some os of which your assign."
+ #   fi
+done
+
+setup()
+{
+    cd Chart/pycha-0.7.0
+    python setup.py install
+    cd ../../
+}
+
+mdprocess()
+{
+    PRITEM=$1
+    PROS=$2
+    MPTYPE=$3
+    case $PRITEM in
+        sysbench.cpu)
+            syscpumd=`sh $SYSCPUSH $PROS`
+            echo "$syscpumd" >> $VERESULT
+        ;;
+        sysbench.mem)
+            case $MPTYPE in
+                MEMA)
+                    sysmemd=`sh $SYSMEMSH $PROS $MPTYPE`
+                    echo "$sysmemd" >> $VERESULT
+                ;;
+                MEMB)
+                    sysmemd=`sh $SYSMEMSH $PROS $MPTYPE`
+                    echo "$sysmemd" >> $VERESULT
+                ;;
+                esac
+        ;;
+        iozone)
+            iozonemd=`sh $IOZONESH $PROS`
+            echo "$iozonemd" >> $VERESULT
+        ;;
+        netperf2)
+            case $MPTYPE in
+                STREAM)
+                    netperfmd=`sh $NETPERFSH $PROS $MPTYPE`
+                    echo "$netperfmd" >> $VERESULT
+                ;;
+                RR)
+                    pingpongmd=`sh $NETPERFSH $PROS $MPTYPE`
+                    echo "$netperfmd" >> $VERESULT
+                ;;
+                esac
+        ;;
+        pingpong)
+            case $MPTYPE in
+                THREADS)
+                    pingpongmd=`sh $PINGPONGSH $PROS $MPTYPE`
+                    echo "$pingpongmd" >> $VERESULT
+                ;;
+                GAMES)
+                    pingpongmd=`sh $PINGPONGSH $PROS $MPTYPE`
+                    echo "$pingpongmd" >> $VERESULT
+                ;;
+                esac
+        ;;
+        unixbench5)
+            case $MPTYPE in
+                SYSTEM)
+                    systemmd=`sh $UNIXSH $PROS $MPTYPE`
+                    echo "$systemmd" >> $VERESULT
+                ;;
+                GRAPHICS)
+                    graphicsmd=`sh $UNIXSH $PROS $MPTYPE`
+                    echo "$graphicsmd" >> $VERESULT
+                ;;
+                esac
+        ;;
+        lmbench)
+            case $MPTYPE in
+               PROCESS)
+                   processmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$processmd" >> $VERESULT
+               ;;
+               INT)
+                   intmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$intmd" >> $VERESULT
+               ;;
+               UINT)
+                   uintmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$uintmd" >> $VERESULT
+               ;;
+               FLOAT)
+                   floatmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$floatmd" >> $VERESULT
+               ;;
+               DOUBLE)
+                   doublemd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$doublemd" >> $VERESULT
+               ;;
+               CONTEXT)
+                   contextmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$contextmd" >> $VERESULT
+               ;;
+               LATENCY)
+                   latencymd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$latencymd" >> $VERESULT
+               ;;
+               REMOTE)
+                   remotemd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$remotemd" >> $VERESULT
+               ;;
+               FILEVM)
+                   filevmmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$filevmmd" >> $VERESULT
+               ;;
+               BANDWIDTH)
+                   bandwidthmd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$bandwidthmd" >> $VERESULT
+               ;;
+               MEMORY)
+                   memorymd=`sh $LMBENCHSH $PROS $MPTYPE`
+                   echo "$memorymd" >> $VERESULT
+               ;;
+               esac
+        ;;
+        pts.compiler)
+            case $MTYPE in
+                MORE)
+                    compilermd1=`sh $COMPILERSH $PROS $MPTYPE`
+                    echo "$compilermd1" >> $VERESULT
+                ;;
+                LESS)
+                    compilermd2=`sh $COMPILERSH $PROS $MPTYPE`
+                    echo "$compilermd2" >> $VERESULT
+                ;;
+                esac        
+        ;;
+        pts.compression)
+            case $MTYPE in
+                MORE)
+                    compressionmd1=`sh $COMPRESSIONSH $PROS $MPTYPE`
+                    echo "$compressionmd1" >> $VERESULT
+                ;;
+                LESS)
+                    compressionmd2=`sh $COMPRESSIONSH $PROS $MPTYPE`
+                    echo "$compressionmd2" >> $VERESULT
+                ;;
+                esac
+        ;;
+        pts.encoding)
+            case $MTYPE in
+                MORE)
+                    encodingmd1=`sh $ENCODINGSH $PROS $MPTYPE`
+                    echo "$encodingmd1" >> $VERESULT
+                ;;
+                LESS)
+                    encodingmd2=`sh $ENCODINGSH $PROS $MPTYPE`
+                    echo "$encodingmd2" >> $VERESULT
+                ;;
+                esac
+        ;;
+        pts.graphics)
+            case $MTYPE in
+                MORE)
+                    graphicsmd1=`sh $GRAPHICSSH $PROS $MPTYPE`
+                    echo "$graphicsmd1" >> $VERESULT
+                ;;
+                LESS)
+                    graphicsmd2=`sh $GRAPHICSSH $PROS $MPTYPE`
+                    echo "$graphicsmd2" >> $VERESULT
+                ;;
+                esac
+        ;;
+        esac    
+}
+
+mktitle() #markdown title
+{
+    
+    MKTIM=$1
+    MTYPE=$2
+    case $MKTIM in
+        sysbench.cpu)
+            cat $SYSCPUMD >> $VERESULT
+        ;;
+        sysbench.mem)
+            case $MTYPE in
+                MEMA)
+                    cat $SYSMEMMDA >> $VERESULT
+                ;;
+                MEMB)
+                    cat $SYSMEMMDB >> $VERESULT
+                ;;
+                esac
+        ;;
+        iozone)
+            cat $IOZONEMD >> $VERESULT
+        ;;
+        netperf2)
+            case $MTYPE in
+                STREAM)
+                    cat $NETPERFMD1 >> $VERESULT
+                ;;
+                RR)
+                    cat $NETPERFMD2  >> $VERESULT
+                ;;
+                esac
+        ;;
+        pingpong)
+            case $MTYPE in
+                THREADS)
+                    cat $PINGPONGMD1 >> $VERESULT
+                ;;
+                GAMES)
+                    cat $PINGPONGMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+        unixbench5)
+            case $MTYPE in
+                SYSTEM)
+                    cat $UNIXBENCHMD1 >> $VERESULT
+                ;;
+                GRAPHICS)
+                    cat $UNIXBENCHMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+        lmbench)
+            case $MTYPE in
+                PROCESS)
+                    cat $LMBENCHMD1 >> $VERESULT
+                ;;
+                INT)
+                    cat $LMBENCHMD2 >> $VERESULT
+                ;;
+                UINT)
+                    cat $LMBENCHMD3 >> $VERESULT
+                ;;
+                FLOAT)
+                    cat $LMBENCHMD4 >> $VERESULT
+                ;;
+                DOUBLE)
+                    cat $LMBENCHMD5 >> $VERESULT
+                ;;
+                CONTEXT)
+                    cat $LMBENCHMD6 >> $VERESULT
+                ;;
+                LATENCY)
+                    cat $LMBENCHMD7 >> $VERESULT
+                ;;
+                REMOTE)
+                    cat $LMBENCHMD8 >> $VERESULT
+                ;;
+                FILEVM)
+                    cat $LMBENCHMD9 >> $VERESULT
+                ;;
+                BANDWIDTH)
+                    cat $LMBENCHMD10 >> $VERESULT
+                ;;
+                MEMORY)
+                    cat $LMBENCHMD11 >> $VERESULT
+                ;;
+                esac
+        ;;    
+        pts.compiler)
+            case $MTYPE in
+                MORE)
+                    cat $COMPILERMD1 >> $VERESULT   
+                ;;
+                LESS)
+                    cat $COMPILERMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+        pts.compression)
+            case $MTYPE in
+                MORE)
+                    cat $COMPRESSIONMD1 >> $VERESULT
+                ;;
+                LESS)
+                    cat $COMPRESSIONMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+        pts.encoding)
+            case $MTYPE in
+                MORE)
+                    cat $ENCODINGMD1 >> $VERESULT
+                ;;
+                LESS)
+                    cat $ENCODINGMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+        pts.graphics)
+            case $MTYPE in
+                MORE)
+                    cat $GRAPHICSMD1 >> $VERESULT
+                ;;
+                LESS)
+                    cat $GRAPHICSMD2 >> $VERESULT
+                ;;
+                esac
+        ;;
+    esac           
+}
+
+checkctile()
+{
+    checkfile=$1
+    grep -w "dataSet = (" $checkfile >/dev/null 2>&1
+    returnno=`echo $?`
+    if [ $returnno -gt 0 ];then
+        echo "dataSet = (" >> $checkfile
+    else
+       return 0
+    fi
+}
+
+chartprocess()
+{
+    CHARTITEM=$1
+    CHARTOS=$2
+    CPTYPE=$3
+    case $PRITEM in
+        sysbench.cpu)
+            syscpuct=`sh $SYSCPUCTSH $CHARTOS`
+            [ ! -f "$SYSCPYCT/chart.py" ] && touch $SYSCPUCT/chart.py
+            checkctile $SYSCPUCT/chart.py
+            echo "        $syscpuct"  >> $SYSCPUCT/chart.py
+        ;;
+        sysbench.mem)
+            case $CPTYPE in
+                MEMA)
+                    [ ! -f "$SYSMEMCT/chart1.py" ] && touch $SYSMEMCT/chart1.py
+                    sysmemct1=`sh $SYSMEMCTSH $CHARTOS MEMA`
+                    checkctile $SYSMEMCT/chart1.py
+                    echo "       $sysmemct1"  >> $SYSMEMCT/chart1.py
+                    ;;
+                MEMB)
+                    [ ! -f "$SYSMEMCT/chart2.py" ] && touch $SYSMEMCT/chart2.py
+                    sysmemct2=`sh $SYSMEMCTSH $CHARTOS MEMB`
+                    checkctile $SYSMEMCT/chart2.py
+                    echo "        $sysmemct2" >> $SYSMEMCT/chart2.py
+                    ;;
+               esac
+        ;;
+        iozone)
+            [ ! -f "$IOZONECT/chart.py" ] && touch $IOZONECT/chart.py
+            iozonect=`sh $IOZONECTSH $CHARTOS`
+            checkctile $IOZONECT/chart.py
+            echo "        $iozonect" >> $IOZONECT/chart.py
+        ;;
+        netperf2)
+            case $CPTYPE in
+                STREAM)
+                    [ ! -f "$NETPERFCT/chart1.py" ] && touch $NETPERFCT/chart1.py
+                    netperfct1=`sh $NETPERFCTSH $CHARTOS STREAM`
+                    checkctile $NETPERFCT/chart1.py
+                    echo "        $netperfct1" >> $NETPERFCT/chart1.py
+                    ;;
+                RR)
+                    [ ! -f "$NETPERFCT/chart2.py" ] && touch $NETPERFCT/chart2.py
+                    netperfct2=`sh $NETPERFCTSH $CHARTOS RR`
+                    checkctile $NETPERFCT/chart2.py
+                    echo "        $netperfct2" >> $NETPERFCT/chart2.py
+                    ;;
+                esac
+        ;;
+        pingpong)
+            case $CPTYPE in
+                THREADS)
+                    [ ! -f "$PINGPONGCT/chart1.py" ] && touch $PINGPONGCT/chart1.py
+                    pingpongct1=`sh $PINGPONGCTSH $CHARTOS THREADS`
+                    checkctile $PINGPONGCT/chart1.py
+                    echo "        $pingpongct1" >> $PINGPONGCT/chart1.py 
+                    ;;
+                GAMES)
+                    [ ! -f "$PINGPONGCT/chart2.py" ] && touch $PINGPONGCT/chart2.py
+                    pingpongct2=`sh $PINGPONGCTSH $CHARTOS GAMES`
+                    checkctile $PINGPONGCT/chart2.py
+                    echo "        $pingpongct2" >> $PINGPONGCT/chart2.py
+                    ;;
+                esac
+        ;;
+        unixbench5)
+            case $CPTYPE in
+                SYSTEM)
+                     [ ! -f "$UNIXCT/chart1.py" ] && touch $UNIXCT/chart1.py
+                     systemct1=`sh $UNIXCTSH $CHARTOS SYSTEM`
+                     checkctile $UNIXCT/chart1.py
+                     echo "       $systemct1"  >> $UNIXCT/chart1.py
+                     ;;
+                GRAPHICS)
+                     [ ! -f "$UNIXCT/chart2.py" ] && touch $UNIXCT/chart2.py
+                     systemct2=`sh $UNIXCTSH $CHARTOS GRAPHICS`
+                     checkctile $UNIXCT/chart2.py
+                     echo "        $systemct2" >> $UNIXCT/chart2.py
+                     ;;
+                esac
+        ;;
+        lmbench)
+            case $CPTYPE in
+               PROCESS)
+                   [ ! -f "$LMBENCHCT/chart1.py" ] && touch $LMBENCHCT/chart1.py
+                   processct1=`sh $LMBENCHCTSH $CHARTOS PROCESS1`
+                   checkctile $LMBENCHCT/chart1.py
+                   echo "        $processct1" >> $LMBENCHCT/chart1.py   
+                   [ ! -f "$LMBENCHCT/chart12.py" ] && touch $LMBENCHCT/chart12.py
+                   processct2=`sh $LMBENCHCTSH $CHARTOS PROCESS2`
+                   checkctile $LMBENCHCT/chart12.py
+                   echo "        $processct2" >> $LMBENCHCT/chart12.py 
+                   ;;
+               INT)
+                   [ ! -f "$LMBENCHCT/chart2.py" ] && touch $LMBENCHCT/chart2.py
+                   intct=`sh $LMBENCHCTSH $CHARTOS INT`
+                   checkctile $LMBENCHCT/chart2.py
+                   echo "        $intct" >> $LMBENCHCT/chart2.py
+               ;;
+               UINT)
+                   [ ! -f "$LMBENCHCT/chart3.py" ] && touch $LMBENCHCT/chart3.py
+                   uintct=`sh $LMBENCHCTSH $CHARTOS UINT`
+                   checkctile $LMBENCHCT/chart3.py
+                   echo "        $uintct" >> $LMBENCHCT/chart3.py
+               ;;
+               FLOAT)
+                   [ ! -f "$LMBENCHCT/chart4.py" ] && touch $LMBENCHCT/chart4.py
+                   floatct=`sh $LMBENCHCTSH $CHARTOS FLOAT`
+                   checkctile $LMBENCHCT/chart4.py
+                   echo "        $floatct" >> $LMBENCHCT/chart4.py
+               ;;
+               DOUBLE)
+                   [ ! -f "$LMBENCHCT/chart5.py" ] && touch $LMBENCHCT/chart5.py
+                   doublect=`sh $LMBENCHCTSH $CHARTOS DOUBLE`
+                   checkctile $LMBENCHCT/chart5.py
+                   echo "        $doublect" >> $LMBENCHCT/chart5.py
+               ;;
+               CONTEXT)
+                   [ ! -f "$LMBENCHCT/chart6.py" ] && touch $LMBENCHCT/chart6.py
+                   contextct=`sh $LMBENCHCTSH $CHARTOS CONTEXT`
+                   checkctile $LMBENCHCT/chart6.py
+                   echo "        $contextct" >> $LMBENCHCT/chart6.py
+               ;;
+               LATENCY)
+                   [ ! -f "$LMBENCHCT/chart7.py" ] && touch $LMBENCHCT/chart7.py
+                   latencyct=`sh $LMBENCHCTSH $CHARTOS LATENCY`
+                   checkctile $LMBENCHCT/chart7.py
+                   echo "        $latencyct" >> $LMBENCHCT/chart7.py
+               ;;
+               REMOTE)
+                   [ ! -f "$LMBENCHCT/chart8.py" ] && touch $LMBENCHCT/chart8.py
+                   remotect=`sh $LMBENCHCTSH $CHARTOS REMOTE`
+                   checkctile $LMBENCHCT/chart8.py
+                   echo "        $remotect" >> $LMBENCHCT/chart8.py
+               ;;
+               FILEVM)
+                   [ ! -f "$LMBENCHCT/chart9.py" ] && touch $LMBENCHCT/chart9.py
+                   filevmct=`sh $LMBENCHCTSH $CHARTOS FILEVM`
+                   checkctile $LMBENCHCT/chart9.py
+                   echo "        $filevmct" >> $LMBENCHCT/chart9.py
+               ;;
+               BANDWIDTH)
+                   [ ! -f "$LMBENCHCT/chart10.py" ] && touch $LMBENCHCT/chart10.py
+                   bandwidthct=`sh $LMBENCHCTSH $CHARTOS BANDWIDTH`
+                   checkctile $LMBENCHCT/chart10.py
+                   echo "        $bandwidthct" >> $LMBENCHCT/chart10.py
+               ;;
+               MEMORY)
+                   [ ! -f "$LMBENCHCT/chart11.py" ] && touch $LMBENCHCT/chart11.py
+                   memoryct=`sh $LMBENCHCTSH $CHARTOS MEMORY`
+                   checkctile $LMBENCHCT/chart11.py
+                   echo "        $memoryct" >> $LMBENCHCT/chart11.py
+               ;;
+               esac
+        ;;
+        pts.compiler)
+            case $CPTYPE in
+                MORE)
+                   [ ! -f "$COMPILERCT/chart1.py" ] && touch $COMPILERCT/chart1.py
+                   compilerct1=`sh $COMPILERCTSH $CHARTOS MORE`
+                   checkctile $COMPILERCT/chart1.py
+                   echo "        $compilerct1" >> $COMPILERCT/chart1.py
+                ;;
+                LESS)
+                   [ ! -f "$COMPILERCT/chart2.py" ] && touch $COMPILERCT/chart2.py
+                   compilerct2=`sh $COMPILERCTSH $CHARTOS LESS`
+                   checkctile $COMPILERCT/chart2.py
+                   echo "        $compilerct2" >> $COMPILERCT/chart2.py
+                ;;
+                esac
+        ;;
+        pts.compression)
+            case $CPTYPE in
+                MORE)
+                   [ ! -f "$COMPRESSIONCT/chart1.py" ] && touch $COMPRESSIONCT/chart1.py
+                   compressionct1=`sh $COMPRESSIONCTSH $CHARTOS MORE`
+                   checkctile $COMPRESSIONCT/chart1.py
+                   echo "        $compressionct1" >> $COMPRESSIONCT/chart1.py
+                ;;
+                LESS)
+                   [ ! -f "$COMPRESSIONCT/chart2.py" ] && touch $COMPRESSIONCT/chart2.py
+                   compressionct2=`sh $COMPRESSIONCTSH $CHARTOS LESS`
+                   checkctile $COMPRESSIONCT/chart2.py
+                   echo "        $compressionct2" >> $COMPRESSIONCT/chart2.py
+                ;;
+                esac
+        ;;
+        pts.encoding)
+            case $CPTYPE in
+                MORE)
+                   [ ! -f "$ENCODINGCT/chart1.py" ] && touch $ENCODINGCT/chart1.py
+                   encodingct1=`sh $ENCODINGCTSH $CHARTOS MORE`
+                   checkctile $ENCODINGCT/chart1.py
+                   echo "        $encodingct1" >> $ENCODINGCT/chart1.py
+                ;;
+                LESS)
+                   [ ! -f "$ENCODINGCT/chart2.py" ] && touch $ENCODINGCT/chart2.py
+                   encodingct2=`sh $ENCODINGCTSH $CHARTOS LESS`
+                   checkctile $ENCODINGCT/chart2.py
+                   echo "        $encodingct2" >> $ENCODINGCT/chart2.py
+                ;;
+                esac
+        ;;
+        pts.graphics)
+            case $CPTYPE in
+                MORE)
+                   [ ! -f "$GRAPHICSCT/chart1.py" ] && touch $GRAPHICSCT/chart1.py
+                   graphicsct1=`sh $GRAPHICSCTSH $CHARTOS MORE`
+                   checkctile $GRAPHICSCT/chart1.py
+                   echo "        $graphicsct1" >> $GRAPHICSCT/chart1.py
+                ;;
+                LESS)
+                   [ ! -f "$GRAPHICSCT/chart2.py" ] && touch $GRAPHICSCT/chart2.py
+                   graphicsct2=`sh $GRAPHICSCTSH $CHARTOS LESS`
+                   checkctile $GRAPHICSCT/chart2.py
+                   echo "        $graphicsct2" >> $GRAPHICSCT/chart2.py
+                ;;
+                esac
+        ;;
+        esac
+}
+
+mkchart()
+{ 
+    MKCTEM=$1
+    MKTYPE=$2
+    case $MKCTEM in
+        sysbench.cpu)
+            cd Chart/sysbench.cpu
+            echo "    )" >> chart.py
+            python syscpu.py
+            mv *.png $RDIR/$RESULTDIR/Chart
+            rm chart.py chart.pyc
+            cd ../..
+            echo -e "![ ](./Chart/v$MKCTEM.png \"$MKCTEM\") \n" >>$VERESULT
+        ;;
+        sysbench.mem)
+            case $MKTYPE in
+                MEMA)
+                    cd Chart/sysbench.mem
+                    echo "    )" >> chart1.py
+                    python sysmem.py MEMA
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/sysMEMA.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                MEMB)    
+                    cd Chart/sysbench.mem
+                    echo "    )" >> chart2.py
+                    python sysmem.py MEMB
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/sysMEMB.png \"$MKCTEM"2"\") \n" >>$VERESULT
+                    ;; 
+                esac
+        ;;
+        iozone)
+            cd Chart/iozone
+            echo "    )" >> chart.py
+            python iozone.py
+            mv *.png $RDIR/$RESULTDIR/Chart
+            rm chart*.py chart*.pyc
+            cd ../..
+            echo -e "![](./Chart/v$MKCTEM.png \"$MKCTEM"1"\") \n" >> $VERESULT
+        ;;
+        netperf2)
+            case $MKTYPE in
+                STREAM)
+                    cd Chart/netperf
+                    echo "    )" >> chart1.py
+                    python netperf.py STREAM
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/netSTREAM.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                RR)
+                    cd Chart/netperf
+                    echo "    )" >> chart2.py
+                    python netperf.py RR
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/netRR.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                esac
+        ;;
+        pingpong)
+            case $MKTYPE in
+                THREADS)
+                    cd Chart/pingpong
+                    echo "    )" >> chart1.py
+                    python pingpong.py THREADS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/pingTHREADS.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                GAMES)
+                    cd Chart/pingpong
+                    echo "    )" >> chart2.py
+                    python pingpong.py GAMES
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/pingGAMES.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                esac
+        ;;
+        unixbench5)
+            case $MKTYPE in
+                SYSTEM)
+                    cd Chart/unixbench
+                    echo "    )" >> chart1.py
+                    python unixbench.py SYSTEM
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/unixSYSTEM.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    ;;
+                GRAPHICS)
+                    cd Chart/unixbench
+                    echo "    )" >> chart2.py
+                    python unixbench.py GRAPHICS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart*.py chart*.pyc
+                    cd ../..
+                    echo -e "![](./Chart/unixGRAPHICS.png \"$MKCTEM"2"\") \n" >>$VERESULT
+                    ;;
+                esac
+        ;;
+        lmbench)
+            case $MPTYPE in
+                PROCESS)
+                    cd Chart/lmbench
+                    echo "    )" >> chart1.py
+                    echo "    )" >> chart12.py
+                    python lmbench.py PROCESS1
+                    python lmbench.py PROCESS2
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart1.py chart1.pyc chart12.py chart12.pyc
+                    cd ../..
+                    echo -e "![*](./Chart/LMPROCESS1.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                    echo -e "![](./Chart/LMPROCESS2.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                INT)
+                    cd Chart/lmbench
+                    echo "    )" >> chart2.py
+                    python lmbench.py INT
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart2.py chart2.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMINT.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                UINT)
+                    cd Chart/lmbench
+                    echo "    )" >> chart3.py
+                    python lmbench.py UINT
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart3.py chart3.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMUINT.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                FLOAT)
+                    cd Chart/lmbench
+                    echo "    )" >> chart4.py
+                    python lmbench.py FLOAT
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart4.py chart4.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMFLOAT.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                DOUBLE)
+                    cd Chart/lmbench
+                    echo "    )" >> chart5.py
+                    python lmbench.py DOUBLE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart5.py chart5.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMDOUBLE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                CONTEXT)
+                    cd Chart/lmbench
+                    echo "    )" >> chart6.py
+                    python lmbench.py CONTEXT
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart6.py chart6.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMCONTEXT.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                LATENCY)
+                    cd Chart/lmbench
+                    echo "    )" >> chart7.py
+                    python lmbench.py LATENCY
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart7.py chart7.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMLATENCY.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                REMOTE)
+                    cd Chart/lmbench
+                    echo "    )" >> chart8.py
+                    python lmbench.py REMOTE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart8.py chart8.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMREMOTE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                FILEVM)
+                    cd Chart/lmbench
+                    echo "    )" >> chart9.py
+                    python lmbench.py FILEVM
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart9.py chart9.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMFILEVM.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                BANDWIDTH)
+                    cd Chart/lmbench
+                    echo "    )" >> chart10.py
+                    python lmbench.py BANDWIDTH
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart10.py chart10.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMBANDWIDTH.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                MEMORY)
+                    cd Chart/lmbench
+                    echo "    )" >> chart11.py
+                    python lmbench.py MEMORY
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart11.py chart11.pyc
+                    cd ../..
+                    echo -e "![](./Chart/LMMEMORY.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                esac
+        ;;
+        pts.compiler)
+            case $MPTYPE in
+                MORE)
+                    cd Chart/compiler
+                    echo "    )" >> chart1.py
+                    python compiler.py MORE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart1.py chart1.pyc
+                    cd ../..
+                    echo -e "![](./Chart/compMORE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                LESS)
+                    cd Chart/compiler
+                    echo "    )" >> chart2.py
+                    python compiler.py LESS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart2.py chart2.pyc
+                    cd ../..
+                    echo -e "![](./Chart/compLESS.png \"$MKCTEM"1"\") \n" >>$VERESULT 
+                ;;
+                esac     
+        ;;
+        pts.compression)
+            case $MPTYPE in
+                MORE)
+                    cd Chart/compression
+                    echo "    )" >> chart1.py
+                    python compressions.py MORE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart1.py chart1.pyc
+                    cd ../..
+                    echo -e "![](./Chart/compressMORE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                LESS)
+                    cd Chart/compression
+                    echo "    )" >> chart2.py
+                    python compression.py LESS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart2.py chart2.pyc
+                    cd ../..
+                    echo -e "![](./Chart/compressLESS.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                esac
+        ;;
+        pts.encoding)
+            case $MPTYPE in
+                MORE)
+                    cd Chart/encoding
+                    echo "    )" >> chart1.py
+                    python encodings.py MORE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart1.py chart1.pyc
+                    cd ../..
+                    echo -e "![](./Chart/encodMORE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                LESS)
+                    cd Chart/encoding
+                    echo "    )" >> chart2.py
+                    python encoding.py LESS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart2.py chart2.pyc
+                    cd ../..
+                    echo -e "![](./Chart/encodLESS.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                esac
+        ;;
+        pts.graphics)
+            case $MPTYPE in
+                MORE)
+                    cd Chart/graphics
+                    echo "    )" >> chart1.py
+                    python graphics.py MORE
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart1.py chart1.pyc
+                    cd ../..
+                    echo -e "![](./Chart/graphMORE.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                LESS)
+                    cd Chart/graphics
+                    echo "    )" >> chart2.py
+                    python graphicss.py LESS
+                    mv *.png $RDIR/$RESULTDIR/Chart
+                    rm chart2.py chart2.pyc
+                    cd ../..
+                    echo -e "![](./Chart/graphLESS.png \"$MKCTEM"1"\") \n" >>$VERESULT
+                ;;
+                esac
+        ;;
+        esac
+}
+
+infoprocess()
+{
+    echo -e "## Hardware Info of Identifying by System \n" >> $VERESULT
+    sh $HWINFOSH ${TESTOS[*]}     
+    cat hwinfo >> $VERESULT
+    rm hwinfo
+    echo -e "## Core Components and System Configuration Information \n" >> $VERESULT
+    sh $COREINFOSH ${TESTOS[*]}
+    cat coreinfo >> $VERESULT
+    rm coreinfo
+}
+main()
+{
+    osnum=${#TESTOS[@]}
+    itemnum=${#TESTITEM[@]}
+    mkdir $RDIR/$RESULTDIR
+    mkdir $RDIR/$RESULTDIR/Chart
+    cp CSS/style.css $RDIR/$RESULTDIR
+    echo -e "# L i n u x * Version * Check * Result \n" >> $VERESULT
+    infoprocess 
+    for ((i=0;i<$itemnum;i++))
+    do
+        ITEM=${TESTITEM[$i]}
+        case $ITEM in
+            sysbench.cpu)
+                mktitle $ITEM
+                for ((j=0;j<$osnum;j++))
+                do
+                    OSNAME=${TESTOS[$j]}
+                    mdprocess $ITEM $OSNAME
+                    chartprocess $ITEM $OSNAME
+                done
+                echo -e "\n" >> $VERESULT
+                mkchart $ITEM
+            ;;
+            sysbench.mem)
+                for k in {MEMA,MEMB}
+                do 
+                    mktitle $ITEM $k
+                    for ((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+            ;;
+            iozone)
+                mktitle $ITEM
+                for ((j=0;j<$osnum;j++))
+                do
+                    OSNAME=${TESTOS[$j]}
+                    mdprocess $ITEM $OSNAME
+                    chartprocess $ITEM $OSNAME
+                done
+                echo -e "\n" >> $VERESULT
+                mkchart $ITEM
+            ;;
+            unixbench5)
+                for k in {SYSTEM,GRAPHICS}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done 
+            ;;
+            pingpong)
+                for k in {THREADS,GAMES}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k     
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+            ;;
+            netperf2)
+                for k in {STREAM,RR}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+            ;;
+            lmbench)
+                args=(PROCESS INT UINT FLOAT DOUBLE CONTEXT LATENCY REMOTE FILEVM BANDWIDTH MEMORY)
+                argsnum=${#args[@]}
+                for((k=0;k<$argsnum;k++))
+                do
+                    lmtype=${args[$k]}
+                    mktitle lmbench $lmtype
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $lmtype
+                        chartprocess $ITEM $OSNAME $lmtype
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $lmtype
+                done
+            ;;
+            pts.compiler)
+            for k in {MORE,LESS}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+            ;;
+            pts.compression)
+            for k in {MORE,LESS}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done         
+            ;;   
+            pts.encoding)
+            for k in {MORE,LESS}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+            ;;
+            pts.graphics)
+            for k in {MORE,LESS}
+                do
+                    mktitle $ITEM $k
+                    for((j=0;j<$osnum;j++))
+                    do
+                        OSNAME=${TESTOS[$j]}
+                        mdprocess $ITEM $OSNAME $k
+                        chartprocess $ITEM $OSNAME $k
+                    done
+                    echo -e "\n" >> $VERESULT
+                    mkchart $ITEM $k
+                done
+           ;;
+           ltp)
+           
+           ;;
+           ltp_stress)
+           ;;
+           esac
+    done
+    pandoc --toc -c ./style.css -o $RDIR/$RESULTDIR/Linux-check-test-result--$(date +'%Y%m%d%H%M').html $VERESULT
+    mv $RDIR/$RESULTDIR $RDIR/$RESULTDIR-$(date +'%Y%m%d%H%m')
+}
+
+setup
+main

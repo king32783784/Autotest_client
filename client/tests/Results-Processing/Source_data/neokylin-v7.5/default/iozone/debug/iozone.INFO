@@ -1,0 +1,4 @@
+09/15 16:48:37 ERROR|     utils:0151| [stderr] fileop.c: 在函数‘validate’中:
+09/15 16:48:37 ERROR|     utils:0151| [stderr] fileop.c:1377:15: 警告：变量‘size1’被设定但未被使用 [-Wunused-but-set-variable]
+09/15 16:48:37 ERROR|     utils:0151| [stderr]   register int size1;
+09/15 16:48:37 ERROR|     utils:0151| [stderr]                ^

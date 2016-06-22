@@ -1,0 +1,11 @@
+NAME = "PTS"
+AUTHOR = "panpan.zhao <panpan.zhao@i-soft.com.cn>"
+TIME = "MEDIUM"
+TEST_CATEGORY = "FUNCTIONAL"
+TEST_CLASS = "KERNEL"
+TEST_TYPE = "CLIENT"
+DOC = """
+phoronix test suite. See www.phoronix-test-suite.com
+"""
+
+job.run_test('pts', testname=['compiler'],tag='comiler')

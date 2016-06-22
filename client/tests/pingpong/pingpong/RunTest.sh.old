@@ -1,0 +1,58 @@
+#!/bin/sh
+
+#This script is created by KongWei 
+
+mkdir -p /root/results/pingpong
+
+gcc -pthread -O2 pp32.c -o pp32
+
+./pp32 -v -n 64 -i 100000 >    /root/results/pingpong/64output
+./pp32 -v -n 64 -i 100000 >>   /root/results/pingpong/64output
+./pp32 -v -n 64 -i 100000 >>   /root/results/pingpong/64output
+./pp32 -v -n 64 -i 100000 >>   /root/results/pingpong/64output
+./pp32 -v -n 64 -i 100000 >>   /root/results/pingpong/64output
+./pp32 -v -n 64 -i 100000 >>   /root/results/pingpong/64output
+
+./pp32 -v -n 128 -i 100000 >   /root/results/pingpong/128output
+./pp32 -v -n 128 -i 100000 >>   /root/results/pingpong/128output
+./pp32 -v -n 128 -i 100000 >>   /root/results/pingpong/128output
+./pp32 -v -n 128 -i 100000 >>   /root/results/pingpong/128output
+./pp32 -v -n 128 -i 100000 >>   /root/results/pingpong/128output
+./pp32 -v -n 128 -i 100000 >>   /root/results/pingpong/128output
+
+./pp32 -v -n 256 -i 100000 >   /root/results/pingpong/256output
+./pp32 -v -n 256 -i 100000 >>   /root/results/pingpong/256output
+./pp32 -v -n 256 -i 100000 >>   /root/results/pingpong/256output
+./pp32 -v -n 256 -i 100000 >>   /root/results/pingpong/256output
+./pp32 -v -n 256 -i 100000 >>   /root/results/pingpong/256output
+./pp32 -v -n 256 -i 100000 >>   /root/results/pingpong/256output
+
+#./pp32 -v -n 512 -i 100000 >   /root/results/pingpong/512output
+#./pp32 -v -n 512 -i 100000 >>   /root/results/pingpong/512output
+#./pp32 -v -n 512 -i 100000 >>   /root/results/pingpong/512output
+#./pp32 -v -n 512 -i 100000 >>   /root/results/pingpong/512output
+#./pp32 -v -n 512 -i 100000 >>   /root/results/pingpong/512output
+#./pp32 -v -n 512 -i 100000 >>   /root/results/pingpong/512output
+
+#./pp32 -v -n 1024 -i 100000 >   /root/results/pingpong/1024output
+#./pp32 -v -n 1024 -i 100000 >>   /root/results/pingpong/1024output
+#./pp32 -v -n 1024 -i 100000 >>   /root/results/pingpong/1024output
+#./pp32 -v -n 1024 -i 100000 >>   /root/results/pingpong/1024output
+#./pp32 -v -n 1024 -i 100000 >>   /root/results/pingpong/1024output
+#./pp32 -v -n 1024 -i 100000 >>   /root/results/pingpong/1024output
+
+#./pp32 -v -n 2048 -i 100000 >   /root/results/pingpong/2048output
+#./pp32 -v -n 2048 -i 100000 >>   /root/results/pingpong/2048output
+#./pp32 -v -n 2048 -i 100000 >>   /root/results/pingpong/2048output
+#./pp32 -v -n 2048 -i 100000 >>   /root/results/pingpong/2048output
+#./pp32 -v -n 2048 -i 100000 >>   /root/results/pingpong/2048output
+#./pp32 -v -n 2048 -i 100000 >>   /root/results/pingpong/2048output
+
+
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+#./pp32 -v -n 5000 -i 10 >>     /root/results/pingpong/output
+

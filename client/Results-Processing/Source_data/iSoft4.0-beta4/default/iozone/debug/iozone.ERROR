@@ -1,0 +1,4 @@
+12/26 21:16:07 ERROR|     utils:0151| [stderr] fileop.c: In function ‘validate’:
+12/26 21:16:07 ERROR|     utils:0151| [stderr] fileop.c:1377:15: warning: variable ‘size1’ set but not used [-Wunused-but-set-variable]
+12/26 21:16:07 ERROR|     utils:0151| [stderr]   register int size1;
+12/26 21:16:07 ERROR|     utils:0151| [stderr]                ^

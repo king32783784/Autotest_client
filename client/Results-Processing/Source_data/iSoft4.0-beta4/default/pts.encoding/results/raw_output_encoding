@@ -1,0 +1,158 @@
+
+[NOTICE] pts/encode-wavpack: The latest test profile version available for upgrade is 1.2.1 but version 1.2.0 is the latest currently installed. 
+
+[NOTICE] pts/ffmpeg: The latest test profile version available for upgrade is 2.5.0 but version 2.4.0 is the latest currently installed. 
+
+[NOTICE] pts/x264: The latest test profile version available for upgrade is 2.0.0 but version 1.9.0 is the latest currently installed. 
+        The test executable for pts/encode-wavpack-1.2.1 could not be located.
+        The test executable for pts/ffmpeg-2.5.0 could not be located.
+        The test executable for pts/x264-2.0.0 could not be located.
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel HD 2000 (1100MHz), Audio: Realtek ALC269VB, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: iSoft Desktop 4.0, Kernel: 4.4.0-15 (x86_64), Desktop: KDE Frameworks 5, Display Server: X Server 1.18.0, Display Driver: intel 2.99.917, OpenGL: 3.3 Mesa 11.1.0, Compiler: Open64 PARSE ERROR: Argument:-dump  Couldn t find match for argumentBrief USAGE:  opencc [--noflush <bool>] [-i <file>] [-o <file>] [-c <file>] [--] [-- ] [-h]For complete USAGE and HELP type:  opencc--help + Clang 3.7.1 + LLVM 3.7.1, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): y
+y
+
+Recently Saved Test Results:
+- compiler-result   [Today]
+
+    Enter a name to save these results under: encoding-result
+encoding-result
+    Enter a unique name to describe this test run / configuration: encoding-conf
+encoding-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Intel Core i5-2400 testing with a Dell 0V5HMK and Intel HD 2000 on iSoft Desktop 4.0 via the Phoronix Test Suite.
+
+New Description: 
+
+
+
+Monkey Audio Encoding 3.99u4b5s6:
+    pts/encode-ape-1.3.0
+    Test 1 of 5
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 18 Minutes
+        Started Run 1 @ 06:16:34
+        Started Run 2 @ 06:16:55
+        Started Run 3 @ 06:17:11
+        Started Run 4 @ 06:17:28
+        Started Run 5 @ 06:17:44  [Std. Dev: 1.33%]
+
+    Test Results:
+        14.583837985992
+        14.181022882462
+        14.184506177902
+        14.145961999893
+        14.139492034912
+
+    Average: 14.25 Seconds
+
+
+FLAC Audio Encoding 1.3.1:
+    pts/encode-flac-1.5.0
+    Test 2 of 5
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 14 Minutes
+        Started Run 1 @ 06:18:05
+        Started Run 2 @ 06:18:18
+        Started Run 3 @ 06:18:30
+        Started Run 4 @ 06:18:42
+        Started Run 5 @ 06:18:54  [Std. Dev: 1.03%]
+
+    Test Results:
+        10.407657146454
+        10.176786899567
+        10.197282075882
+        10.161108016968
+        10.15980386734
+
+    Average: 10.22 Seconds
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 3 of 5
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 11 Minutes
+        Started Run 1 @ 06:19:12
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:19:14
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:19:16
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 06:19:18
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 06:19:20
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Ogg Encoding 1.3.0:
+    pts/encode-ogg-1.4.1
+    Test 4 of 5
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 9 Minutes
+        Started Run 1 @ 06:19:26
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:19:28
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:19:30
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 06:19:32
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 06:19:34
+        The test exited with a non-zero exit status.
+        E: ./vorbis/bin/oggenc: error while loading shared libraries: liboggkate.so.1: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Mencoder 1.1:
+    pts/mencoder-1.4.1
+    Test 5 of 5
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 4 Minutes
+        Started Run 1 @ 06:19:41
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 06:19:43
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 06:19:45
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/encode-mp3-1.4.0: WAV To MP3
+	- pts/encode-ogg-1.4.1: WAV To Ogg
+	- pts/mencoder-1.4.1: AVI To LAVC
+
+
+    Do you want to view the results in your web browser (Y/n): n
+n
+    Would you like to upload the results to OpenBenchmarking.org (Y/n): 

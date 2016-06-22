@@ -1,0 +1,30 @@
+netns_sysfs netns_sysfs.sh
+cgroup 	cgroup_regression_test.sh
+memcg_function 	memcg_function_test.sh
+memcg_stat memcg_stat_test.sh
+memcg_use_hierarchy memcg_use_hierarchy_test.sh
+cpuset_regression_test cpuset_regression_test.sh
+su01 export TCbin=$LTPROOT/testcases/bin;su01
+cron02 cron02
+cron_deny01 cron_deny01
+cron_allow01 cron_allow01
+at_deny01 at_deny01
+at_allow01 at_allow01
+runpwtests06 runpwtests06.sh
+Numa-testcases numa01.sh
+ar export TCdat=$LTPROOT/testcases/bin; ar01
+ld export TCdat=$LTPROOT/testcases/bin; ld01
+nm export TCdat=$LTPROOT/testcases/bin; nm01
+file export TCdat=$LTPROOT/testcases/bin; file_test.sh
+cron export TCdat=$LTPROOT/testcases/bin; cron_tests.sh
+du01 du01.sh
+cpufreq_boost cpufreq_boost
+dma_thread_diotest1 dma_thread_diotest -a 512
+dma_thread_diotest2 dma_thread_diotest -a 1024
+dma_thread_diotest3 dma_thread_diotest -a 1536
+dma_thread_diotest4 dma_thread_diotest -a 2048
+dma_thread_diotest5 dma_thread_diotest -a 2560
+dma_thread_diotest6 dma_thread_diotest -a 3072
+dma_thread_diotest7 dma_thread_diotest -a 3584
+cpuacct01 run_cpuacct_test.sh 1
+cpuacct02 run_cpuacct_test.sh 2

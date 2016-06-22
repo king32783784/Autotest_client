@@ -1,0 +1,19 @@
+**MB** | Dell -  OptiPlex 790
+**BIOS** | Dell-A15-07/17/2012
+**CPU** |  42 Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+**MEM** | Samsung-DDR3-1333 MHz-2048MB x2
+**NB** |  Intel Corporation 2nd Generation Core Processor Family DRAM Controller (rev 09):snb_uncore
+**SB** |  Intel Corporation Q65 Express Chipset Family LPC Controller (rev 04):lpc_ich
+**Video-Card** | { Intel Corporation 2nd Generation Core Processor Family Integrated Graphics Controller (rev 09):i915}
+**Audio-Card** | { Intel Corporation 6 Series/C200 Series Chipset Family High Definition Audio Controller (rev 04):snd_hda_intel}
+**Wired-LAN** | { Intel Corporation 82579LM Gigabit Network Connection (rev 04):e1000e}{ Broadcom Corporation NetXtreme BCM5722 Gigabit Ethernet PCI Express:tg3}
+**Wireless** | null
+**SATA-Cotroller** | { Intel Corporation 6 Series/C200 Series Chipset Family 4 port SATA IDE Controller (rev 04):ata_piix}{ Intel Corporation 6 Series/C200 Series Chipset Family 2 port SATA IDE Controller (rev 04):ata_piix}
+**Hard-Disk** | { ST500DM002-1BD14 }{ Hitachi HUA72201 }
+**CD-ROM** | PLDS DVD-ROM DH-16D6S
+**RAID** | null
+**Bluetooth** | null 
+**Keyboard** | "AT Translated Set 2 keyboard"
+**Mouse** | "ImPS/2 Logitech Wheel Mouse"
+**USB-Flash-Disk** | null 
+

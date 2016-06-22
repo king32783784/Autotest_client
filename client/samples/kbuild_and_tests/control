@@ -1,0 +1,57 @@
+AUTHOR = "Autotest Team <autotest@test.kernel.org>"
+TIME = "MEDIUM"
+NAME = "Sample - Kernel tests"
+TEST_TYPE = "client"
+TEST_CLASS = "Kernel"
+TEST_CATEGORY = "Functional"
+
+DOC = """
+Builds a test kernel, then runs a series of tests on it. This control file shows
+features such as:
+
+ * The step engine - autotest mechanism of executing jobs in steps, where you
+   can interrupt the flow of execution with client reboots, in order to boot
+   newly built kernels
+ * Downloading, configuring, patching, building and booting a kernel straight
+   from kernel.org.
+ * Kernel expand - provide a string such as '3.5.0-rc2' and have autotest to
+   expand that and download the proper source tarballs and patches
+   automatically.
+ * Local kernel.org mirror - Alternate kernel.org mirror that you can set on
+   your control file.
+"""
+
+def step_init():
+    """
+    Build a kernel from kernel.org. This step will be executed, the machine
+    will be rebooted and then we'll proceed with step_tests.
+    """
+    job.next_step([step_tests])
+    # If you have a local/different kernel.org mirror, you can set it by
+    # uncommenting the below and set the URL properly.
+    #job.config_set('local_mirror', 'http://foo/bar')
+    testkernel = job.kernel('3.4.1')
+    testkernel.config()
+    testkernel.build()
+    testkernel.boot()
+
+
+def step_tests():
+    """
+    Run a series of autotest tests on this machine.
+    """
+    job.run_test('aiostress')
+    job.run_test('bonnie')
+    job.run_test('dbench')
+    job.run_test('fio')
+    job.run_test('fsx')
+    job.run_test('interbench')
+    job.run_test('isic')
+    job.run_test('kernbench', iterations=2, threads=5)
+    job.run_test('lmbench')
+    job.run_test('ltp')
+    job.run_test('reaim')
+    job.run_test('sparse')
+    job.run_test('stress')
+    job.run_test('tbench')
+    job.run_test('unixbench')

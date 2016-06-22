@@ -1,0 +1,24 @@
+架构：              x86_64
+CPU 运行模式：    32-bit, 64-bit
+字节序：           Little Endian
+CPU(s):                4
+在线 CPU 列表：   0-3
+每个核的线程数：1
+每个座的核数：  4
+座：                 1
+NUMA 节点：         1
+厂商 ID：           GenuineIntel
+CPU 系列：          6
+型号：              42
+型号名称：        Intel(R) Core(TM) i5-2400 CPU @ 3.10GHz
+步进：              7
+CPU MHz：             2604.605
+CPU 最大 MHz：      3400.0000
+CPU 最小 MHz：      1600.0000
+BogoMIPS：            6185.82
+虚拟化：           VT-x
+L1d 缓存：          32K
+L1i 缓存：          32K
+L2 缓存：           256K
+L3 缓存：           6144K
+NUMA 节点0 CPU：    0-3

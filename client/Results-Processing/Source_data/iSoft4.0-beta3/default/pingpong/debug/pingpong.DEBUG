@@ -1,0 +1,17 @@
+12/10 21:00:17 DEBUG|     utils:0114| Running 'which gcc'
+12/10 21:00:17 DEBUG|     utils:0151| [stdout] /usr/lib/ccache/gcc
+12/10 21:00:17 DEBUG|     utils:0114| Running 'cat /root/autotest/client/tests/pingpong/pingpong.tar.gz | tar xvf - 2>/dev/null'
+12/10 21:00:18 DEBUG|     utils:0114| Running 'patch -p0 < /root/autotest/client/tests/pingpong/Runtest.patch'
+12/10 21:00:18 DEBUG|     utils:0151| [stdout] patching file RunTest.sh
+12/10 21:00:18 DEBUG|     utils:0114| Running './RunTest.sh 3'
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c: In function ‘main’:
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:91:15: warning: implicit declaration of function ‘getopt’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]    while ((c = getopt (argc, argv, "?vri:n:z:p:s:c:S:")) != EOF)
+12/10 21:00:19 ERROR|     utils:0151| [stderr]                ^
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:113:6: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]   if (strcmp (optarg, "shared") == 0)
+12/10 21:00:19 ERROR|     utils:0151| [stderr]       ^
+12/10 21:00:19 ERROR|     utils:0151| [stderr] pp32.c:193:7: warning: implicit declaration of function ‘pthread_setconcurrency’ [-Wimplicit-function-declaration]
+12/10 21:00:19 ERROR|     utils:0151| [stderr]        pthread_setconcurrency (concurrency);
+12/10 21:00:19 ERROR|     utils:0151| [stderr]        ^
+12/10 21:45:55 DEBUG|     utils:0114| Running 'cp -a /root/autotest/client/tmp/pingpong/src/results/*  /mnt/results/default/pingpong/results'

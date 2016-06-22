@@ -1,0 +1,291 @@
+09/24 14:01:27 DEBUG|     utils:0114| Running 'which gcc'
+09/24 14:01:27 DEBUG|     utils:0151| [stdout] /bin/gcc
+09/24 14:01:27 DEBUG|     utils:0114| Running 'zcat /root/autotest/client/tests/pts/phoronix-test-suite-5.2.1.tar.gz | tar xvf - 2>/dev/null'
+09/24 14:01:27 DEBUG|     utils:0114| Running 'cat /etc/issue |awk '{print $1}' '
+09/24 14:01:27 DEBUG|     utils:0151| [stdout] Fedora
+09/24 14:01:27 DEBUG|     utils:0151| [stdout] Kernel
+09/24 14:01:27 DEBUG|     utils:0151| [stdout] 
+09/24 14:01:27 DEBUG|     utils:0114| Running 'yum -y install php php-xml'
+09/24 14:01:27 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install php php-xml'.
+09/24 14:01:27 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 14:01:27 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 14:01:27 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 14:01:27 ERROR|     utils:0151| [stderr] 
+09/24 14:01:28 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 0:35:55 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:01:28 ERROR|     utils:0151| [stderr] 软件包 php-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 14:01:28 ERROR|     utils:0151| [stderr] 软件包 php-xml-5.6.11-2.fc22.x86_64 已安装，跳过
+09/24 14:01:28 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:01:28 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:01:28 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:01:29 DEBUG|     utils:0114| Running 'yum -y install mpich2'
+09/24 14:01:29 ERROR|     utils:0151| [stderr] Yum command has been deprecated, redirecting to '/usr/bin/dnf -y install mpich2'.
+09/24 14:01:29 ERROR|     utils:0151| [stderr] See 'man dnf' and 'man yum2dnf' for more information.
+09/24 14:01:29 ERROR|     utils:0151| [stderr] To transfer transaction metadata from yum to DNF, run:
+09/24 14:01:29 ERROR|     utils:0151| [stderr] 'dnf install python-dnf-plugins-extras-migrate && dnf-2 migrate'
+09/24 14:01:29 ERROR|     utils:0151| [stderr] 
+09/24 14:01:29 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 0:35:56 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:01:29 ERROR|     utils:0151| [stderr] 软件包 mpich-3.1.4-2.fc22.x86_64 已安装，跳过
+09/24 14:01:29 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:01:30 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:01:30 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:01:30 DEBUG|     utils:0114| Running 'dnf -y install python-pexpect.noarch'
+09/24 14:01:30 DEBUG|     utils:0151| [stdout] Last metadata expiration check performed 0:35:57 ago on Thu Sep 24 13:25:32 2015.
+09/24 14:01:30 ERROR|     utils:0151| [stderr] 软件包 python-pexpect-3.1-3.fc21.noarch 已安装，跳过
+09/24 14:01:30 DEBUG|     utils:0151| [stdout] 依赖关系解决。
+09/24 14:01:31 DEBUG|     utils:0151| [stdout] 无需任何处理。
+09/24 14:01:31 DEBUG|     utils:0151| [stdout] 完毕！
+09/24 14:01:31 DEBUG|     utils:0114| Running './install-sh /root/autotest/client/tmp/pts/src'
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] 
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Installation Completed
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] 
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] Executable File: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] Documentation: /root/autotest/client/tmp/pts/src/share/doc/phoronix-test-suite/
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] Phoronix Test Suite Files: /root/autotest/client/tmp/pts/src/share/phoronix-test-suite/
+09/24 14:01:57 DEBUG|     utils:0151| [stdout] 
+09/24 14:01:57 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite list-available-suites'
+09/24 14:01:59 DEBUG|     utils:0151| [stdout] 
+09/24 14:01:59 DEBUG|     utils:0151| [stdout] Phoronix Test Suite v5.2.1
+09/24 14:01:59 DEBUG|     utils:0151| [stdout] Available Suites
+09/24 14:01:59 DEBUG|     utils:0151| [stdout] 
+09/24 14:02:00 DEBUG|     utils:0151| [stdout]   pts/audio-encoding               - Audio Encoding                   System
+09/24 14:02:00 DEBUG|     utils:0151| [stdout]   pts/chess                        - Chess Test Suite                 Processor
+09/24 14:02:00 DEBUG|     utils:0151| [stdout]   pts/compilation                  - Timed Code Compilation           Processor
+09/24 14:02:01 DEBUG|     utils:0151| [stdout]   pts/compiler                     - Compiler                         Processor
+09/24 14:02:01 DEBUG|     utils:0151| [stdout]   pts/compression                  - Timed File Compression           Processor
+09/24 14:02:01 DEBUG|     utils:0151| [stdout]   pts/computational                - Computational Test Suite         System
+09/24 14:02:01 DEBUG|     utils:0151| [stdout]   pts/computational-biology        - Computational Biology Test Suite Processor
+09/24 14:02:02 DEBUG|     utils:0151| [stdout]   pts/cpu                          - CPU / Processor Suite            Processor
+09/24 14:02:02 DEBUG|     utils:0151| [stdout]   pts/cryptography                 - Cryptography                     Processor
+09/24 14:02:04 DEBUG|     utils:0151| [stdout]   pts/daily-kernel-tracker         - Daily Kernel Tracker             System
+09/24 14:02:06 DEBUG|     utils:0151| [stdout]   pts/daily-system-tracker         - Daily System Tracker             System
+09/24 14:02:07 DEBUG|     utils:0151| [stdout]   pts/database                     - Database Test Suite              System
+09/24 14:02:07 DEBUG|     utils:0151| [stdout]   pts/desktop-graphics             - Desktop Graphics                 System
+09/24 14:02:07 DEBUG|     utils:0151| [stdout] * pts/disk                         - Disk Test Suite                  Disk
+09/24 14:02:08 DEBUG|     utils:0151| [stdout]   pts/encoding                     - Encoding                         System
+09/24 14:02:09 DEBUG|     utils:0151| [stdout] * pts/favorites                    - Favorites                        System
+09/24 14:02:09 DEBUG|     utils:0151| [stdout] * pts/gaming                       - Gaming                           System
+09/24 14:02:09 DEBUG|     utils:0151| [stdout]   pts/gaming-closed                - Closed-Source Gaming             System
+09/24 14:02:09 DEBUG|     utils:0151| [stdout] * pts/gaming-free                  - Free Software Gaming             System
+09/24 14:02:10 DEBUG|     utils:0151| [stdout]   pts/gui-toolkits                 - GUI Toolkits                     Graphics
+09/24 14:02:10 DEBUG|     utils:0151| [stdout]   pts/ioquake3-games               - Games Using The ioquake3 Engine  System
+09/24 14:02:10 DEBUG|     utils:0151| [stdout]   pts/iqc                          - Image Quality Comparison Suite   Graphics
+09/24 14:02:10 DEBUG|     utils:0151| [stdout]   pts/java                         - Java                             System
+09/24 14:02:10 DEBUG|     utils:0151| [stdout]   pts/java-opengl                  - Java OpenGL                      System
+09/24 14:02:11 DEBUG|     utils:0151| [stdout]   pts/kernel                       - Kernel                           System
+09/24 14:02:12 DEBUG|     utils:0151| [stdout]   pts/linux-system                 - Linux System                     System
+09/24 14:02:12 DEBUG|     utils:0151| [stdout]   pts/memory                       - Memory Test Suite                Memory
+09/24 14:02:12 DEBUG|     utils:0151| [stdout]   pts/mesa                         - Mesa Test Suite                  Graphics
+09/24 14:02:13 DEBUG|     utils:0151| [stdout]   pts/motherboard                  - Motherboard                      System
+09/24 14:02:13 DEBUG|     utils:0151| [stdout]   pts/multicore                    - Multi-Core                       Processor
+09/24 14:02:14 DEBUG|     utils:0151| [stdout]   pts/netbook                      - Netbook Test Suite               System
+09/24 14:02:14 DEBUG|     utils:0151| [stdout]   pts/network                      - Networking Test Suite            Network
+09/24 14:02:16 DEBUG|     utils:0151| [stdout]   pts/nevada                       - OpenSolaris Nevada Test Suite    System
+09/24 14:02:16 DEBUG|     utils:0151| [stdout]   pts/opencl                       - OpenCL                           System
+09/24 14:02:16 DEBUG|     utils:0151| [stdout]   pts/opengl-demos                 - OpenGL Demos Test Suite          System
+09/24 14:02:16 DEBUG|     utils:0151| [stdout]   pts/opengl-workstation           - OpenGL Workstation Test Suite    System
+09/24 14:02:18 DEBUG|     utils:0151| [stdout]   pts/pts-desktop-live             - PTS Desktop Live                 System
+09/24 14:02:18 DEBUG|     utils:0151| [stdout]   pts/ray-tracing                  - Ray-Tracing Test Suite           System
+09/24 14:02:19 DEBUG|     utils:0151| [stdout]   pts/server                       - Server Motherboard               System
+09/24 14:02:19 DEBUG|     utils:0151| [stdout]   pts/unigine                      - Unigine Test Suite               Graphics
+09/24 14:02:25 DEBUG|     utils:0151| [stdout] * pts/universe                     - Universe Test Suite              System
+09/24 14:02:28 DEBUG|     utils:0151| [stdout] * pts/universe-cli                 - Universe CLI Test Suite          System
+09/24 14:02:29 DEBUG|     utils:0151| [stdout] * pts/universe-x                   - Universe X Test Suite            System
+09/24 14:02:29 DEBUG|     utils:0151| [stdout]   pts/video-encoding               - Video Encoding                   System
+09/24 14:02:30 DEBUG|     utils:0151| [stdout]   pts/workstation                  - Workstation                      System
+09/24 14:02:31 DEBUG|     utils:0151| [stdout]   pts/workstation-graphics         - Workstation Graphics             Graphics
+09/24 14:02:31 DEBUG|     utils:0151| [stdout]   pts/xrender                      - X Render Extension Testing       Graphics
+09/24 14:02:31 DEBUG|     utils:0151| [stdout] 
+09/24 14:02:31 DEBUG|     utils:0151| [stdout] * Indicates a partially supported suite.
+09/24 14:02:31 DEBUG|     utils:0151| [stdout] 
+09/24 14:02:31 DEBUG|     utils:0151| [stdout] 
+09/24 14:02:33 INFO |       pts:0066| 0
+09/24 14:02:33 INFO |       pts:0067| now start first expect.........
+09/24 14:02:33 DEBUG|       pts:0075| 
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results 
+09/24 14:02:33 DEBUG|       pts:0078|  y
+
+Recently Saved Test Results:
+- encoding-result   [Today]
+- compiler-result   [Today]
+
+    Enter a name to save these results 
+09/24 14:02:33 DEBUG|       pts:0081|  compression-result
+    Enter a unique name to describe this test run / 
+09/24 14:02:33 DEBUG|       pts:0084|  compression-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current 
+09/24 14:02:33 INFO |       pts:0085| now start run test..............
+09/24 14:15:04 DEBUG|       pts:0096|  Intel Core i5-2400 testing with a Dell 0V5HMK and Intel Gen6 on Fedora 22 via the Phoronix Test Suite.
+
+New Description: 
+
+
+7-Zip Compression 9.20.1:
+    pts/compress-7zip-1.6.0
+    Test 1 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 23 Minutes
+        Started Run 1 @ 01:02:33
+        Started Run 2 @ 01:02:58
+        Started Run 3 @ 01:03:22  [Std. Dev: 0.88%]
+
+    Test Results:
+        10975
+        11056
+        11168
+
+    Average: 11066 MIPS
+
+
+Parallel BZIP2 Compression 1.1.6:
+    pts/compress-pbzip2-1.4.0
+    Test 2 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 22 Minutes
+        Running Pre-Test Script @ 01:03:52
+        Started Run 1 @ 01:04:16
+        Started Run 2 @ 01:04:36
+        Started Run 3 @ 01:04:50  [Std. Dev: 3.59%]
+        Started Run 4 @ 01:05:04  [Std. Dev: 2.93%]
+        Running Post-Test Script @ 01:05:17
+
+    Test Results:
+        12.68329501152
+        12.635916948318
+        11.890184879303
+        12.448850870132
+
+    Average: 12.41 Seconds
+
+
+Gzip Compression:
+    pts/compress-gzip-1.1.0
+    Test 3 of 4
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 19 Minutes
+        Running Pre-Test Script @ 01:05:24
+        Started Run 1 @ 01:05:39
+        Started Run 2 @ 01:05:57
+        Started Run 3 @ 01:06:15  [Std. Dev: 3.51%]
+        Started Run 4 @ 01:06:33  [Std. Dev: 3.13%]
+        Running Post-Test Script @ 01:06:48
+
+    Test Results:
+        16.661993980408
+        15.769474983215
+        15.621215105057
+        15.633538007736
+
+    Average: 15.92 Seconds
+
+
+LZMA Compression:
+    pts/compress-lzma-1.2.0
+    Test 4 of 4
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 17 Minutes
+        Running Pre-Test Script @ 01:06:57
+        Started Run 1 @ 01:07:21
+        Started Run 2 @ 01:09:54
+        Started Run 3 @ 01:12:26  [Std. Dev: 0.56%]
+        Running Post-Test Script @ 01:14:56
+
+    Test Results:
+        151.28783106804
+        149.67319202423
+        150.03030705452
+
+    Average: 150.33 Seconds
+
+    Do you want to view the results in your web browser 
+09/24 14:15:34 ERROR|      test:0414| Exception escaping from test:
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 411, in _exec
+    _call_test_function(self.execute, *p_args, **p_dargs)
+  File "/root/autotest/client/shared/test.py", line 830, in _call_test_function
+    raise error.UnhandledTestFail(e)
+UnhandledTestFail: Unhandled TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7f24c1d47f10>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compression']
+searcher: <pexpect.searcher_re object at 0x7f24c1cdc050>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3046
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.compression/results/raw_output_compression', mode 'w' at 0x7f24c1cd30c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+Traceback (most recent call last):
+  File "/root/autotest/client/shared/test.py", line 823, in _call_test_function
+    return func(*args, **dargs)
+  File "/root/autotest/client/shared/test.py", line 291, in execute
+    postprocess_profiled_run, args, dargs)
+  File "/root/autotest/client/shared/test.py", line 212, in _call_run_once
+    self.run_once(*args, **dargs)
+  File "/root/autotest/client/tests/pts/pts.py", line 97, in run_once
+    runpts.expect(pexpect.EOF)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1418, in expect
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1433, in expect_list
+    timeout, searchwindowsize)
+  File "/usr/lib/python2.7/site-packages/pexpect/__init__.py", line 1535, in expect_loop
+    raise TIMEOUT(str(err) + '\n' + str(self))
+TIMEOUT: Timeout exceeded.
+<pexpect.spawn object at 0x7f24c1d47f10>
+version: 3.1
+command: /root/autotest/client/tmp/pts/src/bin/phoronix-test-suite
+args: ['/root/autotest/client/tmp/pts/src/bin/phoronix-test-suite', 'run', 'compression']
+searcher: <pexpect.searcher_re object at 0x7f24c1cdc050>
+buffer (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+before (last 100 chars): ' n\r\n    Would you like to upload the results to OpenBenchmarking.org (Y/n): '
+after: <class 'pexpect.TIMEOUT'>
+match: None
+match_index: None
+exitstatus: None
+flag_eof: False
+pid: 3046
+child_fd: 19
+closed: False
+timeout: 30
+delimiter: <class 'pexpect.EOF'>
+logfile: <open file '/mnt/results/default/pts.compression/results/raw_output_compression', mode 'w' at 0x7f24c1cd30c0>
+logfile_read: None
+logfile_send: None
+maxread: 2000
+ignorecase: False
+searchwindowsize: None
+delaybeforesend: 0.05
+delayafterclose: 0.1
+delayafterterminate: 0.1
+

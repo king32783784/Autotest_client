@@ -1,0 +1,1 @@
+BOOT_IMAGE=/boot/vmlinuz-4.4.0-10 root=UUID=d47462f1-c4be-4105-8518-426dd3fa5411 ro quiet splash

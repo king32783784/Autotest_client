@@ -1,0 +1,223 @@
+
+Phoronix Test Suite v5.2.1
+System Information
+
+Hardware:
+Processor: Intel Core i5-2400 @ 3.40GHz (4 Cores), Motherboard: Dell 0V5HMK, Chipset: Intel 2nd Generation Core Family DRAM, Memory: 2 x 2048 MB DDR3-1333MHz, Disk: 500GB Seagate ST500DM002-1BD14 + 1000GB Hitachi HUA72201, Graphics: Intel Gen6, Audio: Intel 6 /C200, Network: Intel 82579LM Gigabit Connection
+
+Software:
+OS: Fedora 22, Kernel: 4.0.4-301.fc22.x86_64+debug (x86_64), Desktop: GNOME Shell 3.16.2, Display Server: X Server 1.17.1, OpenGL: 3.3 Mesa 10.5.4, Compiler: GCC 5.1.1 20150618 + Clang 3.5.0 + LLVM 3.5.0, File-System: ext4, Screen Resolution: 1440x900
+
+    Would you like to save these test results (Y/n): y
+y
+
+Recently Saved Test Results:
+- desktop-graphics-result   [Today]
+- compression-result        [Today]
+- encoding-result           [Today]
+- compiler-result           [Today]
+
+    Enter a name to save these results under: encoding-result
+encoding-result
+
+Current Test Identifiers:
+- encoding-conf
+
+    Enter a unique name to describe this test run / configuration: encoding-conf
+encoding-conf
+
+If you wish, enter a new description below to better describe this result set / system configuration under test.
+Press ENTER to proceed without changes.
+
+Current Description: Running pts/x264-1.9.0, pts/encode-ape-1.3.0, pts/encode-flac-1.5.0, pts/encode-mp3-1.4.0, pts/encode-ogg-1.4.1, pts/encode-wavpack-1.2.0, pts/ffmpeg-2.4.0, pts/mencoder-1.4.1 via the Phoronix Test Suite.
+
+New Description: 
+
+
+
+x264 2014-08-30:
+    pts/x264-1.9.0
+    Test 1 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      4 Minutes
+    Estimated Time To Completion: 20 Minutes
+        Started Run 1 @ 01:27:16
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:27:18
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:27:20
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 01:27:22
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 01:27:24
+        The test exited with a non-zero exit status.
+        E: ./x264_/bin/x264: error while loading shared libraries: libavformat.so.55: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Frames Per Second
+    This test failed to run properly.
+
+
+Monkey Audio Encoding 3.99u4b5s6:
+    pts/encode-ape-1.3.0
+    Test 2 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 17 Minutes
+        Started Run 1 @ 01:27:30
+        Started Run 2 @ 01:27:50
+        Started Run 3 @ 01:28:05
+        Started Run 4 @ 01:28:20
+        Started Run 5 @ 01:28:35  [Std. Dev: 0.19%]
+
+    Test Results:
+        13.086894035339
+        13.052757978439
+        13.054480791092
+        13.097728967667
+        13.037179946899
+
+    Average: 3.07 Seconds
+
+
+FLAC Audio Encoding 1.3.1:
+    pts/encode-flac-1.5.0
+    Test 3 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      1 Minute
+    Estimated Time To Completion: 15 Minutes
+        Started Run 1 @ 01:28:56
+        Started Run 2 @ 01:29:07
+        Started Run 3 @ 01:29:19
+        Started Run 4 @ 01:29:30
+        Started Run 5 @ 01:29:42  [Std. Dev: 0.34%]
+
+    Test Results:
+        9.49054479599
+        9.4860370159149
+        9.499932050705
+        9.5355110168457
+        9.5617740154266
+
+    Average: 19.51 Seconds
+
+
+LAME MP3 Encoding 3.99.3:
+    pts/encode-mp3-1.4.0
+    Test 4 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 14 Minutes
+        Started Run 1 @ 01:29:57
+        Started Run 2 @ 01:30:15
+        Started Run 3 @ 01:30:33
+        Started Run 4 @ 01:30:51
+        Started Run 5 @ 01:31:09  [Std. Dev: 0.25%]
+
+    Test Results:
+        15.740355014801
+        15.775367021561
+        15.83193898201
+        15.824166059494
+        15.769151926041
+
+    Average: 5.79 Seconds
+
+
+Ogg Encoding 1.3.0:
+    pts/encode-ogg-1.4.1
+    Test 5 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      5 Minutes
+    Estimated Time To Completion: 12 Minutes
+        Started Run 1 @ 01:31:32
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:31:34
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:31:36
+        The test exited with a non-zero exit status.
+        Started Run 4 @ 01:31:38
+        The test exited with a non-zero exit status.
+        Started Run 5 @ 01:31:40
+        The test exited with a non-zero exit status.
+        E: ./vorbis/bin/oggenc: error while loading shared libraries: liboggkate.so.1: cannot open shared object file: No such file or directory
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+WavPack Audio Encoding 4.41.0:
+    pts/encode-wavpack-1.2.0
+    Test 6 of 8
+    Estimated Trial Run Count:    5
+    Estimated Test Run-Time:      2 Minutes
+    Estimated Time To Completion: 7 Minutes
+        Started Run 1 @ 01:31:46
+        Started Run 2 @ 01:31:59
+        Started Run 3 @ 01:32:12
+        Started Run 4 @ 01:32:25
+        Started Run 5 @ 01:32:38  [Std. Dev: 0.04%]
+
+    Test Results:
+        11.02051782608
+        11.021728038788
+        11.018112182617
+        11.025954008102
+        11.015002965927
+
+    Average: 14.02 Seconds
+
+
+FFmpeg 2.6.2:
+    pts/ffmpeg-2.4.0
+    Test 7 of 8
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      3 Minutes
+    Estimated Time To Completion: 6 Minutes
+        Started Run 1 @ 01:32:57
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:32:59
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:33:01
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+Mencoder 1.1:
+    pts/mencoder-1.4.1
+    Test 8 of 8
+    Estimated Trial Run Count:    3
+    Estimated Time To Completion: 4 Minutes
+        Started Run 1 @ 01:33:07
+        The test exited with a non-zero exit status.
+        Started Run 2 @ 01:33:09
+        The test exited with a non-zero exit status.
+        Started Run 3 @ 01:33:11
+        The test exited with a non-zero exit status.
+
+    Test Results:
+
+    Average: 0 Seconds
+    This test failed to run properly.
+
+
+The following tests failed to properly run:
+
+	- pts/x264-1.9.0: H.264 Video Encoding
+	- pts/encode-ogg-1.4.1: WAV To Ogg
+	- pts/ffmpeg-2.4.0: H.264 HD To NTSC DV
+	- pts/mencoder-1.4.1: AVI To LAVC
+
+
+
+[NOTICE] No title supplied for result file meta-data. 
+    Do you want to view the results in your web browser (Y/n): n
+n
+    Would you like to upload the results to OpenBenchmarking.org (Y/n): 

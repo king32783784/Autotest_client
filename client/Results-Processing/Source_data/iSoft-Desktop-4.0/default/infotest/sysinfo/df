@@ -1,0 +1,11 @@
+文件系统       1048576-块  已用  可用 配额 挂载点
+devtmpfs             1821     0  1821   0% /dev
+tmpfs                1837    44  1793   3% /dev/shm
+tmpfs                1837     2  1836   1% /run
+tmpfs                1837     0  1837   0% /sys/fs/cgroup
+/dev/sda13          93786 69807 23964  75% /
+tmpfs                1837   297  1540  17% /tmp
+/dev/sda12            189     1   188   1% /boot/efi
+tmpfs                 368     0   368   0% /run/user/987
+tmpfs                 368     1   368   1% /run/user/1000
+/dev/sda7          100000 76902 23099  77% /run/media/isoft_lp/文档与资料

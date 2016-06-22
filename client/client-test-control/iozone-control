@@ -1,0 +1,9 @@
+import os 
+from autotest.client import utils
+#iozone test
+def iozonetest():
+    utils.system('echo 3 >/proc/sys/vm/drop_caches')
+    job.run_test('iozone',iterations=3)
+    res_path=os.path.join(job.bindir, 'tests/iozone')
+    os.chdir(res_path)
+iozonetest()

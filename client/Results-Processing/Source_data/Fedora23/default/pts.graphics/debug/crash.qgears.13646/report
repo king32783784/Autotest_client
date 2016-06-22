@@ -1,0 +1,7 @@
+Program: Unknown
+PID: 13646
+Signal: 6
+Hostname: localhost
+Time of the crash (according to kernel): Tue Dec 15 10:04:29 2015
+Program backtrace:
+Could not determine backtrace for core file /mnt/results/default/pts.graphics/debug/crash.qgears.13646/core

@@ -1,0 +1,5 @@
+
+### Basic double operations - times in nanoseconds - smaller is better
+
+*OS* |*double add* | *double mul* | *double div* | *double bogo*
+------ |------------ | ------------ | ------------ | -------------

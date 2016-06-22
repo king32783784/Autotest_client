@@ -1,0 +1,52 @@
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: BT.A]
+    Test 1 of 5
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 28 Minutes
+        Started Run 1 @ 02:47:38
+        Started Run 2 @ 02:57:01
+        Started Run 3 @ 03:06:21  [Std. Dev: 0.38%]
+
+    Test Results:
+        302.92
+        303.93
+        305.25
+
+    Average: 304.03 Total Mop/s
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: EP.C]
+    Test 2 of 5
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 23 Minutes
+        Started Run 1 @ 03:15:57
+        Started Run 2 @ 03:17:50
+        Started Run 3 @ 03:19:42  [Std. Dev: 0.41%]
+
+    Test Results:
+        77.92
+        77.71
+        77.3
+
+    Average: 77.64 Total Mop/s
+
+
+NAS Parallel Benchmarks 3.3:
+    pts/npb-1.2.1 [Test / Class: FT.A]
+    Test 3 of 5
+    Estimated Trial Run Count:    3
+    Estimated Test Run-Time:      6 Minutes
+    Estimated Time To Completion: 17 Minutes
+        Started Run 1 @ 03:21:59
+        Started Run 2 @ 03:22:11
+        Started Run 3 @ 03:22:23  [Std. Dev: 0.33%]
+
+    Test Results:
+        833.59
+        838.66
+        837.83
+
+    Average: 836.69 Total Mop/s

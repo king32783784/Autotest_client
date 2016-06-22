@@ -1,0 +1,5 @@
+
+### Memory latencies in nanoseconds - smaller is better
+
+*OS* | *L1 $* |  *L2 $* | *Main mem* | *Rand mem* | *Guesses*
+------ | ------- | -------- | ---------- | ---------- | --------

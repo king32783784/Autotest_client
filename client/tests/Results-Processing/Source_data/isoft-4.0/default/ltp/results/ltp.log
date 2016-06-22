@@ -1,0 +1,21 @@
+Test Start Time: Sat Sep 26 12:07:04 2015
+-----------------------------------------
+Testcase                       Result     Exit Value
+--------                       ------     ----------
+abort01                        PASS       0    
+accept01                       PASS       0    
+accept4_01                     PASS       0    
+access01                       PASS       0    
+access02                       PASS       0    
+access03                       PASS       0    
+access04                       PASS       0    
+access05                       PASS       0    
+access06                       PASS       0    
+acct01                         PASS       0    
+add_key01                      PASS       0    
+add_key02                      PASS       0    
+adjtimex01                     PASS       0    
+adjtimex02                     CONF       32   
+alarm01                        PASS       0    
+alarm02                        PASS       0    
+alarm03                        PASS       0    

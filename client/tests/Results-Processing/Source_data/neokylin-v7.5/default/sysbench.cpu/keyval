@@ -1,0 +1,8 @@
+param-cpu_max_prime=[10000, 20000, 30000]
+param-runtimes=3
+param-test_type='cpu'
+version=1
+sysinfo-cmdline=BOOT_IMAGE=/vmlinuz-4.0.4-301.fc22.x86_64+debug root=/dev/mapper/fedora-root ro rd.lvm.lv=fedora/swap rd.lvm.lv=fedora/root rhgb quiet LANG=zh_CN.UTF-8
+sysinfo-memtotal-in-kb=3878084
+sysinfo-phys-mbytes=4096
+sysinfo-uname=4.0.4-301.fc22.x86_64+debug #1 SMP Thu May 21 12:56:19 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux

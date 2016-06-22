@@ -1,0 +1,5 @@
+
+Compression -Less is better (seconds)
+
+*Item* | *compress-pbzip2* | *compress-gzip* | *compress-lzma*
+------ | ----------------- | --------------- | ---------------

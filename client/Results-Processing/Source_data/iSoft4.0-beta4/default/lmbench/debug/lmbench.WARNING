@@ -1,0 +1,206 @@
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_tcp.c: In function ‘tcp_server’:
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_tcp.c:48:9: warning: implicit declaration of function ‘pmap_unset’ [-Wimplicit-function-declaration]
+12/27 04:52:26 ERROR|     utils:0151| [stderr]    (void)pmap_unset((u_long)prog, (u_long)1);
+12/27 04:52:26 ERROR|     utils:0151| [stderr]          ^
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_tcp.c:49:8: warning: implicit declaration of function ‘pmap_set’ [-Wimplicit-function-declaration]
+12/27 04:52:26 ERROR|     utils:0151| [stderr]    if (!pmap_set((u_long)prog, (u_long)1, (u_long)IPPROTO_TCP,
+12/27 04:52:26 ERROR|     utils:0151| [stderr]         ^
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_tcp.c: In function ‘tcp_connect’:
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_tcp.c:163:16: warning: implicit declaration of function ‘pmap_getport’ [-Wimplicit-function-declaration]
+12/27 04:52:26 ERROR|     utils:0151| [stderr]     save_port = pmap_getport(&s, prog,
+12/27 04:52:26 ERROR|     utils:0151| [stderr]                 ^
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_udp.c: In function ‘udp_done’:
+12/27 04:52:26 ERROR|     utils:0151| [stderr] lib_udp.c:54:8: warning: implicit declaration of function ‘pmap_unset’ [-Wimplicit-function-declaration]
+12/27 04:52:26 ERROR|     utils:0151| [stderr]   (void)pmap_unset((u_long)prog, (u_long)1);
+12/27 04:52:26 ERROR|     utils:0151| [stderr]         ^
+12/27 04:52:27 ERROR|     utils:0151| [stderr] lib_timing.c: In function ‘touch’:
+12/27 04:52:27 ERROR|     utils:0151| [stderr] lib_timing.c:1626:9: warning: type defaults to ‘int’ in declaration of ‘psize’ [-Wimplicit-int]
+12/27 04:52:27 ERROR|     utils:0151| [stderr]   static psize;
+12/27 04:52:27 ERROR|     utils:0151| [stderr]          ^
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_debug.c: In function ‘percent_point’:
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: warning: implicit declaration of function ‘floor’ [-Wimplicit-function-declaration]
+12/27 04:52:32 ERROR|     utils:0151| [stderr]   if (t == floor(t)) {
+12/27 04:52:32 ERROR|     utils:0151| [stderr]            ^
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: warning: incompatible implicit declaration of built-in function ‘floor’
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_debug.c:24:11: note: include ‘<math.h>’ or provide a declaration of ‘floor’
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_sched.c: In function ‘handle_scheduler’:
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_sched.c:94:3: warning: ‘return’ with no value, in function returning non-void
+12/27 04:52:32 ERROR|     utils:0151| [stderr]    return;
+12/27 04:52:32 ERROR|     utils:0151| [stderr]    ^
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_sched.c: In function ‘sched_pin’:
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_sched.c:207:12: warning: implicit declaration of function ‘sched_getaffinity’ [-Wimplicit-function-declaration]
+12/27 04:52:32 ERROR|     utils:0151| [stderr]    retval = sched_getaffinity(0, sz * sizeof(unsigned long), cpumask);
+12/27 04:52:32 ERROR|     utils:0151| [stderr]             ^
+12/27 04:52:32 ERROR|     utils:0151| [stderr] lib_sched.c:231:11: warning: implicit declaration of function ‘sched_setaffinity’ [-Wimplicit-function-declaration]
+12/27 04:52:32 ERROR|     utils:0151| [stderr]   retval = sched_setaffinity(0, sz * sizeof(unsigned long), mask);
+12/27 04:52:32 ERROR|     utils:0151| [stderr]            ^
+12/27 04:52:34 ERROR|     utils:0151| [stderr] bw_file_rd.c: In function ‘main’:
+12/27 04:52:34 ERROR|     utils:0151| [stderr] bw_file_rd.c:149:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:34 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:34 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:34 ERROR|     utils:0151| [stderr] bw_mem.c: In function ‘main’:
+12/27 04:52:34 ERROR|     utils:0151| [stderr] bw_mem.c:76:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:34 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:34 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_mmap_rd.c: In function ‘main’:
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_mmap_rd.c:64:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:35 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:35 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_pipe.c: In function ‘main’:
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_pipe.c:157:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:35 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:35 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_tcp.c: In function ‘main’:
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_tcp.c:74:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:35 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:35 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_unix.c: In function ‘main’:
+12/27 04:52:35 ERROR|     utils:0151| [stderr] bw_unix.c:153:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:35 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(argc, argv, usage);
+12/27 04:52:35 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_select.c: In function ‘main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_select.c:53:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_select.c: In function ‘doit’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_select.c:167:9: warning: type defaults to ‘int’ in declaration of ‘count’ [-Wimplicit-int]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]   static count = 0;
+12/27 04:52:36 ERROR|     utils:0151| [stderr]          ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_pipe.c: In function ‘main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_pipe.c:41:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_rpc.c: In function ‘main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_rpc.c:136:5: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]      ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_rpc.c: In function ‘server_main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_rpc.c:211:9: warning: implicit declaration of function ‘pmap_unset’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]   (void) pmap_unset(XACT_PROG, XACT_VERS);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]          ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_syscall.c: In function ‘main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_syscall.c:116:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_tcp.c: In function ‘main’:
+12/27 04:52:36 ERROR|     utils:0151| [stderr] lat_tcp.c:64:5: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:36 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+12/27 04:52:36 ERROR|     utils:0151| [stderr]      ^
+12/27 04:52:37 ERROR|     utils:0151| [stderr] lat_udp.c: In function ‘main’:
+12/27 04:52:37 ERROR|     utils:0151| [stderr] lat_udp.c:78:5: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:37 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+12/27 04:52:37 ERROR|     utils:0151| [stderr]      ^
+12/27 04:52:37 ERROR|     utils:0151| [stderr] lat_mmap.c: In function ‘main’:
+12/27 04:52:37 ERROR|     utils:0151| [stderr] lat_mmap.c:58:5: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:37 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+12/27 04:52:37 ERROR|     utils:0151| [stderr]      ^
+12/27 04:52:37 ERROR|     utils:0151| [stderr] mhz.c: In function ‘main’:
+12/27 04:52:37 ERROR|     utils:0151| [stderr] mhz.c:492:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:37 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:37 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_proc.c: In function ‘main’:
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_proc.c:60:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:38 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:38 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_pagefault.c: In function ‘main’:
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_pagefault.c:54:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:38 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:38 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_connect.c: In function ‘main’:
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_connect.c:63:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:38 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:38 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:38 ERROR|     utils:0151| [stderr] lat_fs.c: In function ‘main’:
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_fs.c:55:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:39 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:39 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:39 ERROR|     utils:0151| [stderr] /tmp/ccX5iaoV.o: In function `setup_names':
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_fs.c:(.text+0x833): warning: the use of `tempnam' is dangerous, better use `mkstemp'
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_sig.c: In function ‘main’:
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_sig.c:182:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:39 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:39 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_mem_rd.c: In function ‘main’:
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_mem_rd.c:47:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:39 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:39 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_ctx.c: In function ‘main’:
+12/27 04:52:39 ERROR|     utils:0151| [stderr] lat_ctx.c:74:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:39 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:39 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:40 ERROR|     utils:0151| [stderr] lat_sem.c: In function ‘main’:
+12/27 04:52:40 ERROR|     utils:0151| [stderr] lat_sem.c:42:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:40 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:40 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:40 ERROR|     utils:0151| [stderr] lat_unix.c: In function ‘main’:
+12/27 04:52:40 ERROR|     utils:0151| [stderr] lat_unix.c:46:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:40 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:40 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:41 ERROR|     utils:0151| [stderr] lat_fifo.c: In function ‘main’:
+12/27 04:52:41 ERROR|     utils:0151| [stderr] lat_fifo.c:45:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:41 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:41 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_http.c: In function ‘main’:
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_http.c:84:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:42 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:42 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_fcntl.c: In function ‘main’:
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_fcntl.c:203:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:42 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:42 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_unix_connect.c: In function ‘main’:
+12/27 04:52:42 ERROR|     utils:0151| [stderr] lat_unix_connect.c:63:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:42 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:42 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:43 ERROR|     utils:0151| [stderr] lat_ops.c: In function ‘main’:
+12/27 04:52:43 ERROR|     utils:0151| [stderr] lat_ops.c:393:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:43 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:52:43 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:52:43 ERROR|     utils:0151| [stderr] line.c: In function ‘main’:
+12/27 04:52:43 ERROR|     utils:0151| [stderr] line.c:54:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:43 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:43 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:43 ERROR|     utils:0151| [stderr] tlb.c: In function ‘main’:
+12/27 04:52:43 ERROR|     utils:0151| [stderr] tlb.c:69:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:43 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:43 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:44 ERROR|     utils:0151| [stderr] par_mem.c: In function ‘main’:
+12/27 04:52:44 ERROR|     utils:0151| [stderr] par_mem.c:64:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:44 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:44 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:44 ERROR|     utils:0151| [stderr] par_ops.c: In function ‘main’:
+12/27 04:52:44 ERROR|     utils:0151| [stderr] par_ops.c:413:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:44 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:44 ERROR|     utils:0151| [stderr]     ^
+12/27 04:52:58 ERROR|     utils:0151| [stderr] stream.c: In function ‘main’:
+12/27 04:52:58 ERROR|     utils:0151| [stderr] stream.c:70:5: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:58 ERROR|     utils:0151| [stderr]      lmbench_usage(ac, av, usage);
+12/27 04:52:58 ERROR|     utils:0151| [stderr]      ^
+12/27 04:52:59 ERROR|     utils:0151| [stderr] cache.c: In function ‘main’:
+12/27 04:52:59 ERROR|     utils:0151| [stderr] cache.c:123:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:52:59 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:52:59 ERROR|     utils:0151| [stderr]     ^
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_dram_page.c: In function ‘main’:
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_dram_page.c:66:4: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:53:00 ERROR|     utils:0151| [stderr]     lmbench_usage(ac, av, usage);
+12/27 04:53:00 ERROR|     utils:0151| [stderr]     ^
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_pmake.c: In function ‘main’:
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_pmake.c:47:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:53:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:53:00 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_rand.c: In function ‘main’:
+12/27 04:53:00 ERROR|     utils:0151| [stderr] lat_rand.c:39:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:53:00 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:53:00 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:53:01 ERROR|     utils:0151| [stderr] lat_usleep.c: In function ‘main’:
+12/27 04:53:01 ERROR|     utils:0151| [stderr] lat_usleep.c:204:3: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:53:01 ERROR|     utils:0151| [stderr]    lmbench_usage(ac, av, usage);
+12/27 04:53:01 ERROR|     utils:0151| [stderr]    ^
+12/27 04:53:01 ERROR|     utils:0151| [stderr] lat_cmd.c: In function ‘main’:
+12/27 04:53:01 ERROR|     utils:0151| [stderr] lat_cmd.c:40:23: warning: implicit declaration of function ‘lmbench_usage’ [-Wimplicit-function-declaration]
+12/27 04:53:01 ERROR|     utils:0151| [stderr]     if (parallel <= 0) lmbench_usage(ac, av, usage);
+12/27 04:53:01 ERROR|     utils:0151| [stderr]                        ^
+12/27 04:53:05 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+12/27 04:53:05 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+12/27 04:53:05 ERROR|     utils:0151| [stderr] 2MB OK3MB OK4MB OK5MB OK6MB OK7MB OK8MB OK10MB OK12MB OK14MB OK16MB OK20MB OK24MB OK
+12/27 05:52:35 ERROR|     utils:0151| [stderr] Name "main::host" used only once: possible typo at ../scripts/getsummary line 20.

@@ -1,0 +1,434 @@
+12/17 08:40:46 DEBUG|     utils:0114| Running 'cat /etc/issue |awk '{print $2}' '
+12/17 08:40:46 DEBUG|     utils:0151| [stdout] Enterprise
+12/17 08:40:46 DEBUG|     utils:0151| [stdout] \r
+12/17 08:40:46 DEBUG|     utils:0151| [stdout] 
+12/17 08:40:46 DEBUG|     utils:0114| Running 'which gcc'
+12/17 08:40:46 DEBUG|     utils:0151| [stdout] /usr/lib/ccache/gcc
+12/17 08:40:46 DEBUG|     utils:0114| Running 'bzcat /root/autotest/client/tests/netperf2/netperf-2.6.0.tar.bz2 | tar xvf - 2>/dev/null'
+12/17 08:40:47 DEBUG|     utils:0114| Running './configure '
+12/17 08:40:47 DEBUG|     utils:0151| [stdout] checking build system type... x86_64-unknown-linux-gnu
+12/17 08:40:47 DEBUG|     utils:0151| [stdout] checking host system type... x86_64-unknown-linux-gnu
+12/17 08:40:47 DEBUG|     utils:0151| [stdout] checking target system type... x86_64-unknown-linux-gnu
+12/17 08:40:47 DEBUG|     utils:0151| [stdout] checking for a BSD-compatible install... /bin/install -c
+12/17 08:40:48 DEBUG|     utils:0151| [stdout] checking whether build environment is sane... yes
+12/17 08:40:48 DEBUG|     utils:0151| [stdout] checking for a thread-safe mkdir -p... /bin/mkdir -p
+12/17 08:40:48 DEBUG|     utils:0151| [stdout] checking for gawk... gawk
+12/17 08:40:48 DEBUG|     utils:0151| [stdout] checking whether make sets $(MAKE)... yes
+12/17 08:40:48 DEBUG|     utils:0151| [stdout] checking for gcc... gcc
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking whether the C compiler works... yes
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for C compiler default output file name... a.out
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for suffix of executables... 
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking whether we are cross compiling... no
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for suffix of object files... o
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking whether we are using the GNU C compiler... yes
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking whether gcc accepts -g... yes
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for gcc option to accept ISO C89... none needed
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for style of include used by make... GNU
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking dependency style of gcc... gcc3
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for ranlib... ranlib
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for an ANSI C-conforming const... yes
+12/17 08:40:50 DEBUG|     utils:0151| [stdout] checking for main in -lm... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking how to run the C preprocessor... gcc -E
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for grep that handles long lines and -e... /bin/grep
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for egrep... /bin/grep -E
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for ANSI C header files... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for sys/wait.h that is POSIX.1 compatible... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for sys/types.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for sys/stat.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for stdlib.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for string.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for memory.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for strings.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for inttypes.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for stdint.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for unistd.h... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking arpa/inet.h usability... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking arpa/inet.h presence... yes
+12/17 08:40:51 DEBUG|     utils:0151| [stdout] checking for arpa/inet.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking endian.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking endian.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for endian.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking errno.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking errno.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for errno.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking fcntl.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking fcntl.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for fcntl.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking ifaddrs.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking ifaddrs.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for ifaddrs.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking limits.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking limits.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for limits.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking linux/tcp.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking linux/tcp.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for linux/tcp.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking malloc.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking malloc.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for malloc.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netdb.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netdb.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for netdb.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netinet/in.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netinet/in.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for netinet/in.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netinet/sctp.h usability... no
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking netinet/sctp.h presence... no
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for netinet/sctp.h... no
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking signal.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking signal.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for signal.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for string.h... (cached) yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for strings.h... (cached) yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking syscall.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking syscall.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for syscall.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/ioctl.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/ioctl.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for sys/ioctl.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/mman.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/mman.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for sys/mman.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/param.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/param.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for sys/param.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/socket.h usability... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking sys/socket.h presence... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for sys/socket.h... yes
+12/17 08:40:52 DEBUG|     utils:0151| [stdout] checking for sys/stat.h... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/time.h usability... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/time.h presence... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/time.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/wait.h... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/ipc.h usability... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/ipc.h presence... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/ipc.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/sockio.h usability... no
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/sockio.h presence... no
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/sockio.h... no
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/sysinfo.h usability... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking sys/sysinfo.h presence... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/sysinfo.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for sys/wait.h... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for unistd.h... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking netinet/in_systm.h usability... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking netinet/in_systm.h presence... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for netinet/in_systm.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking netinet/ip.h usability... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking netinet/ip.h presence... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for netinet/ip.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for main in -lsocket... no
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for main in -lmach... no
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for an ANSI C-conforming const... (cached) yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for off_t... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for size_t... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for socklen_t equivalent... unsigned
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for h_errno declaration in netdb.h... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for struct sockaddr_storage... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking whether time.h and sys/time.h may both be included... yes
+12/17 08:40:53 DEBUG|     utils:0151| [stdout] checking for stdbool.h that conforms to C99... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for _Bool... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking if sockaddr struct has sa_len member... no
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for pid_t... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking vfork.h usability... no
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking vfork.h presence... no
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for vfork.h... no
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for fork... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for vfork... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for working fork... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for working vfork... (cached) yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for stdlib.h... (cached) yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for unistd.h... (cached) yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for sys/param.h... (cached) yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for getpagesize... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for working mmap... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking sys/select.h usability... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking sys/select.h presence... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for sys/select.h... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for sys/socket.h... (cached) yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking types of arguments for select... int,fd_set *,struct timeval *
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking whether setpgrp takes no argument... yes
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking return type of signal handlers... void
+12/17 08:40:54 DEBUG|     utils:0151| [stdout] checking for alarm... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for bzero... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for daemon... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for gethostbyname... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for gethrtime... no
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for gettimeofday... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for inet_ntoa... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for memset... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for memcpy... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for munmap... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for select... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for setsid... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for socket... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for sqrt... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for strcasecmp... yes
+12/17 08:40:55 DEBUG|     utils:0151| [stdout] checking for strchr... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for strstr... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for strtoul... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for uname... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for toupper... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for getnameinfo... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for getaddrinfo... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for inet_ntop... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for getifaddrs... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for sendfile... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for uname... (cached) yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for mpctl... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for processor_bind... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for sched_setaffinity... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for bind_to_cpu_id... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking for bindprocessor... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include histogram support... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include dirty support... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include demo support... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include Unix-domain socket tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include DLPI tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include DCCP tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include OMNI tests... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include XTI tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include SDP tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include ICSC-EXS tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include SCTP tests... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include paced send (intervals) support... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether paced sends should spin... no
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking whether to include initial burst support in _RR tests... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking which CPU utilization measurement type to use... "procstat - auto"
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking which route lookup type to use... "rtnetlink - auto"
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking which slot lookup type to use... "linux - auto"
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking which sec lookup type to use... checking for main in -ldl... yes
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] "linux - auto"
+12/17 08:40:56 DEBUG|     utils:0151| [stdout] checking which driver info lookup type to use... "ethtool - auto"
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] checking which system info lookup type to use... checking smbios/SystemInfo.h usability... no
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] checking smbios/SystemInfo.h presence... no
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] checking for smbios/SystemInfo.h... no
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] checking for main in -lsmbios... no
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] "linux - auto"
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] configure: creating ./config.status
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating src/netperf_version.h
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating src/Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating src/missing/Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating src/missing/m4/Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating doc/Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating doc/examples/Makefile
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating netperf.spec
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: creating config.h
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] config.status: executing depfiles commands
+12/17 08:40:57 DEBUG|     utils:0114| Running 'make  '
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make  all-recursive
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[1]: Entering directory '/root/autotest/client/tmp/netperf2/src'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] Making all in src
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/netperf2/src/src'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] Making all in missing
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/netperf2/src/src/missing'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] Making all in m4
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/netperf2/src/src/missing/m4'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'all'.
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/netperf2/src/src/missing/m4'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Entering directory '/root/autotest/client/tmp/netperf2/src/src/missing'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Nothing to be done for 'all-am'.
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[4]: Leaving directory '/root/autotest/client/tmp/netperf2/src/src/missing'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/netperf2/src/src/missing'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/netperf2/src/src'
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netperf.o -MD -MP -MF .deps/netperf.Tpo -c -o netperf.o netperf.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/netperf.Tpo .deps/netperf.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netlib.o -MD -MP -MF .deps/netlib.Tpo -c -o netlib.o netlib.c
+12/17 08:40:57 ERROR|     utils:0151| [stderr] netlib.c: In function ‘bind_to_specific_processor’:
+12/17 08:40:57 ERROR|     utils:0151| [stderr] netlib.c:2292:9: warning: implicit declaration of function ‘sched_setaffinity’ [-Wimplicit-function-declaration]
+12/17 08:40:57 ERROR|     utils:0151| [stderr]      if (sched_setaffinity(getpid(), len, &netperf_cpu_set)) {
+12/17 08:40:57 ERROR|     utils:0151| [stderr]          ^
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/netlib.Tpo .deps/netlib.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netsh.o -MD -MP -MF .deps/netsh.Tpo -c -o netsh.o netsh.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/netsh.Tpo .deps/netsh.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_bsd.o -MD -MP -MF .deps/nettest_bsd.Tpo -c -o nettest_bsd.o nettest_bsd.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_bsd.Tpo .deps/nettest_bsd.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_dlpi.o -MD -MP -MF .deps/nettest_dlpi.Tpo -c -o nettest_dlpi.o nettest_dlpi.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_dlpi.Tpo .deps/nettest_dlpi.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_unix.o -MD -MP -MF .deps/nettest_unix.Tpo -c -o nettest_unix.o nettest_unix.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_unix.Tpo .deps/nettest_unix.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_xti.o -MD -MP -MF .deps/nettest_xti.Tpo -c -o nettest_xti.o nettest_xti.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_xti.Tpo .deps/nettest_xti.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_sctp.o -MD -MP -MF .deps/nettest_sctp.Tpo -c -o nettest_sctp.o nettest_sctp.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_sctp.Tpo .deps/nettest_sctp.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_sdp.o -MD -MP -MF .deps/nettest_sdp.Tpo -c -o nettest_sdp.o nettest_sdp.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_sdp.Tpo .deps/nettest_sdp.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT nettest_omni.o -MD -MP -MF .deps/nettest_omni.Tpo -c -o nettest_omni.o nettest_omni.c
+12/17 08:40:57 ERROR|     utils:0151| [stderr] nettest_omni.c: In function ‘recv_data_no_copy’:
+12/17 08:40:57 ERROR|     utils:0151| [stderr] nettest_omni.c:2943:19: warning: implicit declaration of function ‘splice’ [-Wimplicit-function-declaration]
+12/17 08:40:57 ERROR|     utils:0151| [stderr]      bytes_recvd = splice(data_socket,
+12/17 08:40:57 ERROR|     utils:0151| [stderr]                    ^
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/nettest_omni.Tpo .deps/nettest_omni.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT net_uuid.o -MD -MP -MF .deps/net_uuid.Tpo -c -o net_uuid.o net_uuid.c
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] mv -f .deps/net_uuid.Tpo .deps/net_uuid.Po
+12/17 08:40:57 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT dscp.o -MD -MP -MF .deps/dscp.Tpo -c -o dscp.o dscp.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/dscp.Tpo .deps/dscp.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netcpu_procstat.o -MD -MP -MF .deps/netcpu_procstat.Tpo -c -o netcpu_procstat.o netcpu_procstat.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netcpu_procstat.Tpo .deps/netcpu_procstat.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netrt_rtnetlink.o -MD -MP -MF .deps/netrt_rtnetlink.Tpo -c -o netrt_rtnetlink.o netrt_rtnetlink.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netrt_rtnetlink.Tpo .deps/netrt_rtnetlink.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netdrv_ethtool.o -MD -MP -MF .deps/netdrv_ethtool.Tpo -c -o netdrv_ethtool.o netdrv_ethtool.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netdrv_ethtool.Tpo .deps/netdrv_ethtool.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netslot_linux.o -MD -MP -MF .deps/netslot_linux.Tpo -c -o netslot_linux.o netslot_linux.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netslot_linux.Tpo .deps/netslot_linux.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netsys_linux.o -MD -MP -MF .deps/netsys_linux.Tpo -c -o netsys_linux.o netsys_linux.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netsys_linux.Tpo .deps/netsys_linux.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netsec_linux.o -MD -MP -MF .deps/netsec_linux.Tpo -c -o netsec_linux.o netsec_linux.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netsec_linux.Tpo .deps/netsec_linux.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc     -o netperf netperf.o netlib.o netsh.o nettest_bsd.o nettest_dlpi.o nettest_unix.o nettest_xti.o nettest_sctp.o nettest_sdp.o nettest_omni.o net_uuid.o dscp.o netcpu_procstat.o netrt_rtnetlink.o netdrv_ethtool.o netslot_linux.o netsys_linux.o netsec_linux.o  -ldl -lm 
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc -DHAVE_CONFIG_H -I. -I..      -MT netserver.o -MD -MP -MF .deps/netserver.Tpo -c -o netserver.o netserver.c
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] mv -f .deps/netserver.Tpo .deps/netserver.Po
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] gcc     -o netserver netserver.o netlib.o netsh.o nettest_bsd.o nettest_dlpi.o nettest_unix.o nettest_xti.o nettest_sctp.o nettest_sdp.o nettest_omni.o net_uuid.o dscp.o netcpu_procstat.o netrt_rtnetlink.o netdrv_ethtool.o netslot_linux.o netsys_linux.o netsec_linux.o  -ldl -lm 
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/netperf2/src/src'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/netperf2/src/src'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] Making all in doc
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/netperf2/src/doc'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] Making all in examples
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/netperf2/src/doc/examples'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all'.
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/netperf2/src/doc/examples'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Entering directory '/root/autotest/client/tmp/netperf2/src/doc'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Nothing to be done for 'all-am'.
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[3]: Leaving directory '/root/autotest/client/tmp/netperf2/src/doc'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/netperf2/src/doc'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[2]: Entering directory '/root/autotest/client/tmp/netperf2/src'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[2]: Leaving directory '/root/autotest/client/tmp/netperf2/src'
+12/17 08:40:58 DEBUG|     utils:0151| [stdout] make[1]: Leaving directory '/root/autotest/client/tmp/netperf2/src'
+12/17 08:40:58 DEBUG|     utils:0114| Running 'sync'
+12/17 08:40:59 DEBUG|     utils:0114| Running 'echo 3 >/proc/sys/vm/drop_caches'
+12/17 08:40:59 DEBUG|      test:0285| Test started. Specified 3 iterations
+12/17 08:40:59 DEBUG|      test:0289| Executing iteration 1 of 3
+12/17 08:40:59 INFO |  netperf2:0039| clean the caches........
+12/17 08:41:00 INFO |  netperf2:0040| ===========Start TCP_STREAM test===============
+12/17 08:41:00 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_STREAM -l 120'
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] Recv   Send    Send                          
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] Socket Socket  Message  Elapsed              
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] Size   Size    Size     Time     Throughput  
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] bytes  bytes   bytes    secs.    10^6bits/sec  
+12/17 08:43:00 DEBUG|     utils:0151| [stdout] 
+12/17 08:43:00 DEBUG|     utils:0151| [stdout]  87380  16384  16384    120.03    870.59   
+12/17 08:43:05 INFO |  netperf2:0039| clean the caches........
+12/17 08:43:05 INFO |  netperf2:0040| ===========Start UDP_STREAM test===============
+12/17 08:43:05 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t UDP_STREAM -l 120'
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] MIGRATED UDP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] Socket  Message  Elapsed      Messages                
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] Size    Size     Time         Okay Errors   Throughput
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] bytes   bytes    secs            #      #   10^6bits/sec
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] 
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] 212992   65507   120.02     218532      0     954.18
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] 212992           120.02     218372            953.48
+12/17 08:45:06 DEBUG|     utils:0151| [stdout] 
+12/17 08:45:11 INFO |  netperf2:0039| clean the caches........
+12/17 08:45:11 INFO |  netperf2:0040| ===========Start TCP_RR test===============
+12/17 08:45:11 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_RR -l 120'
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET : first burst 0
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] 
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.02   8963.29   
+12/17 08:47:11 DEBUG|     utils:0151| [stdout] 16384  87380 
+12/17 08:47:16 INFO |  netperf2:0039| clean the caches........
+12/17 08:47:16 INFO |  netperf2:0040| ===========Start TCP_CRR test===============
+12/17 08:47:16 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_CRR -l 120'
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] MIGRATED TCP Connect/Request/Response TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] 
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.02   2119.91   
+12/17 08:49:21 DEBUG|     utils:0151| [stdout] 16384  87380 
+12/17 08:49:26 DEBUG|      test:0289| Executing iteration 2 of 3
+12/17 08:49:26 INFO |  netperf2:0039| clean the caches........
+12/17 08:49:26 INFO |  netperf2:0040| ===========Start TCP_STREAM test===============
+12/17 08:49:26 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_STREAM -l 120'
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] Recv   Send    Send                          
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] Socket Socket  Message  Elapsed              
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] Size   Size    Size     Time     Throughput  
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] bytes  bytes   bytes    secs.    10^6bits/sec  
+12/17 08:51:26 DEBUG|     utils:0151| [stdout] 
+12/17 08:51:26 DEBUG|     utils:0151| [stdout]  87380  16384  16384    120.04    932.34   
+12/17 08:51:31 INFO |  netperf2:0039| clean the caches........
+12/17 08:51:31 INFO |  netperf2:0040| ===========Start UDP_STREAM test===============
+12/17 08:51:31 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t UDP_STREAM -l 120'
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] MIGRATED UDP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] Socket  Message  Elapsed      Messages                
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] Size    Size     Time         Okay Errors   Throughput
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] bytes   bytes    secs            #      #   10^6bits/sec
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] 
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] 212992   65507   120.00     218328      0     953.47
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] 212992           120.00     218095            952.45
+12/17 08:53:32 DEBUG|     utils:0151| [stdout] 
+12/17 08:53:37 INFO |  netperf2:0039| clean the caches........
+12/17 08:53:37 INFO |  netperf2:0040| ===========Start TCP_RR test===============
+12/17 08:53:37 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_RR -l 120'
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET : first burst 0
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] 
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.01   9070.53   
+12/17 08:55:37 DEBUG|     utils:0151| [stdout] 16384  87380 
+12/17 08:55:42 INFO |  netperf2:0039| clean the caches........
+12/17 08:55:42 INFO |  netperf2:0040| ===========Start TCP_CRR test===============
+12/17 08:55:42 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_CRR -l 120'
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] MIGRATED TCP Connect/Request/Response TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] 
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.03   1564.95   
+12/17 08:57:47 DEBUG|     utils:0151| [stdout] 16384  87380 
+12/17 08:57:52 DEBUG|      test:0289| Executing iteration 3 of 3
+12/17 08:57:52 INFO |  netperf2:0039| clean the caches........
+12/17 08:57:52 INFO |  netperf2:0040| ===========Start TCP_STREAM test===============
+12/17 08:57:52 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_STREAM -l 120'
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] MIGRATED TCP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] Recv   Send    Send                          
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] Socket Socket  Message  Elapsed              
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] Size   Size    Size     Time     Throughput  
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] bytes  bytes   bytes    secs.    10^6bits/sec  
+12/17 08:59:52 DEBUG|     utils:0151| [stdout] 
+12/17 08:59:52 DEBUG|     utils:0151| [stdout]  87380  16384  16384    120.02    931.64   
+12/17 08:59:58 INFO |  netperf2:0039| clean the caches........
+12/17 08:59:58 INFO |  netperf2:0040| ===========Start UDP_STREAM test===============
+12/17 08:59:58 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t UDP_STREAM -l 120'
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] MIGRATED UDP STREAM TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] Socket  Message  Elapsed      Messages                
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] Size    Size     Time         Okay Errors   Throughput
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] bytes   bytes    secs            #      #   10^6bits/sec
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] 
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] 212992   65507   120.02     218536      0     954.20
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] 212992           120.02     218375            953.49
+12/17 09:01:58 DEBUG|     utils:0151| [stdout] 
+12/17 09:02:03 INFO |  netperf2:0039| clean the caches........
+12/17 09:02:03 INFO |  netperf2:0040| ===========Start TCP_RR test===============
+12/17 09:02:03 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_RR -l 120'
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] MIGRATED TCP REQUEST/RESPONSE TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET : first burst 0
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] 
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.02   8851.49   
+12/17 09:04:04 DEBUG|     utils:0151| [stdout] 16384  87380 
+12/17 09:04:09 INFO |  netperf2:0039| clean the caches........
+12/17 09:04:09 INFO |  netperf2:0040| ===========Start TCP_CRR test===============
+12/17 09:04:09 DEBUG|     utils:0114| Running '/root/autotest/client/tmp/netperf2/src/src/netperf -H 192.168.32.47 -t TCP_CRR -l 120'
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] MIGRATED TCP Connect/Request/Response TEST from 0.0.0.0 (0.0.0.0) port 0 AF_INET to 192.168.32.47 () port 0 AF_INET
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] Local /Remote
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] Socket Size   Request  Resp.   Elapsed  Trans.
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] Send   Recv   Size     Size    Time     Rate         
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] bytes  Bytes  bytes    bytes   secs.    per sec   
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] 
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] 16384  87380  1        1       120.01   1113.90   
+12/17 09:06:13 DEBUG|     utils:0151| [stdout] 16384  87380 
